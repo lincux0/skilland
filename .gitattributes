@@ -1,0 +1,3 @@
+# Catalog files are content-addressed: any CRLF conversion changes the
+# bundle hash and breaks verification. Keep the exact vendored bytes.
+catalog-src/** -text
