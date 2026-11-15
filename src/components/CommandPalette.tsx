@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { KeyboardEvent as ReactKeyboardEvent } from "react";
+import { createPortal } from "react-dom";
 import { loadPagefind, type PagefindModule } from "../lib/pagefind";
 import { normalizeSearchTerm } from "../lib/search";
 
@@ -26,7 +27,10 @@ export default function CommandPalette() {
   const [loading, setLoading] = useState(false);
   const [unavailable, setUnavailable] = useState(false);
   const [pagefind, setPagefind] = useState<PagefindModule | null>(null);
+  const [mounted, setMounted] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -138,8 +142,10 @@ export default function CommandPalette() {
         <kbd className="hidden rounded border border-line px-1 font-mono text-[9px] text-faint sm:inline">⌘K</kbd>
       </button>
 
-      {open && (
-        <div
+      {open &&
+        mounted &&
+        createPortal(
+          <div
           className="fixed inset-0 z-50 flex items-start justify-center bg-black/50 px-4 pt-[12vh] backdrop-blur-sm"
           onMouseDown={close}
         >
@@ -174,7 +180,7 @@ export default function CommandPalette() {
                 </p>
               ) : !query.trim() ? (
                 <p className="px-3 py-8 text-center text-[12px] text-muted">
-                  输入关键词开始搜索；或按 Esc 关闭。
+                  输入关键词搜索。
                 </p>
               ) : loading ? (
                 <p className="px-3 py-8 text-center text-[12px] text-muted">搜索中…</p>
@@ -183,7 +189,7 @@ export default function CommandPalette() {
               ) : (
                 <>
                   <p className="px-3 pb-1 pt-2 font-mono text-[9px] uppercase tracking-[0.12em] text-faint" aria-live="polite">
-                    {resultCount} results
+                    {resultCount} 条
                   </p>
                   {items.map((item, index) => (
                     <a
@@ -208,8 +214,9 @@ export default function CommandPalette() {
               )}
             </div>
           </div>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
     </>
   );
 }

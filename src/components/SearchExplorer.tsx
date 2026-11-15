@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { agents, scenes, shelves } from "../lib/content";
 import { scanLabel, statusLabel } from "../lib/format";
+import { AGENT_ICONS, AGENT_LABELS } from "../lib/agent-icons";
 import { normalizeSearchTerm } from "../lib/search";
 import {
   loadPagefind,
@@ -45,12 +46,31 @@ const RISK_LABELS: Record<string, string> = {
   none: "未命中",
 };
 
-function agentShort(id: string): string {
-  return agents.find((agent) => agent.id === id)?.short ?? id.slice(0, 2).toUpperCase();
+function agentLabel(id: string): string {
+  return AGENT_LABELS[id] ?? id;
 }
 
-function agentLabel(id: string): string {
-  return agents.find((agent) => agent.id === id)?.label ?? id;
+function AgentGlyph({ agent }: { agent: string }) {
+  const icon = AGENT_ICONS[agent];
+  const label = agentLabel(agent);
+  return (
+    <span
+      title={label}
+      role="img"
+      aria-label={label}
+      className="grid h-5 w-5 place-items-center rounded-[5px] border border-line bg-surface-2 text-muted"
+    >
+      {icon ? (
+        <svg viewBox={icon.viewBox} className="h-3.5 w-3.5" fill="currentColor" aria-hidden="true">
+          {icon.paths.map((path, index) => (
+            <path key={index} d={path.d} opacity={path.opacity} fillRule={path.fillRule} />
+          ))}
+        </svg>
+      ) : (
+        <span className="font-mono text-[9px]">{agent.slice(0, 2).toUpperCase()}</span>
+      )}
+    </span>
+  );
 }
 
 function sceneLabel(id: string): string {
@@ -157,13 +177,7 @@ function ResultCard({ item, query }: { item: SearchItem; query: string }) {
         </div>
         <div className="flex shrink-0 items-center gap-1">
           {item.agents.slice(0, 4).map((agent) => (
-            <span
-              key={agent}
-              title={agentLabel(agent)}
-              className="grid h-5 min-w-5 place-items-center rounded-[5px] border border-line bg-surface-2 px-1 font-mono text-[9px] text-muted"
-            >
-              {agentShort(agent)}
-            </span>
+            <AgentGlyph key={agent} agent={agent} />
           ))}
         </div>
       </div>
@@ -421,7 +435,7 @@ export default function SearchExplorer({ initialItems }: Props) {
         全部 Skills
       </h1>
       <p className="mt-3 max-w-2xl text-[14px] leading-7 text-muted">
-        搜名称、描述、用法、文件与风险证据。当前索引只包含详情页；扫描结果不是安全认证。
+        搜名称、描述、用法、文件与风险证据。
       </p>
 
       <div className="mt-7 flex max-w-3xl flex-col gap-2 sm:flex-row">
@@ -451,10 +465,7 @@ export default function SearchExplorer({ initialItems }: Props) {
       </div>
 
       {engine === "fallback" && (
-        <p className="mt-4 rounded-lg border border-warn/30 bg-warn/5 px-4 py-3 text-[11px] leading-5 text-muted">
-          当前没有可用的 Pagefind 索引（开发模式常见）。运行 <code className="mono">npm run build</code> 后
-          用 <code className="mono">npm run preview</code> 体验全文搜索；这里暂时退回元数据过滤。
-        </p>
+        <p className="mt-4 text-[11px] text-faint">未生成搜索索引，当前为元数据过滤。</p>
       )}
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[250px_minmax(0,1fr)]">
@@ -485,8 +496,8 @@ export default function SearchExplorer({ initialItems }: Props) {
                   </button>
                 )}
               </div>
-              <p className="mt-2 text-[11px] leading-5 text-muted">
-                每个分组单选；再次点击取消。筛选状态写入 URL。
+              <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.12em] text-faint">
+                筛选
               </p>
             </div>
 
@@ -524,8 +535,8 @@ export default function SearchExplorer({ initialItems }: Props) {
         <div className="min-w-0">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-faint">
-              <span aria-live="polite">{total}</span> results
-              {loading ? " · searching" : ""}
+              <span aria-live="polite">{total}</span> 条
+              {loading ? " · 搜索中" : ""}
             </p>
             <div className="flex flex-wrap items-center gap-1.5">
               {query.trim() && <span className="chip">q: {query.trim()}</span>}
@@ -557,7 +568,6 @@ export default function SearchExplorer({ initialItems }: Props) {
           {items.length === 0 ? (
             <div className="card mt-4 p-10 text-center">
               <p className="text-[15px] font-medium">没找到。</p>
-              <p className="mt-2 text-[13px] text-muted">试试“补测试”“设计稿”或清除筛选。</p>
               <button
                 type="button"
                 onClick={clearAll}

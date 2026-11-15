@@ -9,9 +9,11 @@ import {
   type SkillRecord,
   type SkillSeed,
 } from "./schema";
+import { pickTranslation, type TranslationFile } from "./translations";
 
 const DATA_ROOT = path.join(process.cwd(), "data", "repos");
 const REVIEWS_FILE = path.join(process.cwd(), "data", "reviews.json");
+const TRANSLATIONS_FILE = path.join(process.cwd(), "data", "translations.json");
 const CATALOG_ROOT = path.join(process.cwd(), "catalog-src");
 
 const AGENT_DIRS: Record<string, { project: string; global: string }> = {
@@ -158,6 +160,11 @@ function deriveVersions(
   };
 }
 
+function loadTranslations(): TranslationFile {
+  if (!fs.existsSync(TRANSLATIONS_FILE)) return {};
+  return JSON.parse(fs.readFileSync(TRANSLATIONS_FILE, "utf8")) as TranslationFile;
+}
+
 function loadCatalogEntries(): Map<
   string,
   { packId: string; version: string; bundleHash: string; publishedAt: string }
@@ -193,6 +200,7 @@ function deriveSkill(
   catalogEntry:
     | { packId: string; version: string; bundleHash: string; publishedAt: string }
     | undefined,
+  translations: TranslationFile,
 ): SkillRecord {
   const { repo } = repoFile;
   const commit = skill.snapshot?.commit ?? repo.headCommit;
@@ -227,6 +235,8 @@ function deriveSkill(
   const reviewedCommit = review.reviewed?.commit;
   const installCommit = reviewedCommit ?? commit;
   const publicId = `${repo.owner}/${repo.repo}/${skill.slug}`;
+  const descriptionZh =
+    skill.descriptionZh ?? pickTranslation(translations, publicId, skill.description);
   // Plan §6.4: a human-approved snapshot is public. Keep explicit non-draft
   // states (quarantined / archived / removed) untouched.
   const status =
@@ -250,6 +260,7 @@ function deriveSkill(
     id: `github:${repo.id}:${skill.path}`,
     publicId,
     status,
+    descriptionZh,
     source,
     upstream,
     snapshot,
@@ -279,6 +290,7 @@ export function getAllSkills(): SkillRecord[] {
   if (cachedSkills) return cachedSkills;
   const reviews = loadReviews();
   const catalogs = loadCatalogEntries();
+  const translations = loadTranslations();
   const records = loadRepoFiles()
     .flatMap((repoFile) =>
       repoFile.skills.map((skill) =>
@@ -287,6 +299,7 @@ export function getAllSkills(): SkillRecord[] {
           skill,
           reviews.get(`${repoFile.repo.owner}/${repoFile.repo.repo}/${skill.slug}`),
           catalogs.get(`${repoFile.repo.owner}/${repoFile.repo.repo}/${skill.slug}`),
+          translations,
         ),
       ),
     )

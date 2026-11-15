@@ -21,7 +21,7 @@ const sceneCounts = new Map(
 
 <BaseLayout
   title="Skill Shelf"
-  description="一个面向 AI Coding 开发者的 Agent Skills 精选货架。Phase 2：真实 GitHub 来源、tarball 采集与静态扫描。"
+  description="一个面向 AI Coding 开发者的 Agent Skills 精选货架：真实 GitHub 来源、静态扫描、中文全文搜索与人工复核记录。"
 >
   <section class="relative overflow-hidden border-b border-line">
     <div
@@ -32,8 +32,7 @@ const sceneCounts = new Map(
     </div>
     <div class="container-page relative py-16 md:py-24">
       <div class="flex flex-wrap items-center gap-2">
-        <span class="chip chip-accent">Phase 4 · 版本与复核</span>
-        <span class="chip">{stats.total} 条真实来源 · 自动扫描 · 未人工复核</span>
+        <span class="chip">{stats.total} 个 skills · {stats.reviewed} 个已复核</span>
       </div>
 
       <h1 class="mt-7 max-w-4xl text-[42px] font-semibold leading-[1.05] tracking-[-0.04em] md:text-[64px]">
@@ -41,8 +40,7 @@ const sceneCounts = new Map(
         <span class="text-accent">Agent Skills</span>
       </h1>
       <p class="mt-5 max-w-2xl text-[15px] leading-7 text-muted md:text-[16px]">
-        精选、可逛、装得进你的 agent。先看它能做什么、什么时候适合，再决定要不要装。
-        不追全量索引，只做值得被看见的那一小部分。
+        精选、可逛、装得进你的 agent。
       </p>
 
       <form action="/explore" method="get" class="mt-8 flex max-w-2xl flex-col gap-2 sm:flex-row">
@@ -77,19 +75,19 @@ const sceneCounts = new Map(
 
       <dl class="mt-12 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-4">
         <div class="bg-surface px-4 py-4">
-          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Skills</dt>
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">技能</dt>
           <dd class="mt-1 text-[20px] font-semibold">{stats.total}</dd>
         </div>
         <div class="bg-surface px-4 py-4">
-          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Sources</dt>
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">来源</dt>
           <dd class="mt-1 text-[20px] font-semibold">10</dd>
         </div>
         <div class="bg-surface px-4 py-4">
-          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Full scans</dt>
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">完整扫描</dt>
           <dd class="mt-1 text-[20px] font-semibold">{stats.complete}</dd>
         </div>
         <div class="bg-surface px-4 py-4">
-          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Reviewed</dt>
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">已复核</dt>
           <dd class="mt-1 text-[20px] font-semibold text-warn">{stats.reviewed}</dd>
         </div>
       </dl>
@@ -98,14 +96,14 @@ const sceneCounts = new Map(
 
   <div class="container-page">
     <section class="py-14" id="today">
-      <SectionHeading kicker="Today's shelf" title="今日五件" href="/explore" linkLabel="看全部" />
+      <SectionHeading kicker="今日货架" title="今日五件" href="/explore" linkLabel="看全部" />
       <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {featured.map((skill) => <SkillCard skill={skill} compact />)}
       </div>
     </section>
 
     <section class="border-t border-line py-14" id="scenes">
-      <SectionHeading kicker="Start from the situation" title="按场景挑" />
+      <SectionHeading kicker="从场景出发" title="按场景挑" />
       <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         {scenes.map((scene) => (
           <a
@@ -125,7 +123,7 @@ const sceneCounts = new Map(
 
     <section class="border-t border-line py-14" id="collections">
       <SectionHeading
-        kicker="Collection 01"
+        kicker="专题 01"
         title={designShelf.title}
         href="/explore?shelf=design-systems"
         linkLabel="查看专题"
@@ -138,7 +136,7 @@ const sceneCounts = new Map(
 
     <section class="border-t border-line py-14">
       <SectionHeading
-        kicker="Collection 02"
+        kicker="专题 02"
         title={smallShelf.title}
         href="/explore?shelf=small-and-readable"
         linkLabel="查看专题"
@@ -153,7 +151,7 @@ const sceneCounts = new Map(
 
     <section class="border-t border-line py-14">
       <SectionHeading
-        kicker="Collection 03"
+        kicker="专题 03"
         title={officialShelf.title}
         href="/explore?shelf=official"
         linkLabel="查看专题"
@@ -161,36 +159,6 @@ const sceneCounts = new Map(
       <p class="-mt-2 mb-5 max-w-2xl text-[13px] leading-6 text-muted">{officialShelf.blurb}</p>
       <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {officialSkills.map((skill) => <SkillCard skill={skill} />)}
-      </div>
-    </section>
-
-    <section class="border-t border-line py-14">
-      <div class="card p-6 md:p-8">
-        <div class="grid gap-8 md:grid-cols-3">
-          <div>
-            <p class="section-kicker">What this is</p>
-            <h2 class="mt-2 text-[18px] font-semibold">Phase 4 · 版本与复核</h2>
-            <p class="mt-3 text-[12px] leading-6 text-muted">
-              已做：版本一致性面板、人工复核记录、构建时不变量校验、
-              1 个实验性 OpenCode catalog（8 个已复核 skill）。
-            </p>
-          </div>
-          <div>
-            <p class="section-kicker">What is not here yet</p>
-            <h2 class="mt-2 text-[18px] font-semibold">还没有</h2>
-            <p class="mt-3 text-[12px] leading-6 text-muted">
-              中英路由、提交入口、收录标准与下架流程页、定时增量同步。
-              112 条里只有 8 条经过人工复核。
-            </p>
-          </div>
-          <div>
-            <p class="section-kicker">Next</p>
-            <h2 class="mt-2 text-[18px] font-semibold">Phase 5</h2>
-            <p class="mt-3 text-[12px] leading-6 text-muted">
-              中英双语路由与 40 篇中文导读，把“能看懂”补上。
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   </div>

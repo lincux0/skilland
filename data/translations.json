@@ -1,0 +1,674 @@
+{
+  "anthropics/skills/academy-guide": {
+    "zh": "在回答如何使用 Claude 或 Claude 产品之前，先确认 Claude Academy（academy.claude.com）有没有匹配的课程、教程或案例；适合入门、培训与团队推广类问题。",
+    "source": "c8239b89d5a3a297",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/algorithmic-art": {
+    "zh": "用 p5.js 创作算法艺术，支持固定随机种子与交互式参数探索；适合生成艺术、流场与粒子系统，强调原创而非模仿。",
+    "source": "b85e023198049783",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/brand-guidelines": {
+    "zh": "把 Anthropic 官方品牌色与字体应用到需要统一视觉风格的产物上。",
+    "source": "5678c04b110828cc",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/canvas-design": {
+    "zh": "用设计理念产出 .png / .pdf 视觉作品，如海报、插画与静态设计；强调原创。",
+    "source": "e837915070567de7",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/claude-api": {
+    "zh": "Claude API / Anthropic SDK 参考：模型 ID、价格、参数、流式、工具调用、MCP、缓存与迁移；涉及 Claude 或 LLM 选型时先查再用。",
+    "source": "76f94a0a666549bd",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/discernment-nudge": {
+    "zh": "在给出可能被采纳的结论后，追加 2–3 个针对性追问，帮助用户核对事实、检验推理、发现缺失上下文；每次对话最多一次。",
+    "source": "30f10c5fc1327eac",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/doc-coauthoring": {
+    "zh": "用结构化流程协作撰写文档：提案、技术规格、决策文档等，迭代打磨并验证读者可用。",
+    "source": "1a1433d4314dd907",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/docx": {
+    "zh": "创建和编辑带结构化格式的 Word 文档。",
+    "source": "622e60ca3c82adf6",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "anthropics/skills/frontend-design": {
+    "zh": "把前端界面做出明确的视觉主张，而不是套用通用模板。",
+    "source": "f6aca329665c9761",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.475Z"
+  },
+  "anthropics/skills/internal-comms": {
+    "zh": "按公司习惯的格式撰写内部沟通：状态汇报、管理层更新、FAQ、事故报告、项目进展等。",
+    "source": "3e5a92014a9adb40",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/mcp-builder": {
+    "zh": "构建高质量 MCP 服务器的指南，用设计良好的工具让 LLM 接入外部服务；支持 Python 与 Node/TypeScript。",
+    "source": "dd9ba25d52050d05",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/pdf": {
+    "zh": "提取 PDF 文本与表格、填写表单并处理文档。",
+    "source": "d1906e2fc005cb80",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "anthropics/skills/pptx": {
+    "zh": "处理 .pptx / .potx 的全流程：创建演示文稿、提取文本、编辑幻灯片、合并拆分、模板与备注。",
+    "source": "0197a5fe5ea196e4",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/skill-creator": {
+    "zh": "引导 agent 创建、测试并迭代一个新的 Agent Skill。",
+    "source": "dc3522ad3e3e4645",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "anthropics/skills/slack-gif-creator": {
+    "zh": "为 Slack 制作动图 GIF 的知识与工具：尺寸约束、校验与动画思路。",
+    "source": "01945558d30fc1ca",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/theme-factory": {
+    "zh": "为产物套用主题样式：幻灯片、文档、报告、HTML 落地页；含 10 套预设，也可即时生成新主题。",
+    "source": "35f48ac45701d5cd",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/web-artifacts-builder": {
+    "zh": "用 React、Tailwind、shadcn/ui 构建复杂的 claude.ai HTML 产物，支持状态管理与路由。",
+    "source": "ba76113a90155d78",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/webapp-testing": {
+    "zh": "用 Playwright 测试本地 Web 应用：验证前端功能、调试 UI、截图与查看浏览器日志。",
+    "source": "05bd234ecb677395",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "anthropics/skills/xlsx": {
+    "zh": "创建和编辑表格、公式与数据工作流。",
+    "source": "efd008c86ccd7afe",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/ask-matt": {
+    "zh": "不知道用哪个 skill 时，由它按你的处境推荐本仓库里的 skill 或流程。",
+    "source": "785fdddf1164ede9",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/chief-of-staff": {
+    "zh": "在一次会话里通过调度子代理，推进一个长期目标。",
+    "source": "a745c230d223ba00",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/claude-handoff": {
+    "zh": "把当前对话交接给一个新的后台代理，由它立即接手继续做。",
+    "source": "dfa8fc1fdb46c464",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/code-review": {
+    "zh": "在合并前审查变更的正确性、清晰度和测试缺口。",
+    "source": "fa8dbe24364e5ddc",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "mattpocock/skills/codebase-design": {
+    "zh": "设计深模块的共享词汇：改进模块接口、寻找加深机会、确定接缝位置、提升可测试性。",
+    "source": "63f3b1bed0c9fa4a",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/diagnosing-bugs": {
+    "zh": "面向难缠 Bug 与性能回归的诊断循环；用户说“诊断/调试”或报告崩溃、报错、变慢时使用。",
+    "source": "b78755b7df927451",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/domain-modeling": {
+    "zh": "构建并打磨项目领域模型；讨论术语、编写 GLOSSARY.md 或记录 ADR 时使用。",
+    "source": "971c246c4dfabd7a",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/git-guardrails-claude-code": {
+    "zh": "为 Claude Code 配置 hooks，在执行前拦截危险 git 命令，如 push、reset --hard、clean、branch -D。",
+    "source": "ef9934d743dc6751",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/grill-me": {
+    "zh": "用不留情面的追问打磨一个计划或设计。",
+    "source": "11070b4d380cead9",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/grill-with-docs": {
+    "zh": "不留情面地追问计划或设计，同时产出 ADR 与术语表。",
+    "source": "ed166c9bbf3797f2",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/grilling": {
+    "zh": "围绕计划、决策或想法持续追问，压测你的思考。",
+    "source": "aefd3e0be77f0961",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/handoff": {
+    "zh": "把当前对话压缩成交接文档，供另一个代理接手。",
+    "source": "ca459f68b5f4d982",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/implement": {
+    "zh": "按规格或工单实现一段工作。",
+    "source": "a5e638a4bd5609b9",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/implement-spec": {
+    "zh": "把 /to-spec 与 /to-tickets 的产物落成代码。",
+    "source": "ea262a6ad8d0168c",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/improve-codebase-architecture": {
+    "zh": "发现代码库的结构性摩擦，并提出渐进式架构改进。",
+    "source": "a0867b177e56de05",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/loop-me": {
+    "zh": "就当前工作区内想搭建的工作流规格，反复追问并澄清。",
+    "source": "c3aedcc098dfb117",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/migrate-to-shoehorn": {
+    "zh": "把测试里的 `as` 类型断言迁移到 @total-typescript/shoehorn，便于构造部分测试数据。",
+    "source": "95c6919bf70c0c44",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/pr": {
+    "zh": "撰写 Pull Request 描述时使用。",
+    "source": "85b9d8ec07c5f18e",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/prototype": {
+    "zh": "为回答一个设计问题而写一次性原型，用来验证状态模型或界面方向。",
+    "source": "cc3996263316c1f1",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/research": {
+    "zh": "围绕一个问题查证高可信一手资料，并把结论落成仓库里的 Markdown 文档。",
+    "source": "8062c29038abc1af",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/retro": {
+    "zh": "对一次编码会话做复盘。",
+    "source": "c1ee6fa9da99d5c2",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/scaffold-exercises": {
+    "zh": "搭建练习目录结构：章节、题目、解答与讲解，并通过 lint。",
+    "source": "97449033c90a4c2d",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/setup-matt-pocock-skills": {
+    "zh": "为工程类 skill 配置仓库：issue 跟踪、triage 标签与领域文档结构；首次使用前运行一次。",
+    "source": "ad01e47c565b5188",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/setup-pre-commit": {
+    "zh": "为当前仓库配置 Husky + lint-staged（Prettier）、类型检查与测试的提交前钩子。",
+    "source": "2abd92eee639b284",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/setup-ts-deep-modules": {
+    "zh": "把 dependency-cruiser 接入 TypeScript 仓库，让每个包成为深模块，只能通过入口文件访问。",
+    "source": "c022944046ec31a2",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/software-factory": {
+    "zh": "设计软件工厂的共享语言：它运行哪些任务、接入哪些服务。",
+    "source": "8c8bb058768bad5e",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/tdd": {
+    "zh": "测试驱动开发；用户想先写测试再做功能或修 Bug，或提到 red-green-refactor 时使用。",
+    "source": "58ff584d94624956",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/teach": {
+    "zh": "在当前工作区内教用户一个新的技能或概念。",
+    "source": "c5209685860a0146",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/to-questionnaire": {
+    "zh": "把你无法独立决定的问题，整理成一份供他人填写的问卷。",
+    "source": "584dc6c87e0b17a7",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/to-spec": {
+    "zh": "把当前对话直接整理成规格并发布到项目的 issue 跟踪器，不再额外访谈。",
+    "source": "ea6b127117e78fde",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/to-tickets": {
+    "zh": "把计划、规格或当前对话拆成一组 tracer-bullet 工单，并标注彼此的阻塞关系。",
+    "source": "44b2a412bd7207db",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/triage": {
+    "zh": "让 issue 与外部 PR 走完 triage 状态机：归类、核实、必要时追问，并写出可直接执行的简报。",
+    "source": "ea9153de72502697",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/wait-what": {
+    "zh": "上一条消息没有传达到位时，停下来重新讲一遍。",
+    "source": "ac3ab0a7a802d987",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/wayfinder": {
+    "zh": "把超出单次会话容量的大块工作，规划成 issue 跟踪器上的决策工单地图，逐条解决直到路径清晰。",
+    "source": "78ffe11ef8add13f",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/wizard": {
+    "zh": "生成交互式 bash 向导，带用户完成只有本人能做的步骤，如配置基础设施、凭据、CI secret 或一次性迁移。",
+    "source": "f4db30f214c1f632",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/writing-beats": {
+    "zh": "写作（展开）：把素材组织成一段段推进的节拍，每个术语先落地再被使用。",
+    "source": "19637b7122700d50",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/writing-for-agents": {
+    "zh": "写给代理看的文档；创建或编辑 skill、修改 AGENTS.md / CLAUDE.md 时使用。",
+    "source": "d7c3ccc876056272",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/writing-fragments": {
+    "zh": "写作（探索）：先挖掘零散片段，暂不组织结构。",
+    "source": "cd618adebc7a7297",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "mattpocock/skills/writing-shape": {
+    "zh": "写作（展开）：把素材逐段塑造成一篇文章。",
+    "source": "16a7ec4a96bb4a5a",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/brainstorming": {
+    "zh": "任何创作或改动之前先用它：做功能、改行为、写方案、规划新事物（不限于软件）。",
+    "source": "031ec08d5214fa0a",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/diagnosing-superpowers": {
+    "zh": "当一次 superpowers 会话出问题时，定位重复劳动、忽略计划、skill 未触发、耗时或成本异常等原因，并可整理成 Bug 报告。",
+    "source": "4c2a5d6d79554401",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/dispatching-parallel-agents": {
+    "zh": "面对 2 个以上互不依赖、无共享状态的任务时，并行分派多个代理。",
+    "source": "5649c0d308ec206f",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/executing-plans": {
+    "zh": "在当前会话中由你本人执行实现计划；适合用户选择内联执行或没有子代理工具时。",
+    "source": "fbf78c622d7e89fc",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/finishing-a-development-branch": {
+    "zh": "实现完成、测试通过后，决定如何整合这段工作（合并、PR 或清理）。",
+    "source": "abec2b086d3c16ee",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/receiving-code-review": {
+    "zh": "收到代码评审意见后，先核实再动手；不盲从、不表演式认同。",
+    "source": "aaf1de41eab32e80",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/requesting-code-review": {
+    "zh": "完成任务、实现较大功能或合并前，请求代码评审以确认工作达标。",
+    "source": "739cdd1b776658eb",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/subagent-driven-development": {
+    "zh": "在当前会话中，用子代理执行包含独立任务的实现计划。",
+    "source": "4a3ca86a4a7b7f1a",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/systematic-debugging": {
+    "zh": "系统化调试：复现、隔离、提出假设并验证修复。",
+    "source": "45abe257b772fb52",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "obra/superpowers/test-driven-development": {
+    "zh": "用红-绿-重构的循环和聚焦测试驱动实现。",
+    "source": "23b7e98c1a3494e1",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "obra/superpowers/using-git-worktrees": {
+    "zh": "开始需要隔离的功能开发或执行实现计划前，用 git worktree 建立独立工作区。",
+    "source": "f112aa0c9e54d2f6",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/using-superpowers": {
+    "zh": "每次会话开始时建立“如何找到并使用 skill”的规则，要求在回应前先调用相关 skill。",
+    "source": "574152d6113b5dfa",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/verification-before-completion": {
+    "zh": "在声称“完成、修好、通过”之前，先运行验证命令并确认真实输出。",
+    "source": "fc4ba75fba42be6b",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "obra/superpowers/writing-plans": {
+    "zh": "把功能需求拆成清晰、可执行的实现计划。",
+    "source": "90ae238dbfd4ac84",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "obra/superpowers/writing-skills": {
+    "zh": "创建新 skill、修改已有 skill，或在发布前验证 skill 是否可用。",
+    "source": "5699be5f365acafa",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-cli": {
+    "zh": "Prisma ORM 7 的 CLI 参考：init、generate、migrate、db、dev、studio 与 mcp；初始化或连接修复请用 prisma-orm-setup。",
+    "source": "6970855ae52d178e",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-client-api": {
+    "zh": "正确使用 Prisma Client API 处理查询、关联和事务。",
+    "source": "1f1ce21bb024bbb4",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "prisma/skills/prisma-compute": {
+    "zh": "用 Prisma 8 CLI 在 Prisma Compute 上部署与运维应用，涵盖部署、预览阶段、日志、回滚、自定义域名与常见故障。",
+    "source": "74a393ad15de74fe",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-database-setup": {
+    "zh": "配置 Prisma 项目的数据库连接与 schema。",
+    "source": "46efb668212011d5",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-driver-adapter-implementation": {
+    "zh": "Prisma ORM 7 SQL 驱动适配器的实现参考：事务生命周期、savepoint、结果映射与错误保留。",
+    "source": "bcd12d4ebc73b490",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-mongodb-upgrade": {
+    "zh": "Prisma ORM 6 的 MongoDB 项目没有到 v7 的升级路径；这份指南给出决策与迁移选项。",
+    "source": "e048beab84fb34ea",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-orm-setup": {
+    "zh": "在应用中搭建 Prisma ORM、连接数据库，或排查已有 Prisma 6/7/8 项目的连接问题。",
+    "source": "0001aa750ba01e05",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-postgres": {
+    "zh": "prisma-postgres-setup 的兼容别名；仅在已有集成显式调用时使用。",
+    "source": "3fb55fee9db77fd8",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-postgres-setup": {
+    "zh": "获取或复用 Prisma Postgres 数据库并接入应用；适合“我需要一个数据库”或使用 create-db 的场景。",
+    "source": "e17eeae6c4a59ffc",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-postgres-upgrade": {
+    "zh": "把 PostgreSQL 应用从 Prisma 6/7 一次性升级到 Prisma 8，保留 schema、数据与既有连接。",
+    "source": "471be1866037b53e",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "prisma/skills/prisma-upgrade-v7": {
+    "zh": "Prisma ORM v6 → v7 的完整迁移指南，覆盖全部破坏性变更与常见报错。",
+    "source": "daa632bdf3dc336c",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-best-practices": {
+    "zh": "用 Remotion 的当前 API 与模式制作程序化视频。",
+    "source": "4f1b24826f5eae63",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-captions": {
+    "zh": "字幕的转写、显示与动画。",
+    "source": "5f7ebf06a3245590",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-create": {
+    "zh": "创建一支新的 Remotion 视频。",
+    "source": "516b5acfd25ec4ea",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-docs": {
+    "zh": "检索 Remotion 文档。",
+    "source": "59a3e22f3d4018b5",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-interactivity": {
+    "zh": "按 Remotion Studio 可编辑的方式组织图层、时间与样式。",
+    "source": "1044d1f8bbaeb166",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-license": {
+    "zh": "查询 Remotion 的许可信息、FAQ、条款与购买方式。",
+    "source": "4d74950b003c63f6",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-maps": {
+    "zh": "Remotion 地图动画的实践知识。",
+    "source": "c222ca5bcee2b1e2",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-markup": {
+    "zh": "内容、动画与效果的最佳实践。",
+    "source": "377c686049df2381",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-multimedia": {
+    "zh": "与 Mediabunny 协作处理多媒体。",
+    "source": "a3821c6223032311",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-render": {
+    "zh": "导出 Remotion 视频。",
+    "source": "2d833fe9e1c89762",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-saas": {
+    "zh": "用 Remotion 构建应用。",
+    "source": "1aac29c6b3553da8",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-studio": {
+    "zh": "预览 Remotion 视频。",
+    "source": "17cda31fe72a619b",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-upgrade": {
+    "zh": "升级 Remotion 及相关依赖包。",
+    "source": "a6d7dbca2e943c41",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "shadcn-ui/ui/migrate-radix-to-base": {
+    "zh": "把 React 项目与组件从 Radix UI 迁移到 Base UI，支持单个组件或整个项目。",
+    "source": "b03fb6b21fd35ed8",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "shadcn-ui/ui/shadcn": {
+    "zh": "用 shadcn/ui 组件和项目设计规范构建界面。",
+    "source": "18f33232ed0334f2",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "supabase/agent-skills/supabase": {
+    "zh": "任何涉及 Supabase 的任务：数据库、Auth、Edge Functions、Realtime、Storage、CLI、MCP、迁移、RLS 与排错。",
+    "source": "289c606021f73bf2",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "supabase/agent-skills/supabase-postgres-best-practices": {
+    "zh": "设计与审查 Postgres schema、查询和 Supabase 用法。",
+    "source": "f49e508dd92d32ba",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "vercel-labs/agent-browser/agent-browser": {
+    "zh": "让 agent 操作浏览器：导航、填表并验证界面行为。",
+    "source": "fc57e3d5c3f1d1bd",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "vercel-labs/agent-skills/deploy-to-vercel": {
+    "zh": "把应用或网站部署到 Vercel，包括生成预览链接与上线操作。",
+    "source": "2ded67e8be88b2b3",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "vercel-labs/agent-skills/vercel-cli-with-tokens": {
+    "zh": "用访问令牌而非交互登录来部署和管理 Vercel 项目。",
+    "source": "9b9dc506f54bdec5",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "vercel-labs/agent-skills/vercel-composition-patterns": {
+    "zh": "用可组合、可扩展的模式组织 React 组件。",
+    "source": "7a7f444cf3b6c4b1",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "vercel-labs/agent-skills/vercel-optimize": {
+    "zh": "针对已部署项目的 Vercel 成本与性能优化，先取指标与代码扫描结果，再给出有依据的排序建议。",
+    "source": "792f4cdf4986e199",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "vercel-labs/agent-skills/vercel-react-best-practices": {
+    "zh": "应用 React 与 Next.js 的性能和组合最佳实践。",
+    "source": "9e407656c97ec59c",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "vercel-labs/agent-skills/vercel-react-native-skills": {
+    "zh": "React Native 与 Expo 的性能最佳实践：组件、列表、动画与原生模块。",
+    "source": "9264c0fd71aa090a",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "vercel-labs/agent-skills/vercel-react-view-transitions": {
+    "zh": "用 React View Transition API 实现接近原生的页面与路由动画，包括共享元素与进出场。",
+    "source": "a091153d5190b8e3",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "vercel-labs/agent-skills/web-design-guidelines": {
+    "zh": "按一套实用的设计与可用性准则审查 Web 界面。",
+    "source": "9fa2a4f2fb6b4efb",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  },
+  "vercel-labs/agent-skills/writing-guidelines": {
+    "zh": "按写作规范审阅文档与文案：语气、风格与合规。",
+    "source": "b6ab6eca3d96057c",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.477Z"
+  },
+  "vercel-labs/skills/find-skills": {
+    "zh": "从命令行搜索开放 Agent Skills 生态并安装匹配的 skill。",
+    "source": "ae20b48793b11f53",
+    "provider": "manual",
+    "at": "2026-11-15T13:12:02.476Z"
+  }
+}

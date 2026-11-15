@@ -37,7 +37,6 @@ const related = getAllSkills()
   )
   .slice(0, 3);
 const sourceUrl = `https://github.com/${skill.source.fullName}/blob/${skill.snapshot.commit}/${skill.path}`;
-const isDraft = skill.status === "draft";
 const licenseText = licenseLabel(skill.source.licenseSpdx, skill.source.licenseStatus);
 const riskValues = skill.scan.flags.length
   ? [...new Set(skill.scan.flags.map((flag) => flag.severity))]
@@ -65,25 +64,10 @@ const versionTone: Record<string, string> = {
   neutral: "border-line text-muted",
 };
 const versionState = !versions.reviewed
-  ? {
-      tone: "neutral",
-      label: "未人工复核",
-      text: "当前同步版本与扫描指纹一致；还没有人工复核记录，默认安装指向同步版本。",
-    }
+  ? { tone: "neutral", label: "未人工复核" }
   : versions.consistency.reviewMatchesSnapshot
-    ? {
-        tone: "ok",
-        label: "已复核 · 版本一致",
-        text: `已由 ${versions.reviewed.reviewer} 于 ${formatDate(versions.reviewed.at)} 复核当前版本。复核是“人看过”，不是安全认证。`,
-      }
-    : {
-        tone: "warn",
-        label: "复核已失效",
-        text:
-          versions.reviewed.commit === versions.synced.commit
-            ? `复核的是 @${shortCommit(versions.reviewed.commit)}，但 bundle 指纹与当前同步不一致，复核已失效。默认安装仍指向已复核版本。`
-            : `复核的是 @${shortCommit(versions.reviewed.commit)}，当前同步已前进到 @${shortCommit(versions.synced.commit)}。默认安装仍指向已复核版本。`,
-      };
+    ? { tone: "ok", label: "已复核 · 版本一致" }
+    : { tone: "warn", label: "复核已失效" };
 
 const versionRows = [
   {
@@ -176,15 +160,6 @@ const versionRows = [
       <span class="chip" data-pagefind-meta="scan">{scanLabel(skill.scan.status)}</span>
       <span class="chip">{reviewLabel(skill.review.status)}</span>
       <span class="chip" data-pagefind-meta="license">{licenseText}</span>
-      {isDraft && (
-        <span class="chip chip-accent">
-          {skill.review.status === "human-approved"
-            ? "已人工复核 · 仍为草稿"
-            : skill.review.status === "stale"
-              ? "自动扫描 · 复核已失效"
-              : "自动扫描 · 未人工复核"}
-        </span>
-      )}
     </div>
 
     <div class="mt-4 flex flex-col justify-between gap-5 md:flex-row md:items-start">
@@ -195,7 +170,7 @@ const versionRows = [
         <p class="mt-4 text-[16px] leading-7 text-muted md:text-[17px]" data-pagefind-meta="description" data-search-highlight>
           {skill.descriptionZh ?? skill.description}
         </p>
-        <div class="mt-4 flex flex-wrap items-center gap-1.5">
+        <div class="mt-4 flex flex-wrap items-center gap-1.5" data-pagefind-ignore="all">
           {skill.taxonomy.topics.map((topic) => (
             <span class="chip">{topicLabel(topic)}</span>
           ))}
@@ -208,9 +183,8 @@ const versionRows = [
             );
           })}
         </div>
-        <div class="mt-4 flex flex-wrap items-center gap-3" data-pagefind-ignore="all">
-          <AgentBadges agents={skill.taxonomy.agents} portability={skill.taxonomy.portability} />
-          <span class="text-[11px] text-faint">兼容性未逐一验证</span>
+        <div class="mt-4 flex flex-wrap items-center gap-1.5" data-pagefind-ignore="all">
+          <AgentBadges agents={skill.taxonomy.agents} />
         </div>
       </div>
       <a
@@ -227,7 +201,7 @@ const versionRows = [
     <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
       <div class="min-w-0 space-y-10">
         <section>
-          <h2 class="section-kicker">What it does</h2>
+          <h2 class="section-kicker">用途</h2>
           <div class="mt-3 space-y-4 text-[14px] leading-7 text-muted">
             <p>{skill.descriptionZh ?? skill.description}</p>
             {skill.descriptionZh && skill.descriptionZh !== skill.description && (
@@ -240,7 +214,7 @@ const versionRows = [
         </section>
 
         <section data-pagefind-ignore="all">
-          <h2 class="section-kicker">When to use it</h2>
+          <h2 class="section-kicker">适用场景</h2>
           {sceneItems.length > 0 ? (
             <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {sceneItems.map((scene) => (
@@ -259,27 +233,23 @@ const versionRows = [
         <section>
           <div class="flex items-end justify-between gap-4 border-b border-line pb-3">
             <div>
-              <h2 class="section-kicker">Ingredients</h2>
-              <p class="mt-2 text-[16px] font-semibold">配料表</p>
+              <h2 class="text-[16px] font-semibold">配料表</h2>
             </div>
             <span class="chip">{scanLabel(skill.scan.status)} · 自动扫描</span>
           </div>
 
           <div class="mt-4 grid gap-3 md:grid-cols-3">
             <div class="card p-4">
-              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Files</p>
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">文件</p>
               <p class="mt-2 text-[22px] font-semibold">{skill.metrics.fileCount}</p>
-              <p class="mt-1 text-[11px] text-muted">来自 tarball 的实际文件</p>
             </div>
             <div class="card p-4">
               <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Tokens</p>
               <p class="mt-2 text-[22px] font-semibold">{formatTokens(skill.metrics.bodyTokensEstimate)}</p>
-              <p class="mt-1 text-[11px] text-muted">按文件字节粗略估算</p>
             </div>
             <div class="card p-4">
-              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Scripts</p>
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">脚本</p>
               <p class="mt-2 text-[22px] font-semibold">{skill.metrics.scriptCount ?? "—"}</p>
-              <p class="mt-1 text-[11px] text-muted">脚本已扫描，未执行</p>
             </div>
           </div>
 
@@ -308,7 +278,7 @@ const versionRows = [
 
           <div class="mt-4 grid gap-3 md:grid-cols-2">
             <div class="card p-4">
-              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Scan</p>
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">扫描</p>
               <p class="mt-2 text-[14px] font-semibold">{scanLabel(skill.scan.status)}</p>
               <p class="mt-2 text-[11px] leading-5 text-muted">
                 扫描文件 {skill.scan.coverage.filesScanned} 个，跳过 {skill.scan.coverage.filesSkipped} 个。
@@ -321,7 +291,7 @@ const versionRows = [
             </div>
             <div class="card p-4">
               <div class="flex items-center justify-between gap-2">
-                <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Review</p>
+                <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">复核</p>
                 <span
                   class={`chip ${
                     skill.review.status === "human-approved"
@@ -372,13 +342,11 @@ const versionRows = [
 
           <div class="mt-4">
             <div class="flex items-center justify-between gap-3">
-              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Risk flags</p>
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">风险</p>
               <span class="chip">{skill.scan.flags.length} 项命中</span>
             </div>
             {skill.scan.flags.length === 0 ? (
-              <p class="mt-3 rounded-lg border border-line bg-surface px-4 py-3 text-[11px] leading-5 text-muted">
-                在已扫描文件中未命中已知规则。这只表示没有发现模式，不代表安全。
-              </p>
+              <p class="mt-3 text-[11px] leading-5 text-faint">未命中已知规则。</p>
             ) : (
               <div class="mt-3 space-y-2">
                 {skill.scan.flags.map((flag) => (
@@ -408,19 +376,11 @@ const versionRows = [
         <section data-pagefind-ignore="all">
           <div class="flex flex-wrap items-end justify-between gap-3 border-b border-line pb-3">
             <div>
-              <h2 class="section-kicker">Version consistency</h2>
+              <h2 class="section-kicker">版本</h2>
               <p class="mt-2 text-[16px] font-semibold">版本一致性</p>
             </div>
             <span class={`chip ${versionTone[versionState.tone]}`}>{versionState.label}</span>
           </div>
-
-          <p
-            class={`mt-4 rounded-lg border px-4 py-3 text-[11px] leading-5 text-muted ${
-              versionState.tone === "warn" ? "border-warn/30 bg-warn/5" : "border-line bg-surface"
-            }`}
-          >
-            {versionState.text}
-          </p>
 
           <div class="mt-4 overflow-x-auto rounded-lg border border-line">
             <table class="w-full text-left text-[12px]">
@@ -444,16 +404,11 @@ const versionRows = [
               </tbody>
             </table>
           </div>
-
-          <p class="mt-3 text-[10px] leading-5 text-faint">
-            bundle 指纹是文件清单与内容的 SHA-256。上游继续更新时以 GitHub 为准；
-            复核过期不会自动改写安装命令，默认安装仍指向已复核版本。
-          </p>
         </section>
 
         {related.length > 0 && (
           <section data-pagefind-ignore="all">
-            <h2 class="section-kicker">Related</h2>
+            <h2 class="section-kicker">相关</h2>
             <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((item) => <SkillCard skill={item} compact />)}
             </div>
@@ -471,7 +426,7 @@ const versionRows = [
         />
 
         <div class="card p-4">
-          <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Source</p>
+          <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">来源</p>
           <a
             href={skill.source.url}
             target="_blank"
@@ -499,15 +454,6 @@ const versionRows = [
               <span class="mono text-muted">{skill.snapshot.bundleHash.slice(0, 10)}</span>
             </div>
           </div>
-        </div>
-
-        <div class="rounded-lg border border-warn/30 bg-warn/5 p-4">
-          <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-warn">Not a safety check</p>
-          <p class="mt-2 text-[11px] leading-5 text-muted">
-            {skill.review.reviewed
-              ? "已有人工复核记录，但复核是“人看过”，不是安全认证。扫描只读取文本，未执行任何脚本。安装前请自行确认。"
-              : "这是自动扫描数据：已读取 skill 目录文本并做静态规则分析，但未人工复核，也没有执行任何脚本。不要把这当作安全认证。"}
-          </p>
         </div>
       </aside>
     </div>

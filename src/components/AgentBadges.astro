@@ -1,30 +1,34 @@
 ---
+import { AGENT_ICONS, AGENT_LABELS } from "../lib/agent-icons";
+
 interface Props {
   agents: string[];
-  portability?: "portable" | "client-specific" | "unknown";
 }
 
-const { agents, portability = "unknown" } = Astro.props;
-const labels: Record<string, { short: string; label: string }> = {
-  opencode: { short: "OC", label: "OpenCode" },
-  "claude-code": { short: "CC", label: "Claude Code" },
-  codex: { short: "CX", label: "Codex" },
-  cursor: { short: "CU", label: "Cursor" },
-};
-const unverified = portability === "unknown";
+const { agents } = Astro.props;
 ---
 
-<span class="inline-flex items-center gap-1" title={unverified ? "兼容性未逐一验证" : undefined}>
+<span class="inline-flex items-center gap-1">
   {agents.map((agent) => {
-    const item = labels[agent] ?? { short: agent.slice(0, 2).toUpperCase(), label: agent };
+    const icon = AGENT_ICONS[agent];
+    const label = AGENT_LABELS[agent] ?? agent;
     return (
       <span
-        class="grid h-5 min-w-5 place-items-center rounded-[5px] border border-line bg-surface-2 px-1 font-mono text-[9px] text-muted"
-        title={item.label}
+        class="grid h-5 w-5 place-items-center rounded-[5px] border border-line bg-surface-2 text-muted"
+        title={label}
+        role="img"
+        aria-label={label}
       >
-        {item.short}
+        {icon ? (
+          <svg viewBox={icon.viewBox} class="h-3.5 w-3.5" fill="currentColor" aria-hidden="true">
+            {icon.paths.map((path) => (
+              <path d={path.d} opacity={path.opacity} fill-rule={path.fillRule} />
+            ))}
+          </svg>
+        ) : (
+          <span class="font-mono text-[9px]">{agent.slice(0, 2).toUpperCase()}</span>
+        )}
       </span>
     );
   })}
-  {unverified && <span class="font-mono text-[9px] text-faint" title="兼容性未逐一验证">?</span>}
 </span>

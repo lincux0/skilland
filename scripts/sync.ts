@@ -9,6 +9,7 @@ import {
   type RepoFile,
   type SkillSeed,
 } from "../src/lib/schema";
+import { backfillTranslations, describeStats } from "./lib/translate";
 import {
   decideLicense,
   inferScenes,
@@ -682,6 +683,14 @@ async function main() {
       console.error(`${fullName}: ${message}`);
     }
   }
+
+  const translationStats = await backfillTranslations({
+    log: (message) => console.log(message),
+  });
+  report.totals.translated = translationStats.translated;
+  report.totals.translationPending = translationStats.pending;
+  report.totals.translationFailed = translationStats.failed;
+  console.log(`\ntranslations: ${describeStats(translationStats)}`);
 
   await fsp.writeFile(REPORT_FILE, `${JSON.stringify(report, null, 2)}\n`);
   console.log(

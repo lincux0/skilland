@@ -79,6 +79,17 @@ npm run review -- --skill <publicId> --remove
 - CLI 拒绝在扫描失败、未扫描、许可证 `unknown`/`conflict` 时写入“通过”。
 - 状态是“人看过”，不是安全认证；页面上不会出现“已认证/安全”这类承诺。
 
+## Translation
+
+`data/translations.json` 保存每条 skill 的中文描述；`npm run sync` 会在写完后自动补齐缺失或过期的条目。
+
+- 值为 `{ zh, source, provider, at }`，`source` 是英文描述的哈希；上游描述一变，旧译文即失效并重译。
+- 手动译文标记 `provider: "manual"`，不会被自动覆盖；只有 `--force` 才重译。
+- provider 顺序：`TRANSLATE_LLM_URL` + `TRANSLATE_LLM_KEY`（任意 OpenAI 兼容接口，质量最好）→ Google → MyMemory。
+- 单个条目翻译失败不阻断同步，只记入 `data/sync-report.json` 的 `translationFailed`。
+- 手动补齐：`npm run translate`；`--dry-run` 只列待译，`--limit=N` 限制条数，`--provider=google|mymemory` 指定通道。
+- 翻译发生在采集阶段，站点运行时没有任何翻译请求。
+
 ## Version consistency
 
 详情页的版本面板展示六个版本：上游最新、本站同步、自动扫描、人工复核、默认安装、Catalog。

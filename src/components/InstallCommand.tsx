@@ -71,12 +71,7 @@ export default function InstallCommand({
       </div>
 
       <div className="p-4">
-        <p className="text-[11px] leading-5 text-muted">
-          {tab === "reviewed"
-            ? "固定到最近一次人工复核的 commit。"
-            : "固定到本次同步的 commit；当前没有人工复核版本。"}
-        </p>
-        <pre className="mono mt-3 overflow-x-auto rounded-md border border-line bg-canvas px-3 py-3 text-[11px] leading-5 text-ink">
+        <pre className="mono overflow-x-auto rounded-md border border-line bg-canvas px-3 py-3 text-[11px] leading-5 text-ink">
           <code>{command}</code>
         </pre>
         <div className="mt-3 flex flex-wrap gap-2">
@@ -95,9 +90,6 @@ export default function InstallCommand({
             {copied === "use" ? "已复制" : "复制临时使用命令"}
           </button>
         </div>
-        <p className="mt-3 text-[10px] leading-5 text-faint">
-          临时使用（无需安装）不是沙箱：agent 仍以正常权限运行，可能读写文件、联网或执行命令。
-        </p>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 ---
 import AgentBadges from "./AgentBadges.astro";
 import type { SkillRecord } from "../lib/schema";
-import { formatTokens, licenseLabel, scanLabel, statusLabel } from "../lib/format";
+import { licenseLabel, scanLabel, statusLabel } from "../lib/format";
 
 interface Props {
   skill: SkillRecord;
@@ -41,16 +41,15 @@ const searchText = [
         {skill.source.owner}/{skill.source.repo}
       </p>
     </div>
-    <AgentBadges agents={skill.taxonomy.agents} portability={skill.taxonomy.portability} />
+    <AgentBadges agents={skill.taxonomy.agents} />
   </div>
 
   <p class:list={["mt-3 text-[13px] leading-6 text-muted", compact ? "line-clamp-2" : "line-clamp-3"]}>
     {description}
   </p>
 
-  <div class="mt-auto flex flex-wrap items-center gap-1.5 pt-4">
+  <div class="mt-auto flex flex-nowrap items-center gap-1.5 overflow-hidden pt-4">
     <span class="chip">{licenseLabel(skill.source.licenseSpdx, skill.source.licenseStatus)}</span>
-    <span class="chip">{formatTokens(skill.metrics.bodyTokensEstimate)} tokens</span>
     <span class="chip">{scanLabel(skill.scan.status)}</span>
     {notableFlags > 0 && <span class="chip">{notableFlags} 项高风险</span>}
     {skill.status === "draft" && <span class="chip chip-accent">{statusLabel(skill.status)}</span>}
