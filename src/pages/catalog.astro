@@ -80,7 +80,7 @@ const baseUrl = (Astro.site ?? new URL("https://skill-shelf-psi.vercel.app")).or
         </div>
 
         <div class="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px]">
-          <div class="overflow-x-auto rounded-lg border border-line">
+          <div class="min-w-0 overflow-x-auto rounded-lg border border-line">
             <table class="w-full text-left text-[12px]">
               <thead class="bg-surface-2 text-faint">
                 <tr>
@@ -110,7 +110,7 @@ const baseUrl = (Astro.site ?? new URL("https://skill-shelf-psi.vercel.app")).or
             </table>
           </div>
 
-          <div class="space-y-4">
+          <div class="min-w-0 space-y-4">
             <div class="card p-4">
               <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">opencode.json</p>
               <pre class="mono mt-2 overflow-x-auto rounded-md border border-line bg-canvas px-3 py-3 text-[10px] leading-5 text-ink"><code>{`{

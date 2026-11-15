@@ -227,6 +227,10 @@ function deriveSkill(
   const reviewedCommit = review.reviewed?.commit;
   const installCommit = reviewedCommit ?? commit;
   const publicId = `${repo.owner}/${repo.repo}/${skill.slug}`;
+  // Plan §6.4: a human-approved snapshot is public. Keep explicit non-draft
+  // states (quarantined / archived / removed) untouched.
+  const status =
+    skill.status === "draft" && review.status === "human-approved" ? "published" : skill.status;
   const catalog = catalogEntry
     ? {
         eligible: true,
@@ -245,6 +249,7 @@ function deriveSkill(
     ...skill,
     id: `github:${repo.id}:${skill.path}`,
     publicId,
+    status,
     source,
     upstream,
     snapshot,
