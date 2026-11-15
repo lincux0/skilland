@@ -4,6 +4,11 @@ Agent Skills 发现、探索与安装平台。当前是 **Phase 4：版本一致
 
 **线上演示**：<https://skill-shelf-psi.vercel.app>（Vercel Hobby，非商业演示）
 
+**仓库**：<https://github.com/lincux0/skilland>
+
+部署方式：推送到 `main` 后由 Vercel 自动构建并发布到生产域名。
+`.github/workflows/sync.yml` 每天 03:17 UTC 增量同步数据并提交到 `main`，从而触发一次新的部署；也可在 Actions 页手动触发。
+
 > 数据来自 10 个公开 GitHub 仓库，共 112 个 Skills。全部条目都是
 > `draft` / `unreviewed`；`scan.status` 表示自动扫描覆盖范围，不代表安全认证。
 
