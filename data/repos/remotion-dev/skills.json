@@ -5,7 +5,7 @@
     "repo": "skills",
     "fullName": "remotion-dev/skills",
     "url": "https://github.com/remotion-dev/skills",
-    "stars": 7140,
+    "stars": 7149,
     "licenseSpdx": null,
     "licenseStatus": "unknown",
     "defaultBranch": "main",
@@ -18,45 +18,657 @@
       "path": "skills/remotion-best-practices/SKILL.md",
       "slug": "remotion-best-practices",
       "name": "remotion-best-practices",
-      "description": "Build programmatic videos with Remotion using current APIs and patterns.",
+      "description": "Router for all Remotion skills",
       "descriptionZh": "用 Remotion 的当前 API 与模式制作程序化视频。",
       "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "c491302acdc7b659c11f23c7898f519c4cf6c2bb8b186ade2aeab1bcaca25be0",
+        "bundleHash": "ce9e5401a9e1fc7d8aa642ccbfb83d15558245abb2cf2e550289500a2058a8f3",
+        "filesFetched": 80,
+        "filesSkipped": 9,
+        "bytesFetched": 630990
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 4426,
           "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 311,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "remotion-captions/REFERENCE.md",
+          "size": 1153,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-captions/agents/openai.yaml",
+          "size": 305,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-captions/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
           "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-captions/display-captions.md",
+          "size": 5951,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-captions/import-srt-captions.md",
+          "size": 2231,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-captions/transcribe-captions.md",
+          "size": 5533,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-create/REFERENCE.md",
+          "size": 3023,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-create/agents/openai.yaml",
+          "size": 310,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-create/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-create/tailwind.md",
+          "size": 386,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-create/video-layout.md",
+          "size": 498,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-docs/REFERENCE.md",
+          "size": 1355,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-docs/agents/openai.yaml",
+          "size": 307,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-docs/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-interactivity/REFERENCE.md",
+          "size": 14304,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-interactivity/agents/openai.yaml",
+          "size": 320,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-interactivity/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-interactivity/inline-effects.md",
+          "size": 993,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-interactivity/timeline-structure.md",
+          "size": 7016,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-license/REFERENCE.md",
+          "size": 498,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-license/agents/openai.yaml",
+          "size": 300,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-license/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-maps/REFERENCE.md",
+          "size": 1030,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/agents/openai.yaml",
+          "size": 293,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+          "size": 3909,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+          "size": 8912,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/cesium-path.json",
+          "size": 12329,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/city-path.json",
+          "size": 223,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/example-Root.tsx",
+          "size": 923,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/flight-path.ts",
+          "size": 1240,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/sample-river.geojson",
+          "size": 6409,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/references/3d-data-sources.md",
+          "size": 1451,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+          "size": 7887,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+          "size": 6741,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+          "size": 5561,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/mapbox/TECHNIQUE.md",
+          "size": 13128,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/mapbox/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maplibre/TECHNIQUE.md",
+          "size": 13843,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maplibre/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/TECHNIQUE.md",
+          "size": 4518,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+          "size": 1849,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+          "size": 2183,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+          "size": 10830,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+          "size": 1039,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+          "size": 333134,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+          "size": 13082,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/tokens.ts",
+          "size": 1256,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/map-data-sources.md",
+          "size": 4798,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+          "size": 6871,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+          "size": 4098,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+          "size": 7553,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/static-map/TECHNIQUE.md",
+          "size": 1151,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/3d.md",
+          "size": 2292,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/REFERENCE.md",
+          "size": 13830,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/agents/openai.yaml",
+          "size": 310,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/arabic-text.md",
+          "size": 4540,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-markup/audio-visualization.md",
+          "size": 4892,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/audio.md",
+          "size": 4121,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/calculate-metadata.md",
+          "size": 3498,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/color-correction.md",
+          "size": 7476,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/compositions.md",
+          "size": 5134,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/connected-compositions.md",
+          "size": 3511,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/cropping.md",
+          "size": 1324,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/effects.md",
+          "size": 10900,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/embedding-videos.md",
+          "size": 3725,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/ffmpeg.md",
+          "size": 1112,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/gifs.md",
+          "size": 3783,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/google-fonts.md",
+          "size": 1714,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/html-in-canvas.md",
+          "size": 2976,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/images.md",
+          "size": 1568,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/light-leaks.md",
+          "size": 3148,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/local-fonts.md",
+          "size": 1533,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/lottie.md",
+          "size": 1806,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/measuring-dom-nodes.md",
+          "size": 995,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 1107,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 80,
+        "scriptCount": 10,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "partial",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
+          "filesScanned": 71,
+          "filesSkipped": 9,
+          "bytesScanned": 282326,
           "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+            "remotion-captions/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-create/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-docs/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-interactivity/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-license/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-maps/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-maps/techniques/cesium/assets/sample-river.geojson: binary asset not parsed",
+            "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json: >256 KB; not scanned",
+            "remotion-markup/assets/remotion-icon.svg: binary asset not parsed",
+            "file list capped at 80; some files may be omitted"
           ]
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "remotion-create/REFERENCE.md",
+                "line": 22,
+                "excerpt": "eat all hidden files as disposable: files such as `.env` and directories such as `.git` are meaningful contents. Scaffold in existing"
+              },
+              {
+                "file": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+                "line": 15,
+                "excerpt": "ing blocks rather than textured architecture. ## Credentials For `landscape`, set: ```text REMOTION_MAPTILER_KEY=... ``` Create a MapTile"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "remotion-maps/techniques/mapbox/TECHNIQUE.md",
+                "line": 50,
+                "excerpt": "```bash bun i mapbox-gl @turf/turf ``` ```bash yarn add mapbox-gl @turf/turf ``` ```bash pnpm i mapbox-gl @turf/turf ``` Import the M"
+              },
+              {
+                "file": "remotion-maps/techniques/maplibre/TECHNIQUE.md",
+                "line": 48,
+                "excerpt": "```bash bun i maplibre-gl @turf/turf ``` ```bash yarn add maplibre-gl @turf/turf ``` ```bash pnpm i maplibre-gl @turf/turf ``` Import t"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 65,
+                "excerpt": "y navigating to `/[composition-id]`, for example `http://localhost:3000/MapAnimation`. :::note The Studio supports WebMCP tools. ::: ##"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              },
+              {
+                "file": "remotion-captions/REFERENCE.md",
+                "line": 7,
+                "excerpt": "ed in JSON. The captions must use the [`Caption`](https://www.remotion.dev/docs/captions/caption.md) type which is the following: ```ts i"
+              },
+              {
+                "file": "remotion-captions/display-captions.md",
+                "line": 10,
+                "excerpt": "ming you already have captions in the [`Caption`](https://www.remotion.dev/docs/captions/caption.md) format. ## Prerequisites Read [Tran"
+              },
+              {
+                "file": "remotion-captions/import-srt-captions.md",
+                "line": 43,
+                "excerpt": "nc () => { try { const response = await fetch(staticFile(\"subtitles.srt\")); const text = await response.text(); co"
+              },
+              {
+                "file": "remotion-captions/transcribe-captions.md",
+                "line": 3,
+                "excerpt": "te captions in Remotion, use the [`transcribe()`](https://www.remotion.dev/docs/whisper-webgpu/transcribe.md) function from the [`@remotio"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/cesium/assets/example-Root.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/cesium/assets/flight-path.ts",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "ce9e5401a9e1fc7d8aa642ccbfb83d15558245abb2cf2e550289500a2058a8f3"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [],
@@ -83,7 +695,2332 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-captions/SKILL.md",
+      "slug": "remotion-captions",
+      "name": "remotion-captions",
+      "description": "Transcribing, displaying and animating captions",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "c08b52bfa3813f39a8ff95256607bebaccd2cee19f5b88d5e2b19bd206ecc7e8",
+        "bundleHash": "5aecb99f9cfeb18528edd31176c478eb2c7d9b0ccff8c51da06cf72aa315bb28",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 16495
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1172,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 305,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "display-captions.md",
+          "size": 5951,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "import-srt-captions.md",
+          "size": 2231,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "transcribe-captions.md",
+          "size": 5533,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 293,
+        "fileCount": 6,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 16495,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 7,
+                "excerpt": "ed in JSON. The captions must use the [`Caption`](https://www.remotion.dev/docs/captions/caption.md) type which is the following: ```ts i"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              },
+              {
+                "file": "display-captions.md",
+                "line": 10,
+                "excerpt": "ming you already have captions in the [`Caption`](https://www.remotion.dev/docs/captions/caption.md) format. ## Prerequisites Read [Tran"
+              },
+              {
+                "file": "import-srt-captions.md",
+                "line": 43,
+                "excerpt": "nc () => { try { const response = await fetch(staticFile(\"subtitles.srt\")); const text = await response.text(); co"
+              },
+              {
+                "file": "transcribe-captions.md",
+                "line": 3,
+                "excerpt": "te captions in Remotion, use the [`transcribe()`](https://www.remotion.dev/docs/whisper-webgpu/transcribe.md) function from the [`@remotio"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "5aecb99f9cfeb18528edd31176c478eb2c7d9b0ccff8c51da06cf72aa315bb28"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-create/SKILL.md",
+      "slug": "remotion-create",
+      "name": "remotion-create",
+      "description": "Create a new Remotion video",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "7892df3fdd021f7024da6359dbeab451eb29f414e710bea8b687301bb245e2ff",
+        "bundleHash": "a33ec6b9f2db714cb86eb7935d7b195a23ad5b95782039bdf0ec3a47e559128b",
+        "filesFetched": 5,
+        "filesSkipped": 0,
+        "bytesFetched": 5570
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3073,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 310,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "tailwind.md",
+          "size": 386,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "video-layout.md",
+          "size": 498,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 769,
+        "fileCount": 5,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 5,
+          "filesSkipped": 0,
+          "bytesScanned": 5570,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 22,
+                "excerpt": "eat all hidden files as disposable: files such as `.env` and directories such as `.git` are meaningful contents. Scaffold in existing"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              },
+              {
+                "file": "tailwind.md",
+                "line": 11,
+                "excerpt": "led and enabled first in a Remotion project - see https://www.remotion.dev/docs/tailwind."
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "a33ec6b9f2db714cb86eb7935d7b195a23ad5b95782039bdf0ec3a47e559128b"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-docs/SKILL.md",
+      "slug": "remotion-docs",
+      "name": "remotion-docs",
+      "description": "Search Remotion documentation",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "9bf31669a3eb946f814db42e30ad7a3cce55f87cda049f31a5a6f3e330ee4892",
+        "bundleHash": "2a7664660999ee9f5075dfb07b4c91c16700f91e219993d1dd2bc45dd6c119de",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 2984
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1374,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 307,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 344,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 2984,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 15,
+                "excerpt": "I to find relevant documentation pages: ``` POST https://plsduol1ca-dsn.algolia.net/1/indexes/*/queries?x-algolia-api-key=3e42dbd4f895fe9"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "2a7664660999ee9f5075dfb07b4c91c16700f91e219993d1dd2bc45dd6c119de"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-interactivity/SKILL.md",
+      "slug": "remotion-interactivity",
+      "name": "remotion-interactivity",
+      "description": "Structures Remotion markup so layers, timing and styles are editable in Remotion Studio. Use when writing a new composition or restructuring existing markup.",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "70f67a8427330076538d8e93788994fbe0730762717a70f0286145541589fbc9",
+        "bundleHash": "ad10bffb36d765df8705a75a1bce236d4431c0f54b6036d33109fc4e10ff6f58",
+        "filesFetched": 5,
+        "filesSkipped": 0,
+        "bytesFetched": 24001
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 14343,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 320,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "inline-effects.md",
+          "size": 993,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "timeline-structure.md",
+          "size": 7042,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 3586,
+        "fileCount": 5,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 5,
+          "filesSkipped": 0,
+          "bytesScanned": 24001,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 74,
+                "excerpt": "`string` field type. See [`InteractivitySchema`](https://www.remotion.dev/docs/interactivity-schema) for all options. ## Make an HTML el"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "ad10bffb36d765df8705a75a1bce236d4431c0f54b6036d33109fc4e10ff6f58"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "inherit-codebase",
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "video",
+          "architecture",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "docs-and-data",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-license/SKILL.md",
+      "slug": "remotion-license",
+      "name": "remotion-license",
+      "description": "Find Remotion license information, FAQs, terms, and where to buy a license.",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "79e71584bd09d81a044acf11c04cb34998e091ca19ba164333310d4cf074cd2d",
+        "bundleHash": "b2c722618e5bb4a83f87e8c3e4d964545a793f36f5fa3048fb0428ac5bea8ae4",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 2101
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 498,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 300,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 125,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 2101,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 11,
+                "excerpt": "censing, read the relevant resource: - [License](https://www.remotion.dev/docs/license.md) - [License FAQ](https://www.remotion.dev/docs/"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "b2c722618e5bb4a83f87e8c3e4d964545a793f36f5fa3048fb0428ac5bea8ae4"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "video",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-maps/SKILL.md",
+      "slug": "remotion-maps",
+      "name": "remotion-maps",
+      "description": "Remotion Map animation knowledge",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "f623f9ae66d44400846dc35124d32d4501ae0349d041d64ad0daa70a5f8dc920",
+        "bundleHash": "272bba5dd65c16f6514d924e7660f9b59819a02fde70ae168082eff7a6eca713",
+        "filesFetched": 32,
+        "filesSkipped": 2,
+        "bytesFetched": 488431
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1030,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 293,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/TECHNIQUE.md",
+          "size": 3909,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/assets/CesiumFlythrough.tsx",
+          "size": 8912,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/assets/cesium-path.json",
+          "size": 12329,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/assets/city-path.json",
+          "size": 223,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/assets/example-Root.tsx",
+          "size": 923,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/assets/flight-path.ts",
+          "size": 1240,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/assets/sample-river.geojson",
+          "size": 6409,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "techniques/cesium/references/3d-data-sources.md",
+          "size": 1451,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/references/3d-flyover-architecture.md",
+          "size": 7887,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/references/3d-troubleshooting.md",
+          "size": 6741,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/cesium/scripts/prep-cesium-path.mjs",
+          "size": 5561,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/mapbox/TECHNIQUE.md",
+          "size": 13128,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/mapbox/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maplibre/TECHNIQUE.md",
+          "size": 13843,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maplibre/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/TECHNIQUE.md",
+          "size": 4518,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/assets/CountryLabel.tsx",
+          "size": 1849,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/assets/MapTilerVectorElement.ts",
+          "size": 2183,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/assets/RiverReveal.tsx",
+          "size": 10830,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/assets/example-Root.tsx",
+          "size": 1039,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/assets/sample-data/country-meta.json",
+          "size": 333134,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/assets/sample-data/yarlung-flow.json",
+          "size": 13082,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/assets/tokens.ts",
+          "size": 1256,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/references/map-data-sources.md",
+          "size": 4798,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/references/map-explainer-architecture.md",
+          "size": 6871,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/references/map-geo-prep.md",
+          "size": 4098,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "techniques/maptiler/scripts/prep-geo.mjs",
+          "size": 7553,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "techniques/static-map/TECHNIQUE.md",
+          "size": 1121,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 258,
+        "fileCount": 32,
+        "scriptCount": 10,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "partial",
+        "coverage": {
+          "filesScanned": 30,
+          "filesSkipped": 2,
+          "bytesScanned": 148888,
+          "limitations": [
+            "techniques/cesium/assets/sample-river.geojson: binary asset not parsed",
+            "techniques/maptiler/assets/sample-data/country-meta.json: >256 KB; not scanned"
+          ]
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "techniques/cesium/TECHNIQUE.md",
+                "line": 15,
+                "excerpt": "ing blocks rather than textured architecture. ## Credentials For `landscape`, set: ```text REMOTION_MAPTILER_KEY=... ``` Create a MapTile"
+              }
+            ],
+            "note": "References credential files or secret stores. Possible negated/teaching context; verify manually."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "techniques/mapbox/TECHNIQUE.md",
+                "line": 50,
+                "excerpt": "```bash bun i mapbox-gl @turf/turf ``` ```bash yarn add mapbox-gl @turf/turf ``` ```bash pnpm i mapbox-gl @turf/turf ``` Import the M"
+              },
+              {
+                "file": "techniques/maplibre/TECHNIQUE.md",
+                "line": 48,
+                "excerpt": "```bash bun i maplibre-gl @turf/turf ``` ```bash yarn add maplibre-gl @turf/turf ``` ```bash pnpm i maplibre-gl @turf/turf ``` Import t"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              },
+              {
+                "file": "techniques/cesium/TECHNIQUE.md",
+                "line": 23,
+                "excerpt": "ON_MAPTILER_KEY=... ``` Create a MapTiler key at https://cloud.maptiler.com/account/keys/. For `city`, set: ```text REMOTION_GOOGLE_MAP"
+              },
+              {
+                "file": "techniques/cesium/assets/CesiumFlythrough.tsx",
+                "line": 32,
+                "excerpt": "API_KEY; const CESIUM_VER = '1.143'; const CDN = `https://cesium.com/downloads/cesiumjs/releases/${CESIUM_VER}/Build/Cesium/`; const R = 6"
+              },
+              {
+                "file": "techniques/cesium/references/3d-data-sources.md",
+                "line": 14,
+                "excerpt": "a. Set `REMOTION_MAPTILER_KEY`. Create a key: - https://cloud.maptiler.com/account/keys/ Official documentation: - https://docs.maptil"
+              },
+              {
+                "file": "techniques/cesium/references/3d-flyover-architecture.md",
+                "line": 24,
+                "excerpt": "ileset = await Cesium.Cesium3DTileset.fromUrl( `https://tile.googleapis.com/v1/3dtiles/root.json?key=${GOOGLE_KEY}`, {showCreditsOnScr"
+              },
+              {
+                "file": "techniques/maplibre/TECHNIQUE.md",
+                "line": 85,
+                "excerpt": "URL.createObjectURL( new Blob( [`import \"https://unpkg.com/maplibre-gl@${maplibregl.getVersion()}/dist/maplibre-gl-worker.mjs\";`]"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "techniques/cesium/assets/CesiumFlythrough.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "techniques/cesium/assets/example-Root.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "techniques/cesium/assets/flight-path.ts",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "techniques/cesium/scripts/prep-cesium-path.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "techniques/maptiler/assets/CountryLabel.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "techniques/maptiler/assets/MapTilerVectorElement.ts",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "272bba5dd65c16f6514d924e7660f9b59819a02fde70ae168082eff7a6eca713"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-markup/SKILL.md",
+      "slug": "remotion-markup",
+      "name": "remotion-markup",
+      "description": "Content, animation and effects best practices",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "8650285547e38233ec7c7b95faf88fb7941b170579f87159b42a5bdc40672d94",
+        "bundleHash": "f5f1d1dc4e7ecd35ac519c794351350bd78f28523aaef1639ec16f6da68e7de1",
+        "filesFetched": 69,
+        "filesSkipped": 3,
+        "bytesFetched": 617969
+      },
+      "files": [
+        {
+          "path": "3d.md",
+          "size": 2292,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 13826,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 310,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "arabic-text.md",
+          "size": 4540,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "audio-visualization.md",
+          "size": 4892,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "audio.md",
+          "size": 4121,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "calculate-metadata.md",
+          "size": 3537,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "color-correction.md",
+          "size": 7476,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "compositions.md",
+          "size": 5147,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "connected-compositions.md",
+          "size": 3524,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "cropping.md",
+          "size": 1315,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "effects.md",
+          "size": 10900,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "embedding-videos.md",
+          "size": 3725,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "ffmpeg.md",
+          "size": 1112,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "gifs.md",
+          "size": 3783,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "google-fonts.md",
+          "size": 1714,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "html-in-canvas.md",
+          "size": 2976,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "images.md",
+          "size": 1568,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "light-leaks.md",
+          "size": 3148,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "local-fonts.md",
+          "size": 1533,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "lottie.md",
+          "size": 1806,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "measuring-dom-nodes.md",
+          "size": 995,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "measuring-text.md",
+          "size": 2801,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "motion-blur.md",
+          "size": 2039,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "multi-scene-video.md",
+          "size": 1048,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "parameters.md",
+          "size": 2223,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/REFERENCE.md",
+          "size": 1030,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/agents/openai.yaml",
+          "size": 293,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+          "size": 3909,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+          "size": 8912,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/cesium-path.json",
+          "size": 12329,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/city-path.json",
+          "size": 223,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/example-Root.tsx",
+          "size": 923,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/flight-path.ts",
+          "size": 1240,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/assets/sample-river.geojson",
+          "size": 6409,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/references/3d-data-sources.md",
+          "size": 1451,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+          "size": 7887,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+          "size": 6741,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+          "size": 5561,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/mapbox/TECHNIQUE.md",
+          "size": 13128,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/mapbox/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maplibre/TECHNIQUE.md",
+          "size": 13843,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maplibre/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/TECHNIQUE.md",
+          "size": 4518,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+          "size": 1849,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+          "size": 2183,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+          "size": 10830,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+          "size": 1039,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+          "size": 333134,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+          "size": 13082,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/assets/tokens.ts",
+          "size": 1256,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/map-data-sources.md",
+          "size": 4798,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+          "size": 6871,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+          "size": 4098,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/references/render-stability.md",
+          "size": 3639,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+          "size": 7553,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "remotion-maps/techniques/static-map/TECHNIQUE.md",
+          "size": 1116,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "sequencing.md",
+          "size": 1306,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "sfx.md",
+          "size": 1823,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "silence-detection.md",
+          "size": 2593,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "text-highlights.md",
+          "size": 1842,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "timing-props.md",
+          "size": 3304,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "timing.md",
+          "size": 3315,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "transitions.md",
+          "size": 8811,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "video-editing.md",
+          "size": 5842,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "video-matting.md",
+          "size": 3398,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "voiceover.md",
+          "size": 3655,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 3457,
+        "fileCount": 69,
+        "scriptCount": 10,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "partial",
+        "coverage": {
+          "filesScanned": 66,
+          "filesSkipped": 3,
+          "bytesScanned": 277123,
+          "limitations": [
+            "remotion-maps/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-maps/techniques/cesium/assets/sample-river.geojson: binary asset not parsed",
+            "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json: >256 KB; not scanned"
+          ]
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+                "line": 15,
+                "excerpt": "ing blocks rather than textured architecture. ## Credentials For `landscape`, set: ```text REMOTION_MAPTILER_KEY=... ``` Create a MapTile"
+              }
+            ],
+            "note": "References credential files or secret stores. Possible negated/teaching context; verify manually."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "remotion-maps/techniques/mapbox/TECHNIQUE.md",
+                "line": 50,
+                "excerpt": "```bash bun i mapbox-gl @turf/turf ``` ```bash yarn add mapbox-gl @turf/turf ``` ```bash pnpm i mapbox-gl @turf/turf ``` Import the M"
+              },
+              {
+                "file": "remotion-maps/techniques/maplibre/TECHNIQUE.md",
+                "line": 48,
+                "excerpt": "```bash bun i maplibre-gl @turf/turf ``` ```bash yarn add maplibre-gl @turf/turf ``` ```bash pnpm i maplibre-gl @turf/turf ``` Import t"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 125,
+                "excerpt": "h: 100, height: 100 }} /> <Video src=\"https://remotion.media/video.mp4\" /> <AnimatedImage src={staticFile('nyancat.gif')"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              },
+              {
+                "file": "audio-visualization.md",
+                "line": 18,
+                "excerpt": "Loading Audio Data Use `useWindowedAudioData()` (https://www.remotion.dev/docs/use-windowed-audio-data) to load audio data: ```tsx impor"
+              },
+              {
+                "file": "audio.md",
+                "line": 37,
+                "excerpt": "rt { Audio } from \"@remotion/media\"; <Audio src=\"https://remotion.media/audio.mp3\" /> ``` By default, audio plays from the start, at ful"
+              },
+              {
+                "file": "calculate-metadata.md",
+                "line": 22,
+                "excerpt": "920} height={1080} defaultProps={{ videoSrc: \"https://remotion.media/video.mp4\" }} calculateMetadata={calculateMetadata} /> ``` ##"
+              },
+              {
+                "file": "color-correction.md",
+                "line": 15,
+                "excerpt": "Primary adjustments Prefer [`colorCorrection()`](https://www.remotion.dev/docs/effects/color-correction) when combining adjustments. It"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/cesium/assets/example-Root.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/cesium/assets/flight-path.ts",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "f5f1d1dc4e7ecd35ac519c794351350bd78f28523aaef1639ec16f6da68e7de1"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-multimedia/SKILL.md",
+      "slug": "remotion-multimedia",
+      "name": "remotion-multimedia",
+      "description": "Interacting with Mediabunny",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "29164a346d0ba9549de08f1e5051d5ba4fc608e58334a908f63759e5e62a7da5",
+        "bundleHash": "17c017dcba65086603b5b5c3ec9d770d267c45b5b552c140495a2377968986e0",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 7098
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 705,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 317,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "get-audio-duration.md",
+          "size": 1507,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "get-video-dimensions.md",
+          "size": 1797,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "get-video-duration.md",
+          "size": 1469,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 177,
+        "fileCount": 6,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 7098,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 8,
+                "excerpt": ". Here is a compact overview of its capabilities: https://mediabunny.dev/llms.txt ## Getting audio duration See [get-audio-duration.md]("
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              },
+              {
+                "file": "get-audio-duration.md",
+                "line": 31,
+                "excerpt": "```tsx const duration = await getAudioDuration(\"https://remotion.media/audio.mp3\"); console.log(duration); // e.g. 180.5 (seconds) ```"
+              },
+              {
+                "file": "get-video-dimensions.md",
+                "line": 38,
+                "excerpt": "`tsx const dimensions = await getVideoDimensions(\"https://remotion.media/video.mp4\"); console.log(dimensions.width); // e.g. 1920 console."
+              },
+              {
+                "file": "get-video-duration.md",
+                "line": 31,
+                "excerpt": "```tsx const duration = await getVideoDuration(\"https://remotion.media/video.mp4\"); console.log(duration); // e.g. 10.5 (seconds) ``` #"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "17c017dcba65086603b5b5c3ec9d770d267c45b5b552c140495a2377968986e0"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-render/SKILL.md",
+      "slug": "remotion-render",
+      "name": "remotion-render",
+      "description": "Export a Remotion video",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "b59b979e360bb0ba615373cc7c2542115f7feee6be36f3f6bb9c5b63491325bb",
+        "bundleHash": "998e63b743a2483db5bbad871f6bb656c38a7521751a0fb1e6b22948b7ced3f2",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 6169
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2313,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 286,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "transparent-videos.md",
+          "size": 2267,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 579,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 6169,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 21,
+                "excerpt": "`` npx remotion render ``` Full list of options: https://www.remotion.dev/docs/cli/render.md ## Passing input props Pass input props as"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "998e63b743a2483db5bbad871f6bb656c38a7521751a0fb1e6b22948b7ced3f2"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-saas/SKILL.md",
+      "slug": "remotion-saas",
+      "name": "remotion-saas",
+      "description": "Build an app with Remotion",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "9dad5026098719d03b0baf2bc5d32055b64357e125186433586603ff202cc407",
+        "bundleHash": "baff8cfced8650a0cb6a2868766ad1d70e32d7f033b67c40cb9c4294b961681e",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 8791
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1053,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 283,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "framework.md",
+          "size": 908,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "player.md",
+          "size": 942,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rendering.md",
+          "size": 4302,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 264,
+        "fileCount": 6,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 8791,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "rendering.md",
+                "line": 69,
+                "excerpt": "the generated Remotion policy commands. 4. Store credentials in `.env` using `REMOTION_AWS_ACCESS_KEY_ID` and `REMOTION_AWS_SECRET_ACCESS_KE"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 25,
+                "excerpt": "Node.js and Cloudflare options. ## With Vue See https://www.remotion.dev/docs/vue.md for how to use Remotion with Vue. ## Angular See"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              },
+              {
+                "file": "framework.md",
+                "line": 12,
+                "excerpt": "k. We offer the following templates: - Next.js: https://github.com/remotion-dev/template-next-app-dir-tailwind. Uses Lambda as default r"
+              },
+              {
+                "file": "player.md",
+                "line": 29,
+                "excerpt": "e composition's `calculateMetadata()` logic. Link https://www.remotion.dev/docs/dynamic-metadata.md#with-the-player. Full API for the Pla"
+              },
+              {
+                "file": "rendering.md",
+                "line": 13,
+                "excerpt": "better suited. ## Comparison of SSR methods See https://www.remotion.dev/docs/compare-ssr.md for the tradeoffs between server-side rende"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "baff8cfced8650a0cb6a2868766ad1d70e32d7f033b67c40cb9c4294b961681e"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-studio/SKILL.md",
+      "slug": "remotion-studio",
+      "name": "remotion-studio",
+      "description": "Preview a Remotion video",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "0b0592686d2be506d22311b463972f1ae3b8b2650dabb30c6bbb2f4b9658909a",
+        "bundleHash": "a8e57165b61d83c13c0ff817a5d105bb46dd79d854e45be39619b9d5b244d253",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 3151
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1611,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 237,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 403,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 3151,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "a8e57165b61d83c13c0ff817a5d105bb46dd79d854e45be39619b9d5b244d253"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "video",
+          "code-review",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    },
+    {
+      "path": "skills/remotion-upgrade/SKILL.md",
+      "slug": "remotion-upgrade",
+      "name": "remotion-upgrade",
+      "description": "Upgrade Remotion, and related packages",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "latestCommitAt": "2026-11-11T19:23:30Z",
+        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+      },
+      "snapshot": {
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "skillMdHash": "7fcc89867dd57219e6c89fa77da6efd51d57970b60cad2b6f7dd1cfb1e4d3666",
+        "bundleHash": "11f65980bc25b514f1aca4e14f2e502189e9be3ee3b47c992bc574c8ffc327ab",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 3532
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1947,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 282,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "other",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 487,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 3532,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 31,
+                "excerpt": "as an additional check. The [Remotion releases](https://github.com/remotion-dev/remotion/releases) contain the changelog and may be usef"
+              },
+              {
+                "file": "assets/remotion-icon.svg",
+                "line": 1,
+                "excerpt": "\"100\" height=\"100\" viewBox=\"20 30 363 363\" xmlns=\"http://www.w3.org/2000/svg\"> <title>Remotion</title> <path d=\"M148.332 92.9015C143.307"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "11f65980bc25b514f1aca4e14f2e502189e9be3ee3b47c992bc574c8ffc327ab"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:16.281Z",
+        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     }

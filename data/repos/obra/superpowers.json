@@ -5,7 +5,7 @@
     "repo": "superpowers",
     "fullName": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
-    "stars": 317683,
+    "stars": 317704,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -15,56 +15,157 @@
   },
   "skills": [
     {
-      "path": "skills/test-driven-development/SKILL.md",
-      "slug": "test-driven-development",
-      "name": "test-driven-development",
-      "description": "Drive implementation with a red-green-refactor workflow and focused tests.",
-      "descriptionZh": "用红-绿-重构的循环和聚焦测试驱动实现。",
+      "path": "skills/brainstorming/SKILL.md",
+      "slug": "brainstorming",
+      "name": "brainstorming",
+      "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
       "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "2c9ca71f94886f9ca9f4aef055f7cafb3e1a9bdf3aeebf8f4cb547c69405d207",
+        "bundleHash": "5232835051aa44781621b5a67bffc1676b4ddd6ee46e234ae74e53e8b7feb2b8",
+        "filesFetched": 8,
+        "filesSkipped": 0,
+        "bytesFetched": 79470
+      },
       "files": [
         {
           "path": "SKILL.md",
-          "size": 9578,
+          "size": 15190,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "builder-check-prompt.md",
+          "size": 881,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/frame-template.html",
+          "size": 8094,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/helper.js",
+          "size": 5615,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/server.cjs",
+          "size": 25699,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/start-server.sh",
+          "size": 7315,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/stop-server.sh",
+          "size": 3263,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "visual-companion.md",
+          "size": 13413,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
-        "bodyTokensEstimate": 2395,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "bodyTokensEstimate": 3798,
+        "fileCount": 8,
+        "scriptCount": 4,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 8,
+          "filesSkipped": 0,
+          "bytesScanned": 79470,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "scripts/server.cjs",
+                "line": 106,
+                "excerpt": "rsVersion(); const SUPERPOWERS_BRAND_IMAGE_URL = 'https://primeradiant.com/brand/superpowers-visual-brainstorming-logo.png'; const TELEMET"
+              },
+              {
+                "file": "visual-companion.md",
+                "line": 41,
+                "excerpt": "\"server-started\",\"port\":52341, # \"url\":\"http://localhost:52341/?key=ab12…\", # \"screen_dir\":\"/path/to/project/.superpo"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/helper.js",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/server.cjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/start-server.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/stop-server.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
         "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "5232835051aa44781621b5a67bffc1676b4ddd6ee46e234ae74e53e8b7feb2b8"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
-          "add-tests"
+          "design-to-code",
+          "write-clearly"
         ],
         "topics": [
-          "testing",
-          "tdd"
+          "design",
+          "frontend",
+          "agent-workflows",
+          "planning"
         ],
         "agents": [
           "opencode",
@@ -77,16 +178,873 @@
       },
       "editorial": {
         "shelfIds": [
-          "testing",
-          "code-quality"
+          "design-systems"
         ],
-        "featuredRank": 4,
         "curator": "Skill Shelf"
       },
       "status": "draft",
       "timestamps": {
-        "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/diagnosing-superpowers/SKILL.md",
+      "slug": "diagnosing-superpowers",
+      "name": "diagnosing-superpowers",
+      "description": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "3143de8695c5a2d63e8b1675f33837578076f464deb127c2ebdd0b46fceef886",
+        "bundleHash": "d0fe532526e678dba21a2079e92b06cc44fd6e7bfa9b13cd1da1823d776d3632",
+        "filesFetched": 20,
+        "filesSkipped": 0,
+        "bytesFetched": 41699
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6941,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "prompts/analyst-common.md",
+          "size": 1582,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/cost-and-time.md",
+          "size": 1640,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/plan-adherence.md",
+          "size": 1637,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/quality-evidence.md",
+          "size": 1476,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/repeated-work.md",
+          "size": 1469,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/request-conflicts.md",
+          "size": 1011,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/scrub-audit.md",
+          "size": 1363,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/scrub.md",
+          "size": 1471,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/similar-session.md",
+          "size": 1711,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/skill-timeline.md",
+          "size": 1646,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "prompts/stumbles.md",
+          "size": 1330,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/context-safety.md",
+          "size": 990,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/github-issues.md",
+          "size": 1636,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/redaction-policy.md",
+          "size": 2243,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/session-discovery.md",
+          "size": 1859,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "templates/bundle-README.md",
+          "size": 3672,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "templates/case.md",
+          "size": 2983,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "templates/issue.md",
+          "size": 2680,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "templates/report.md",
+          "size": 2359,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1736,
+        "fileCount": 20,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 20,
+          "filesSkipped": 0,
+          "bytesScanned": 41699,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "references/github-issues.md",
+                "line": 4,
+                "excerpt": "imits, and JSON. Fall back to the public API with curl, then to a URL your partner opens. ## Search ```bash gh search issues --repo"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "d0fe532526e678dba21a2079e92b06cc44fd6e7bfa9b13cd1da1823d776d3632"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "inherit-codebase",
+          "design-to-code",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "debugging",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems",
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/dispatching-parallel-agents/SKILL.md",
+      "slug": "dispatching-parallel-agents",
+      "name": "dispatching-parallel-agents",
+      "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
+        "bundleHash": "167dbb0fc56206a44b03b782cc661086ad0ce39885d173de77073bbd8a4578a9",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 6078
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6078,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1520,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 6078,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "167dbb0fc56206a44b03b782cc661086ad0ce39885d173de77073bbd8a4578a9"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/executing-plans/SKILL.md",
+      "slug": "executing-plans",
+      "name": "executing-plans",
+      "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "deaf176fa179827e80f2ea3101db3ea90fdf562ebef340eba761e4687940f5f5",
+        "bundleHash": "440e83a47368fb77c7aaee798f98e4a18b8947fee6d2dd992e9f04e7571f23cd",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 21449
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 18364,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "scripts/task-done",
+          "size": 1900,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/task-start",
+          "size": 1185,
+          "kind": "other",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 4591,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 21449,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "440e83a47368fb77c7aaee798f98e4a18b8947fee6d2dd992e9f04e7571f23cd"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/finishing-a-development-branch/SKILL.md",
+      "slug": "finishing-a-development-branch",
+      "name": "finishing-a-development-branch",
+      "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65",
+        "bundleHash": "93abcd0f3e52093f38629995689cfe80d172f620c2a5f3e907657f1a9cb8bc76",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 7781
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 7781,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1946,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 7781,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "93abcd0f3e52093f38629995689cfe80d172f620c2a5f3e907657f1a9cb8bc76"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests"
+        ],
+        "topics": [
+          "testing",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/receiving-code-review/SKILL.md",
+      "slug": "receiving-code-review",
+      "name": "receiving-code-review",
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438",
+        "bundleHash": "e82d83690859b5d37e87365661dd034d86da6363c5405f3c5badc40cf7f78993",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 6203
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6203,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1551,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 6203,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "e82d83690859b5d37e87365661dd034d86da6363c5405f3c5badc40cf7f78993"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "browser",
+          "code-review",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/requesting-code-review/SKILL.md",
+      "slug": "requesting-code-review",
+      "name": "requesting-code-review",
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "2180e14a448e9410bec88e6646a2d1f0ce7fdd58de27388c1e052e929679d2bc",
+        "bundleHash": "4595cf96b417dafb6124bb2f08d03051dca693976315ddcc32845982fbf83b80",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 9423
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2974,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "code-reviewer.md",
+          "size": 6449,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 744,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 9423,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "4595cf96b417dafb6124bb2f08d03051dca693976315ddcc32845982fbf83b80"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely"
+        ],
+        "topics": [
+          "design",
+          "code-review",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "design-systems",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "slug": "subagent-driven-development",
+      "name": "subagent-driven-development",
+      "description": "Use when executing implementation plans with independent tasks in the current session",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "1baf70e307bde682c462513c86116333f1f066168c6710f45145bf5f0b00828d",
+        "bundleHash": "59cbda014ee496d3bfb924365ad0c602fccd0d1a21eea61662bf2385c290df2a",
+        "filesFetched": 15,
+        "filesSkipped": 0,
+        "bytesFetched": 65490
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 19740,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "implementer-prompt.md",
+          "size": 6335,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "re-review-prompt.md",
+          "size": 4833,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/batching.md",
+          "size": 583,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/cannot-verify.md",
+          "size": 513,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/final-review.md",
+          "size": 2576,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/fix-loop.md",
+          "size": 4314,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/handling-reports.md",
+          "size": 1062,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/preflight.md",
+          "size": 1353,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/resuming.md",
+          "size": 614,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/review-package",
+          "size": 2444,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/sdd-repo",
+          "size": 2356,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/sdd-workspace",
+          "size": 4823,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/task-brief",
+          "size": 4769,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "task-reviewer-prompt.md",
+          "size": 9175,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 4935,
+        "fileCount": 15,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 15,
+          "filesSkipped": 0,
+          "bytesScanned": 65490,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "59cbda014ee496d3bfb924365ad0c602fccd0d1a21eea61662bf2385c290df2a"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
         "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
       }
     },
@@ -94,45 +1052,119 @@
       "path": "skills/systematic-debugging/SKILL.md",
       "slug": "systematic-debugging",
       "name": "systematic-debugging",
-      "description": "Debug systematically: reproduce, isolate, form hypotheses, and verify fixes.",
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
       "descriptionZh": "系统化调试：复现、隔离、提出假设并验证修复。",
       "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
+        "bundleHash": "5d0f7f59a77f672df1ae836ae89d5b1bd78f768e7ab225df612e7aa30c25f0e0",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 29057
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 9530,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "condition-based-waiting-example.ts",
+          "size": 5054,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "condition-based-waiting.md",
+          "size": 3516,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "defense-in-depth.md",
+          "size": 3650,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "find-polluter.sh",
+          "size": 1986,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "root-cause-tracing.md",
+          "size": 5321,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 2383,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 6,
+        "scriptCount": 2,
+        "hasNetwork": false,
+        "hasCredentialPatterns": true
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 29057,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 98,
+                "excerpt": "nment\" # Layer 3: Signing script echo \"=== Keychain state: ===\" security list-keychains security find-identity -v # Layer"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "condition-based-waiting-example.ts",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "find-polluter.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
         "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "5d0f7f59a77f672df1ae836ae89d5b1bd78f768e7ab225df612e7aa30c25f0e0"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -163,7 +1195,426 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/test-driven-development/SKILL.md",
+      "slug": "test-driven-development",
+      "name": "test-driven-development",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "descriptionZh": "用红-绿-重构的循环和聚焦测试驱动实现。",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d",
+        "bundleHash": "d1cfe792f8feb34e23e3f2785f2df4a458acce62eece64e376727be4fd8af3aa",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 17846
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9578,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "writing-good-tests.md",
+          "size": 8268,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2395,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 17846,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "d1cfe792f8feb34e23e3f2785f2df4a458acce62eece64e376727be4fd8af3aa"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests"
+        ],
+        "topics": [
+          "testing",
+          "tdd"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "testing",
+          "code-quality"
+        ],
+        "featuredRank": 4,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/using-git-worktrees/SKILL.md",
+      "slug": "using-git-worktrees",
+      "name": "using-git-worktrees",
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "8cfb86f121269e8f7f12361e6795c4f6738828340e28964c9229d365666c9edd",
+        "bundleHash": "bb9b823d6dad9fea124a08f421b7d89e5fd52dd62f3267b4795e84c4efd0dc9e",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 6813
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6813,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1704,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 6813,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 108,
+                "excerpt": ": ```bash # Node.js if [ -f package.json ]; then npm install; fi # Rust if [ -f Cargo.toml ]; then cargo build; fi # Python if [ -f requir"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "bb9b823d6dad9fea124a08f421b7d89e5fd52dd62f3267b4795e84c4efd0dc9e"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/using-superpowers/SKILL.md",
+      "slug": "using-superpowers",
+      "name": "using-superpowers",
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "82c5c8866ad7f5dd4440ce66bd7806ba48a2f13771beae5cf112e53f08fe36ba",
+        "bundleHash": "acca58527ee44adcd0018fe2be30af26312dcb4d7149157f26fd674812adccd1",
+        "filesFetched": 8,
+        "filesSkipped": 0,
+        "bytesFetched": 20630
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3192,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/antigravity-tools.md",
+          "size": 1495,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/claude-code-tools.md",
+          "size": 1469,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/codex-tools.md",
+          "size": 4762,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/gemini-tools.md",
+          "size": 4598,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/hermes-tools.md",
+          "size": 1964,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/muse-tools.md",
+          "size": 1908,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/pi-tools.md",
+          "size": 1242,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 798,
+        "fileCount": 8,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 8,
+          "filesSkipped": 0,
+          "bytesScanned": 20630,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "acca58527ee44adcd0018fe2be30af26312dcb4d7149157f26fd674812adccd1"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/verification-before-completion/SKILL.md",
+      "slug": "verification-before-completion",
+      "name": "verification-before-completion",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+        "bundleHash": "54172ed2ae9ec3d3994c5996e71045fdaa030e3d1673c14e9f00c6973b90e8f9",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 3646
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3646,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 912,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 3646,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "54172ed2ae9ec3d3994c5996e71045fdaa030e3d1673c14e9f00c6973b90e8f9"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
         "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
       }
     },
@@ -171,45 +1622,61 @@
       "path": "skills/writing-plans/SKILL.md",
       "slug": "writing-plans",
       "name": "writing-plans",
-      "description": "Turn a feature request into a clear, executable implementation plan.",
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
       "descriptionZh": "把功能需求拆成清晰、可执行的实现计划。",
       "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
+        "bundleHash": "3bd86be3d51ea2e3f8a006cd12f89f6535427c666cd884f964b9e79f8531721f",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 10335
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 10335,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 2584,
         "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 10335,
+          "limitations": []
         },
         "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
         "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "3bd86be3d51ea2e3f8a006cd12f89f6535427c666cd884f964b9e79f8531721f"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -239,7 +1706,240 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/writing-skills/SKILL.md",
+      "slug": "writing-skills",
+      "name": "writing-skills",
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "latestCommitAt": "2026-11-03T22:17:07Z",
+        "latestTreeSha": "8fddc972a73e9af7501442df0e638d8e29842b6b"
+      },
+      "snapshot": {
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "syncedAt": "2026-11-15T04:54:55.766Z",
+        "skillMdHash": "8cb3ac68c6d8c4bb46886b998b09af7989643cab8bd0e46ee86dd62e64546bbe",
+        "bundleHash": "588982687fd4410958c26455731d0772bac025c2750ab61cc9b28dc6dc8742e3",
+        "filesFetched": 10,
+        "filesSkipped": 0,
+        "bytesFetched": 109209
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 16738,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/CLAUDE_MD_TESTING.md",
+          "size": 5423,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/anthropic-best-practices.md",
+          "size": 46197,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/bulletproofing.md",
+          "size": 2577,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/discovery.md",
+          "size": 7616,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/flowcharts.md",
+          "size": 1262,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/graphviz-conventions.dot",
+          "size": 5970,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "references/persuasion-principles.md",
+          "size": 5901,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/testing-skills-with-subagents.md",
+          "size": 12557,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "render-graphs.js",
+          "size": 4968,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 4185,
+        "fileCount": 10,
+        "scriptCount": 1,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 10,
+          "filesSkipped": 0,
+          "bytesScanned": 109209,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "references/persuasion-principles.md",
+                "line": 12,
+                "excerpt": "Authority **What it is:** Deference to expertise, credentials, or official sources. **How it works in skills:** - Imperative language: \"YOU"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "references/anthropic-best-practices.md",
+                "line": 1082,
+                "excerpt": "about dependencies**: \"Install required package: `pip install pypdf` Then use it: ```python from pypdf import PdfReader reader = PdfReader(\""
+              },
+              {
+                "file": "render-graphs.js",
+                "line": 116,
+                "excerpt": "not found. Install with:'); console.error(' brew install graphviz # macOS'); console.error(' apt install graphviz # Linux');"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "PROMPT_INJECTION_PATTERN",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 299,
+                "excerpt": "ingle-shot subagent if you don't have API access. System prompt = the realistic context the guidance will live in (the full skill or prompt tem"
+              },
+              {
+                "file": "references/anthropic-best-practices.md",
+                "line": 15,
+                "excerpt": "else your agent needs to know, including: * The system prompt * Conversation history * Other Skills' metadata * Your actual request Not ever"
+              },
+              {
+                "file": "references/discovery.md",
+                "line": 92,
+                "excerpt": "he trigger - Write in third person (injected into system prompt) - **NEVER summarize the skill's process or workflow** ```yaml # ❌ BAD: Too ab"
+              }
+            ],
+            "note": "Contains prompt-injection style instructions."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 358,
+                "excerpt": "`description` fields (max 1024 chars; see [spec](https://agentskills.io/specification)) - [ ] Description starts with \"Use when...\" and i"
+              },
+              {
+                "file": "references/anthropic-best-practices.md",
+                "line": 7,
+                "excerpt": "und on how Skills work, see the [Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview). ## Core pr"
+              },
+              {
+                "file": "references/discovery.md",
+                "line": 9,
+                "excerpt": "`description` (see [agentskills.io/specification](https://agentskills.io/specification) for all supported fields) - Max 1024 characters to"
+              },
+              {
+                "file": "references/persuasion-principles.md",
+                "line": 173,
+                "excerpt": "Jerk: Persuading AI to Comply with Objectionable Requests. University of Pennsylvania. - Tested 7 principles with N=28,000 LLM conversatio"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "render-graphs.js",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:55.766Z",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "588982687fd4410958c26455731d0772bac025c2750ab61cc9b28dc6dc8742e3"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:09.486Z",
+        "lastSyncedAt": "2026-11-15T04:54:55.766Z",
         "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
       }
     }

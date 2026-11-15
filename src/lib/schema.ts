@@ -34,7 +34,7 @@ export const PublishStatusSchema = z.enum([
 
 export const RiskFlagSchema = z.object({
   code: z.string().min(1),
-  severity: z.enum(["info", "warn", "high", "critical"]),
+  severity: z.enum(["info", "low", "medium", "warn", "high", "critical"]),
   evidence: z
     .array(
       z.object({
@@ -112,6 +112,28 @@ export const FrontmatterSchema = z.object({
   allowedTools: z.string().optional(),
 });
 
+export const UpstreamSchema = z.object({
+  latestCommit: z.string().min(7),
+  latestCommitAt: z.string().min(1),
+  latestTreeSha: z.string().min(1),
+});
+
+export const SnapshotSchema = z.object({
+  commit: z.string().min(7),
+  syncedAt: z.string().min(1),
+  skillMdHash: z.string().min(1),
+  bundleHash: z.string().min(1),
+  filesFetched: z.number().int().nonnegative(),
+  filesSkipped: z.number().int().nonnegative(),
+  bytesFetched: z.number().int().nonnegative(),
+});
+
+export const SkillLicenseSchema = z.object({
+  spdx: z.string().nullable(),
+  status: LicenseStatusSchema,
+  source: z.enum(["repo", "frontmatter", "none", "conflict", "author"]),
+});
+
 export const ReviewSchema = z.object({
   status: ReviewStatusSchema,
   reviewed: z
@@ -161,6 +183,9 @@ export const SkillSeedSchema = z.object({
   description: z.string().min(1),
   descriptionZh: z.string().optional(),
   frontmatter: FrontmatterSchema.default({}),
+  license: SkillLicenseSchema.optional(),
+  upstream: UpstreamSchema.optional(),
+  snapshot: SnapshotSchema.optional(),
   files: z.array(FileEntrySchema).default([]),
   metrics: MetricsSchema,
   scan: ScanResultSchema,
@@ -179,6 +204,9 @@ export const RepoFileSchema = z.object({
 export type RepoFile = z.infer<typeof RepoFileSchema>;
 export type SkillSeed = z.infer<typeof SkillSeedSchema>;
 export type RepoSchemaType = z.infer<typeof RepoSchema>;
+export type LicenseStatus = z.infer<typeof LicenseStatusSchema>;
+export type RiskFlag = z.infer<typeof RiskFlagSchema>;
+export type ScanResult = z.infer<typeof ScanResultSchema>;
 
 export interface InstallInfo {
   reviewedCommand?: string;
@@ -207,10 +235,17 @@ export interface SnapshotInfo {
   bytesFetched: number;
 }
 
+export interface UpstreamInfo {
+  latestCommit: string;
+  latestCommitAt: string;
+  latestTreeSha: string;
+}
+
 export type SkillRecord = SkillSeed & {
   id: string;
   publicId: string;
   source: RepoSchemaType;
+  upstream: UpstreamInfo;
   snapshot: SnapshotInfo;
   install: InstallInfo;
   catalog: CatalogInfo;

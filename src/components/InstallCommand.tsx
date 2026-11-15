@@ -74,7 +74,7 @@ export default function InstallCommand({
         <p className="text-[11px] leading-5 text-muted">
           {tab === "reviewed"
             ? "固定到最近一次人工复核的 commit。"
-            : "固定到仓库当前 HEAD；Phase 1 样例没有人工复核版本。"}
+            : "固定到本次同步的 commit；当前没有人工复核版本。"}
         </p>
         <pre className="mono mt-3 overflow-x-auto rounded-md border border-line bg-canvas px-3 py-3 text-[11px] leading-5 text-ink">
           <code>{command}</code>

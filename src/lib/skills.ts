@@ -9,8 +9,6 @@ import {
 } from "./schema";
 
 const DATA_ROOT = path.join(process.cwd(), "data", "repos");
-const SAMPLE_REVIEW_NOTE =
-  "Phase 1 sample data: file contents were not scanned and no human review was recorded.";
 
 const AGENT_DIRS: Record<string, { project: string; global: string }> = {
   opencode: { project: ".agents/skills/", global: "~/.config/opencode/skills/" },
@@ -51,33 +49,52 @@ function loadRepoFiles(): RepoFile[] {
 
 function deriveSkill(repoFile: RepoFile, skill: SkillSeed): SkillRecord {
   const { repo } = repoFile;
-  const bundleHash = sampleHash(repo.fullName, repo.headCommit, skill.path, "bundle");
-  const skillMdHash = sampleHash(repo.fullName, repo.headCommit, skill.path, "skill-md");
+  const commit = skill.snapshot?.commit ?? repo.headCommit;
+  const bundleHash =
+    skill.snapshot?.bundleHash ?? sampleHash(repo.fullName, commit, skill.path, "bundle");
+  const skillMdHash =
+    skill.snapshot?.skillMdHash ?? sampleHash(repo.fullName, commit, skill.path, "skill-md");
   const size = skill.files.reduce((sum, file) => sum + file.size, 0);
-  const pinned = `${repo.fullName}@${repo.headCommit}`;
+  const pinned = `${repo.fullName}@${commit}`;
   const base = `npx skills add ${pinned} --skill "${skill.name}"`;
-  const use = `npx skills use ${pinned} --skill "${skill.name}"`;
+  const reviewedCommit = skill.review.reviewed?.commit;
+  const useCommit = reviewedCommit ?? commit;
+  const use = `npx skills use ${repo.fullName}@${useCommit} --skill "${skill.name}"`;
+  const source = {
+    ...repo,
+    licenseSpdx: skill.license?.spdx ?? repo.licenseSpdx,
+    licenseStatus: skill.license?.status ?? repo.licenseStatus,
+    licenseSource: skill.license?.source ?? "repo",
+  };
 
   return {
     ...skill,
     id: `github:${repo.id}:${skill.path}`,
     publicId: `${repo.owner}/${repo.repo}/${skill.slug}`,
-    source: repo,
+    source,
+    upstream: skill.upstream ?? {
+      latestCommit: repo.headCommit,
+      latestCommitAt: repo.pushedAt,
+      latestTreeSha: "",
+    },
     snapshot: {
-      commit: repo.headCommit,
-      syncedAt: skill.timestamps.lastSyncedAt,
+      commit,
+      syncedAt: skill.snapshot?.syncedAt ?? skill.timestamps.lastSyncedAt,
       skillMdHash,
       bundleHash,
-      filesFetched: skill.files.length,
-      filesSkipped: 0,
-      bytesFetched: size,
+      filesFetched: skill.snapshot?.filesFetched ?? skill.files.length,
+      filesSkipped: skill.snapshot?.filesSkipped ?? 0,
+      bytesFetched: skill.snapshot?.bytesFetched ?? size,
     },
     install: {
+      reviewedCommand: reviewedCommit
+        ? `npx skills add ${repo.fullName}@${reviewedCommit} --skill "${skill.name}" -a opencode`
+        : undefined,
       latestCommand: `${base} -a opencode`,
       useCommand: use,
       targetDirs: AGENT_DIRS,
       notes: [
-        "Phase 1 样例：命令固定到 commit，但还没有已复核版本。",
+        "命令固定到同步时的 commit。",
         "临时使用不是沙箱；agent 仍拥有正常的文件、网络和命令权限。",
       ],
     },
@@ -134,7 +151,8 @@ export function getStats() {
     draft: skills.filter((skill) => skill.status === "draft").length,
     reviewed: skills.filter((skill) => skill.review.status === "human-approved").length,
     scanned: skills.filter((skill) => skill.scan.status !== "not-scanned").length,
+    complete: skills.filter((skill) => skill.scan.status === "complete").length,
+    partial: skills.filter((skill) => skill.scan.status === "partial").length,
+    flagged: skills.filter((skill) => skill.scan.flags.length > 0).length,
   };
 }
-
-export { SAMPLE_REVIEW_NOTE };

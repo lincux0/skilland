@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-11-15T04:54:37.728Z",
+  "repos": [
+    {
+      "fullName": "anthropics/skills",
+      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "mode": "tarball",
+      "tarballBytes": 4146531,
+      "skills": 19,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "vercel-labs/agent-skills",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "mode": "tarball",
+      "tarballBytes": 827024,
+      "skills": 9,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "vercel-labs/skills",
+      "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+      "mode": "tarball",
+      "tarballBytes": 442942,
+      "skills": 1,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "obra/superpowers",
+      "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "mode": "tarball",
+      "tarballBytes": 542860,
+      "skills": 15,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "supabase/agent-skills",
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "mode": "tarball",
+      "tarballBytes": 114155,
+      "skills": 2,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "remotion-dev/skills",
+      "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+      "mode": "tarball",
+      "tarballBytes": 757689,
+      "skills": 13,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "prisma/skills",
+      "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+      "mode": "tarball",
+      "tarballBytes": 103484,
+      "skills": 11,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "shadcn-ui/ui",
+      "commit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+      "mode": "api",
+      "tarballBytes": 0,
+      "skills": 2,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "vercel-labs/agent-browser",
+      "commit": "e1723082258b6ff7f8ee9ba1e681ea872d128e43",
+      "mode": "tarball",
+      "tarballBytes": 2872240,
+      "skills": 1,
+      "treeTruncated": false
+    },
+    {
+      "fullName": "mattpocock/skills",
+      "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "mode": "tarball",
+      "tarballBytes": 278593,
+      "skills": 39,
+      "treeTruncated": false
+    }
+  ],
+  "errors": [],
+  "totals": {
+    "repos": 10,
+    "skills": 112,
+    "complete": 103,
+    "partial": 9,
+    "criticalFlags": 0
+  }
+}

@@ -5,7 +5,7 @@
     "repo": "skills",
     "fullName": "vercel-labs/skills",
     "url": "https://github.com/vercel-labs/skills",
-    "stars": 39384,
+    "stars": 39390,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -18,45 +18,74 @@
       "path": "skills/find-skills/SKILL.md",
       "slug": "find-skills",
       "name": "find-skills",
-      "description": "Search the open Agent Skills ecosystem from the command line and install a matching skill.",
+      "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
       "descriptionZh": "从命令行搜索开放 Agent Skills 生态并安装匹配的 skill。",
       "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+        "latestCommitAt": "2026-11-12T23:25:22Z",
+        "latestTreeSha": "0bda06b437e9958e9f49b76835643b06c5e91879"
+      },
+      "snapshot": {
+        "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+        "syncedAt": "2026-11-15T04:54:52.187Z",
+        "skillMdHash": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+        "bundleHash": "135a7616b6704a25d129d5b6e095b83dc1c591dd3cbb5ebcfd343d45fecc947c",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 5472
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 5472,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 1368,
         "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 5472,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 31,
+                "excerpt": "pdate all installed skills **Browse skills at:** https://skills.sh/ ## How to Help Users Find Skills ### Step 1: Understand What They N"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:52.187Z",
         "scannedCommit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "135a7616b6704a25d129d5b6e095b83dc1c591dd3cbb5ebcfd343d45fecc947c"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -85,7 +114,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:52.187Z",
         "upstreamUpdatedAt": "2026-11-12T23:25:25Z"
       }
     }

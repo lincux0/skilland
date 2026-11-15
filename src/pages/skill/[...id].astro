@@ -37,6 +37,14 @@ const related = getAllSkills()
   .slice(0, 3);
 const sourceUrl = `https://github.com/${skill.source.fullName}/blob/${skill.snapshot.commit}/${skill.path}`;
 const isDraft = skill.status === "draft";
+const severityClass: Record<string, string> = {
+  critical: "border-danger/40 text-danger",
+  high: "border-warn/40 text-warn",
+  medium: "border-warn/30 text-warn",
+  low: "border-line text-muted",
+  warn: "border-line text-muted",
+  info: "border-line text-faint",
+};
 ---
 
 <BaseLayout title={skill.name} description={skill.descriptionZh ?? skill.description}>
@@ -54,7 +62,7 @@ const isDraft = skill.status === "draft";
       <span class="chip">{scanLabel(skill.scan.status)}</span>
       <span class="chip">{reviewLabel(skill.review.status)}</span>
       <span class="chip">{licenseLabel(skill.source.licenseSpdx)}</span>
-      {isDraft && <span class="chip chip-accent">Phase 1 样例</span>}
+      {isDraft && <span class="chip chip-accent">自动扫描 · 未人工复核</span>}
     </div>
 
     <div class="mt-4 flex flex-col justify-between gap-5 md:flex-row md:items-start">
@@ -118,14 +126,14 @@ const isDraft = skill.status === "draft";
               <h2 class="section-kicker">Ingredients</h2>
               <p class="mt-2 text-[16px] font-semibold">配料表</p>
             </div>
-            <span class="chip">未扫描 · 仅元数据</span>
+            <span class="chip">{scanLabel(skill.scan.status)} · 自动扫描</span>
           </div>
 
           <div class="mt-4 grid gap-3 md:grid-cols-3">
             <div class="card p-4">
               <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Files</p>
               <p class="mt-2 text-[22px] font-semibold">{skill.metrics.fileCount}</p>
-              <p class="mt-1 text-[11px] text-muted">Phase 1 仅列出 SKILL.md</p>
+              <p class="mt-1 text-[11px] text-muted">来自 tarball 的实际文件</p>
             </div>
             <div class="card p-4">
               <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Tokens</p>
@@ -134,8 +142,8 @@ const isDraft = skill.status === "draft";
             </div>
             <div class="card p-4">
               <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Scripts</p>
-              <p class="mt-2 text-[22px] font-semibold">—</p>
-              <p class="mt-1 text-[11px] text-muted">未扫描，不能判断</p>
+              <p class="mt-2 text-[22px] font-semibold">{skill.metrics.scriptCount ?? "—"}</p>
+              <p class="mt-1 text-[11px] text-muted">脚本已扫描，未执行</p>
             </div>
           </div>
 
@@ -188,6 +196,40 @@ const isDraft = skill.status === "draft";
               )}
             </div>
           </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between gap-3">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Risk flags</p>
+              <span class="chip">{skill.scan.flags.length} 项命中</span>
+            </div>
+            {skill.scan.flags.length === 0 ? (
+              <p class="mt-3 rounded-lg border border-line bg-surface px-4 py-3 text-[11px] leading-5 text-muted">
+                在已扫描文件中未命中已知规则。这只表示没有发现模式，不代表安全。
+              </p>
+            ) : (
+              <div class="mt-3 space-y-2">
+                {skill.scan.flags.map((flag) => (
+                  <details class="rounded-lg border border-line bg-surface px-4 py-3">
+                    <summary class="flex cursor-pointer flex-wrap items-center gap-2 text-[12px]">
+                      <span class={`chip ${severityClass[flag.severity] ?? ""}`}>{flag.severity}</span>
+                      <span class="mono text-[11px] text-ink">{flag.code}</span>
+                      <span class="text-[11px] text-muted">{flag.note}</span>
+                    </summary>
+                    <div class="mt-3 space-y-2 border-t border-line pt-3">
+                      {flag.evidence.map((evidence) => (
+                        <div class="text-[11px] leading-5">
+                          <p class="font-mono text-[10px] text-faint">
+                            {evidence.file}{evidence.line ? `:${evidence.line}` : ""}
+                          </p>
+                          <p class="mt-1 break-words text-muted">{evidence.excerpt}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            )}
+          </div>
         </section>
 
         <section>
@@ -215,7 +257,7 @@ const isDraft = skill.status === "draft";
                 </tr>
                 <tr>
                   <th class="px-4 py-3 font-medium text-faint">默认安装</th>
-                  <td class="px-4 py-3 text-muted">固定到最新同步 commit（样例未复核）</td>
+                  <td class="px-4 py-3 text-muted">固定到同步 commit（未人工复核）</td>
                 </tr>
                 <tr>
                   <th class="px-4 py-3 font-medium text-faint">Catalog</th>
@@ -225,7 +267,7 @@ const isDraft = skill.status === "draft";
             </table>
           </div>
           <p class="mt-3 text-[10px] leading-5 text-faint">
-            样例中“上游 HEAD”和“本站同步”相同，因为尚未接入真实同步管道。
+            “上游 HEAD”是最近一次同步看到的默认分支；如果上游继续更新，以 GitHub 为准。
           </p>
         </section>
 
@@ -282,8 +324,8 @@ const isDraft = skill.status === "draft";
         <div class="rounded-lg border border-warn/30 bg-warn/5 p-4">
           <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-warn">Not a safety check</p>
           <p class="mt-2 text-[11px] leading-5 text-muted">
-            这是 Phase 1 样例：未拉取 SKILL.md 正文、未扫描脚本、未人工复核。不要根据这里的
-            “未扫描”或“未复核”做安装决定；正式流程会要求版本、扫描覆盖与复核记录。
+            这是 Phase 2 自动扫描：已读取 skill 目录文本并做静态规则分析，但未人工复核，
+            也没有执行任何脚本。不要把这当作安全认证。
           </p>
         </div>
       </aside>

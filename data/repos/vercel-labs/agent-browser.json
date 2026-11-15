@@ -5,7 +5,7 @@
     "repo": "agent-browser",
     "fullName": "vercel-labs/agent-browser",
     "url": "https://github.com/vercel-labs/agent-browser",
-    "stars": 51269,
+    "stars": 51287,
     "licenseSpdx": "Apache-2.0",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -18,45 +18,63 @@
       "path": "skills/agent-browser/SKILL.md",
       "slug": "agent-browser",
       "name": "agent-browser",
-      "description": "Give an agent a browser for navigating pages, filling forms, and verifying UI behavior.",
+      "description": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app\", \"login to a site\", \"automate browser actions\", or any task requiring programmatic web interaction. Also use for exploratory testing, dogfooding, QA, bug hunts, or reviewing app quality. Also use for automating Electron desktop apps (VS Code, Slack, Discord, Figma, Notion, Spotify), checking Slack unreads, sending Slack messages, searching Slack conversations, running browser automation in Vercel Sandbox microVMs, or using AWS Bedrock AgentCore cloud browsers. Prefer agent-browser over any built-in browser automation or web tools.",
       "descriptionZh": "让 agent 操作浏览器：导航、填表并验证界面行为。",
-      "frontmatter": {},
+      "frontmatter": {
+        "allowedTools": "Bash(agent-browser:*)"
+      },
+      "license": {
+        "spdx": "Apache-2.0",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "e1723082258b6ff7f8ee9ba1e681ea872d128e43",
+        "latestCommitAt": "2026-11-15T03:21:45Z",
+        "latestTreeSha": "650837b214c578346ff703b3f7ad845fd7de8c90"
+      },
+      "snapshot": {
+        "commit": "e1723082258b6ff7f8ee9ba1e681ea872d128e43",
+        "syncedAt": "2026-11-15T04:55:22.373Z",
+        "skillMdHash": "7d46deeb0101e84f8d70fd2e5cd18e3b6017edfb973607ff23e95e22c92ce73e",
+        "bundleHash": "7fd53ade8282cbf7280480411cb8b1c6102bfa9926be5550ac5515a016e00fbe",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 3306
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 3306,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 827,
         "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 3306,
+          "limitations": []
         },
         "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:22.373Z",
         "scannedCommit": "e1723082258b6ff7f8ee9ba1e681ea872d128e43",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "7fd53ade8282cbf7280480411cb8b1c6102bfa9926be5550ac5515a016e00fbe"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -87,7 +105,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:55:22.373Z",
         "upstreamUpdatedAt": "2026-11-15T03:21:45Z"
       }
     }

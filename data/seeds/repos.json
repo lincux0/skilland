@@ -1,0 +1,72 @@
+[
+  {
+    "owner": "anthropics",
+    "repo": "skills",
+    "official": true,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "vercel-labs",
+    "repo": "agent-skills",
+    "official": true,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "vercel-labs",
+    "repo": "skills",
+    "official": true,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "obra",
+    "repo": "superpowers",
+    "official": false,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "supabase",
+    "repo": "agent-skills",
+    "official": true,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "remotion-dev",
+    "repo": "skills",
+    "official": true,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "prisma",
+    "repo": "skills",
+    "official": true,
+    "mode": "tarball",
+    "includeRoot": true
+  },
+  {
+    "owner": "shadcn-ui",
+    "repo": "ui",
+    "official": true,
+    "mode": "api",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "vercel-labs",
+    "repo": "agent-browser",
+    "official": true,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  },
+  {
+    "owner": "mattpocock",
+    "repo": "skills",
+    "official": false,
+    "mode": "tarball",
+    "includePrefix": "skills/"
+  }
+]

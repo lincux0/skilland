@@ -13,11 +13,11 @@ const filterLabels = {
 
 <BaseLayout
   title="全部 Skills"
-  description="浏览 Skill Shelf 的全部样例；当前为 Phase 1 客户端过滤，不是全文搜索。"
+  description="浏览 Skill Shelf 的全部条目；当前为 Phase 2 客户端过滤，不是全文搜索。"
 >
   <div class="container-page py-12 md:py-16">
     <div class="flex flex-wrap items-center gap-2">
-      <span class="chip chip-accent">Phase 1 · 20 个样例</span>
+      <span class="chip chip-accent">Phase 2 · {skills.length} 个真实条目</span>
       <span class="chip">客户端过滤 · 非 Pagefind</span>
     </div>
 
@@ -68,8 +68,8 @@ const filterLabels = {
 
     <div class="mt-12 border-t border-line pt-6">
       <p class="max-w-3xl text-[11px] leading-6 text-faint">
-        说明：样例的检查状态是“未扫描 / 未复核”。这里的搜索仅匹配名称、描述和标签，不读取
-        SKILL.md 正文，也不代表任何安全结论。
+        说明：条目已完成静态扫描，但未人工复核；“未发现模式”不代表安全。这里的搜索仅匹配名称、
+        描述和标签，不读取 SKILL.md 正文，也不代表任何安全结论。
       </p>
     </div>
   </div>

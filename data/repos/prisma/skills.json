@@ -15,48 +15,392 @@
   },
   "skills": [
     {
+      "path": "prisma-cli/SKILL.md",
+      "slug": "prisma-cli",
+      "name": "prisma-cli",
+      "description": "Prisma ORM 7 CLI reference for existing Prisma 7 applications or explicitly selected Prisma 7 workflows. Covers prisma init, generate, migrate, db, dev, studio, and mcp. For setup, connection repair, or Prisma 8, use prisma-orm-setup; not the Prisma Platform CLI.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "7.9.1"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "e20d1a307dd836ede8c3ac5f8cdd4f91d77cc6f09ee9b0621bd2efde295ae229",
+        "bundleHash": "f04345d9d2a4a014410dc6d5e1806f93b416b6da39f6997362cdd6aa22c72e48",
+        "filesFetched": 21,
+        "filesSkipped": 0,
+        "bytesFetched": 50075
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 7508,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/agent-safety.md",
+          "size": 1084,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/complete.md",
+          "size": 652,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/db-execute.md",
+          "size": 1836,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/db-pull.md",
+          "size": 3574,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/db-push.md",
+          "size": 2990,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/db-seed.md",
+          "size": 3323,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/debug.md",
+          "size": 1062,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/dev.md",
+          "size": 2662,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/format.md",
+          "size": 1061,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/generate.md",
+          "size": 3508,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/init.md",
+          "size": 3245,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/mcp.md",
+          "size": 1236,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/migrate-deploy.md",
+          "size": 2636,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/migrate-dev.md",
+          "size": 3136,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/migrate-diff.md",
+          "size": 2088,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/migrate-reset.md",
+          "size": 1732,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/migrate-resolve.md",
+          "size": 1671,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/migrate-status.md",
+          "size": 1520,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/studio.md",
+          "size": 2668,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/validate.md",
+          "size": 883,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1877,
+        "fileCount": 21,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 21,
+          "filesSkipped": 0,
+          "bytesScanned": 50075,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "references/init.md",
+                "line": 23,
+                "excerpt": "g.ts` - TypeScript configuration for Prisma CLI - `.env` - Environment variables (DATABASE_URL) - `.gitignore` - Ensures `.env` is igno"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "references/agent-safety.md",
+                "line": 27,
+                "excerpt": "sent. ## Reference - [Prisma ORM 7.9.0 release](https://github.com/prisma/prisma/releases/tag/7.9.0)"
+              },
+              {
+                "file": "references/complete.md",
+                "line": 22,
+                "excerpt": "n x`. ## Reference - [Prisma ORM 7.9.0 release](https://github.com/prisma/prisma/releases/tag/7.9.0)"
+              },
+              {
+                "file": "references/mcp.md",
+                "line": 38,
+                "excerpt": "ent. ## References - [Prisma CLI `mcp` command](https://docs.prisma.io/docs/cli/mcp) - [Prisma MCP Server](https://www.prisma.io/docs/ai"
+              },
+              {
+                "file": "references/migrate-resolve.md",
+                "line": 56,
+                "excerpt": "se changes (rare). ## References - [Baselining](https://www.prisma.io/docs/guides/database/developing-with-prisma-migrate/baselining) -"
+              },
+              {
+                "file": "references/studio.md",
+                "line": 36,
+                "excerpt": "Open Studio ```bash prisma studio ``` Opens at http://localhost:5555 ### Custom port ```bash prisma studio --port 3000 ``` ### Spec"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "f04345d9d2a4a014410dc6d5e1806f93b416b6da39f6997362cdd6aa22c72e48"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "database",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
       "path": "prisma-client-api/SKILL.md",
       "slug": "prisma-client-api",
       "name": "prisma-client-api",
-      "description": "Use the Prisma Client API correctly for queries, relations, and transactions.",
+      "description": "Prisma Client API reference covering model queries, filters, operators, and client methods. Use when writing database queries, using CRUD operations, filtering data, or configuring Prisma Client. Triggers on \"prisma query\", \"findMany\", \"create\", \"update\", \"delete\", \"$transaction\".",
       "descriptionZh": "正确使用 Prisma Client API 处理查询、关联和事务。",
-      "frontmatter": {},
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "7.9.1"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "d033821313dc64b2b7dee120c6904b7d4457813e3b9c82d9584f7dee74baabe4",
+        "bundleHash": "d13644c7beeca144d808830bd4c2019fa6a9dc2de635c4096d2a16665041fab1",
+        "filesFetched": 9,
+        "filesSkipped": 0,
+        "bytesFetched": 40178
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 6346,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "references/client-methods.md",
+          "size": 4027,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/constructor.md",
+          "size": 4909,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/filters.md",
+          "size": 3458,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/model-queries.md",
+          "size": 4770,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/query-options.md",
+          "size": 4047,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/raw-queries.md",
+          "size": 4362,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/relations.md",
+          "size": 4435,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/transactions.md",
+          "size": 3824,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 1587,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 9,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 9,
+          "filesSkipped": 0,
+          "bytesScanned": 40178,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 210,
+                "excerpt": "| ## Resources - [Prisma Client API Reference](https://www.prisma.io/docs/orm/reference/prisma-client-reference) - [CRUD Operations](ht"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
         "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "d13644c7beeca144d808830bd4c2019fa6a9dc2de635c4096d2a16665041fab1"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -85,7 +429,260 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-compute/SKILL.md",
+      "slug": "prisma-compute",
+      "name": "prisma-compute",
+      "description": "Deploy and operate apps on Prisma Compute with the Prisma 8 CLI. Use whenever the user mentions Prisma Compute, deploying or hosting a Prisma app, `prisma deploy`, `prisma dev module.ts`, Prisma Composer apps (`module.ts`, `compute()`, the `composer` section of `prisma.config.ts`), preview stages, deploy on push (`prisma git connect`, `prisma/cloud-deploy-action`), `prisma service` logs, versions, rollback, or custom domains, `project env`, `PRISMA_SERVICE_TOKEN`, regions, 504s, sleeping instances, or `waitUntil`; also when a project still uses the removed `@prisma/cli app deploy`, `prisma.compute.ts`, `defineComputeConfig`, `compute:deploy`, or `build logs` surface.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "2.1.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "c22850acd10955df858784189f02f8c41e90853d7c89c05aa2c9aecc8f38dffb",
+        "bundleHash": "6be4aba8f6be5df360673e1f9a4678e56625a0b04329d69a34619dda11afd5bd",
+        "filesFetched": 12,
+        "filesSkipped": 0,
+        "bytesFetched": 88850
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 17409,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/app-composer-setup.md",
+          "size": 8273,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/app-framework-builds.md",
+          "size": 5002,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/automation-create-prisma.md",
+          "size": 4126,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/automation-rest-api.md",
+          "size": 5651,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/cli-command-map.md",
+          "size": 8222,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/debug-deploy-failures.md",
+          "size": 9507,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/deploy-cli-and-ci.md",
+          "size": 7004,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/deploy-existing-app.md",
+          "size": 7267,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/deploy-on-push.md",
+          "size": 4699,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/ops-services-and-config.md",
+          "size": 6743,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/runtime-requirements.md",
+          "size": 4947,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 4353,
+        "fileCount": 12,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 12,
+          "filesSkipped": 0,
+          "bytesScanned": 88850,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 103,
+                "excerpt": "dev module.ts` runs the whole app locally with no credentials. Verify each local URL before deploying. - `deploy-production-intent` - A deplo"
+              },
+              {
+                "file": "references/cli-command-map.md",
+                "line": 39,
+                "excerpt": "` | `--name`, `--fresh` | Composer app, local, no credentials | | `init` | `--skills <agents>`, `--postinstall/--no-postinstall` | Local only"
+              },
+              {
+                "file": "references/debug-deploy-failures.md",
+                "line": 21,
+                "excerpt": "module.ts prisma.config.ts node --version test -f .env && sed 's/=.*/=<redacted>/' .env ``` Re-run the failing command with `--json`"
+              },
+              {
+                "file": "references/deploy-cli-and-ci.md",
+                "line": 22,
+                "excerpt": "| |-------------|-----| | Run the app locally, no credentials | `npm run build && npx prisma dev module.ts` | | Deploy a preview | `npm run b"
+              },
+              {
+                "file": "references/ops-services-and-config.md",
+                "line": 78,
+                "excerpt": "hell environment npx prisma project env add --file .env.preview --role preview npx prisma project env add API_BASE_URL=https://staging."
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 136,
+                "excerpt": "ease, which may not work with them: ```bash npm install @prisma/composer @prisma/composer-prisma-cloud npm install -D prisma npx"
+              },
+              {
+                "file": "references/app-composer-setup.md",
+                "line": 20,
+                "excerpt": "e entry a service needs. - The packages: ```bash npm install @prisma/composer @prisma/composer-prisma-cloud npm install -D prisma npx prisma"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 129,
+                "excerpt": "ents/{deploymentId}/logs`, and `/v1/builds` from `https://api.prisma.io/v1/doc`. Do not build new deploy tooling on `@prisma/compute-sdk`."
+              },
+              {
+                "file": "references/app-composer-setup.md",
+                "line": 11,
+                "excerpt": "oser-core-concepts` skill and the [Composer docs](https://www.prisma.io/docs/composer). ## Requirements - Node.js 22.18 or newer on the"
+              },
+              {
+                "file": "references/app-framework-builds.md",
+                "line": 74,
+                "excerpt": "r.mjs\"`. ## References - [Port an existing app](https://www.prisma.io/docs/composer/porting-an-app) - [Framework guides](https://www.pri"
+              },
+              {
+                "file": "references/automation-create-prisma.md",
+                "line": 88,
+                "excerpt": "review`. ## References - [create-prisma on npm](https://www.npmjs.com/package/create-prisma) - [Deploy your first app](https://www.prism"
+              },
+              {
+                "file": "references/automation-rest-api.md",
+                "line": 20,
+                "excerpt": "edential and approval policy | [Agent enrollment](https://www.prisma.io/docs/prisma-compute/agent-enrollment) (REST API) | ## REST API B"
+              },
+              {
+                "file": "references/cli-command-map.md",
+                "line": 135,
+                "excerpt": "api --json ``` ## References - [CLI reference](https://www.prisma.io/docs/cli) - [Global flags](https://www.prisma.io/docs/cli/global-f"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "6be4aba8f6be5df360673e1f9a4678e56625a0b04329d69a34619dda11afd5bd"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely"
+        ],
+        "topics": [
+          "design",
+          "database",
+          "code-review",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
         "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
       }
     },
@@ -93,45 +690,80 @@
       "path": "prisma-database-setup/SKILL.md",
       "slug": "prisma-database-setup",
       "name": "prisma-database-setup",
-      "description": "Set up a Prisma project with the right database connection and schema.",
+      "description": "Deprecated compatibility name for prisma-orm-setup. Use only when a user or existing integration explicitly invokes prisma-database-setup; otherwise select prisma-orm-setup.",
       "descriptionZh": "配置 Prisma 项目的数据库连接与 schema。",
-      "frontmatter": {},
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "8.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "f1f95a5f596ad4260649a20e56cf77f1d24222b56ba6f7b12b24ec6e5ac39477",
+        "bundleHash": "db4441a3adcf7e632ee20b770c2ab247d4ea4b650bbad9e211c350bb427540f4",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 704
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 704,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 176,
         "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 704,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 12,
+                "excerpt": ". If unavailable, install it from [prisma/skills](https://github.com/prisma/skills/tree/main/prisma-orm-setup) before continuing. It cover"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
         "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "db4441a3adcf7e632ee20b770c2ab247d4ea4b650bbad9e211c350bb427540f4"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -162,7 +794,1180 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-driver-adapter-implementation/SKILL.md",
+      "slug": "prisma-driver-adapter-implementation",
+      "name": "prisma-driver-adapter-implementation",
+      "description": "Required reference for Prisma ORM 7 SQL driver adapter work. Use when implementing or modifying adapters, adding database drivers, or touching SqlDriverAdapter, Transaction, savepoint, result mapping, or DriverAdapterError behavior. Covers current transaction lifecycle, optional savepoint hooks, original database-error preservation, and verification.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "7.9.1"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "cb8f4127acb259a1827140ee6201ed46f872021254902a86d5fadcd6d2b8a409",
+        "bundleHash": "412b59158932dcfd9349fdd51d6c3c617d7a2219494de560e05ecea1bbc53643",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 11399
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 11399,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2850,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 11399,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 268,
+                "excerpt": "Source references - [Driver adapter interfaces](https://github.com/prisma/prisma/blob/v7/packages/driver-adapter-utils/src/types.ts) - ["
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "412b59158932dcfd9349fdd51d6c3c617d7a2219494de560e05ecea1bbc53643"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "database",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-mongodb-upgrade/SKILL.md",
+      "slug": "prisma-mongodb-upgrade",
+      "name": "prisma-mongodb-upgrade",
+      "description": "Decision and migration guide for Prisma ORM MongoDB projects on v6, which have no upgrade path to v7. Use when a MongoDB project asks about upgrading Prisma, when \"upgrade to prisma 7\" comes up in a project with provider = \"mongodb\", or when evaluating a move to Prisma 8. Triggers on \"upgrade prisma mongodb\", \"prisma 7 mongodb\", \"mongodb prisma migration\", \"prisma 8 mongodb\".",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "0.2.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "6f4b25ef8c7a703447d8388edc87889d45ca9aba8a0d0e87c7f81f71b986ed50",
+        "bundleHash": "2293aa7d37d778ed29eb0f2d3a11e7bb96ea775d1257468ac190061bfdd88b59",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 25426
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5844,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/client-api-mapping.md",
+          "size": 4161,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/decision-stay-or-migrate.md",
+          "size": 4112,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/migrations-mapping.md",
+          "size": 3628,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/schema-contract-mapping.md",
+          "size": 4396,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/verify-cutover-checklist.md",
+          "size": 3285,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1461,
+        "fileCount": 6,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 25426,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 90,
+                "excerpt": "ncy. The `mongodb@7` driver no longer accepts AWS credentials in the connection string. ## Hand-off rule This skill is the **discovery brid"
+              },
+              {
+                "file": "references/verify-cutover-checklist.md",
+                "line": 27,
+                "excerpt": "ver rejects some URLs v6 accepted, such as AWS credentials in the connection string — validate the URL with the driver first. 2. **Server"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 14,
+                "excerpt": "sma 8, where MongoDB support is in [Early Access](https://www.prisma.io/docs/orm/supported-databases) while PostgreSQL is a release candid"
+              },
+              {
+                "file": "references/client-api-mapping.md",
+                "line": 26,
+                "excerpt": "Raw(...)`, `<model>.aggregateRaw(...)` ([v6 docs](https://www.prisma.io/docs/orm/prisma-client/using-raw-sql/raw-queries#findraw)) | `db.r"
+              },
+              {
+                "file": "references/decision-stay-or-migrate.md",
+                "line": 19,
+                "excerpt": "on rests on Prisma 8 side ([supported databases](https://www.prisma.io/docs/orm/supported-databases), [6 to 8 MongoDB guide](https://www."
+              },
+              {
+                "file": "references/migrations-mapping.md",
+                "line": 19,
+                "excerpt": "nternal schemas\" ([no support for Prisma Migrate](https://www.prisma.io/docs/orm/overview/databases/mongodb#no-support-for-prisma-migrate)"
+              },
+              {
+                "file": "references/schema-contract-mapping.md",
+                "line": 30,
+                "excerpt": "ider = \"mongodb\" }` + `url = env(...)` ([v6 docs](https://www.prisma.io/docs/orm/overview/databases/mongodb#example)) | No provider in the"
+              },
+              {
+                "file": "references/verify-cutover-checklist.md",
+                "line": 59,
+                "excerpt": "d`). ## References - [v6 MongoDB documentation](https://www.prisma.io/docs/orm/overview/databases/mongodb) - [Prisma ORM 6 to 8 (MongoDB"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "2293aa7d37d778ed29eb0f2d3a11e7bb96ea775d1257468ac190061bfdd88b59"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "database",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-orm-setup/SKILL.md",
+      "slug": "prisma-orm-setup",
+      "name": "prisma-orm-setup",
+      "description": "Set up Prisma ORM in an application, connect its database, or troubleshoot the connection of an existing Prisma 6, 7, or 8 app. Defaults new applications to Prisma ORM 8 and loads the package-owned prisma-8 skill; keeps existing Prisma 6/7 apps on their version with provider references for PostgreSQL, MySQL, SQLite, SQL Server, CockroachDB, MongoDB, and Prisma Postgres.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "1.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "26f935e748f4e16ad5900d75b30a7ef4ad395169a0add7c332fbb6d7df8eb769",
+        "bundleHash": "7f09c4ad391a3844a1e407178486f649b7a76e6ecb8fa7157d3d28bac59b7dd2",
+        "filesFetched": 9,
+        "filesSkipped": 0,
+        "bytesFetched": 26255
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6948,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/v6-mongodb.md",
+          "size": 2770,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/v7-client-setup.md",
+          "size": 1632,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/v7-cockroachdb.md",
+          "size": 2181,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/v7-mysql.md",
+          "size": 3581,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/v7-postgresql.md",
+          "size": 2182,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/v7-prisma-postgres.md",
+          "size": 1564,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/v7-sqlite.md",
+          "size": 2654,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/v7-sqlserver.md",
+          "size": 2743,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1737,
+        "fileCount": 9,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 9,
+          "filesSkipped": 0,
+          "bytesScanned": 26255,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 78,
+                "excerpt": "nment for each without printing secrets, and keep credentials in ignored environment files or the host's secret configuration. For SQL adapte"
+              },
+              {
+                "file": "references/v6-mongodb.md",
+                "line": 60,
+                "excerpt": "db.ObjectId } ``` ## 2. Environment Variable In `.env`: ```env DATABASE_URL=\"mongodb+srv://user:password@cluster.mongodb.net/mydb?re"
+              },
+              {
+                "file": "references/v7-cockroachdb.md",
+                "line": 42,
+                "excerpt": "RL'), }, }) ``` ## 3. Environment Variable In `.env`: ```env DATABASE_URL=\"postgresql://user:password@host:26257/db?sslmode=verify"
+              },
+              {
+                "file": "references/v7-mysql.md",
+                "line": 43,
+                "excerpt": "RL'), }, }) ``` ## 3. Environment Variable In `.env`: ```env DATABASE_URL=\"mysql://user:password@localhost:3306/mydb\" ``` ### Con"
+              },
+              {
+                "file": "references/v7-postgresql.md",
+                "line": 43,
+                "excerpt": "RL'), }, }) ``` ## 3. Environment Variable In `.env`: ```env DATABASE_URL=\"postgresql://user:password@localhost:5432/mydb?schema=p"
+              },
+              {
+                "file": "references/v7-sqlite.md",
+                "line": 42,
+                "excerpt": "RL'), }, }) ``` ## 3. Environment Variable In `.env`: ```env DATABASE_URL=\"file:./dev.db\" ``` ### Connection String Format ``` f"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "references/v6-mongodb.md",
+                "line": 77,
+                "excerpt": "new explicitly selected Prisma 6 setup: ```bash npm install --save-dev prisma@6 npm install @prisma/client@6 dotenv ``` Generate with the"
+              },
+              {
+                "file": "references/v7-client-setup.md",
+                "line": 8,
+                "excerpt": "se examples. ## 1. Install dependencies ```bash npm install --save-dev prisma@7 npm install @prisma/client@7 dotenv ``` For an existing ap"
+              },
+              {
+                "file": "references/v7-cockroachdb.md",
+                "line": 56,
+                "excerpt": "er. 1. Install adapter and driver: ```bash npm install @prisma/adapter-pg@7 pg ``` 2. Instantiate Prisma Client with the adapter:"
+              },
+              {
+                "file": "references/v7-mysql.md",
+                "line": 67,
+                "excerpt": "ow. 1. Install adapter and driver: ```bash npm install @prisma/adapter-mariadb@7 mariadb ``` 2. Set `MYSQL_USER`, `MYSQL_PASSWORD`"
+              },
+              {
+                "file": "references/v7-postgresql.md",
+                "line": 68,
+                "excerpt": "ow. 1. Install adapter and driver: ```bash npm install @prisma/adapter-pg@7 pg ``` 2. Instantiate Prisma Client with the adapter:"
+              },
+              {
+                "file": "references/v7-prisma-postgres.md",
+                "line": 14,
+                "excerpt": "ebSocket driver. With a Prisma 7 client: ```bash npm install @prisma/adapter-ppg@7 @prisma/ppg ``` ```typescript import { PrismaClient } fr"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 14,
+                "excerpt": "ime code belong to the versioned [prisma-8 skill](https://github.com/prisma/orm/tree/main/skills/prisma-8) shipped with the ORM package."
+              },
+              {
+                "file": "references/v6-mongodb.md",
+                "line": 102,
+                "excerpt": "D. ## References - [Prisma 6 MongoDB connector](https://www.prisma.io/docs/orm/v6/overview/databases/mongodb)"
+              },
+              {
+                "file": "references/v7-client-setup.md",
+                "line": 12,
+                "excerpt": "ons and check the [Prisma 7 runtime requirements](https://www.prisma.io/docs/guides/upgrade-prisma-orm/v7#prerequisites). ## 2. Add gener"
+              },
+              {
+                "file": "references/v7-cockroachdb.md",
+                "line": 3,
+                "excerpt": "eep its configuration and use the [Prisma 6 docs](https://www.prisma.io/docs/orm/v6); the configuration and adapter examples below are for"
+              },
+              {
+                "file": "references/v7-mysql.md",
+                "line": 3,
+                "excerpt": "eep its configuration and use the [Prisma 6 docs](https://www.prisma.io/docs/orm/v6); the configuration and adapter examples below are for"
+              },
+              {
+                "file": "references/v7-postgresql.md",
+                "line": 3,
+                "excerpt": "eep its configuration and use the [Prisma 6 docs](https://www.prisma.io/docs/orm/v6); the configuration and adapter examples below are for"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "7f09c4ad391a3844a1e407178486f649b7a76e6ecb8fa7157d3d28bac59b7dd2"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "database",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-postgres-setup/SKILL.md",
+      "slug": "prisma-postgres-setup",
+      "name": "prisma-postgres-setup",
+      "description": "Obtain or reuse a Prisma Postgres database and connect an application. Use when the user needs a database and has none configured (\"I need a database\", \"add a Postgres database\", \"set up a database for this app\"), runs or mentions `create-db` or `npx create-db`, or asks to set up or connect Prisma Postgres, including in v0 and the Vercel Marketplace. Hands Prisma ORM configuration to prisma-orm-setup; reuses an existing connection first and honors an explicit provider, driver, alternative ORM, or database-only choice.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "2.3.1"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "1ee11f09a205bc87cec984957e6d94ac99dff1bf8a3c218ef510a1406e1527a2",
+        "bundleHash": "1a85e7653839ffa2602a7fda6f1a19eefcdcf7c8bd79f4be15af14b17dc1dab4",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 21625
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 4426,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/operations.md",
+          "size": 1759,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/provisioning.md",
+          "size": 4910,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/vercel-marketplace.md",
+          "size": 10530,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1107,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 21625,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 37,
+                "excerpt": "ironment files. For example, a framework may load `.env.development.local` while a shell command does not. A variable missing from the"
+              },
+              {
+                "file": "references/operations.md",
+                "line": 18,
+                "excerpt": "Service-token and connection creation can return credentials once. Save them to the intended secret store without logging the response. List"
+              },
+              {
+                "file": "references/provisioning.md",
+                "line": 16,
+                "excerpt": "d to avoid duplicates. Store returned connection credentials immediately in the intended secret environment. Some credentials are shown only"
+              },
+              {
+                "file": "references/vercel-marketplace.md",
+                "line": 26,
+                "excerpt": "nments, then runs `vercel env pull`, which writes `.env.local`. - One resource on all three environments means local development, previ"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 41,
+                "excerpt": "risma ORM setup, read [prisma-orm-setup/SKILL.md](https://github.com/prisma/skills/blob/main/prisma-orm-setup/SKILL.md) directly, or load"
+              },
+              {
+                "file": "references/operations.md",
+                "line": 7,
+                "excerpt": "ole and database operations Use [Prisma Console](https://console.prisma.io) to inspect the selected project and open its database in Stud"
+              },
+              {
+                "file": "references/provisioning.md",
+                "line": 9,
+                "excerpt": "ntended workspace and project at [Prisma Console](https://console.prisma.io), then obtain the database's connection details. - **Platform"
+              },
+              {
+                "file": "references/vercel-marketplace.md",
+                "line": 86,
+                "excerpt": "database queries. Sources: [vercel integration](https://vercel.com/docs/cli/integration), [vercel env](https://vercel.com/docs/cli/env),"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "1a85e7653839ffa2602a7fda6f1a19eefcdcf7c8bd79f4be15af14b17dc1dab4"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "database",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-postgres-upgrade/SKILL.md",
+      "slug": "prisma-postgres-upgrade",
+      "name": "prisma-postgres-upgrade",
+      "description": "Upgrade a PostgreSQL app from Prisma ORM 6 or 7 straight to Prisma 8 in one pass, keeping the existing schema.prisma, database and data. Use when a Postgres project on Prisma 6 or 7 wants Prisma 8, including before deploying it on Prisma Compute, which runs only Prisma 8. Triggers on \"upgrade prisma 6 to 8\", \"upgrade prisma 7 to 8\", \"upgrade to prisma 8 postgres\", \"prisma7Schema\", \"migrations/app\", \"move off @prisma/client\", \"Console says move to Prisma 8\".",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "2.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "4ecb78c25e7fd42663b81f9b6c7ce0b194c096d58a3f1880c08d8094db621d5b",
+        "bundleHash": "4e324547c6b6dd55c59382a698e4ed31e0ab7d9ce48446cb11e8fbd93fb5f3a7",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 17308
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6577,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/adopt-schema-and-migrations.md",
+          "size": 3621,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/client-api-mapping.md",
+          "size": 4440,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/verify-upgrade-checklist.md",
+          "size": 2670,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1645,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 17308,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 24,
+                "excerpt": "The [Prisma ORM 6 or 7 to 8 (PostgreSQL) guide](https://www.prisma.io/docs/guides/upgrade-prisma-orm/postgresql) is the source of truth"
+              },
+              {
+                "file": "references/adopt-schema-and-migrations.md",
+                "line": 78,
+                "excerpt": "ions ``` ## References - [Guide, steps 2 and 3](https://www.prisma.io/docs/guides/upgrade-prisma-orm/postgresql#2-create-the-contract-fr"
+              },
+              {
+                "file": "references/client-api-mapping.md",
+                "line": 54,
+                "excerpt": "n update, is listed in [Coming from Prisma ORM 7](https://www.prisma.io/docs/orm/coming-from-prisma-orm-7#queries). ## The five differenc"
+              },
+              {
+                "file": "references/verify-upgrade-checklist.md",
+                "line": 61,
+                "excerpt": "ot cover. ``` ## References - [Guide, step 5.3](https://www.prisma.io/docs/guides/upgrade-prisma-orm/postgresql#53-run-the-app-locally)"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "4e324547c6b6dd55c59382a698e4ed31e0ab7d9ce48446cb11e8fbd93fb5f3a7"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "database",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-postgres/SKILL.md",
+      "slug": "prisma-postgres",
+      "name": "prisma-postgres",
+      "description": "Deprecated compatibility name for prisma-postgres-setup. Use only when a user or existing integration explicitly invokes prisma-postgres; otherwise select prisma-postgres-setup.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "8.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "f8d565a1bc2f598ccfce6b0f9e9adcb3450ad65639e3e969a1e0d03e2d349c82",
+        "bundleHash": "ebda673015a94aadb71b7e19ae4e8fd7820baf03590f60f5bb2a4f92be32b112",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 648
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 648,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 162,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 648,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 12,
+                "excerpt": ". If unavailable, install it from [prisma/skills](https://github.com/prisma/skills/tree/main/prisma-postgres-setup) before continuing. Th"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "ebda673015a94aadb71b7e19ae4e8fd7820baf03590f60f5bb2a4f92be32b112"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "database",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-upgrade-v7/SKILL.md",
+      "slug": "prisma-upgrade-v7",
+      "name": "prisma-upgrade-v7",
+      "description": "Complete migration guide from Prisma ORM v6 to v7 covering all breaking changes. Use when upgrading Prisma versions, encountering v7 errors, or migrating existing projects. Triggers on \"upgrade to prisma 7\", \"prisma 7 migration\", \"prisma-client generator\", \"driver adapter required\".",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "prisma",
+          "version": "7.6.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "latestCommitAt": "2026-11-09T11:24:05Z",
+        "latestTreeSha": "c1a64b728def0a8aff9dd83ab88a154bab6c8978"
+      },
+      "snapshot": {
+        "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "syncedAt": "2026-11-15T04:55:06.885Z",
+        "skillMdHash": "03d79d99b6132b97b5b3b9d8158e40933fbb9a6d23708dc9539faeb64e09c8ff",
+        "bundleHash": "4e8a19cf05d4f9eb9b699a8e09f83c4634f56299f13026d810b528b8df20bde5",
+        "filesFetched": 8,
+        "filesSkipped": 0,
+        "bytesFetched": 36056
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 8072,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "references/accelerate-users.md",
+          "size": 3475,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/driver-adapters.md",
+          "size": 6104,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/env-variables.md",
+          "size": 3392,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/esm-support.md",
+          "size": 3212,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/prisma-config.md",
+          "size": 3407,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/removed-features.md",
+          "size": 4754,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/schema-changes.md",
+          "size": 3640,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2018,
+        "fileCount": 8,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 8,
+          "filesSkipped": 0,
+          "bytesScanned": 36056,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 95,
+                "excerpt": "al | Required for SQL providers | | Config file | `.env` + schema | `prisma.config.ts` | | Env loading | Automatic | Manual (dotenv) |"
+              },
+              {
+                "file": "references/accelerate-users.md",
+                "line": 16,
+                "excerpt": "elerate ### 1. Keep your Accelerate URL ```env # .env DATABASE_URL=\"prisma://accelerate.prisma-data.net/?api_key=...\" # or DATABASE_U"
+              },
+              {
+                "file": "references/env-variables.md",
+                "line": 9,
+                "excerpt": "### v6 Behavior Prisma CLI automatically loaded `.env` files. ### v7 Behavior You must manually load environment variables using `d"
+              },
+              {
+                "file": "references/esm-support.md",
+                "line": 114,
+                "excerpt": "r `enums`, not from `client`. ### Bun Bun loads `.env` files automatically, so ESM plus `env()` is the smoothest default. You can sti"
+              },
+              {
+                "file": "references/prisma-config.md",
+                "line": 128,
+                "excerpt": "} ``` This provides type safety but does NOT load .env files automatically. ### Loading .env files Install and import dotenv: ```ba"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 74,
+                "excerpt": "Quick Upgrade Commands ```bash # Update packages npm install @prisma/client@7 npm install -D prisma@7 # Install a driver adapter (PostgreSQ"
+              },
+              {
+                "file": "references/accelerate-users.md",
+                "line": 25,
+                "excerpt": "``` ### 2. Install Accelerate extension ```bash npm install @prisma/extension-accelerate ``` ### 3. Configure prisma.config.ts ```typescr"
+              },
+              {
+                "file": "references/driver-adapters.md",
+                "line": 35,
+                "excerpt": "re D1 | ## Installation ### PostgreSQL ```bash npm install @prisma/adapter-pg ``` ### MySQL ```bash npm install @prisma/adapter-mariadb"
+              },
+              {
+                "file": "references/env-variables.md",
+                "line": 20,
+                "excerpt": "imilar. ## Setup ### 1. Install dotenv ```bash npm install dotenv ``` ### 2. Import in prisma.config.ts ```typescript import 'dotenv/con"
+              },
+              {
+                "file": "references/prisma-config.md",
+                "line": 135,
+                "excerpt": "g .env files Install and import dotenv: ```bash npm install dotenv ``` ```typescript import 'dotenv/config' // Must be first import impor"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 253,
+                "excerpt": "eded ## Resources - [Official v7 Upgrade Guide](https://www.prisma.io/docs/orm/more/upgrades/to-v7) - [Driver Adapters Documentation](ht"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:06.885Z",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "4e8a19cf05d4f9eb9b699a8e09f83c4634f56299f13026d810b528b8df20bde5"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "database",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:21.403Z",
+        "lastSyncedAt": "2026-11-15T04:55:06.885Z",
         "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
       }
     }

@@ -5,7 +5,7 @@
     "repo": "agent-skills",
     "fullName": "vercel-labs/agent-skills",
     "url": "https://github.com/vercel-labs/agent-skills",
-    "stars": 34072,
+    "stars": 34077,
     "licenseSpdx": null,
     "licenseStatus": "unknown",
     "defaultBranch": "main",
@@ -15,203 +15,171 @@
   },
   "skills": [
     {
-      "path": "skills/web-design-guidelines/SKILL.md",
-      "slug": "web-design-guidelines",
-      "name": "web-design-guidelines",
-      "description": "Review web interfaces against a practical set of design and usability guidelines.",
-      "descriptionZh": "按一套实用的设计与可用性准则审查 Web 界面。",
-      "frontmatter": {},
-      "files": [
-        {
-          "path": "SKILL.md",
-          "size": 1231,
-          "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
-        }
-      ],
-      "metrics": {
-        "bodyTokensEstimate": 308,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
-      },
-      "scan": {
-        "status": "not-scanned",
-        "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
-        },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
-        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
-        "scannedBundleHash": "not-scanned"
-      },
-      "review": {
-        "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
-      },
-      "taxonomy": {
-        "scenes": [
-          "design-to-code"
-        ],
-        "topics": [
-          "design",
-          "frontend",
-          "review"
-        ],
-        "agents": [
-          "opencode",
-          "claude-code",
-          "codex",
-          "cursor"
-        ],
-        "language": "en",
-        "portability": "unknown"
-      },
-      "editorial": {
-        "shelfIds": [
-          "design-systems",
-          "small-and-readable",
-          "official"
-        ],
-        "featuredRank": 3,
-        "curator": "Skill Shelf"
-      },
-      "status": "draft",
-      "timestamps": {
-        "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
-        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
-      }
-    },
-    {
-      "path": "skills/react-best-practices/SKILL.md",
-      "slug": "react-best-practices",
-      "name": "react-best-practices",
-      "description": "Apply React and Next.js performance and composition best practices.",
-      "descriptionZh": "应用 React 与 Next.js 的性能和组合最佳实践。",
-      "frontmatter": {},
-      "files": [
-        {
-          "path": "SKILL.md",
-          "size": 7251,
-          "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
-        }
-      ],
-      "metrics": {
-        "bodyTokensEstimate": 1813,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
-      },
-      "scan": {
-        "status": "not-scanned",
-        "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
-        },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
-        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
-        "scannedBundleHash": "not-scanned"
-      },
-      "review": {
-        "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
-      },
-      "taxonomy": {
-        "scenes": [
-          "design-to-code",
-          "ship-safely"
-        ],
-        "topics": [
-          "react",
-          "nextjs",
-          "performance"
-        ],
-        "agents": [
-          "opencode",
-          "claude-code",
-          "codex",
-          "cursor"
-        ],
-        "language": "en",
-        "portability": "unknown"
-      },
-      "editorial": {
-        "shelfIds": [
-          "official"
-        ],
-        "featuredRank": 12,
-        "curator": "Skill Shelf"
-      },
-      "status": "draft",
-      "timestamps": {
-        "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
-        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
-      }
-    },
-    {
       "path": "skills/composition-patterns/SKILL.md",
-      "slug": "composition-patterns",
-      "name": "composition-patterns",
-      "description": "Structure React components with composable, scalable patterns.",
+      "slug": "vercel-composition-patterns",
+      "name": "vercel-composition-patterns",
+      "description": "React composition patterns that scale. Use when refactoring components with boolean prop proliferation, building flexible component libraries, or designing reusable APIs. Triggers on tasks involving compound components, render props, context providers, or component architecture. Includes React 19 API changes.",
       "descriptionZh": "用可组合、可扩展的模式组织 React 组件。",
-      "frontmatter": {},
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "vercel",
+          "version": "1.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3",
+        "bundleHash": "2e7c7976aba77087089a264bb876547fcb5d362b194b435bc1157c2dbbaa691a",
+        "filesFetched": 14,
+        "filesSkipped": 0,
+        "bytesFetched": 50339
+      },
       "files": [
+        {
+          "path": "AGENTS.md",
+          "size": 22627,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "README.md",
+          "size": 2140,
+          "kind": "reference",
+          "scanned": true
+        },
         {
           "path": "SKILL.md",
           "size": 2886,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "metadata.json",
+          "size": 530,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/_sections.md",
+          "size": 829,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/_template.md",
+          "size": 329,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/architecture-avoid-boolean-props.md",
+          "size": 2267,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/architecture-compound-components.md",
+          "size": 2600,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/patterns-children-over-render-props.md",
+          "size": 1886,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/patterns-explicit-variants.md",
+          "size": 2395,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/react19-no-forwardref.md",
+          "size": 953,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/state-context-interface.md",
+          "size": 4974,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/state-decouple-implementation.md",
+          "size": 2699,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/state-lift-state.md",
+          "size": 3224,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 722,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 14,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 14,
+          "filesSkipped": 0,
+          "bytesScanned": 50339,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "AGENTS.md",
+                "line": 944,
+                "excerpt": ", unlike `useContext()`. --- ## References 1. [https://react.dev](https://react.dev) 2. [https://react.dev/learn/passing-data-deeply-wi"
+              },
+              {
+                "file": "metadata.json",
+                "line": 7,
+                "excerpt": "work with as they scale.\", \"references\": [ \"https://react.dev\", \"https://react.dev/learn/passing-data-deeply-with-context\","
+              },
+              {
+                "file": "rules/_template.md",
+                "line": 24,
+                "excerpt": "``tsx // Good code example ``` Reference: [Link](https://example.com)"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
         "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "2e7c7976aba77087089a264bb876547fcb5d362b194b435bc1157c2dbbaa691a"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -243,7 +211,2324 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/deploy-to-vercel/SKILL.md",
+      "slug": "deploy-to-vercel",
+      "name": "deploy-to-vercel",
+      "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+      "frontmatter": {
+        "metadata": {
+          "author": "vercel",
+          "version": "4.0.0"
+        }
+      },
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "418ca2a60d35c551e6cb645f4e82c1b704a8335486ffe74b1b3d0617a17504e5",
+        "bundleHash": "4307bc410346b0484742187a11a79f644acc1988a90ed8ba85fbed89865bb51b",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 9721
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9721,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2431,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 9721,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 164,
+                "excerpt": "loy --temporary` **When to use:** The CLI has no credentials and `vercel login` isn't possible (sandboxes, agents, non-interactive environme"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 141,
+                "excerpt": "e CLI (if not already installed):** ```bash npm install -g vercel ``` 2. **Authenticate:** ```bash vercel login ``` The"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 172,
+                "excerpt": "directory already linked to a Vercel project. See https://vercel.com/docs/deployments/deploy-without-logging-in. **Tell the user:** \"Your"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "4307bc410346b0484742187a11a79f644acc1988a90ed8ba85fbed89865bb51b"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "code-review",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:00.936Z",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/react-best-practices/SKILL.md",
+      "slug": "vercel-react-best-practices",
+      "name": "vercel-react-best-practices",
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
+      "descriptionZh": "应用 React 与 Next.js 的性能和组合最佳实践。",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "vercel",
+          "version": "1.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+        "bundleHash": "081772c9de29db1e6791032effe1adb2d9792b05aab1d81ae536e2532c637817",
+        "filesFetched": 76,
+        "filesSkipped": 0,
+        "bytesFetched": 230383
+      },
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "size": 108261,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "README.md",
+          "size": 3360,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 7251,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "metadata.json",
+          "size": 921,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/_sections.md",
+          "size": 1554,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/_template.md",
+          "size": 631,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/advanced-effect-event-deps.md",
+          "size": 1802,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/advanced-event-handler-refs.md",
+          "size": 1483,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/advanced-init-once.md",
+          "size": 958,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/advanced-use-latest.md",
+          "size": 1072,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/async-api-routes.md",
+          "size": 1125,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/async-cheap-condition-before-await.md",
+          "size": 1220,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/async-defer-await.md",
+          "size": 2208,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/async-dependencies.md",
+          "size": 1293,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/async-parallel.md",
+          "size": 654,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/async-suspense-boundaries.md",
+          "size": 2510,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/bundle-analyzable-paths.md",
+          "size": 2382,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/bundle-barrel-imports.md",
+          "size": 2795,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/bundle-conditional.md",
+          "size": 949,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/bundle-defer-third-party.md",
+          "size": 920,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/bundle-dynamic-imports.md",
+          "size": 791,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/bundle-preload.md",
+          "size": 1149,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/client-event-listeners.md",
+          "size": 1969,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/client-localstorage-schema.md",
+          "size": 1950,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/client-passive-event-listeners.md",
+          "size": 1644,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/client-swr-dedup.md",
+          "size": 1159,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-batch-dom-css.md",
+          "size": 3266,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-cache-function-results.md",
+          "size": 1949,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-cache-property-access.md",
+          "size": 532,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-cache-storage.md",
+          "size": 1651,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-combine-iterations.md",
+          "size": 753,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-early-exit.md",
+          "size": 1133,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-flatmap-filter.md",
+          "size": 1411,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-hoist-regexp.md",
+          "size": 1028,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-index-maps.md",
+          "size": 837,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-length-check-first.md",
+          "size": 1747,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-min-max-loop.md",
+          "size": 2290,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-request-idle-callback.md",
+          "size": 2647,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-set-map-lookups.md",
+          "size": 532,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-tosorted-immutable.md",
+          "size": 1782,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-activity.md",
+          "size": 564,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-animate-svg-wrapper.md",
+          "size": 1185,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-conditional-render.md",
+          "size": 980,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-content-visibility.md",
+          "size": 815,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-hoist-jsx.md",
+          "size": 1039,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-hydration-no-flicker.md",
+          "size": 2308,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-hydration-suppress-warning.md",
+          "size": 872,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-resource-hints.md",
+          "size": 2549,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-script-defer-async.md",
+          "size": 1868,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-svg-precision.md",
+          "size": 588,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-usetransition-loading.md",
+          "size": 2074,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-defer-reads.md",
+          "size": 973,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-dependencies.md",
+          "size": 824,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-derived-state-no-effect.md",
+          "size": 1201,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-derived-state.md",
+          "size": 728,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-functional-setstate.md",
+          "size": 2968,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-lazy-state-init.md",
+          "size": 2016,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-memo-with-default-value.md",
+          "size": 1173,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-memo.md",
+          "size": 1148,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-move-effect-to-event.md",
+          "size": 1268,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-no-inline-components.md",
+          "size": 2135,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-simple-expression-in-memo.md",
+          "size": 1018,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-split-combined-hooks.md",
+          "size": 1844,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-transitions.md",
+          "size": 1055,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-use-deferred-value.md",
+          "size": 1846,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rerender-use-ref-transient-values.md",
+          "size": 1742,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-after-nonblocking.md",
+          "size": 2012,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-auth-actions.md",
+          "size": 2649,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-cache-lru.md",
+          "size": 1353,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-cache-react.md",
+          "size": 2228,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-dedup-props.md",
+          "size": 2060,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-hoist-static-io.md",
+          "size": 4423,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-no-shared-module-state.md",
+          "size": 1766,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-parallel-fetching.md",
+          "size": 1554,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-parallel-nested-fetching.md",
+          "size": 992,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/server-serialization.md",
+          "size": 996,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1813,
+        "fileCount": 76,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 76,
+          "filesSkipped": 0,
+          "bytesScanned": 230383,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 20,
+                "excerpt": "g Started 1. Install dependencies: ```bash pnpm install ``` 2. Build AGENTS.md from rules: ```bash pnpm build ``` 3. Vali"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "AGENTS.md",
+                "line": 266,
+                "excerpt": ", and do `Promise.all()` at the end. Reference: [https://github.com/shuding/better-all](https://github.com/shuding/better-all) ### 1.4 P"
+              },
+              {
+                "file": "README.md",
+                "line": 84,
+                "excerpt": "planatory text after examples. Reference: [Link](https://example.com) ## File Naming Convention - Files starting with `_` are special ("
+              },
+              {
+                "file": "metadata.json",
+                "line": 7,
+                "excerpt": "ing and code generation.\", \"references\": [ \"https://react.dev\", \"https://nextjs.org\", \"https://swr.vercel.app\", \"https:/"
+              },
+              {
+                "file": "rules/_sections.md",
+                "line": 26,
+                "excerpt": "t data fetching patterns reduce redundant network requests. ## 5. Re-render Optimization (rerender) **Impact:** MEDIUM **Description:**"
+              },
+              {
+                "file": "rules/_template.md",
+                "line": 28,
+                "excerpt": "` Reference: [Link to documentation or resource](https://example.com)"
+              },
+              {
+                "file": "rules/advanced-effect-event-deps.md",
+                "line": 56,
+                "excerpt": "nce: [React useEffectEvent: Effect Event in deps](https://react.dev/reference/react/useEffectEvent#effect-event-in-deps)"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "081772c9de29db1e6791032effe1adb2d9792b05aab1d81ae536e2532c637817"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely"
+        ],
+        "topics": [
+          "react",
+          "nextjs",
+          "performance"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "featuredRank": 12,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/react-native-skills/SKILL.md",
+      "slug": "vercel-react-native-skills",
+      "name": "vercel-react-native-skills",
+      "description": "React Native and Expo best practices for building performant mobile apps. Use when building React Native components, optimizing list performance, implementing animations, or working with native modules. Triggers on tasks involving React Native, Expo, mobile performance, or native platform APIs.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "vercel",
+          "version": "1.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "4012750a5ccbe064ca04af3835d5d1b011979d2d09d9b6df1c8128fac58e0a66",
+        "bundleHash": "70ea6d5ce00350bdfb959f6e40ccbbbc618484aeee1637db5a18020c54b33295",
+        "filesFetched": 42,
+        "filesSkipped": 0,
+        "bytesFetched": 159022
+      },
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "size": 73771,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "README.md",
+          "size": 5064,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 4439,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "metadata.json",
+          "size": 896,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/_sections.md",
+          "size": 2228,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/_template.md",
+          "size": 631,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/animation-derived-value.md",
+          "size": 1373,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/animation-gesture-detector-press.md",
+          "size": 2559,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/animation-gpu-properties.md",
+          "size": 2059,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/design-system-compound-components.md",
+          "size": 1625,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/fonts-config-plugin.md",
+          "size": 1393,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/imports-design-system-folder.md",
+          "size": 1418,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/js-hoist-intl.md",
+          "size": 1645,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-callbacks.md",
+          "size": 1059,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-function-references.md",
+          "size": 4133,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-images.md",
+          "size": 1417,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-inline-objects.md",
+          "size": 2308,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-item-expensive.md",
+          "size": 2466,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-item-memo.md",
+          "size": 2250,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-item-types.md",
+          "size": 2749,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/list-performance-virtualize.md",
+          "size": 1742,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/monorepo-native-deps-in-app.md",
+          "size": 1091,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/monorepo-single-dependency-versions.md",
+          "size": 1351,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/navigation-native-navigators.md",
+          "size": 4941,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/react-compiler-destructure-functions.md",
+          "size": 1274,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/react-compiler-reanimated-shared-values.md",
+          "size": 1268,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/react-state-dispatcher.md",
+          "size": 2255,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/react-state-fallback.md",
+          "size": 1735,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/react-state-minimize.md",
+          "size": 1740,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-no-falsy-and.md",
+          "size": 1812,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/rendering-text-in-text-component.md",
+          "size": 697,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/scroll-position-no-state.md",
+          "size": 1936,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/state-ground-truth.md",
+          "size": 2172,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-expo-image.md",
+          "size": 1648,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-image-gallery.md",
+          "size": 2546,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-measure-views.md",
+          "size": 2232,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-menus.md",
+          "size": 4598,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-native-modals.md",
+          "size": 1859,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-pressable.md",
+          "size": 1534,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-safe-area-scroll.md",
+          "size": 1579,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-scrollview-content-inset.md",
+          "size": 1317,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/ui-styling.md",
+          "size": 2212,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1110,
+        "fileCount": 42,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 42,
+          "filesSkipped": 0,
+          "bytesScanned": 159022,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "AGENTS.md",
+                "line": 154,
+                "excerpt": "jsx-no-leaked-render` from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-leaked-r"
+              },
+              {
+                "file": "README.md",
+                "line": 148,
+                "excerpt": "``tsx // Good code example ``` Reference: [Link](https://example.com) ``` ## File Naming Convention - Files starting with `_` are spec"
+              },
+              {
+                "file": "metadata.json",
+                "line": 7,
+                "excerpt": "ing and code generation.\", \"references\": [ \"https://react.dev\", \"https://reactnative.dev\", \"https://docs.swmansion.com/react"
+              },
+              {
+                "file": "rules/_template.md",
+                "line": 28,
+                "excerpt": "` Reference: [Link to documentation or resource](https://example.com)"
+              },
+              {
+                "file": "rules/animation-derived-value.md",
+                "line": 53,
+                "excerpt": "nOnJS`). Reference: [Reanimated useDerivedValue](https://docs.swmansion.com/react-native-reanimated/docs/core/useDerivedValue)"
+              },
+              {
+                "file": "rules/animation-gesture-detector-press.md",
+                "line": 95,
+                "excerpt": "bility. Reference: [Gesture Handler Tap Gesture](https://docs.swmansion.com/react-native-gesture-handler/docs/gestures/tap-gesture)"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "70ea6d5ce00350bdfb959f6e40ccbbbc618484aeee1637db5a18020c54b33295"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely"
+        ],
+        "topics": [
+          "design",
+          "frontend",
+          "video",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:00.936Z",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/react-view-transitions/SKILL.md",
+      "slug": "vercel-react-view-transitions",
+      "name": "vercel-react-view-transitions",
+      "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries.",
+      "frontmatter": {
+        "license": "MIT",
+        "metadata": {
+          "author": "vercel",
+          "version": "1.0.0"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "693acbddd1d2dcf774286867efbc9a5c09dce2da6f21f8e12618187a92f2106a",
+        "bundleHash": "c11cc3cee79d8c63c4c92115ffa516d7a4bd839e26edf2eb2fb3dffa86d8f09c",
+        "filesFetched": 9,
+        "filesSkipped": 0,
+        "bytesFetched": 121871
+      },
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "size": 59088,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "README.md",
+          "size": 2231,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 14502,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "metadata.json",
+          "size": 852,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/css-recipes.md",
+          "size": 8337,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/implementation.md",
+          "size": 9280,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/nextjs.md",
+          "size": 10700,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/patterns.md",
+          "size": 11941,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/troubleshooting.md",
+          "size": 4940,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 3626,
+        "fileCount": 9,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 9,
+          "filesSkipped": 0,
+          "bytesScanned": 121871,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "AGENTS.md",
+                "line": 337,
+                "excerpt": "the official [React `<ViewTransition>` reference](https://react.dev/reference/react/ViewTransition) and [Next.js guide](https://nextjs.org"
+              },
+              {
+                "file": "README.md",
+                "line": 32,
+                "excerpt": "ons ``` ## Installation Install via [skills.sh](https://skills.sh): ```bash npx skills add https://github.com/vercel-labs/agent-skills"
+              },
+              {
+                "file": "metadata.json",
+                "line": 7,
+                "excerpt": "production Next.js apps.\", \"references\": [ \"https://react.dev/reference/react/ViewTransition\", \"https://react.dev/reference/reac"
+              },
+              {
+                "file": "references/css-recipes.md",
+                "line": 221,
+                "excerpt": "sition's duration, no CSS override ([csswg#10930](https://github.com/w3c/csswg-drafts/issues/10930)). Weigh that before naming interactive"
+              },
+              {
+                "file": "references/implementation.md",
+                "line": 5,
+                "excerpt": "the official [React `<ViewTransition>` reference](https://react.dev/reference/react/ViewTransition) and [Next.js guide](https://nextjs.org"
+              },
+              {
+                "file": "references/nextjs.md",
+                "line": 7,
+                "excerpt": "Read the current [Next.js View Transitions guide](https://nextjs.org/docs/app/guides/view-transitions) and the matching guide under `node_"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "c11cc3cee79d8c63c4c92115ffa516d7a4bd839e26edf2eb2fb3dffa86d8f09c"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely"
+        ],
+        "topics": [
+          "design",
+          "frontend",
+          "video",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:00.936Z",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/vercel-cli-with-tokens/SKILL.md",
+      "slug": "vercel-cli-with-tokens",
+      "name": "vercel-cli-with-tokens",
+      "description": "Deploy and manage projects on Vercel using token-based authentication. Use when working with Vercel CLI using access tokens rather than interactive login — e.g. \"deploy to vercel\", \"set up vercel\", \"add environment variables to vercel\".",
+      "frontmatter": {
+        "metadata": {
+          "author": "vercel",
+          "version": "1.0.0"
+        }
+      },
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "c06bea99e75eab07fde4fae26069baa002f82f39b53f07981704c2901551dd4c",
+        "bundleHash": "65588c4a8e5407447c4e934038265a3e3194db18c6b18d0732647413b64c0eaa",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 10476
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 10476,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2619,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 10476,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 25,
+                "excerpt": "u're ready. Skip to Step 2. ### B) Token is in a `.env` file under `VERCEL_TOKEN` ```bash grep '^VERCEL_TOKEN=' .env 2>/dev/null ```"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 102,
+                "excerpt": "Vercel CLI is installed and up to date: ```bash npm install -g vercel vercel --version ``` ## Deploying a Project Always deploy as **prev"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 81,
+                "excerpt": "ev/null ``` **If you have a project URL** (e.g. `https://vercel.com/my-team/my-project`), extract the team slug: ```bash # e.g. \"my-team"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "65588c4a8e5407447c4e934038265a3e3194db18c6b18d0732647413b64c0eaa"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:00.936Z",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/vercel-optimize/SKILL.md",
+      "slug": "vercel-optimize",
+      "name": "vercel-optimize",
+      "description": "Use for Vercel cost and performance optimization on deployed projects, especially Next.js, SvelteKit, Nuxt, and limited Astro apps. Collect Vercel metrics, usage, project config, and code scan results first; investigate only metric-backed candidates; produce ranked recommendations grounded in verified files and version-aware Vercel/framework docs. Trigger for Vercel bill reduction, slow or expensive routes, caching opportunities, Function Invocations, Build Minutes, Fast Data Transfer, Core Web Vitals, Bot Management, Fluid compute, or cost breakdown requests.",
+      "frontmatter": {
+        "metadata": {
+          "version": "1.2.0"
+        }
+      },
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "95ae2683b30d892d165af92a350c5628b68106f395a59b448857b654e306ed91",
+        "bundleHash": "d051f155b825e024438b2fb9397ea796d38f8e83aa072a74f25e5b011b6d3309",
+        "filesFetched": 80,
+        "filesSkipped": 0,
+        "bytesFetched": 503930
+      },
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "size": 1964,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "size": 2224,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "README.md",
+          "size": 4471,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 17311,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "lib/auth-route.mjs",
+          "size": 807,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/budget-summary.mjs",
+          "size": 7145,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/citations.mjs",
+          "size": 4029,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/cost-coverage.mjs",
+          "size": 8628,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/dedup-recs.mjs",
+          "size": 10151,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/deep-dive.mjs",
+          "size": 10458,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/display-labels.mjs",
+          "size": 7611,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/extract-claims.mjs",
+          "size": 19136,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/framework-support.mjs",
+          "size": 2126,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/build-minutes-fanout.mjs",
+          "size": 3016,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/cold-start.mjs",
+          "size": 2797,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/contract.mjs",
+          "size": 3143,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/cwv-poor.mjs",
+          "size": 3372,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/external-api-slow.mjs",
+          "size": 2173,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/hard-gates.mjs",
+          "size": 2543,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/index.mjs",
+          "size": 2066,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/isr-overrevalidation.mjs",
+          "size": 2442,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/middleware-heavy.mjs",
+          "size": 2085,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/observability-events-attribution.mjs",
+          "size": 2255,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/platform-bot-protection.mjs",
+          "size": 5089,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/platform-fluid-compute.mjs",
+          "size": 3630,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/region-misconfig.mjs",
+          "size": 3101,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/route-errors.mjs",
+          "size": 3101,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/scanner-driven.mjs",
+          "size": 5191,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/select-candidates.mjs",
+          "size": 4703,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/slow-route.mjs",
+          "size": 4384,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/types.d.ts",
+          "size": 893,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/uncached-route.mjs",
+          "size": 3963,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/gates/usage-spike-triage.mjs",
+          "size": 5095,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/grade-recommendation.mjs",
+          "size": 6887,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/impact-label.mjs",
+          "size": 5344,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/impact-magnitude.mjs",
+          "size": 2172,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/investigation-brief.mjs",
+          "size": 35165,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/observation-safety.mjs",
+          "size": 9486,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/project-facts.mjs",
+          "size": 4399,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/queries.mjs",
+          "size": 10338,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/reconcile-candidates.mjs",
+          "size": 15966,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/render-report.mjs",
+          "size": 39131,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/repo-root.mjs",
+          "size": 3135,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/route-normalize.mjs",
+          "size": 8590,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/bot-protection-certainty.mjs",
+          "size": 1988,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/cache-tag-invalidation-certainty.mjs",
+          "size": 1522,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/count-correct.mjs",
+          "size": 1956,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/function-duration-invocations.mjs",
+          "size": 1470,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/index.mjs",
+          "size": 3053,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/middleware-conflict.mjs",
+          "size": 1586,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/missing-citation.mjs",
+          "size": 497,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/pre-release.mjs",
+          "size": 2224,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/rate-limit.mjs",
+          "size": 2655,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/rendering-mode-mislabel.mjs",
+          "size": 1670,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/undeclared-dep.mjs",
+          "size": 2833,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/vercel-directive-strip.mjs",
+          "size": 1460,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/sanitizers/window-units.mjs",
+          "size": 869,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/cache-components-suspense-dedupe.mjs",
+          "size": 4367,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/edge-heavy-import.mjs",
+          "size": 3740,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/force-dynamic.mjs",
+          "size": 1586,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/headers-in-page.mjs",
+          "size": 1537,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/index.mjs",
+          "size": 1458,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/large-static-asset.mjs",
+          "size": 3279,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/max-age-without-s-maxage.mjs",
+          "size": 1629,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/middleware-broad-matcher.mjs",
+          "size": 1986,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/missing-cache-headers.mjs",
+          "size": 3922,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/prisma-include-tree.mjs",
+          "size": 1585,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/region-pin-in-config.mjs",
+          "size": 3448,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/source-maps-production.mjs",
+          "size": 1300,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/sveltekit-prerender-missing.mjs",
+          "size": 2127,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/turbo-force-bypass.mjs",
+          "size": 4974,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/unoptimized-image.mjs",
+          "size": 4516,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/scanners/use-cache-date-stamp.mjs",
+          "size": 4040,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/support-topics.mjs",
+          "size": 12836,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/throttle.mjs",
+          "size": 8992,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/util.mjs",
+          "size": 544,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/vercel.mjs",
+          "size": 31125,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/verify-claim.mjs",
+          "size": 60992,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "lib/workspace-resolver.mjs",
+          "size": 17545,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "metadata.json",
+          "size": 903,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 4328,
+        "fileCount": 80,
+        "scriptCount": 75,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "partial",
+        "coverage": {
+          "filesScanned": 80,
+          "filesSkipped": 0,
+          "bytesScanned": 503930,
+          "limitations": [
+            "file list capped at 80; some files may be omitted"
+          ]
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "lib/vercel.mjs",
+                "line": 382,
+                "excerpt": "KED'; if (lc.includes('log in') || lc.includes('credentials')) return 'NOT_AUTH'; if (lc.includes('rate limit') || lc.includes('429')) re"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "README.md",
+                "line": 7,
+                "excerpt": "evidence, and version-aware docs. [![skills.sh](https://skills.sh/b/vercel-labs/agent-skills)](https://skills.sh/vercel-labs/agent-skill"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 3,
+                "excerpt": "Bot Management, Fluid compute, or cost breakdown requests.\" metadata: version: \"1.2.0\" --- # Vercel Optimize Run an observability-firs"
+              },
+              {
+                "file": "lib/cost-coverage.mjs",
+                "line": 10,
+                "excerpt": "dim: 'edge-requests' }, { match: /^Edge Requests.*Additional CPU Duration/i, dim: 'edge-requests' }, { match: /^Edge Function"
+              },
+              {
+                "file": "lib/gates/cwv-poor.mjs",
+                "line": 1,
+                "excerpt": "// Thresholds are Google's \"Poor\" band (https://web.dev/articles/vitals): LCP p75 > 2500ms, INP > 200ms, CLS > 0.1. // When Spee"
+              },
+              {
+                "file": "lib/gates/isr-overrevalidation.mjs",
+                "line": 9,
+                "excerpt": "sion: 'isr', scope: 'route', sourceCitation: 'https://vercel.com/docs/incremental-static-regeneration', description: 'ISR routes"
+              },
+              {
+                "file": "lib/gates/middleware-heavy.mjs",
+                "line": 8,
+                "excerpt": "requests', scope: 'account', sourceCitation: 'https://nextjs.org/docs/app/building-your-application/routing/middleware', description"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "lib/auth-route.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "lib/budget-summary.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "lib/citations.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "lib/cost-coverage.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "lib/dedup-recs.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "lib/deep-dive.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "d051f155b825e024438b2fb9397ea796d38f8e83aa072a74f25e5b011b6d3309"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "frontend",
+          "docs",
+          "browser",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:00.936Z",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/web-design-guidelines/SKILL.md",
+      "slug": "web-design-guidelines",
+      "name": "web-design-guidelines",
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "descriptionZh": "按一套实用的设计与可用性准则审查 Web 界面。",
+      "frontmatter": {
+        "metadata": {
+          "author": "vercel",
+          "version": "1.0.0",
+          "argument-hint": "<file-or-pattern>"
+        }
+      },
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+        "bundleHash": "4ff7ca2669a7aa85279722430689d75165d66ee1c1c0a3639c9d6b50596dae49",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 1231
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1231,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 308,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 1231,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 26,
+                "excerpt": "Fetch fresh guidelines before each review: ``` https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md `"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "4ff7ca2669a7aa85279722430689d75165d66ee1c1c0a3639c9d6b50596dae49"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "frontend",
+          "review"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems",
+          "small-and-readable",
+          "official"
+        ],
+        "featuredRank": 3,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
+        "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
+      }
+    },
+    {
+      "path": "skills/writing-guidelines/SKILL.md",
+      "slug": "writing-guidelines",
+      "name": "writing-guidelines",
+      "description": "Review docs/prose for Writing Guidelines compliance. Use when asked to \"review my docs\", \"check writing style\", \"audit prose\", \"review docs voice and tone\", or \"check this page against the writing handbook\".",
+      "frontmatter": {
+        "metadata": {
+          "author": "vercel",
+          "version": "1.0.0",
+          "argument-hint": "<file-or-pattern>"
+        }
+      },
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "latestCommitAt": "2026-10-27T21:40:02Z",
+        "latestTreeSha": "339e66e210e08989967e7d992ce3906313165f77"
+      },
+      "snapshot": {
+        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "syncedAt": "2026-11-15T04:54:46.277Z",
+        "skillMdHash": "89a5f581193289b80af58b980090aeed535047c8df2b55ccbaae0de40283a99d",
+        "bundleHash": "8dc63cf566498a9aae8e7cd9436a1c680fbf33d432c148802d3f0013c603bbd7",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 1233
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1233,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 309,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 1233,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 26,
+                "excerpt": "Fetch fresh guidelines before each review: ``` https://raw.githubusercontent.com/vercel-labs/writing-guidelines/main/command.md ``` Us"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:46.277Z",
+        "scannedCommit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "scannedBundleHash": "8dc63cf566498a9aae8e7cd9436a1c680fbf33d432c148802d3f0013c603bbd7"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "docs",
+          "browser",
+          "code-review",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable",
+          "design-systems",
+          "docs-and-data",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:00.936Z",
+        "lastSyncedAt": "2026-11-15T04:54:46.277Z",
         "upstreamUpdatedAt": "2026-11-12T14:09:10Z"
       }
     }

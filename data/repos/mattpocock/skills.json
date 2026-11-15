@@ -5,7 +5,7 @@
     "repo": "skills",
     "fullName": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
-    "stars": 324553,
+    "stars": 324574,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -15,48 +15,196 @@
   },
   "skills": [
     {
+      "path": "skills/engineering/ask-matt/SKILL.md",
+      "slug": "ask-matt",
+      "name": "ask-matt",
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
+        "bundleHash": "e879a3adbd19605c62946283decb0e523fb8d97fcf2aa99269638f556e016501",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 16980
+      },
+      "files": [
+        {
+          "path": "PHASE-BOUNDARIES.md",
+          "size": 4249,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 12594,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 137,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 3149,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 16980,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 90,
+                "excerpt": "can take: provisioning infrastructure, setting up credentials or CI secrets, clicking through an unfamiliar third-party dashboard, running a"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "PHASE-BOUNDARIES.md",
+                "line": 21,
+                "excerpt": "primary source**, or you have enough [smart zone](https://www.aihero.dev/ai-coding-dictionary/smart-zone) left (~150k tokens) for the next"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 40,
+                "excerpt": "instead. The limit on this is the **[smart zone](https://www.aihero.dev/ai-coding-dictionary/smart-zone)**: the window (~150k tokens on s"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "e879a3adbd19605c62946283decb0e523fb8d97fcf2aa99269638f556e016501"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
       "path": "skills/engineering/code-review/SKILL.md",
       "slug": "code-review",
       "name": "code-review",
-      "description": "Review a change for correctness, clarity, and missing tests before merge.",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
       "descriptionZh": "在合并前审查变更的正确性、清晰度和测试缺口。",
       "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "9c921a8d88138a41401d8897ca1bb852088ab1b7b605cdd04edc13e3e8aab6dd",
+        "bundleHash": "9aed52233fb4ae108ba15ff85dd32c8253d2a94d5d7990daad89abb565047ac8",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 6821
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 6721,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 100,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
-        "bodyTokensEstimate": 1680,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "bodyTokensEstimate": 1681,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 6821,
+          "limitations": []
         },
         "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
         "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "9aed52233fb4ae108ba15ff85dd32c8253d2a94d5d7990daad89abb565047ac8"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -85,7 +233,651 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "slug": "codebase-design",
+      "name": "codebase-design",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "bundleHash": "bfd56d74b0483d851ba971d265707ca5a996c9c3aa2e9a32de32820353409f0e",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 11800
+      },
+      "files": [
+        {
+          "path": "DEEPENING.md",
+          "size": 2553,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "DESIGN-IT-TWICE.md",
+          "size": 2699,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 6446,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 102,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1612,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 11800,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "bfd56d74b0483d851ba971d265707ca5a996c9c3aa2e9a32de32820353409f0e"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "testing",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems",
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "slug": "diagnosing-bugs",
+      "name": "diagnosing-bugs",
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+        "bundleHash": "5b653e570e7bb0fcdf13a7f954f473833e0d5d4c3aa85fd91cc3f4154679b045",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 10083
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 8664,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 103,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/hitl-loop.template.sh",
+          "size": 1316,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2166,
+        "fileCount": 3,
+        "scriptCount": 1,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 10083,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 27,
+                "excerpt": "eam reaches the bug: unit, integration, e2e. 2. **Curl / HTTP script** against a running dev server. 3. **CLI invocation** with a fixt"
+              },
+              {
+                "file": "scripts/hitl-loop.template.sh",
+                "line": 34,
+                "excerpt": "-------------------------- step \"Open the app at http://localhost:3000 and sign in.\" capture ERRORED \"Click the 'Export' button. Did it"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/hitl-loop.template.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "5b653e570e7bb0fcdf13a7f954f473833e0d5d4c3aa85fd91cc3f4154679b045"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "inherit-codebase",
+          "ship-safely"
+        ],
+        "topics": [
+          "debugging",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "slug": "domain-modeling",
+      "name": "domain-modeling",
+      "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "bundleHash": "315e6ed3bd32d48d5ddf5d76a76cc53960cd329ad77351f2a3816e8c35074303",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 8480
+      },
+      "files": [
+        {
+          "path": "ADR-FORMAT.md",
+          "size": 2733,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "GLOSSARY-FORMAT.md",
+          "size": 2300,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 3346,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 101,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 837,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 8480,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "315e6ed3bd32d48d5ddf5d76a76cc53960cd329ad77351f2a3816e8c35074303"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "design-systems",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/grill-with-docs/SKILL.md",
+      "slug": "grill-with-docs",
+      "name": "grill-with-docs",
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+        "bundleHash": "8429bd70ebbf58725c509447b09683295a1b31ea2e5c729c6b387c1f683bb8d5",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 392
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 247,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 145,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 62,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 392,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "8429bd70ebbf58725c509447b09683295a1b31ea2e5c729c6b387c1f683bb8d5"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "docs",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "design-systems",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/implement-spec/SKILL.md",
+      "slug": "implement-spec",
+      "name": "implement-spec",
+      "description": "Implement the result of /to-spec and /to-tickets in code.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "1993a473cec40ac85d081c112cdffdc63ec3267c2e412055ad09e013a2f623d1",
+        "bundleHash": "ebe6358f88cdd9ead57044100fcab9ce1170b52f387c87b5df6f262b2f9ed2b1",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 3003
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2835,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 168,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 709,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 3003,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "ebe6358f88cdd9ead57044100fcab9ce1170b52f387c87b5df6f262b2f9ed2b1"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/implement/SKILL.md",
+      "slug": "implement",
+      "name": "implement",
+      "description": "Implement a piece of work based on a spec or set of tickets.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
+        "bundleHash": "fabba2b67ec45a1d8f588de4c95f2837ec7f4427d27d7c0a71d0db948b679458",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 761
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 622,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 139,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 156,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 761,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "fabba2b67ec45a1d8f588de4c95f2837ec7f4427d27d7c0a71d0db948b679458"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
         "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
       }
     },
@@ -93,45 +885,86 @@
       "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
       "slug": "improve-codebase-architecture",
       "name": "improve-codebase-architecture",
-      "description": "Find structural friction in a codebase and propose incremental architecture improvements.",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
       "descriptionZh": "发现代码库的结构性摩擦，并提出渐进式架构改进。",
       "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "35b03a3db61e0f5aa333ea59b54963e45a3d2ace6649b2ef4f9576603e2582a6",
+        "bundleHash": "a1967339b7123f57dfa8d2f2e2b8f3b13aaf6f1baa44f6eda83534c3aefb1924",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 12835
+      },
       "files": [
+        {
+          "path": "HTML-REPORT.md",
+          "size": 6641,
+          "kind": "reference",
+          "scanned": true
+        },
         {
           "path": "SKILL.md",
           "size": 6028,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 166,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 1507,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 12835,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "HTML-REPORT.md",
+                "line": 13,
+                "excerpt": "review for {{repo name}}</title> <script src=\"https://cdn.tailwindcss.com\"></script> <script type=\"module\"> import mermaid f"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
         "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "a1967339b7123f57dfa8d2f2e2b8f3b13aaf6f1baa44f6eda83534c3aefb1924"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -161,7 +994,3219 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/pr/SKILL.md",
+      "slug": "pr",
+      "name": "pr",
+      "description": "Use when writing a PR body.",
+      "frontmatter": {
+        "metadata": {
+          "credits": "{\"skill\":\"show-me\",\"author\":\"Dex Horthy\",\"organisation\":\"Humanlayer\",\"url\":\"https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md\"}"
+        }
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+        "bundleHash": "e0eb5841cbed689bdde9a8da4ebb9d9d68f7bed772044c69330678bde041cd26",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 4866
+      },
+      "files": [
+        {
+          "path": "CREDITS.md",
+          "size": 604,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 4169,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 93,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1043,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 4866,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "CREDITS.md",
+                "line": 3,
+                "excerpt": "and its placement guidance come from [Dex Horthy](https://github.com/dexhorthy)'s [`show-me`](https://github.com/humanlayer/humanlayer) sk"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 9,
+                "excerpt": "Dex Horthy organisation: Humanlayer url: \"https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md\""
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "e0eb5841cbed689bdde9a8da4ebb9d9d68f7bed772044c69330678bde041cd26"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/prototype/SKILL.md",
+      "slug": "prototype",
+      "name": "prototype",
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+        "bundleHash": "b1f723255f4e3c767a653893f7314d554a5902392c49a68428f0dcff6d550ad3",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 15980
+      },
+      "files": [
+        {
+          "path": "LOGIC.md",
+          "size": 6036,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 2931,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "UI.md",
+          "size": 6913,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 100,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 733,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 15980,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "b1f723255f4e3c767a653893f7314d554a5902392c49a68428f0dcff6d550ad3"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/research/SKILL.md",
+      "slug": "research",
+      "name": "research",
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "1f629e18ab899412683bc6a1c4efb4339999e27c2fdac328f26ee10a8c031d33",
+        "bundleHash": "ad92dbda48c3b831494e6909c0ad68d98a9909d1292498111670c1305901f37d",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 926
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 832,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 94,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 208,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 926,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "ad92dbda48c3b831494e6909c0ad68d98a9909d1292498111670c1305901f37d"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/retro/SKILL.md",
+      "slug": "retro",
+      "name": "retro",
+      "description": "Conduct a retrospective on a coding session.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bundleHash": "6edb24f777aa3913766643ef303469f9916c050c5edd24cb289732bdfaca1b09",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 4515
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 4369,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 146,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1093,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 4515,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "6edb24f777aa3913766643ef303469f9916c050c5edd24cb289732bdfaca1b09"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "slug": "setup-matt-pocock-skills",
+      "name": "setup-matt-pocock-skills",
+      "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "b01e05bfe8c323171275c6ceec78b12f1bd4c62dfd26c2cfe8be806d3883f1ed",
+        "bundleHash": "15d0c84726c5e5750ac07048bab42c32c5d31c53c44454919546b09e6fd2e74d",
+        "filesFetched": 7,
+        "filesSkipped": 0,
+        "bytesFetched": 21648
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 7526,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 152,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "domain.md",
+          "size": 2042,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "issue-tracker-github.md",
+          "size": 5082,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "issue-tracker-gitlab.md",
+          "size": 3979,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "issue-tracker-local.md",
+          "size": 1810,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "triage-labels.md",
+          "size": 1057,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1882,
+        "fileCount": 7,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 7,
+          "filesSkipped": 0,
+          "bytesScanned": 21648,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 45,
+                "excerpt": "ve in the repo's GitLab Issues (uses the [`glab`](https://gitlab.com/gitlab-org/cli) CLI) - **Local markdown**: issues live as files under"
+              },
+              {
+                "file": "issue-tracker-gitlab.md",
+                "line": 3,
+                "excerpt": "this repo live as GitLab issues. Use the [`glab`](https://gitlab.com/gitlab-org/cli) CLI for all operations. ## Conventions - **Create a"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "15d0c84726c5e5750ac07048bab42c32c5d31c53c44454919546b09e6fd2e74d"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/tdd/SKILL.md",
+      "slug": "tdd",
+      "name": "tdd",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+        "bundleHash": "5b1f027ae70c5a8d7824ba01e7cd394c0c29630718be2fe4f43429e90440ed02",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 7411
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3629,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 87,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "mocking.md",
+          "size": 1481,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "tests.md",
+          "size": 2214,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 908,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 7411,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "mocking.md",
+                "line": 44,
+                "excerpt": "ndently mockable const api = { getUser: (id) => fetch(`/users/${id}`), getOrders: (userId) => fetch(`/users/${userId}/orders`), cr"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "5b1f027ae70c5a8d7824ba01e7cd394c0c29630718be2fe4f43429e90440ed02"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "design-to-code",
+          "inherit-codebase",
+          "ship-safely"
+        ],
+        "topics": [
+          "design",
+          "testing",
+          "architecture",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems",
+          "testing",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/to-spec/SKILL.md",
+      "slug": "to-spec",
+      "name": "to-spec",
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088",
+        "bundleHash": "74d57acbf83c2a864c88206a2edd4b2365f5aa566f970bb9b2caab42d6321166",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 3178
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3043,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 135,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 761,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 3178,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "74d57acbf83c2a864c88206a2edd4b2365f5aa566f970bb9b2caab42d6321166"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "slug": "to-tickets",
+      "name": "to-tickets",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
+        "bundleHash": "6c2b582af80d518e7b6e56954f52b56100bb7c210034525efd8fd59756fe7188",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 5958
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5812,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 146,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1453,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 5958,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "6c2b582af80d518e7b6e56954f52b56100bb7c210034525efd8fd59756fe7188"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/triage/SKILL.md",
+      "slug": "triage",
+      "name": "triage",
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf",
+        "bundleHash": "6387bc4a885fd3be72318908a00090e6b9a54427d635f2a5d5d8741dbd55be36",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 19302
+      },
+      "files": [
+        {
+          "path": "AGENT-BRIEF.md",
+          "size": 7942,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "OUT-OF-SCOPE.md",
+          "size": 4667,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 6558,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 135,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1640,
+        "fileCount": 4,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 19302,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "OUT-OF-SCOPE.md",
+                "line": 3,
+                "excerpt": "epo stores persistent records of rejected feature requests. It serves two purposes: 1. **Institutional memory**: why a feature was rejecte"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "6387bc4a885fd3be72318908a00090e6b9a54427d635f2a5d5d8741dbd55be36"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "slug": "wayfinder",
+      "name": "wayfinder",
+      "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "0c9fa96791aebf3b7d654cf35c6aadde97d81f57c17b07d13b27c14d9c46561f",
+        "bundleHash": "dea853b586063d5d05fb4363246e4c0854cf53b988d694a1ae975df16b5e820d",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 12552
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 12408,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 144,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 3102,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 12552,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 80,
+                "excerpt": "er records what was done and any resulting facts (credentials location, new URLs, row counts) later tickets depend on. ## Fog of war The ma"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "dea853b586063d5d05fb4363246e4c0854cf53b988d694a1ae975df16b5e820d"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/wizard/SKILL.md",
+      "slug": "wizard",
+      "name": "wizard",
+      "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+        "bundleHash": "3d1c9d91b33835396c536ce1199ab1b9932c8be303ac55d6208c031c58083f8c",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 13717
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 4123,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 96,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "template.sh",
+          "size": 9498,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1031,
+        "fileCount": 3,
+        "scriptCount": 1,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 13717,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 3,
+                "excerpt": "Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-of"
+              },
+              {
+                "file": "template.sh",
+                "line": 26,
+                "excerpt": "TAL_STAGES=0 _STAGE_INDEX=0 ENV_FILE=\"${ENV_FILE:-.env}\" WRITTEN_ENV=() # KEYs written to ENV_FILE this run WRITTEN_SECRET=() # sec"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "PRIVILEGE_ESCALATION",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 42,
+                "excerpt": "h -n <script>`; run `shellcheck` if available. - `chmod +x <script>`. - Don't run it end-to-end yourself: it opens browsers and blocks on"
+              }
+            ],
+            "note": "Requests elevated or persistent system changes. Possible negated/teaching context; verify manually."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "template.sh",
+                "line": 210,
+                "excerpt": "eys and store them for local dev + CI.\" open_url \"https://dashboard.stripe.com/test/apikeys\" step \"On the API keys page, copy the Publisha"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "template.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "3d1c9d91b33835396c536ce1199ab1b9932c8be303ac55d6208c031c58083f8c"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely",
+          "inherit-codebase"
+        ],
+        "topics": [
+          "browser",
+          "architecture",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "slug": "chief-of-staff",
+      "name": "chief-of-staff",
+      "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bundleHash": "0d1a2c26560e5efb0ab9dacbabe479a0d83374e75db694a27773de398869985d",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 4913
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 4729,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 184,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1183,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 4913,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "0d1a2c26560e5efb0ab9dacbabe479a0d83374e75db694a27773de398869985d"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/claude-handoff/SKILL.md",
+      "slug": "claude-handoff",
+      "name": "claude-handoff",
+      "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
+        "bundleHash": "148e705d8e51a24068b4f76ad01c5f6ec8dd99d3f3de8a1cb28e9e2db7627634",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 1565
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 1424,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 141,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 356,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 1565,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "148e705d8e51a24068b4f76ad01c5f6ec8dd99d3f3de8a1cb28e9e2db7627634"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/loop-me/SKILL.md",
+      "slug": "loop-me",
+      "name": "loop-me",
+      "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
+        "bundleHash": "0b085ab99e1854b2665053b43947aafc6bd55af25fe44304a5577140eaa4d27d",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 2662
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2522,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 140,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 631,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 2662,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "0b085ab99e1854b2665053b43947aafc6bd55af25fe44304a5577140eaa4d27d"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "slug": "setup-ts-deep-modules",
+      "name": "setup-ts-deep-modules",
+      "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "29acca66ac99d4532e2a6f0370d8125d7cba1e87c9ac66573203c75189d3e6c7",
+        "bundleHash": "449a52e0135455629e287cfff7b1ffd4c5c89e2ae3830895ba9bbb194a89b543",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 11407
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 7546,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 149,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "dependency-cruiser.config.cjs",
+          "size": 3712,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1887,
+        "fileCount": 3,
+        "scriptCount": 1,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 11407,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 9,
+                "excerpt": "hidden. This skill installs [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) and the rules that make the entry points"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "dependency-cruiser.config.cjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "449a52e0135455629e287cfff7b1ffd4c5c89e2ae3830895ba9bbb194a89b543"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/software-factory/SKILL.md",
+      "slug": "software-factory",
+      "name": "software-factory",
+      "description": "Shared language for designing a software factory: the tasks it runs and the services it plugs into.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "8a3d04e2ebcf2f863a514784ee0307ef8fb53ac0892deb29b75a406c0c84de7b",
+        "bundleHash": "0fd8c42df428e68a4bd71c85e5c7f3acb9f603ace8608f7e11621f199f323c76",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 42710
+      },
+      "files": [
+        {
+          "path": "EXAMPLE-TASKS.md",
+          "size": 3844,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "GIT-HOSTS.md",
+          "size": 7706,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "OBSERVABILITY-PLATFORMS.md",
+          "size": 7849,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "RUNNERS.md",
+          "size": 8738,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 6108,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "TICKET-TRACKERS.md",
+          "size": 8465,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1527,
+        "fileCount": 6,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 42710,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "GIT-HOSTS.md",
+                "line": 13,
+                "excerpt": "ser's runs or slot in as one of them. - [GitHub](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api): the de"
+              },
+              {
+                "file": "OBSERVABILITY-PLATFORMS.md",
+                "line": 11,
+                "excerpt": "tel]` block in `config.toml`. ([Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/observability), [Claude Code](https://code.cla"
+              },
+              {
+                "file": "RUNNERS.md",
+                "line": 24,
+                "excerpt": "three slots. Starting points: - [GitHub Actions](https://docs.github.com/en/actions/reference/limits): the default for an all-GitHub fact"
+              },
+              {
+                "file": "TICKET-TRACKERS.md",
+                "line": 13,
+                "excerpt": "carry their tracker with them. - [GitHub Issues](https://docs.github.com/en/copilot/concepts/agents/about-third-party-agents): the defaul"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "0fd8c42df428e68a4bd71c85e5c7f3acb9f603ace8608f7e11621f199f323c76"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/writing-beats/SKILL.md",
+      "slug": "writing-beats",
+      "name": "writing-beats",
+      "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e",
+        "bundleHash": "0d33ac8fd5b90afb851191bea799cf28e6a1eb7adf60a11b787ee2acdad9f889",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 4997
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 4855,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 142,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1214,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 4997,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "0d33ac8fd5b90afb851191bea799cf28e6a1eb7adf60a11b787ee2acdad9f889"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "slug": "writing-fragments",
+      "name": "writing-fragments",
+      "description": "Writing, explore: mine raw fragments, no structure yet.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea",
+        "bundleHash": "6e5e374263c11be1eb0c37d6f9341d06596eecff3db732cd6bc66e1294b2cddf",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 3698
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3558,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 140,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 890,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 3698,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "6e5e374263c11be1eb0c37d6f9341d06596eecff3db732cd6bc66e1294b2cddf"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "inherit-codebase",
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "architecture",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/in-progress/writing-shape/SKILL.md",
+      "slug": "writing-shape",
+      "name": "writing-shape",
+      "description": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72",
+        "bundleHash": "f33c6a203e1179f444e3942c638550236d17f5e597487d0902f449b85c2ed514",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 6066
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5922,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 144,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1481,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 6066,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "f33c6a203e1179f444e3942c638550236d17f5e597487d0902f449b85c2ed514"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "slug": "git-guardrails-claude-code",
+      "name": "git-guardrails-claude-code",
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+        "bundleHash": "85e5a2a54969d8bc4aa187f01e7d40ecafd81a3ade8bdfcdad7d73df56f1a353",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 2932
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2313,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 112,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/block-dangerous-git.sh",
+          "size": 507,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 579,
+        "fileCount": 3,
+        "scriptCount": 1,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 2932,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "PRIVILEGE_ESCALATION",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 35,
+                "excerpt": "block-dangerous-git.sh` Make it executable with `chmod +x`. ### 3. Add hook to settings Add to the appropriate settings file: **Projec"
+              }
+            ],
+            "note": "Requests elevated or persistent system changes."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/block-dangerous-git.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "85e5a2a54969d8bc4aa187f01e7d40ecafd81a3ade8bdfcdad7d73df56f1a353"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "slug": "migrate-to-shoehorn",
+      "name": "migrate-to-shoehorn",
+      "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+        "bundleHash": "c6c63ea23f1b7f8b111abcef4983b555a4b5e3f2a2f1b85f83f639fb80aad368",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 2905
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2795,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 110,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 699,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 2905,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "c6c63ea23f1b7f8b111abcef4983b555a4b5e3f2a2f1b85f83f639fb80aad368"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests"
+        ],
+        "topics": [
+          "testing",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "slug": "scaffold-exercises",
+      "name": "scaffold-exercises",
+      "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
+        "bundleHash": "c0f7d0416cfe8f5de1a564725959c72a585766e337e52eb2ccd0ed0e48a80119",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 3697
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3589,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 108,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 898,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 3697,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "c0f7d0416cfe8f5de1a564725959c72a585766e337e52eb2ccd0ed0e48a80119"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "inherit-codebase",
+          "ship-safely"
+        ],
+        "topics": [
+          "architecture",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "slug": "setup-pre-commit",
+      "name": "setup-pre-commit",
+      "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bundleHash": "70fc2847f6e0bdea962e0ccaae35312d6a9e561fb5e7fcb475138f8bdfe79f30",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 2357
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2258,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 99,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 565,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 2357,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "70fc2847f6e0bdea962e0ccaae35312d6a9e561fb5e7fcb475138f8bdfe79f30"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "ship-safely"
+        ],
+        "topics": [
+          "testing",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/productivity/grill-me/SKILL.md",
+      "slug": "grill-me",
+      "name": "grill-me",
+      "description": "A relentless interview to sharpen a plan or design.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+        "bundleHash": "851a859049dda0165248649d34f9c3abed8a195e7692bc1651c16295e5203f3e",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 294
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 157,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 137,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 40,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 294,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "851a859049dda0165248649d34f9c3abed8a195e7692bc1651c16295e5203f3e"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/productivity/grilling/SKILL.md",
+      "slug": "grilling",
+      "name": "grilling",
+      "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "a146842ed93ca43d833550fa9adf02e58cb63c83fea9d4b4522995b82242d4e2",
+        "bundleHash": "b2f66b4415ea759502d7ad6fd27306a51d0f5f209b2e5237f1fc4a0d630851b4",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 2190
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2077,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 113,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 520,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 2190,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "b2f66b4415ea759502d7ad6fd27306a51d0f5f209b2e5237f1fc4a0d630851b4"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "write-clearly"
+        ],
+        "topics": [
+          "testing",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/productivity/handoff/SKILL.md",
+      "slug": "handoff",
+      "name": "handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+        "bundleHash": "d98e277eceb3e825c04919e55fe7732d9466348aa2824cf20ce8a80d2dc6d8b8",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 1081
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 940,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 141,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 235,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 1081,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "d98e277eceb3e825c04919e55fe7732d9466348aa2824cf20ce8a80d2dc6d8b8"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/productivity/teach/SKILL.md",
+      "slug": "teach",
+      "name": "teach",
+      "description": "Teach the user a new skill or concept, within this workspace.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
+        "bundleHash": "da9743f4f16f3658a3b3ead194342a34c3b405c597ceb262b0124f6b3042b1a7",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 18205
+      },
+      "files": [
+        {
+          "path": "GLOSSARY-FORMAT.md",
+          "size": 2122,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "LEARNING-RECORD-FORMAT.md",
+          "size": 2747,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "MISSION-FORMAT.md",
+          "size": 1540,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "RESOURCES-FORMAT.md",
+          "size": 1924,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 9733,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 139,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2434,
+        "fileCount": 6,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 18205,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "RESOURCES-FORMAT.md",
+                "line": 12,
+                "excerpt": "ce of Strength Training_ by Zatsiorsky & Kraemer](https://example.com) Foundational text on programming and adaptation. Use for: anythin"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "da9743f4f16f3658a3b3ead194342a34c3b405c597ceb262b0124f6b3042b1a7"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/productivity/to-questionnaire/SKILL.md",
+      "slug": "to-questionnaire",
+      "name": "to-questionnaire",
+      "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "bundleHash": "305900da696fc2ced6e7f4ea79131f14bd987034787de559febf1ee156482880",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 3070
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 2904,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 166,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 726,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 3070,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "305900da696fc2ced6e7f4ea79131f14bd987034787de559febf1ee156482880"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/productivity/wait-what/SKILL.md",
+      "slug": "wait-what",
+      "name": "wait-what",
+      "description": "Stop. That last message did not land: re-pitch it.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+        "bundleHash": "97ea52af3659ca881229684104d7a93e5ed19ab1ea0870c017f44c3012c47a2c",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 554
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 396,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 158,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 99,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 554,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "97ea52af3659ca881229684104d7a93e5ed19ab1ea0870c017f44c3012c47a2c"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "slug": "writing-for-agents",
+      "name": "writing-for-agents",
+      "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "latestCommitAt": "2026-11-12T08:42:38Z",
+        "latestTreeSha": "dc6b596b851e6a987f86aeb934672d28cb767e5f"
+      },
+      "snapshot": {
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "syncedAt": "2026-11-15T04:55:29.447Z",
+        "skillMdHash": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+        "bundleHash": "ae7b9b661e5857873addd284d24f2b1a220752bfdeafbc8962cdd7e7952486d9",
+        "filesFetched": 3,
+        "filesSkipped": 0,
+        "bytesFetched": 13617
+      },
+      "files": [
+        {
+          "path": "SKILL-MECHANICS.md",
+          "size": 2629,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 10886,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yaml",
+          "size": 102,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2722,
+        "fileCount": 3,
+        "scriptCount": 0,
+        "hasNetwork": false,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 3,
+          "filesSkipped": 0,
+          "bytesScanned": 13617,
+          "limitations": []
+        },
+        "flags": [],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:29.447Z",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "ae7b9b661e5857873addd284d24f2b1a220752bfdeafbc8962cdd7e7952486d9"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:46.517Z",
+        "lastSyncedAt": "2026-11-15T04:55:29.447Z",
         "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
       }
     }

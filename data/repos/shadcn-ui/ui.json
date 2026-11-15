@@ -5,7 +5,7 @@
     "repo": "ui",
     "fullName": "shadcn-ui/ui",
     "url": "https://github.com/shadcn-ui/ui",
-    "stars": 128206,
+    "stars": 128207,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -15,48 +15,418 @@
   },
   "skills": [
     {
+      "path": "skills/migrate-radix-to-base/SKILL.md",
+      "slug": "migrate-radix-to-base",
+      "name": "migrate-radix-to-base",
+      "description": "Migrates React projects and components from Radix UI to Base UI. Use when asked to migrate from radix, move to base-ui, convert radix primitives, or switch a shadcn project's base library. Handles single components (\"migrate accordion\") and whole projects.",
+      "frontmatter": {},
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+        "latestCommitAt": "2026-11-13T10:57:41Z",
+        "latestTreeSha": "ccbbd6a19bf45140b4062868cc2ed9a635150d67"
+      },
+      "snapshot": {
+        "commit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+        "syncedAt": "2026-11-15T04:55:10.211Z",
+        "skillMdHash": "64c879f6f1eab0decc306ca52ad32d41327c05c4d2fb7e708335e956c61dadf8",
+        "bundleHash": "0a4f5240b778003c9fcb3bccb7e0d13a013cdefb15191a58061eaa1ba73becaa",
+        "filesFetched": 10,
+        "filesSkipped": 0,
+        "bytesFetched": 176645
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9313,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "class-mapping.md",
+          "size": 2838,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "consumer-props.md",
+          "size": 4482,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "disclosure.md",
+          "size": 20896,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "display-misc.md",
+          "size": 25693,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "form-controls.md",
+          "size": 29615,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "menus.md",
+          "size": 33098,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "overlays.md",
+          "size": 31466,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "universal-patterns.md",
+          "size": 14502,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "wrapper-shapes.md",
+          "size": 4742,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2329,
+        "fileCount": 10,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 10,
+          "filesSkipped": 0,
+          "bytesScanned": 176645,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 35,
+                "excerpt": "components.json style VERBATIM in the URL (`https://ui.shadcn.com/r/styles/<style>/<component>.json`, files[0].content). This w"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:10.211Z",
+        "scannedCommit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+        "scannedBundleHash": "0a4f5240b778003c9fcb3bccb7e0d13a013cdefb15191a58061eaa1ba73becaa"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "frontend",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:36:23.843Z",
+        "lastSyncedAt": "2026-11-15T04:55:10.211Z",
+        "upstreamUpdatedAt": "2026-11-13T10:58:16Z"
+      }
+    },
+    {
       "path": "skills/shadcn/SKILL.md",
       "slug": "shadcn",
       "name": "shadcn",
-      "description": "Build interfaces with shadcn/ui components and the project's design conventions.",
+      "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", \"switch to --preset\", and for building a design system or applying a DESIGN.md or brand spec to shadcn/ui.",
       "descriptionZh": "用 shadcn/ui 组件和项目设计规范构建界面。",
-      "frontmatter": {},
+      "frontmatter": {
+        "allowedTools": "Bash(npx shadcn@latest *), Bash(pnpm dlx shadcn@latest *), Bash(bunx --bun shadcn@latest *)"
+      },
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "source": "repo"
+      },
+      "upstream": {
+        "latestCommit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+        "latestCommitAt": "2026-11-13T10:57:41Z",
+        "latestTreeSha": "ccbbd6a19bf45140b4062868cc2ed9a635150d67"
+      },
+      "snapshot": {
+        "commit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+        "syncedAt": "2026-11-15T04:55:10.211Z",
+        "skillMdHash": "93951e5e83f616a3e046491c00d770bd54c0a64164706cd1191822a233d27592",
+        "bundleHash": "c40bb98784690354cfc7cb34ed59b5ee8b1432cbc95b643540f3186a03acf480",
+        "filesFetched": 21,
+        "filesSkipped": 2,
+        "bytesFetched": 158662
+      },
       "files": [
         {
           "path": "SKILL.md",
           "size": 21606,
           "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/openai.yml",
+          "size": 238,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/shadcn-small.png",
+          "size": 1049,
+          "kind": "asset",
           "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "skipReason": "binary/asset or too large"
+        },
+        {
+          "path": "assets/shadcn.png",
+          "size": 3852,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset or too large"
+        },
+        {
+          "path": "assets/showcase/color-pair.tsx",
+          "size": 3448,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "assets/showcase/preview-states.css",
+          "size": 425,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/showcase/state-matrix.tsx",
+          "size": 1682,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "cli.md",
+          "size": 17304,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "customization.md",
+          "size": 6279,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "design-system-page.md",
+          "size": 15790,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "design-system.md",
+          "size": 21621,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "evals/evals.json",
+          "size": 10626,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "mcp.md",
+          "size": 3510,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "registry.md",
+          "size": 8817,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/base-vs-radix.md",
+          "size": 6954,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/chat.md",
+          "size": 17626,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/composition.md",
+          "size": 4892,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/forms.md",
+          "size": 4857,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/icons.md",
+          "size": 1958,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "rules/styling.md",
+          "size": 4675,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/showcase-coverage.mjs",
+          "size": 1453,
+          "kind": "script",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 5402,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 21,
+        "scriptCount": 3,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "partial",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
+          "filesScanned": 19,
+          "filesSkipped": 2,
+          "bytesScanned": 153761,
           "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+            "assets/shadcn-small.png: binary asset not parsed",
+            "assets/shadcn.png: binary asset not parsed"
           ]
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 163,
+                "excerpt": "his for any non-shadcn dependency installs (e.g. `pnpm add date-fns` vs `npm install date-fns`). - **`preset`** → resolved preset code and"
+              },
+              {
+                "file": "design-system.md",
+                "line": 214,
+                "excerpt": "ou reference at the top of the CSS file: ```bash npm install @fontsource-variable/inter @fontsource-variable/cormorant-garamond @fontsource-"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 282,
+                "excerpt": "ngs (e.g. `a2r6bw` or `b0`), from [ui.shadcn.com](https://ui.shadcn.com). ## Detailed References - [rules/forms.md](./rules/forms.md) —"
+              },
+              {
+                "file": "cli.md",
+                "line": 107,
+                "excerpt": "tsx # Works with URLs too. npx shadcn@latest add https://api.npoint.io/abc123 --dry-run # Works with public GitHub registries too. npx s"
+              },
+              {
+                "file": "customization.md",
+                "line": 80,
+                "excerpt": "stom theme URL. npx shadcn@latest apply --preset \"https://ui.shadcn.com/init?base=radix&style=nova&theme=blue&...\" ``` Or edit CSS variab"
+              },
+              {
+                "file": "mcp.md",
+                "line": 92,
+                "excerpt": "ation. ```json { \"registries\": { \"@acme\": \"https://acme.com/r/{name}.json\", \"@private\": { \"url\": \"https://private.com/r/{"
+              },
+              {
+                "file": "registry.md",
+                "line": 29,
+                "excerpt": "er `items` or `include`. ```json { \"$schema\": \"https://ui.shadcn.com/schema/registry.json\", \"name\": \"acme\", \"homepage\": \"https://ac"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "assets/showcase/color-pair.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "assets/showcase/state-matrix.tsx",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/showcase-coverage.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:55:10.211Z",
         "scannedCommit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "c40bb98784690354cfc7cb34ed59b5ee8b1432cbc95b643540f3186a03acf480"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -87,7 +457,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:55:10.211Z",
         "upstreamUpdatedAt": "2026-11-13T10:58:16Z"
       }
     }

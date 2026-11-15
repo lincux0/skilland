@@ -1,6 +1,6 @@
 # Editorial data
 
-Phase 1 的货架/场景定义暂时在 `src/lib/content.ts`。
+Phase 2 的货架/场景定义暂时在 `src/lib/content.ts`。
 
 后续会迁移到这里：
 

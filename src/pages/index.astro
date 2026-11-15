@@ -21,7 +21,7 @@ const sceneCounts = new Map(
 
 <BaseLayout
   title="Skill Shelf"
-  description="一个面向 AI Coding 开发者的 Agent Skills 精选货架。Phase 1 骨架：20 条样例数据。"
+  description="一个面向 AI Coding 开发者的 Agent Skills 精选货架。Phase 2：真实 GitHub 来源、tarball 采集与静态扫描。"
 >
   <section class="relative overflow-hidden border-b border-line">
     <div
@@ -32,8 +32,8 @@ const sceneCounts = new Map(
     </div>
     <div class="container-page relative py-16 md:py-24">
       <div class="flex flex-wrap items-center gap-2">
-        <span class="chip chip-accent">Phase 1 · 基础骨架</span>
-        <span class="chip">20 条样例 · 未扫描 · 未复核</span>
+        <span class="chip chip-accent">Phase 2 · 真实扫描</span>
+        <span class="chip">{stats.total} 条真实来源 · 自动扫描 · 未人工复核</span>
       </div>
 
       <h1 class="mt-7 max-w-4xl text-[42px] font-semibold leading-[1.05] tracking-[-0.04em] md:text-[64px]">
@@ -71,7 +71,7 @@ const sceneCounts = new Map(
           随手拿一件
         </button>
         <a href="/explore" class="text-[12px] text-muted transition-colors hover:text-accent">
-          或浏览全部 20 个 →
+          或浏览全部 {stats.total} 个 →
         </a>
       </div>
 
@@ -85,12 +85,12 @@ const sceneCounts = new Map(
           <dd class="mt-1 text-[20px] font-semibold">10</dd>
         </div>
         <div class="bg-surface px-4 py-4">
-          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Reviewed</dt>
-          <dd class="mt-1 text-[20px] font-semibold text-warn">{stats.reviewed}</dd>
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Full scans</dt>
+          <dd class="mt-1 text-[20px] font-semibold">{stats.complete}</dd>
         </div>
         <div class="bg-surface px-4 py-4">
-          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Scanned</dt>
-          <dd class="mt-1 text-[20px] font-semibold text-warn">{stats.scanned}</dd>
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Reviewed</dt>
+          <dd class="mt-1 text-[20px] font-semibold text-warn">{stats.reviewed}</dd>
         </div>
       </dl>
     </div>
@@ -169,23 +169,23 @@ const sceneCounts = new Map(
         <div class="grid gap-8 md:grid-cols-3">
           <div>
             <p class="section-kicker">What this is</p>
-            <h2 class="mt-2 text-[18px] font-semibold">Phase 1 骨架</h2>
+            <h2 class="mt-2 text-[18px] font-semibold">Phase 2 · 真实扫描</h2>
             <p class="mt-3 text-[12px] leading-6 text-muted">
-              已做：数据 schema、20 条真实来源样例、首页/Explore/详情页、可复制的安装命令。
+              已做：tarball 采集、112 条真实来源、静态规则扫描、真实 commit/bundleHash、首页/Explore/详情页。
             </p>
           </div>
           <div>
             <p class="section-kicker">What is not here yet</p>
             <h2 class="mt-2 text-[18px] font-semibold">还没有</h2>
             <p class="mt-3 text-[12px] leading-6 text-muted">
-              真实扫描、人工复核、Pagefind 全文搜索、中英路由、OpenCode catalog、提交入口。
+              人工复核、Pagefind 全文搜索、中英路由、OpenCode catalog、提交入口。
             </p>
           </div>
           <div>
             <p class="section-kicker">Next</p>
-            <h2 class="mt-2 text-[18px] font-semibold">Phase 2</h2>
+            <h2 class="mt-2 text-[18px] font-semibold">Phase 3</h2>
             <p class="mt-3 text-[12px] leading-6 text-muted">
-              接入 tarball 采集与静态扫描，把样例数据换成可复核的真实数据。
+              接入 Pagefind 中文搜索与分面过滤，把“能逛”的体验做完整。
             </p>
           </div>
         </div>

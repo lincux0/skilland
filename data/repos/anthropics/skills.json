@@ -5,7 +5,7 @@
     "repo": "skills",
     "fullName": "anthropics/skills",
     "url": "https://github.com/anthropics/skills",
-    "stars": 194683,
+    "stars": 194694,
     "licenseSpdx": null,
     "licenseStatus": "unknown",
     "defaultBranch": "main",
@@ -15,56 +15,99 @@
   },
   "skills": [
     {
-      "path": "skills/frontend-design/SKILL.md",
-      "slug": "frontend-design",
-      "name": "frontend-design",
-      "description": "Design and build distinctive front-end interfaces with a clear visual point of view instead of falling back to generic templates.",
-      "descriptionZh": "把前端界面做出明确的视觉主张，而不是套用通用模板。",
-      "frontmatter": {},
+      "path": "skills/academy-guide/SKILL.md",
+      "slug": "academy-guide",
+      "name": "academy-guide",
+      "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"what can Claude do\", \"teach me\", \"learn to use\"; questions about artifacts, projects, skills, plugins, connectors, MCP; requests about rolling Claude out to a team, class, or organization; and any ask for training materials, onboarding content, or learning resources. Use it when the user is learning how to use a feature or product — not when they are mid-task and just want the task done. This skill composes with other skills: after consulting product documentation to answer how a Claude feature works, also check here for a matching course or tutorial — a docs-grounded answer and an Academy recommendation belong together. Only recommend on a strong match; never invent Academy content.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "f27992510c051355dfe68c92394d509af730da5298094ec86834ee40bbd31376",
+        "bundleHash": "d4374d43bef7be278b984add901ed2b58917b7fcc014715c0fb90207aa3457ea",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 19100
+      },
       "files": [
         {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
           "path": "SKILL.md",
-          "size": 9390,
+          "size": 7755,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
         }
       ],
       "metrics": {
-        "bodyTokensEstimate": 2348,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "bodyTokensEstimate": 1939,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 19100,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 30,
+                "excerpt": "al answer. All content lives on [Claude Academy](https://academy.claude.com), Anthropic's learning hub. It offers three kinds of content:"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
         "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "d4374d43bef7be278b984add901ed2b58917b7fcc014715c0fb90207aa3457ea"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
-          "design-to-code"
+          "design-to-code",
+          "write-clearly"
         ],
         "topics": [
           "design",
-          "frontend"
+          "docs",
+          "agent-workflows"
         ],
         "agents": [
           "opencode",
@@ -77,68 +120,136 @@
       },
       "editorial": {
         "shelfIds": [
+          "official",
           "design-systems",
-          "official"
+          "docs-and-data"
         ],
-        "featuredRank": 1,
         "curator": "Skill Shelf"
       },
       "status": "draft",
       "timestamps": {
-        "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
         "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
       }
     },
     {
-      "path": "skills/skill-creator/SKILL.md",
-      "slug": "skill-creator",
-      "name": "skill-creator",
-      "description": "Guide an agent through creating, testing, and refining a new Agent Skill.",
-      "descriptionZh": "引导 agent 创建、测试并迭代一个新的 Agent Skill。",
-      "frontmatter": {},
+      "path": "skills/algorithmic-art/SKILL.md",
+      "slug": "algorithmic-art",
+      "name": "algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef",
+        "bundleHash": "eb2095699f1e4ab97d5539d6b92bd9f3395ac869a6a46de61223936281bed355",
+        "filesFetched": 4,
+        "filesSkipped": 0,
+        "bytesFetched": 59784
+      },
       "files": [
         {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
           "path": "SKILL.md",
-          "size": 33168,
+          "size": 19769,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "templates/generator_template.js",
+          "size": 7826,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "templates/viewer.html",
+          "size": 20844,
+          "kind": "reference",
+          "scanned": true
         }
       ],
       "metrics": {
-        "bodyTokensEstimate": 8292,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "bodyTokensEstimate": 4943,
+        "fileCount": 4,
+        "scriptCount": 1,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 4,
+          "filesSkipped": 0,
+          "bytesScanned": 59784,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 280,
+                "excerpt": "js from CDN - always available --> <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js\"></script> <style> /*"
+              },
+              {
+                "file": "templates/viewer.html",
+                "line": 23,
+                "excerpt": "le>Generative Art Viewer</title> <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js\"></script> <link rel=\"p"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "templates/generator_template.js",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
         "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "eb2095699f1e4ab97d5539d6b92bd9f3395ac869a6a46de61223936281bed355"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "agent-workflows",
-          "skills"
+          "agent-workflows"
         ],
         "agents": [
           "opencode",
@@ -153,67 +264,104 @@
         "shelfIds": [
           "official"
         ],
-        "featuredRank": 13,
         "curator": "Skill Shelf"
       },
       "status": "draft",
       "timestamps": {
-        "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
         "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
       }
     },
     {
-      "path": "skills/pdf/SKILL.md",
-      "slug": "pdf",
-      "name": "pdf",
-      "description": "Extract text and tables, fill forms, and manipulate PDF documents.",
-      "descriptionZh": "提取 PDF 文本与表格、填写表单并处理文档。",
-      "frontmatter": {},
+      "path": "skills/brand-guidelines/SKILL.md",
+      "slug": "brand-guidelines",
+      "name": "brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe",
+        "bundleHash": "37def0755f8ec06ba7f8c1f277ab139ff107a86532779262dcfdfacb376f360c",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 13580
+      },
       "files": [
         {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
           "path": "SKILL.md",
-          "size": 8058,
+          "size": 2235,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
         }
       ],
       "metrics": {
-        "bodyTokensEstimate": 2015,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "bodyTokensEstimate": 559,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 13580,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
         "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "37def0755f8ec06ba7f8c1f277ab139ff107a86532779262dcfdfacb376f360c"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
-          "write-clearly"
+          "design-to-code",
+          "ship-safely"
         ],
         "topics": [
-          "docs",
-          "pdf"
+          "design",
+          "browser",
+          "agent-workflows"
         ],
         "agents": [
           "opencode",
@@ -226,16 +374,1693 @@
       },
       "editorial": {
         "shelfIds": [
-          "docs-and-data",
-          "official"
+          "official",
+          "small-and-readable",
+          "design-systems"
         ],
-        "featuredRank": 5,
         "curator": "Skill Shelf"
       },
       "status": "draft",
       "timestamps": {
-        "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/canvas-design/SKILL.md",
+      "slug": "canvas-design",
+      "name": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b",
+        "bundleHash": "027c27efa306137fbe599f2ddec0d995d9bf25d6cf36a40e69b23ebb7519acb6",
+        "filesFetched": 80,
+        "filesSkipped": 52,
+        "bytesFetched": 5255553
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 11939,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/ArsenalSC-OFL.txt",
+          "size": 4373,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/ArsenalSC-Regular.ttf",
+          "size": 165848,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/BigShoulders-Bold.ttf",
+          "size": 94528,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/BigShoulders-OFL.txt",
+          "size": 4397,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/BigShoulders-Regular.ttf",
+          "size": 94396,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Boldonse-OFL.txt",
+          "size": 4390,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Boldonse-Regular.ttf",
+          "size": 77168,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/BricolageGrotesque-Bold.ttf",
+          "size": 90952,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/BricolageGrotesque-OFL.txt",
+          "size": 4403,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/BricolageGrotesque-Regular.ttf",
+          "size": 90920,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-Bold.ttf",
+          "size": 107352,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-Italic.ttf",
+          "size": 108828,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-OFL.txt",
+          "size": 4394,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/CrimsonPro-Regular.ttf",
+          "size": 106696,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/DMMono-OFL.txt",
+          "size": 4392,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/DMMono-Regular.ttf",
+          "size": 48852,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/EricaOne-OFL.txt",
+          "size": 4410,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/EricaOne-Regular.ttf",
+          "size": 24872,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/GeistMono-Bold.ttf",
+          "size": 78304,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/GeistMono-OFL.txt",
+          "size": 4388,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/GeistMono-Regular.ttf",
+          "size": 78232,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Gloock-OFL.txt",
+          "size": 4381,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Gloock-Regular.ttf",
+          "size": 95156,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/IBMPlexMono-Bold.ttf",
+          "size": 136008,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/IBMPlexMono-OFL.txt",
+          "size": 4363,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/IBMPlexMono-Regular.ttf",
+          "size": 133796,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-Bold.ttf",
+          "size": 161000,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+          "size": 169840,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-Italic.ttf",
+          "size": 170004,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/IBMPlexSerif-Regular.ttf",
+          "size": 160380,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-Bold.ttf",
+          "size": 68084,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-BoldItalic.ttf",
+          "size": 70004,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-Italic.ttf",
+          "size": 69900,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-OFL.txt",
+          "size": 4403,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/InstrumentSans-Regular.ttf",
+          "size": 68028,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/InstrumentSerif-Italic.ttf",
+          "size": 70868,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/InstrumentSerif-Regular.ttf",
+          "size": 69312,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Italiana-OFL.txt",
+          "size": 4394,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Italiana-Regular.ttf",
+          "size": 27184,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/JetBrainsMono-Bold.ttf",
+          "size": 114828,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/JetBrainsMono-OFL.txt",
+          "size": 4399,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/JetBrainsMono-Regular.ttf",
+          "size": 114904,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Jura-Light.ttf",
+          "size": 154308,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Jura-Medium.ttf",
+          "size": 154488,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Jura-OFL.txt",
+          "size": 4380,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/LibreBaskerville-OFL.txt",
+          "size": 4449,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/LibreBaskerville-Regular.ttf",
+          "size": 147584,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Lora-Bold.ttf",
+          "size": 133828,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Lora-BoldItalic.ttf",
+          "size": 140332,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Lora-Italic.ttf",
+          "size": 139328,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Lora-OFL.txt",
+          "size": 4423,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Lora-Regular.ttf",
+          "size": 133888,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/NationalPark-Bold.ttf",
+          "size": 79208,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/NationalPark-OFL.txt",
+          "size": 4399,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/NationalPark-Regular.ttf",
+          "size": 76424,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/NothingYouCouldDo-OFL.txt",
+          "size": 4363,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/NothingYouCouldDo-Regular.ttf",
+          "size": 32020,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Outfit-Bold.ttf",
+          "size": 55392,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Outfit-OFL.txt",
+          "size": 4389,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Outfit-Regular.ttf",
+          "size": 54912,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/PixelifySans-Medium.ttf",
+          "size": 51072,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/PixelifySans-OFL.txt",
+          "size": 4395,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/PoiretOne-OFL.txt",
+          "size": 4366,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/PoiretOne-Regular.ttf",
+          "size": 45244,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/RedHatMono-Bold.ttf",
+          "size": 34420,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/RedHatMono-OFL.txt",
+          "size": 4394,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/RedHatMono-Regular.ttf",
+          "size": 34488,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Silkscreen-OFL.txt",
+          "size": 4394,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Silkscreen-Regular.ttf",
+          "size": 31960,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/SmoochSans-Medium.ttf",
+          "size": 59704,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/SmoochSans-OFL.txt",
+          "size": 4396,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Tektur-Medium.ttf",
+          "size": 76248,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/Tektur-OFL.txt",
+          "size": 4385,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "canvas-fonts/Tektur-Regular.ttf",
+          "size": 75604,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/WorkSans-Bold.ttf",
+          "size": 191304,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/WorkSans-BoldItalic.ttf",
+          "size": 175772,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/WorkSans-Italic.ttf",
+          "size": 174280,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "canvas-fonts/WorkSans-OFL.txt",
+          "size": 4397,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2985,
+        "fileCount": 80,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "partial",
+        "coverage": {
+          "filesScanned": 28,
+          "filesSkipped": 52,
+          "bytesScanned": 137501,
+          "limitations": [
+            "canvas-fonts/ArsenalSC-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/BigShoulders-Bold.ttf: binary asset not parsed",
+            "canvas-fonts/BigShoulders-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/Boldonse-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/BricolageGrotesque-Bold.ttf: binary asset not parsed",
+            "canvas-fonts/BricolageGrotesque-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/CrimsonPro-Bold.ttf: binary asset not parsed",
+            "canvas-fonts/CrimsonPro-Italic.ttf: binary asset not parsed",
+            "canvas-fonts/CrimsonPro-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/DMMono-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/EricaOne-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/GeistMono-Bold.ttf: binary asset not parsed",
+            "canvas-fonts/GeistMono-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/Gloock-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/IBMPlexMono-Bold.ttf: binary asset not parsed",
+            "canvas-fonts/IBMPlexMono-Regular.ttf: binary asset not parsed",
+            "canvas-fonts/IBMPlexSerif-Bold.ttf: binary asset not parsed",
+            "canvas-fonts/IBMPlexSerif-BoldItalic.ttf: binary asset not parsed",
+            "canvas-fonts/IBMPlexSerif-Italic.ttf: binary asset not parsed",
+            "canvas-fonts/IBMPlexSerif-Regular.ttf: binary asset not parsed"
+          ]
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "canvas-fonts/ArsenalSC-OFL.txt",
+                "line": 5,
+                "excerpt": "opied below, and is also available with a FAQ at: https://openfontlicense.org ----------------------------------------------------------"
+              },
+              {
+                "file": "canvas-fonts/BigShoulders-OFL.txt",
+                "line": 1,
+                "excerpt": "Copyright 2019 The Big Shoulders Project Authors (https://github.com/xotypeco/big_shoulders) This Font Software is licensed under the SIL"
+              },
+              {
+                "file": "canvas-fonts/Boldonse-OFL.txt",
+                "line": 1,
+                "excerpt": "Copyright 2024 The Boldonse Project Authors (https://github.com/googlefonts/boldonse) This Font Software is licensed under the SIL O"
+              },
+              {
+                "file": "canvas-fonts/BricolageGrotesque-OFL.txt",
+                "line": 1,
+                "excerpt": "ght 2022 The Bricolage Grotesque Project Authors (https://github.com/ateliertriay/bricolage) This Font Software is licensed under the SIL"
+              },
+              {
+                "file": "canvas-fonts/CrimsonPro-OFL.txt",
+                "line": 1,
+                "excerpt": "Copyright 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro) This Font Software is licensed under the SIL"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "027c27efa306137fbe599f2ddec0d995d9bf25d6cf36a40e69b23ebb7519acb6"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "docs",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/claude-api/SKILL.md",
+      "slug": "claude-api",
+      "name": "claude-api",
+      "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration.\nTRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens).\nSKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "40537cca17c4aa86e4ce83ced39efcbfb1204905e3cf4c4ff98f2eab011e4b7f",
+        "bundleHash": "79bc3eb9c8d15528a31a856117581778dbc06687a5fccecbb18989a355dd900e",
+        "filesFetched": 80,
+        "filesSkipped": 1,
+        "bytesFetched": 1593552
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 105146,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "csharp/claude-api/README.md",
+          "size": 18933,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "csharp/claude-api/batches.md",
+          "size": 413,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "csharp/claude-api/files-api.md",
+          "size": 900,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "csharp/claude-api/streaming.md",
+          "size": 787,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "csharp/claude-api/tool-use.md",
+          "size": 7623,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "curl/examples.md",
+          "size": 9714,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "curl/managed-agents.md",
+          "size": 10788,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "go/claude-api/README.md",
+          "size": 8477,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "go/claude-api/files-api.md",
+          "size": 936,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "go/claude-api/streaming.md",
+          "size": 1026,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "go/claude-api/tool-use.md",
+          "size": 10018,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "go/managed-agents/README.md",
+          "size": 22460,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "java/claude-api/README.md",
+          "size": 11946,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "java/claude-api/files-api.md",
+          "size": 1198,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "java/claude-api/streaming.md",
+          "size": 655,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "java/claude-api/tool-use.md",
+          "size": 11134,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "java/managed-agents/README.md",
+          "size": 20465,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "php/claude-api/README.md",
+          "size": 6554,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "php/claude-api/batches.md",
+          "size": 447,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "php/claude-api/files-api.md",
+          "size": 476,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "php/claude-api/streaming.md",
+          "size": 682,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "php/claude-api/tool-use.md",
+          "size": 9722,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "php/managed-agents/README.md",
+          "size": 16555,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "python/claude-api/README.md",
+          "size": 20623,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "python/claude-api/batches.md",
+          "size": 5723,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "python/claude-api/files-api.md",
+          "size": 4499,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "python/claude-api/sdk-upgrade.md",
+          "size": 28760,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "python/claude-api/streaming.md",
+          "size": 11940,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "python/claude-api/tool-use.md",
+          "size": 21411,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "python/managed-agents/README.md",
+          "size": 14823,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "ruby/claude-api/README.md",
+          "size": 4843,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "ruby/claude-api/streaming.md",
+          "size": 235,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "ruby/claude-api/tool-use.md",
+          "size": 2688,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "ruby/managed-agents/README.md",
+          "size": 12201,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/admin-api.md",
+          "size": 11606,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/agent-design.md",
+          "size": 8736,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/anthropic-cli.md",
+          "size": 23999,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/claude-platform-on-aws.md",
+          "size": 4420,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/cost-optimization.md",
+          "size": 58448,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/error-codes.md",
+          "size": 20796,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/evals/build-eval.md",
+          "size": 54835,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/evals/cost-hillclimb.md",
+          "size": 31711,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/evals/eval-audit.md",
+          "size": 27892,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/evals/eval-hillclimb.md",
+          "size": 69153,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/evals/report/SCHEMA.md",
+          "size": 16121,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/evals/report/build-report-lite.mjs",
+          "size": 27329,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "shared/evals/report/runner-scaffold.mjs",
+          "size": 33142,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "shared/live-sources.md",
+          "size": 17732,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-api-reference.md",
+          "size": 35296,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-client-patterns.md",
+          "size": 12095,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-core.md",
+          "size": 33515,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-environments.md",
+          "size": 14234,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-events.md",
+          "size": 26015,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-memory.md",
+          "size": 11362,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-multiagent.md",
+          "size": 66616,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-onboarding-from-quickstart.md",
+          "size": 19798,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-onboarding-from-url.md",
+          "size": 32707,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-onboarding.md",
+          "size": 16787,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-outcomes.md",
+          "size": 8960,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-overview.md",
+          "size": 14571,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/bug-hunter.md",
+          "size": 8096,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/contract-tracker.md",
+          "size": 1806,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/data-analyst.md",
+          "size": 1561,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/deep-researcher.md",
+          "size": 2430,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/explainer-video-maker.md",
+          "size": 4886,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/field-monitor.md",
+          "size": 2105,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/incident-commander.md",
+          "size": 1723,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/performance-tuner.md",
+          "size": 11394,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/sprint-retro-facilitator.md",
+          "size": 2091,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/structured-extractor.md",
+          "size": 1541,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/support-agent.md",
+          "size": 1481,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/support-to-eng-escalator.md",
+          "size": 1842,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-quickstarts/watchlist-scanner.md",
+          "size": 5642,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-scheduled-deployments.md",
+          "size": 9561,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-self-hosted-sandboxes.md",
+          "size": 27926,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-tools.md",
+          "size": 37869,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/managed-agents-webhooks.md",
+          "size": 11321,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "shared/model-migration.md",
+          "size": 346255,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 26287,
+        "fileCount": 80,
+        "scriptCount": 2,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "partial",
+        "coverage": {
+          "filesScanned": 79,
+          "filesSkipped": 1,
+          "bytesScanned": 1247297,
+          "limitations": [
+            "shared/model-migration.md: >256 KB; not scanned",
+            "file list capped at 80; some files may be omitted"
+          ]
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 46,
+                "excerpt": "example; do not bulk-convert. | | Managed Agents credentials | Keep secrets host-side via custom tools (the only option before vaults shippe"
+              },
+              {
+                "file": "curl/managed-agents.md",
+                "line": 383,
+                "excerpt": "] }' # 2. Session attaches vault containing credentials for that MCP server URL curl -X POST https://api.anthropic.com/v1/sessions \\"
+              },
+              {
+                "file": "go/managed-agents/README.md",
+                "line": 459,
+                "excerpt": "c(err) } // Session attaches vault(s) containing credentials for those MCP server URLs session, err := client.Beta.Sessions.New(ctx, anthrop"
+              },
+              {
+                "file": "java/managed-agents/README.md",
+                "line": 358,
+                "excerpt": "uild()); // Session attaches vault(s) containing credentials for those MCP server URLs var session = client.beta().sessions().create(Session"
+              },
+              {
+                "file": "php/claude-api/README.md",
+                "line": 25,
+                "excerpt": "ent; // Messages-API Bedrock endpoint. Reads AWS credentials from env. $client = new MantleClient(awsRegion: 'us-east-1'); ``` Model IDs on"
+              },
+              {
+                "file": "php/managed-agents/README.md",
+                "line": 374,
+                "excerpt": "], ); // Session attaches vault(s) containing credentials for those MCP server URLs $session = $client->beta->sessions->create( agent"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "python/claude-api/README.md",
+                "line": 6,
+                "excerpt": "# Claude API - Python ## Installation ```bash pip install anthropic ``` ## Client Initialization ```python import anthropic # Default"
+              },
+              {
+                "file": "python/claude-api/sdk-upgrade.md",
+                "line": 45,
+                "excerpt": "the JSON cell sources; edit the source strings, `%pip install` lines included, and keep the JSON valid). Never touch installed packages or ve"
+              },
+              {
+                "file": "python/claude-api/tool-use.md",
+                "line": 105,
+                "excerpt": "API types for use with the tool runner. Requires `pip install anthropic[mcp]` (Python 3.10+). > **Note:** The Claude API also supports an `m"
+              },
+              {
+                "file": "python/managed-agents/README.md",
+                "line": 10,
+                "excerpt": "ot in the request path. ## Installation ```bash pip install anthropic ``` ## Client Initialization ```python import anthropic # Default"
+              },
+              {
+                "file": "shared/anthropic-cli.md",
+                "line": 20,
+                "excerpt": "nts.send()` | ## Install and auth ```sh # macOS brew install anthropics/tap/ant xattr -d com.apple.quarantine \"$(brew --prefix)/bin/ant\" #"
+              },
+              {
+                "file": "shared/claude-platform-on-aws.md",
+                "line": 13,
+                "excerpt": "ge | Install | Client | |---|---|---| | Python | `pip install -U \"anthropic[aws]\"` | `from anthropic import AnthropicAWS` -> `AnthropicAWS()`"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "MEMORY_WRITE",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "shared/managed-agents-api-reference.md",
+                "line": 171,
+                "excerpt": "_store_id\": ...}` entry in `resources[]` (session-create time only). See `shared/managed-agents-memory.md` for the conceptual guide, the FUSE-mount agent interface, preconditions, "
+              },
+              {
+                "file": "shared/managed-agents-self-hosted-sandboxes.md",
+                "line": 173,
+                "excerpt": "emory_store_id\": ..., \"access\": ...}]` at session create, up to 8 per session (see `shared/managed-agents-memory.md`). The difference is *who materializes them*: on cloud, Anthropi"
+              }
+            ],
+            "note": "Writes agent memory or configuration."
+          },
+          {
+            "code": "PRIVILEGE_ESCALATION",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "shared/anthropic-cli.md",
+                "line": 25,
+                "excerpt": "/x86_64/amd64/ -e s/aarch64/arm64/).tar.gz\" \\ | sudo tar -xz -C /usr/local/bin ant # Or from source (Go 1.25+) go install github.co"
+              },
+              {
+                "file": "shared/managed-agents-self-hosted-sandboxes.md",
+                "line": 187,
+                "excerpt": "recommended. Before starting the worker: ```bash sudo mkdir -p /mnt/memory && sudo chown \"$USER\" /mnt/memory ``` Do **not** create t"
+              }
+            ],
+            "note": "Requests elevated or persistent system changes."
+          },
+          {
+            "code": "PROMPT_INJECTION_PATTERN",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 285,
+                "excerpt": "-> `messages`. Keep stable content first (frozen system prompt, deterministic tool list), put volatile content (timestamps, per-request IDs, v"
+              },
+              {
+                "file": "curl/managed-agents.md",
+                "line": 95,
+                "excerpt": "ey is not in the Default workspace) ``` ### With system prompt, custom tools, and GitHub repo ```bash # 1. Create the agent curl -X POST http"
+              },
+              {
+                "file": "python/claude-api/README.md",
+                "line": 108,
+                "excerpt": "== \"text\": print(block.text) ``` --- ## System Prompts ```python response = client.messages.create( model=\"claude-opus-5-5\","
+              },
+              {
+                "file": "python/managed-agents/README.md",
+                "line": 78,
+                "excerpt": "key is not in the Default workspace ``` ### With system prompt and custom tools ```python import os agent = client.beta.agents.create( n"
+              },
+              {
+                "file": "shared/agent-design.md",
+                "line": 93,
+                "excerpt": "specific workaround | | --- | --- | | Editing the system prompt mid-session invalidates the cache. | Append a `{\"role\": \"system\", ...}` message"
+              },
+              {
+                "file": "shared/anthropic-cli.md",
+                "line": 169,
+                "excerpt": "YAML frontmatter = agent config, Markdown body = system prompt environments/cloud.yaml # the environment create body skills/pr-summary/S"
+              }
+            ],
+            "note": "Contains prompt-injection style instructions."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 23,
+                "excerpt": "ted SDK exists for the project. 2. **Raw HTTP** (`curl`, `requests`, `fetch`, `httpx`, etc.) - only when the user explicitly asks for"
+              },
+              {
+                "file": "csharp/claude-api/README.md",
+                "line": 48,
+                "excerpt": "e standard project setup (per the [C# quickstart](https://platform.claude.com/docs/en/get-started): `dotnet new console` -> `dotnet add pa"
+              },
+              {
+                "file": "curl/examples.md",
+                "line": 1,
+                "excerpt": "# Claude API - cURL / Raw HTTP Use these examples when the user needs raw HTTP requests or is work"
+              },
+              {
+                "file": "curl/managed-agents.md",
+                "line": 1,
+                "excerpt": "# Managed Agents - cURL / Raw HTTP Use these examples when the user needs raw HTTP requests or is work"
+              },
+              {
+                "file": "go/claude-api/README.md",
+                "line": 153,
+                "excerpt": "), ) ``` Other sources: `URLPDFSourceParam{URL: \"https://...\"}`, `PlainTextSourceParam{Data: \"...\"}`. --- ## Context Editing / Compacti"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "shared/evals/report/build-report-lite.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "shared/evals/report/runner-scaffold.mjs",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "79bc3eb9c8d15528a31a856117581778dbc06687a5fccecbb18989a355dd900e"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "inherit-codebase",
+          "ship-safely"
+        ],
+        "topics": [
+          "debugging",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/discernment-nudge/SKILL.md",
+      "slug": "discernment-nudge",
+      "name": "discernment-nudge",
+      "description": "After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretation of data, factual claims they may rely on, or a multi-step argument — invoke this skill BEFORE finalizing your reply and then, if it applies, append 2-3 short follow-up questions, each tied to something specific in what you just produced, that help the user check key facts, probe the reasoning or assumptions, and notice missing context. Do this at most once per conversation. Skip it when the user asked a trivial how-to or simple lookup, wants a purely educational explanation, asked you only to format, convert, or assemble a file from content they provided, is writing code they will run, is doing creative writing or casual chat, or already asked you to double-check, cite, or review — the skill file explains these boundaries and the exact output format.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad",
+        "bundleHash": "c3f0a673169471a7c3f45835d1a90620c1821e080754cdce65c55ed77bf74bac",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 21937
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 10592,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2648,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 21937,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "c3f0a673169471a7c3f45835d1a90620c1821e080754cdce65c55ed77bf74bac"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "browser",
+          "code-review",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "docs-and-data",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/doc-coauthoring/SKILL.md",
+      "slug": "doc-coauthoring",
+      "name": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4",
+        "bundleHash": "ac77dcfcbc3363ea52f96fdb9874aa651a06406ac2496b9e7cc93c1e543b8cb6",
+        "filesFetched": 1,
+        "filesSkipped": 0,
+        "bytesFetched": 15815
+      },
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 15815,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 3954,
+        "fileCount": 1,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 1,
+          "filesSkipped": 0,
+          "bytesScanned": 15815,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 303,
+                "excerpt": "nstructions: 1. Open a fresh Claude conversation: https://claude.ai 2. Paste or share the document content (if using a shared doc platform"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "ac77dcfcbc3363ea52f96fdb9874aa651a06406ac2496b9e7cc93c1e543b8cb6"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code",
+          "inherit-codebase",
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "design",
+          "docs",
+          "architecture",
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems",
+          "docs-and-data",
+          "code-quality"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
         "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
       }
     },
@@ -243,45 +2068,538 @@
       "path": "skills/docx/SKILL.md",
       "slug": "docx",
       "name": "docx",
-      "description": "Create and edit Word documents with structured formatting.",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
       "descriptionZh": "创建和编辑带结构化格式的 Word 文档。",
-      "frontmatter": {},
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "e094096faf2861e4dbed2dd4ba1960dbc1a137f8a71403b22bf1e4df41b31051",
+        "bundleHash": "fad176365cae7df5c665a453813072b4be0aa25ef9a1f3613733e5eb57f685af",
+        "filesFetched": 61,
+        "filesSkipped": 0,
+        "bytesFetched": 1162826
+      },
       "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "kind": "reference",
+          "scanned": true
+        },
         {
           "path": "SKILL.md",
           "size": 7442,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 1,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/accept_changes.py",
+          "size": 4051,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/comment.py",
+          "size": 14054,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/merge_runs.py",
+          "size": 9398,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/__init__.py",
+          "size": 4042,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_chart.py",
+          "size": 9938,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_slide.py",
+          "size": 3352,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_theme.py",
+          "size": 3510,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "size": 74984,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "size": 6956,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "size": 51302,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "size": 624,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "size": 152039,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "size": 1231,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "size": 8862,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "size": 14795,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "size": 83612,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "size": 1269,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "size": 7328,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "size": 6382,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "size": 1248,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "size": 880,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "size": 2608,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "size": 3507,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "size": 7507,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "size": 23313,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "size": 1367,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "size": 242277,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "size": 26148,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "size": 25279,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "size": 535,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "size": 5712,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "size": 4010,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "size": 171367,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "size": 4646,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "size": 1963,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "size": 2515,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "size": 2856,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "size": 1344,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/mce/mc.xsd",
+          "size": 3127,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2010.xsd",
+          "size": 26549,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2012.xsd",
+          "size": 3745,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2018.xsd",
+          "size": 901,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+          "size": 1778,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+          "size": 1002,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "size": 600,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+          "size": 745,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/soffice.py",
+          "size": 5945,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validate.py",
+          "size": 7677,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/__init__.py",
+          "size": 336,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/base.py",
+          "size": 34369,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/docx.py",
+          "size": 19745,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/pptx.py",
+          "size": 21058,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/redlining.py",
+          "size": 18983,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/templates/comments.xml",
+          "size": 2603,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/templates/commentsExtended.xml",
+          "size": 2611,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/templates/commentsExtensible.xml",
+          "size": 2707,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/templates/commentsIds.xml",
+          "size": 2619,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/templates/people.xml",
+          "size": 115,
+          "kind": "other",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 1861,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 61,
+        "scriptCount": 15,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 61,
+          "filesSkipped": 0,
+          "bytesScanned": 1162826,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+                "line": 409,
+                "excerpt": "olean\" default=\"false\"/> <xsd:attribute name=\"credentials\" use=\"optional\" type=\"ST_CredMethod\" default=\"integrated\"/> <xsd:attribute"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 21,
+                "excerpt": "s — gotchas `docx` is preinstalled — do not run `npm install` first; write the script and `require('docx')` directly. Only if that require f"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts. Possible negated/teaching context; verify manually."
+          },
+          {
+            "code": "HIDDEN_UNICODE",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <xs:schema xmlns=\"http://"
+              },
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <xs:schema targetNamespace=\"http://schema"
+              },
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <xsd:schema xmlns=\"http:/"
+              }
+            ],
+            "note": "Contains zero-width or bidirectional control characters."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "scripts/accept_changes.py",
+                "line": 21,
+                "excerpt": "0//EN\" \"module.dtd\"> <script:module xmlns:script=\"http://openoffice.org/2000/script\" script:name=\"Module1\" script:language=\"StarBasic\">"
+              },
+              {
+                "file": "scripts/comment.py",
+                "line": 42,
+                "excerpt": "h(__file__).parent / \"templates\" NS = { \"w\": \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\", \"w14\": \"http://schem"
+              },
+              {
+                "file": "scripts/merge_runs.py",
+                "line": 37,
+                "excerpt": "rendered_text, rezip, safe_extract WORDML_NS = \"http://schemas.openxmlformats.org/wordprocessingml/2006/main\" def merge_runs(input_di"
+              },
+              {
+                "file": "scripts/office/helpers/__init__.py",
+                "line": 21,
+                "excerpt": "r\"^[A-Za-z][A-Za-z0-9+.\\-]*:\") SLIDE_REL_TYPE = \"http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide\" def one_li"
+              },
+              {
+                "file": "scripts/office/helpers/pptx_slide.py",
+                "line": 62,
+                "excerpt": "return error.startswith(\"Element \") _PML = \"{http://schemas.openxmlformats.org/presentationml/2006/main}\" _MC = \"{http://schemas.ope"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/__init__.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/accept_changes.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/comment.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/merge_runs.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/helpers/__init__.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/helpers/pptx_chart.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
         "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "fad176365cae7df5c665a453813072b4be0aa25ef9a1f3613733e5eb57f685af"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -311,7 +2629,2233 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/frontend-design/SKILL.md",
+      "slug": "frontend-design",
+      "name": "frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "descriptionZh": "把前端界面做出明确的视觉主张，而不是套用通用模板。",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+        "bundleHash": "f2cb741efbe8c747905c1db4858cc70fd2e519b36dd182f9b2dd498889314f94",
+        "filesFetched": 2,
+        "filesSkipped": 0,
+        "bytesFetched": 19564
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 10174,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 9390,
+          "kind": "skill",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2348,
+        "fileCount": 2,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 2,
+          "filesSkipped": 0,
+          "bytesScanned": 19564,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "f2cb741efbe8c747905c1db4858cc70fd2e519b36dd182f9b2dd498889314f94"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "frontend"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems",
+          "official"
+        ],
+        "featuredRank": 1,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/internal-comms/SKILL.md",
+      "slug": "internal-comms",
+      "name": "internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475",
+        "bundleHash": "ca6b4cc63257f43570962642d3008edc9fdd8b37964f1d5ca8d91355d14bd1f8",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 22393
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 1511,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "examples/3p-updates.md",
+          "size": 3274,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "examples/company-newsletter.md",
+          "size": 3295,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "examples/faq-answers.md",
+          "size": 2366,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "examples/general-comms.md",
+          "size": 602,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 378,
+        "fileCount": 6,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 22393,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "ca6b4cc63257f43570962642d3008edc9fdd8b37964f1d5ca8d91355d14bd1f8"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/mcp-builder/SKILL.md",
+      "slug": "mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "b483b56d6673134497e45489c317f26ae0f1429c194db0297e43073e17e6748c",
+        "bundleHash": "da1a63a89dd71a6ee9008632ca618730be109f54e832d1a735f48a7c9c55bc1d",
+        "filesFetched": 11,
+        "filesSkipped": 0,
+        "bytesFetched": 159159
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 11129,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "reference/evaluation.md",
+          "size": 21663,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "reference/mcp_best_practices.md",
+          "size": 7330,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "reference/node_mcp_server.md",
+          "size": 28745,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "reference/node_mcp_server_v2.md",
+          "size": 35171,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "reference/python_mcp_server.md",
+          "size": 25099,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/connections.py",
+          "size": 4875,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/evaluation.py",
+          "size": 12579,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/example_evaluation.xml",
+          "size": 1194,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/requirements.txt",
+          "size": 29,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2783,
+        "fileCount": 11,
+        "scriptCount": 2,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 11,
+          "filesSkipped": 0,
+          "bytesScanned": 159159,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "reference/node_mcp_server_v2.md",
+                "line": 699,
+                "excerpt": "auth) | | Accept machine-to-machine OAuth (client credentials) | [oauth-client-credentials](https://github.com/modelcontextprotocol/typescrip"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "reference/evaluation.md",
+                "line": 387,
+                "excerpt": "Setup 1. **Install Dependencies** ```bash pip install -r scripts/requirements.txt ``` Or install manually: ```bash pip i"
+              },
+              {
+                "file": "reference/node_mcp_server_v2.md",
+                "line": 14,
+                "excerpt": "L. --- ## Quick Reference ### Install ```bash npm install @modelcontextprotocol/server zod npm install @modelcontextprotocol/express @mod"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 41,
+                "excerpt": "Start with the sitemap to find relevant pages: `https://modelcontextprotocol.io/sitemap.xml` Then fetch specific pages with `.md` suffi"
+              },
+              {
+                "file": "reference/evaluation.md",
+                "line": 456,
+                "excerpt": "sh python scripts/evaluation.py \\ -t sse \\ -u https://example.com/mcp \\ -H \"Authorization: Bearer token123\" \\ -H \"X-Custom-Header:"
+              },
+              {
+                "file": "reference/node_mcp_server.md",
+                "line": 426,
+                "excerpt": "te limit exceeded. Please wait before making more requests.\"; default: return `Error: API request failed with status ${er"
+              },
+              {
+                "file": "reference/node_mcp_server_v2.md",
+                "line": 5,
+                "excerpt": "re adapted from the [MCP TypeScript SDK examples](https://github.com/modelcontextprotocol/typescript-sdk/tree/main/examples). The full v2"
+              },
+              {
+                "file": "reference/python_mcp_server.md",
+                "line": 43,
+                "excerpt": "plete SDK documentation, use WebFetch to load:** `https://raw.githubusercontent.com/modelcontextprotocol/python-sdk/main/README.md` ## Se"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/connections.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/evaluation.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "da1a63a89dd71a6ee9008632ca618730be109f54e832d1a735f48a7c9c55bc1d"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/pdf/SKILL.md",
+      "slug": "pdf",
+      "name": "pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "descriptionZh": "提取 PDF 文本与表格、填写表单并处理文档。",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+        "bundleHash": "e89ca7d6e3dfb0eac9dbc24ad9ebfef68f624d3287d634ea474a6804b459a3cf",
+        "filesFetched": 12,
+        "filesSkipped": 0,
+        "bytesFetched": 68603
+      },
+      "files": [
+        {
+          "path": "FORMS.md",
+          "size": 11857,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "REFERENCE.md",
+          "size": 16724,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 8058,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "scripts/check_bounding_boxes.py",
+          "size": 2774,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/check_fillable_fields.py",
+          "size": 268,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/convert_pdf_to_images.py",
+          "size": 1008,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/create_validation_image.py",
+          "size": 1258,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/extract_form_field_info.py",
+          "size": 4300,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/extract_form_structure.py",
+          "size": 3945,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/fill_fillable_fields.py",
+          "size": 3819,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/fill_pdf_form_with_annotations.py",
+          "size": 3235,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2015,
+        "fileCount": 12,
+        "scriptCount": 8,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 12,
+          "filesSkipped": 0,
+          "bytesScanned": 68603,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 235,
+                "excerpt": "ract Text from Scanned PDFs ```python # Requires: pip install pytesseract pdf2image import pytesseract from pdf2image import convert_from_pat"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/check_bounding_boxes.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/check_fillable_fields.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/convert_pdf_to_images.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/create_validation_image.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/extract_form_field_info.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/extract_form_structure.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "e89ca7d6e3dfb0eac9dbc24ad9ebfef68f624d3287d634ea474a6804b459a3cf"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "pdf"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data",
+          "official"
+        ],
+        "featuredRank": 5,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/pptx/SKILL.md",
+      "slug": "pptx",
+      "name": "pptx",
+      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "1b54d26d78bcb35e3c6a2c723615c4a33c29732de2e5b29c9ecf10b34fb1a2e5",
+        "bundleHash": "86668df42ff2c571dd696d075d1461aaed2af818f710ec3aeb83633d0dd79402",
+        "filesFetched": 58,
+        "filesSkipped": 0,
+        "bytesFetched": 1196374
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 28364,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 0,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/add_slide.py",
+          "size": 18831,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/apply_theme.js",
+          "size": 7291,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/clean.py",
+          "size": 10415,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/__init__.py",
+          "size": 4042,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_chart.py",
+          "size": 9938,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_slide.py",
+          "size": 3352,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_theme.py",
+          "size": 3510,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "size": 74984,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "size": 6956,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "size": 51302,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "size": 624,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "size": 152039,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "size": 1231,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "size": 8862,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "size": 14795,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "size": 83612,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "size": 1269,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "size": 7328,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "size": 6382,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "size": 1248,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "size": 880,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "size": 2608,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "size": 3507,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "size": 7507,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "size": 23313,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "size": 1367,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "size": 242277,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "size": 26148,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "size": 25279,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "size": 535,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "size": 5712,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "size": 4010,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "size": 171367,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "size": 4646,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "size": 1963,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "size": 2515,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "size": 2856,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "size": 1344,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/mce/mc.xsd",
+          "size": 3127,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2010.xsd",
+          "size": 26549,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2012.xsd",
+          "size": 3745,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2018.xsd",
+          "size": 901,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+          "size": 1778,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+          "size": 1002,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "size": 600,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+          "size": 745,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/soffice.py",
+          "size": 5945,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validate.py",
+          "size": 7677,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/__init__.py",
+          "size": 336,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/base.py",
+          "size": 34369,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/docx.py",
+          "size": 19745,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/pptx.py",
+          "size": 21058,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/redlining.py",
+          "size": 18983,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/slide_text.py",
+          "size": 4446,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/thumbnail.py",
+          "size": 9802,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 7091,
+        "fileCount": 58,
+        "scriptCount": 17,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 58,
+          "filesSkipped": 0,
+          "bytesScanned": 1196374,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+                "line": 409,
+                "excerpt": "olean\" default=\"false\"/> <xsd:attribute name=\"credentials\" use=\"optional\" type=\"ST_CredMethod\" default=\"integrated\"/> <xsd:attribute"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 33,
+                "excerpt": "otchas `pptxgenjs` is preinstalled — do not run `npm install` first; write the script and `require('pptxgenjs')` directly. Only if that requ"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts. Possible negated/teaching context; verify manually."
+          },
+          {
+            "code": "HIDDEN_UNICODE",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <xs:schema xmlns=\"http://"
+              },
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <xs:schema targetNamespace=\"http://schema"
+              },
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <xsd:schema xmlns=\"http:/"
+              }
+            ],
+            "note": "Contains zero-width or bidirectional control characters."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "scripts/add_slide.py",
+                "line": 45,
+                "excerpt": "coding=\"UTF-8\" standalone=\"yes\"?> <p:sld xmlns:a=\"http://schemas.openxmlformats.org/drawingml/2006/main\" xmlns:r=\"http://schemas.openxmlf"
+              },
+              {
+                "file": "scripts/office/helpers/__init__.py",
+                "line": 21,
+                "excerpt": "r\"^[A-Za-z][A-Za-z0-9+.\\-]*:\") SLIDE_REL_TYPE = \"http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide\" def one_li"
+              },
+              {
+                "file": "scripts/office/helpers/pptx_slide.py",
+                "line": 62,
+                "excerpt": "return error.startswith(\"Element \") _PML = \"{http://schemas.openxmlformats.org/presentationml/2006/main}\" _MC = \"{http://schemas.ope"
+              },
+              {
+                "file": "scripts/office/helpers/pptx_theme.py",
+                "line": 16,
+                "excerpt": "pping from . import part_text THEME_REL_TYPE = \"http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme\" _MASTER_RE"
+              },
+              {
+                "file": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+                "line": 2,
+                "excerpt": "n=\"1.0\" encoding=\"utf-8\"?> <xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:a=\"http://schemas.openxmlformats.org/drawingm"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/__init__.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/add_slide.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/apply_theme.js",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/clean.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/helpers/__init__.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/helpers/pptx_chart.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "86668df42ff2c571dd696d075d1461aaed2af818f710ec3aeb83633d0dd79402"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "agent-workflows",
+          "planning"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/skill-creator/SKILL.md",
+      "slug": "skill-creator",
+      "name": "skill-creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "descriptionZh": "引导 agent 创建、测试并迭代一个新的 Agent Skill。",
+      "frontmatter": {},
+      "license": {
+        "spdx": null,
+        "status": "unknown",
+        "source": "none"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+        "bundleHash": "d299b765c485af9e155b315b9b32fc2ab594877b548f99d6f4e58b60e159ffba",
+        "filesFetched": 18,
+        "filesSkipped": 0,
+        "bytesFetched": 224992
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 33168,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "agents/analyzer.md",
+          "size": 10376,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "agents/comparator.md",
+          "size": 7287,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "agents/grader.md",
+          "size": 9049,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "assets/eval_review.html",
+          "size": 7058,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "eval-viewer/generate_review.py",
+          "size": 16365,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "eval-viewer/viewer.html",
+          "size": 44998,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "references/schemas.md",
+          "size": 12061,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "scripts/__init__.py",
+          "size": 0,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/aggregate_benchmark.py",
+          "size": 14386,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/generate_report.py",
+          "size": 12847,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/improve_description.py",
+          "size": 11116,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/package_skill.py",
+          "size": 4234,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/quick_validate.py",
+          "size": 3972,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/run_eval.py",
+          "size": 11464,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/run_loop.py",
+          "size": 13605,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/utils.py",
+          "size": 1661,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 8292,
+        "fileCount": 18,
+        "scriptCount": 10,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 18,
+          "filesSkipped": 0,
+          "bytesScanned": 224992,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "PROMPT_INJECTION_PATTERN",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 390,
+                "excerpt": "s 5 \\ --verbose ``` Use the model ID from your system prompt (the one powering the current session) so the triggering test matches what the"
+              }
+            ],
+            "note": "Contains prompt-injection style instructions."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "assets/eval_review.html",
+                "line": 7,
+                "excerpt": "CEHOLDER__</title> <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"> <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\""
+              },
+              {
+                "file": "eval-viewer/generate_review.py",
+                "line": 449,
+                "excerpt": "port = server.server_address[1] url = f\"http://localhost:{port}\" print(f\"\\n Eval Viewer\") print(f\" ──────────────────"
+              },
+              {
+                "file": "eval-viewer/viewer.html",
+                "line": 7,
+                "excerpt": "val Review</title> <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"> <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\""
+              },
+              {
+                "file": "scripts/generate_report.py",
+                "line": 39,
+                "excerpt": "mization</title> <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"> <link rel=\"preconnect\" href=\"https://fonts.gstatic.co"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "eval-viewer/generate_review.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/__init__.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/aggregate_benchmark.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/generate_report.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/improve_description.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/package_skill.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "d299b765c485af9e155b315b9b32fc2ab594877b548f99d6f4e58b60e159ffba"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows",
+          "skills"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "featuredRank": 13,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/slack-gif-creator/SKILL.md",
+      "slug": "slack-gif-creator",
+      "name": "slack-gif-creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22",
+        "bundleHash": "c744ab50a6238ade30b0affc1ed1df4db8abf73869e535ec6beea9e9b1a8a61f",
+        "filesFetched": 7,
+        "filesSkipped": 0,
+        "bytesFetched": 43697
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 7841,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "core/easing.py",
+          "size": 6265,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "core/frame_composer.py",
+          "size": 4548,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "core/gif_builder.py",
+          "size": 9847,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "core/validators.py",
+          "size": 3785,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "requirements.txt",
+          "size": 66,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1961,
+        "fileCount": 7,
+        "scriptCount": 4,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 7,
+          "filesSkipped": 0,
+          "bytesScanned": 43697,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 253,
+                "excerpt": "IL's full capabilities. ## Dependencies ```bash pip install pillow imageio numpy ```"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "core/easing.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "core/frame_composer.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "core/gif_builder.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "core/validators.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "c744ab50a6238ade30b0affc1ed1df4db8abf73869e535ec6beea9e9b1a8a61f"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/theme-factory/SKILL.md",
+      "slug": "theme-factory",
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552",
+        "bundleHash": "f98ae7d58139be5350c29c1e683670edd2bd686986ba74a6244933bc7ccd7f83",
+        "filesFetched": 13,
+        "filesSkipped": 1,
+        "bytesFetched": 144094
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 3124,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "theme-showcase.pdf",
+          "size": 124310,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "themes/arctic-frost.md",
+          "size": 544,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/botanical-garden.md",
+          "size": 519,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/desert-rose.md",
+          "size": 496,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/forest-canopy.md",
+          "size": 506,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/golden-hour.md",
+          "size": 528,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/midnight-galaxy.md",
+          "size": 513,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/modern-minimalist.md",
+          "size": 549,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/ocean-depths.md",
+          "size": 555,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/sunset-boulevard.md",
+          "size": 558,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "themes/tech-innovation.md",
+          "size": 547,
+          "kind": "reference",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 781,
+        "fileCount": 13,
+        "scriptCount": 0,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "partial",
+        "coverage": {
+          "filesScanned": 12,
+          "filesSkipped": 1,
+          "bytesScanned": 19784,
+          "limitations": [
+            "theme-showcase.pdf: binary asset not parsed"
+          ]
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "f98ae7d58139be5350c29c1e683670edd2bd686986ba74a6244933bc7ccd7f83"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely",
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable",
+          "docs-and-data"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/web-artifacts-builder/SKILL.md",
+      "slug": "web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8",
+        "bundleHash": "79c284d4f52a7e8172154db222f167d0bf0f459310331201f8a1acda4252e670",
+        "filesFetched": 5,
+        "filesSkipped": 1,
+        "bytesFetched": 45840
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 3087,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "scripts/bundle-artifact.sh",
+          "size": 1517,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/init-artifact.sh",
+          "size": 9924,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/shadcn-components.tar.gz",
+          "size": 19967,
+          "kind": "archive",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 772,
+        "fileCount": 5,
+        "scriptCount": 2,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "partial",
+        "coverage": {
+          "filesScanned": 4,
+          "filesSkipped": 1,
+          "bytesScanned": 25873,
+          "limitations": [
+            "scripts/shadcn-components.tar.gz: archive not extracted"
+          ]
+        },
+        "flags": [
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "scripts/bundle-artifact.sh",
+                "line": 21,
+                "excerpt": "ies echo \"📦 Installing bundling dependencies...\" pnpm add -D parcel @parcel/config-default parcel-resolver-tspaths html-inline # Create"
+              },
+              {
+                "file": "scripts/init-artifact.sh",
+                "line": 36,
+                "excerpt": "echo \"📦 pnpm not found. Installing pnpm...\" npm install -g pnpm fi # Check if project name is provided if [ -z \"$1\" ]; then echo \"❌"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 74,
+                "excerpt": "arise. ## Reference - **shadcn/ui components**: https://ui.shadcn.com/docs/components"
+              },
+              {
+                "file": "scripts/init-artifact.sh",
+                "line": 283,
+                "excerpt": ".\" cat > components.json << 'EOF' { \"$schema\": \"https://ui.shadcn.com/schema.json\", \"style\": \"default\", \"rsc\": false, \"tsx\": true,"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/bundle-artifact.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/init-artifact.sh",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "79c284d4f52a7e8172154db222f167d0bf0f459310331201f8a1acda4252e670"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "frontend",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "small-and-readable",
+          "design-systems"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/webapp-testing/SKILL.md",
+      "slug": "webapp-testing",
+      "name": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+        "bundleHash": "4e7199ba5174a83044ff04c940f63b917e33526fcd0b7ce2f657b952c3469b80",
+        "filesFetched": 6,
+        "filesSkipped": 0,
+        "bytesFetched": 22394
+      },
+      "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11345,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "SKILL.md",
+          "size": 3913,
+          "kind": "skill",
+          "scanned": true
+        },
+        {
+          "path": "examples/console_logging.py",
+          "size": 1027,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "examples/element_discovery.py",
+          "size": 1463,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "examples/static_html_automation.py",
+          "size": 953,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/with_server.py",
+          "size": 3693,
+          "kind": "script",
+          "scanned": true
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 979,
+        "fileCount": 6,
+        "scriptCount": 4,
+        "hasNetwork": true,
+        "hasCredentialPatterns": false
+      },
+      "scan": {
+        "status": "complete",
+        "coverage": {
+          "filesScanned": 6,
+          "filesSkipped": 0,
+          "bytesScanned": 22394,
+          "limitations": []
+        },
+        "flags": [
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "SKILL.md",
+                "line": 59,
+                "excerpt": "mode page = browser.new_page() page.goto('http://localhost:5173') # Server already running and ready page.wait_for_load_state"
+              },
+              {
+                "file": "examples/console_logging.py",
+                "line": 5,
+                "excerpt": "ng console logs during browser automation url = 'http://localhost:5173' # Replace with your URL console_logs = [] with sync_playwrigh"
+              },
+              {
+                "file": "examples/element_discovery.py",
+                "line": 10,
+                "excerpt": "page and wait for it to fully load page.goto('http://localhost:5173') page.wait_for_load_state('networkidle') # Discover all"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "examples/console_logging.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "examples/element_discovery.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "examples/static_html_automation.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/with_server.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "4e7199ba5174a83044ff04c940f63b917e33526fcd0b7ce2f657b952c3469b80"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "inherit-codebase",
+          "design-to-code",
+          "ship-safely"
+        ],
+        "topics": [
+          "design",
+          "frontend",
+          "testing",
+          "debugging",
+          "browser",
+          "agent-workflows"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official",
+          "design-systems",
+          "testing"
+        ],
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15T04:35:52.576Z",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
         "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
       }
     },
@@ -319,45 +4863,490 @@
       "path": "skills/xlsx/SKILL.md",
       "slug": "xlsx",
       "name": "xlsx",
-      "description": "Build and edit spreadsheets, formulas, and data workflows.",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
       "descriptionZh": "创建和编辑表格、公式与数据工作流。",
-      "frontmatter": {},
+      "frontmatter": {
+        "license": "Complete terms in LICENSE.txt"
+      },
+      "license": {
+        "spdx": "Complete terms in LICENSE.txt",
+        "status": "unknown",
+        "source": "frontmatter"
+      },
+      "upstream": {
+        "latestCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "latestCommitAt": "2026-11-14T15:16:42Z",
+        "latestTreeSha": "f9c04d957809f6f1a314355821139f477263c43c"
+      },
+      "snapshot": {
+        "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "syncedAt": "2026-11-15T04:54:37.729Z",
+        "skillMdHash": "f32b1c2b5d5d31e02964df110d6489613d9345f86830c118cfe24159d8448ce6",
+        "bundleHash": "5e39af52078edc44b267ca71cfcaddb20a7860c11d3839a19ee9d7f6ec57b61c",
+        "filesFetched": 53,
+        "filesSkipped": 0,
+        "bytesFetched": 1161335
+      },
       "files": [
+        {
+          "path": "LICENSE.txt",
+          "size": 11357,
+          "kind": "reference",
+          "scanned": true
+        },
         {
           "path": "SKILL.md",
           "size": 9770,
           "kind": "skill",
-          "scanned": false,
-          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/__init__.py",
+          "size": 4042,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_chart.py",
+          "size": 9938,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_slide.py",
+          "size": 3352,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/helpers/pptx_theme.py",
+          "size": 3510,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+          "size": 74984,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+          "size": 6956,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+          "size": 51302,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+          "size": 624,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+          "size": 152039,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+          "size": 1231,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+          "size": 8862,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+          "size": 14795,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+          "size": 83612,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+          "size": 1269,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+          "size": 7328,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+          "size": 6382,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+          "size": 1248,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+          "size": 880,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+          "size": 2608,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+          "size": 3507,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+          "size": 7507,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+          "size": 23313,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+          "size": 1367,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+          "size": 242277,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+          "size": 26148,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+          "size": 25279,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+          "size": 535,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+          "size": 5712,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+          "size": 4010,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+          "size": 171367,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+          "size": 4646,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+          "size": 1963,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+          "size": 2515,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+          "size": 2856,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+          "size": 1344,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/mce/mc.xsd",
+          "size": 3127,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2010.xsd",
+          "size": 26549,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2012.xsd",
+          "size": 3745,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-2018.xsd",
+          "size": 901,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+          "size": 1778,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+          "size": 1002,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+          "size": 600,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+          "size": 745,
+          "kind": "other",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/soffice.py",
+          "size": 5945,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validate.py",
+          "size": 7677,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/__init__.py",
+          "size": 336,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/base.py",
+          "size": 34369,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/docx.py",
+          "size": 19745,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/pptx.py",
+          "size": 21058,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/office/validators/redlining.py",
+          "size": 18983,
+          "kind": "script",
+          "scanned": true
+        },
+        {
+          "path": "scripts/recalc.py",
+          "size": 34340,
+          "kind": "script",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 2443,
-        "fileCount": 1,
-        "scriptCount": null,
-        "hasNetwork": null,
-        "hasCredentialPatterns": null
+        "fileCount": 53,
+        "scriptCount": 12,
+        "hasNetwork": true,
+        "hasCredentialPatterns": true
       },
       "scan": {
-        "status": "not-scanned",
+        "status": "complete",
         "coverage": {
-          "filesScanned": 0,
-          "filesSkipped": 1,
-          "bytesScanned": 0,
-          "limitations": [
-            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
-          ]
+          "filesScanned": 53,
+          "filesSkipped": 0,
+          "bytesScanned": 1161335,
+          "limitations": []
         },
-        "flags": [],
-        "scannerVersion": "none",
-        "rulesetVersion": "none",
-        "scannedAt": "2026-11-15",
+        "flags": [
+          {
+            "code": "CREDENTIAL_ACCESS",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+                "line": 409,
+                "excerpt": "olean\" default=\"false\"/> <xsd:attribute name=\"credentials\" use=\"optional\" type=\"ST_CredMethod\" default=\"integrated\"/> <xsd:attribute"
+              }
+            ],
+            "note": "References credential files or secret stores."
+          },
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "SKILL.md",
+                "line": 16,
+                "excerpt": ", and `markitdown` are preinstalled — do not run `pip install` first; write the script and import directly. Only if an import fails (or the `"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts. Possible negated/teaching context; verify manually."
+          },
+          {
+            "code": "HIDDEN_UNICODE",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <xs:schema xmlns=\"http://"
+              },
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <xs:schema targetNamespace=\"http://schema"
+              },
+              {
+                "file": "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+                "line": 1,
+                "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <xsd:schema xmlns=\"http:/"
+              }
+            ],
+            "note": "Contains zero-width or bidirectional control characters."
+          },
+          {
+            "code": "NETWORK_FETCH",
+            "severity": "medium",
+            "evidence": [
+              {
+                "file": "LICENSE.txt",
+                "line": 4,
+                "excerpt": "Version 2.0, January 2004 http://www.apache.org/licenses/ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DIS"
+              },
+              {
+                "file": "scripts/office/helpers/__init__.py",
+                "line": 21,
+                "excerpt": "r\"^[A-Za-z][A-Za-z0-9+.\\-]*:\") SLIDE_REL_TYPE = \"http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide\" def one_li"
+              },
+              {
+                "file": "scripts/office/helpers/pptx_slide.py",
+                "line": 62,
+                "excerpt": "return error.startswith(\"Element \") _PML = \"{http://schemas.openxmlformats.org/presentationml/2006/main}\" _MC = \"{http://schemas.ope"
+              },
+              {
+                "file": "scripts/office/helpers/pptx_theme.py",
+                "line": 16,
+                "excerpt": "pping from . import part_text THEME_REL_TYPE = \"http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme\" _MASTER_RE"
+              },
+              {
+                "file": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+                "line": 2,
+                "excerpt": "n=\"1.0\" encoding=\"utf-8\"?> <xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:a=\"http://schemas.openxmlformats.org/drawingm"
+              },
+              {
+                "file": "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+                "line": 2,
+                "excerpt": "n=\"1.0\" encoding=\"utf-8\"?> <xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:a=\"http://schemas.openxmlformats.org/drawingm"
+              }
+            ],
+            "note": "Mentions network access or a network tool."
+          },
+          {
+            "code": "SCRIPT_PRESENT",
+            "severity": "low",
+            "evidence": [
+              {
+                "file": "scripts/office/helpers/__init__.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/helpers/pptx_chart.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/helpers/pptx_slide.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/helpers/pptx_theme.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/soffice.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              },
+              {
+                "file": "scripts/office/validate.py",
+                "excerpt": "Executable or script file present in the skill bundle."
+              }
+            ],
+            "note": "The bundle contains executable/script files; contents were scanned but never executed."
+          }
+        ],
+        "scannerVersion": "2.0.0",
+        "rulesetVersion": "2.0.0",
+        "scannedAt": "2026-11-15T04:54:37.729Z",
         "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
-        "scannedBundleHash": "not-scanned"
+        "scannedBundleHash": "5e39af52078edc44b267ca71cfcaddb20a7860c11d3839a19ee9d7f6ec57b61c"
       },
       "review": {
         "status": "unreviewed",
-        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+        "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
         "scenes": [
@@ -388,7 +5377,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15T04:54:37.729Z",
         "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
       }
     }
