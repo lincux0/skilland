@@ -1,0 +1,396 @@
+{
+  "repo": {
+    "id": 1061953414,
+    "owner": "anthropics",
+    "repo": "skills",
+    "fullName": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "stars": 194683,
+    "licenseSpdx": null,
+    "licenseStatus": "unknown",
+    "defaultBranch": "main",
+    "headCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+    "archived": false,
+    "pushedAt": "2026-11-14T21:52:49Z"
+  },
+  "skills": [
+    {
+      "path": "skills/frontend-design/SKILL.md",
+      "slug": "frontend-design",
+      "name": "frontend-design",
+      "description": "Design and build distinctive front-end interfaces with a clear visual point of view instead of falling back to generic templates.",
+      "descriptionZh": "把前端界面做出明确的视觉主张，而不是套用通用模板。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9390,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2348,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "design-to-code"
+        ],
+        "topics": [
+          "design",
+          "frontend"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "design-systems",
+          "official"
+        ],
+        "featuredRank": 1,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/skill-creator/SKILL.md",
+      "slug": "skill-creator",
+      "name": "skill-creator",
+      "description": "Guide an agent through creating, testing, and refining a new Agent Skill.",
+      "descriptionZh": "引导 agent 创建、测试并迭代一个新的 Agent Skill。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 33168,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 8292,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "agent-workflows",
+          "skills"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "featuredRank": 13,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/pdf/SKILL.md",
+      "slug": "pdf",
+      "name": "pdf",
+      "description": "Extract text and tables, fill forms, and manipulate PDF documents.",
+      "descriptionZh": "提取 PDF 文本与表格、填写表单并处理文档。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 8058,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2015,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "pdf"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data",
+          "official"
+        ],
+        "featuredRank": 5,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/docx/SKILL.md",
+      "slug": "docx",
+      "name": "docx",
+      "description": "Create and edit Word documents with structured formatting.",
+      "descriptionZh": "创建和编辑带结构化格式的 Word 文档。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 7442,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1861,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "word"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data",
+          "official"
+        ],
+        "featuredRank": 16,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    },
+    {
+      "path": "skills/xlsx/SKILL.md",
+      "slug": "xlsx",
+      "name": "xlsx",
+      "description": "Build and edit spreadsheets, formulas, and data workflows.",
+      "descriptionZh": "创建和编辑表格、公式与数据工作流。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9770,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2443,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "docs",
+          "spreadsheet",
+          "data"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data",
+          "official"
+        ],
+        "featuredRank": 17,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-14T21:52:49Z"
+      }
+    }
+  ]
+}

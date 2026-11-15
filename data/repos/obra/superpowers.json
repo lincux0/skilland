@@ -1,0 +1,247 @@
+{
+  "repo": {
+    "id": 1073224795,
+    "owner": "obra",
+    "repo": "superpowers",
+    "fullName": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "stars": 317683,
+    "licenseSpdx": "MIT",
+    "licenseStatus": "permissive",
+    "defaultBranch": "main",
+    "headCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "archived": false,
+    "pushedAt": "2026-11-03T23:24:58Z"
+  },
+  "skills": [
+    {
+      "path": "skills/test-driven-development/SKILL.md",
+      "slug": "test-driven-development",
+      "name": "test-driven-development",
+      "description": "Drive implementation with a red-green-refactor workflow and focused tests.",
+      "descriptionZh": "用红-绿-重构的循环和聚焦测试驱动实现。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9578,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2395,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests"
+        ],
+        "topics": [
+          "testing",
+          "tdd"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "testing",
+          "code-quality"
+        ],
+        "featuredRank": 4,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/systematic-debugging/SKILL.md",
+      "slug": "systematic-debugging",
+      "name": "systematic-debugging",
+      "description": "Debug systematically: reproduce, isolate, form hypotheses, and verify fixes.",
+      "descriptionZh": "系统化调试：复现、隔离、提出假设并验证修复。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 9530,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2383,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "add-tests",
+          "inherit-codebase"
+        ],
+        "topics": [
+          "debugging",
+          "testing"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "testing",
+          "code-quality"
+        ],
+        "featuredRank": 11,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    },
+    {
+      "path": "skills/writing-plans/SKILL.md",
+      "slug": "writing-plans",
+      "name": "writing-plans",
+      "description": "Turn a feature request into a clear, executable implementation plan.",
+      "descriptionZh": "把功能需求拆成清晰、可执行的实现计划。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 10335,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 2584,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "write-clearly"
+        ],
+        "topics": [
+          "planning",
+          "docs"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "docs-and-data",
+          "code-quality"
+        ],
+        "featuredRank": 10,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-03T23:24:58Z"
+      }
+    }
+  ]
+}

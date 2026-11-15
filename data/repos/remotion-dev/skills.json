@@ -1,0 +1,91 @@
+{
+  "repo": {
+    "id": 1137388347,
+    "owner": "remotion-dev",
+    "repo": "skills",
+    "fullName": "remotion-dev/skills",
+    "url": "https://github.com/remotion-dev/skills",
+    "stars": 7140,
+    "licenseSpdx": null,
+    "licenseStatus": "unknown",
+    "defaultBranch": "main",
+    "headCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+    "archived": false,
+    "pushedAt": "2026-11-11T19:23:32Z"
+  },
+  "skills": [
+    {
+      "path": "skills/remotion-best-practices/SKILL.md",
+      "slug": "remotion-best-practices",
+      "name": "remotion-best-practices",
+      "description": "Build programmatic videos with Remotion using current APIs and patterns.",
+      "descriptionZh": "用 Remotion 的当前 API 与模式制作程序化视频。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 4426,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1107,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [],
+        "topics": [
+          "video",
+          "remotion"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "featuredRank": 18,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "repo": {
+    "id": 1148788086,
+    "owner": "mattpocock",
+    "repo": "skills",
+    "fullName": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "stars": 324553,
+    "licenseSpdx": "MIT",
+    "licenseStatus": "permissive",
+    "defaultBranch": "main",
+    "headCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "archived": false,
+    "pushedAt": "2026-11-13T12:30:31Z"
+  },
+  "skills": [
+    {
+      "path": "skills/engineering/code-review/SKILL.md",
+      "slug": "code-review",
+      "name": "code-review",
+      "description": "Review a change for correctness, clarity, and missing tests before merge.",
+      "descriptionZh": "在合并前审查变更的正确性、清晰度和测试缺口。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6721,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1680,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "code-review",
+          "quality"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "code-quality"
+        ],
+        "featuredRank": 7,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    },
+    {
+      "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "slug": "improve-codebase-architecture",
+      "name": "improve-codebase-architecture",
+      "description": "Find structural friction in a codebase and propose incremental architecture improvements.",
+      "descriptionZh": "发现代码库的结构性摩擦，并提出渐进式架构改进。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6028,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1507,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "inherit-codebase",
+          "ship-safely"
+        ],
+        "topics": [
+          "architecture",
+          "code-review"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "code-quality"
+        ],
+        "featuredRank": 20,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-13T12:30:31Z"
+      }
+    }
+  ]
+}

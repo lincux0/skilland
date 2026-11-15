@@ -1,0 +1,95 @@
+{
+  "repo": {
+    "id": 1132001614,
+    "owner": "vercel-labs",
+    "repo": "agent-browser",
+    "fullName": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "stars": 51269,
+    "licenseSpdx": "Apache-2.0",
+    "licenseStatus": "permissive",
+    "defaultBranch": "main",
+    "headCommit": "e1723082258b6ff7f8ee9ba1e681ea872d128e43",
+    "archived": false,
+    "pushedAt": "2026-11-15T03:21:45Z"
+  },
+  "skills": [
+    {
+      "path": "skills/agent-browser/SKILL.md",
+      "slug": "agent-browser",
+      "name": "agent-browser",
+      "description": "Give an agent a browser for navigating pages, filling forms, and verifying UI behavior.",
+      "descriptionZh": "让 agent 操作浏览器：导航、填表并验证界面行为。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3306,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 827,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "e1723082258b6ff7f8ee9ba1e681ea872d128e43",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "browser",
+          "testing",
+          "ui"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "official"
+        ],
+        "featuredRank": 9,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-15T03:21:45Z"
+      }
+    }
+  ]
+}

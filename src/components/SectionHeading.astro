@@ -1,0 +1,22 @@
+---
+interface Props {
+  kicker: string;
+  title: string;
+  href?: string;
+  linkLabel?: string;
+}
+
+const { kicker, title, href, linkLabel = "查看全部" } = Astro.props;
+---
+
+<div class="mb-5 flex items-end justify-between gap-4">
+  <div>
+    <p class="section-kicker">{kicker}</p>
+    <h2 class="mt-2 text-[22px] font-semibold tracking-tight md:text-[26px]">{title}</h2>
+  </div>
+  {href && (
+    <a class="shrink-0 text-[12px] text-muted transition-colors hover:text-accent" href={href}>
+      {linkLabel} <span aria-hidden="true">→</span>
+    </a>
+  )}
+</div>

@@ -1,0 +1,205 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SkillCard from "../components/SkillCard.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import { getAllSkills, getFeaturedSkills, getSkillsForShelf, getStats } from "../lib/skills";
+import { getShelf, scenes } from "../lib/content";
+
+const all = getAllSkills();
+const featured = getFeaturedSkills(5);
+const stats = getStats();
+const designShelf = getShelf("design-systems")!;
+const smallShelf = getShelf("small-and-readable")!;
+const officialShelf = getShelf("official")!;
+const designSkills = getSkillsForShelf("design-systems", 4);
+const smallSkills = getSkillsForShelf("small-and-readable", 5);
+const officialSkills = getSkillsForShelf("official", 6);
+const sceneCounts = new Map(
+  scenes.map((scene) => [scene.id, all.filter((skill) => skill.taxonomy.scenes.includes(scene.id)).length]),
+);
+---
+
+<BaseLayout
+  title="Skill Shelf"
+  description="一个面向 AI Coding 开发者的 Agent Skills 精选货架。Phase 1 骨架：20 条样例数据。"
+>
+  <section class="relative overflow-hidden border-b border-line">
+    <div
+      class="pointer-events-none absolute inset-0 opacity-70"
+      style="background: radial-gradient(900px 420px at 50% -10%, color-mix(in srgb, var(--color-accent) 11%, transparent), transparent 70%);"
+      aria-hidden="true"
+    >
+    </div>
+    <div class="container-page relative py-16 md:py-24">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="chip chip-accent">Phase 1 · 基础骨架</span>
+        <span class="chip">20 条样例 · 未扫描 · 未复核</span>
+      </div>
+
+      <h1 class="mt-7 max-w-4xl text-[42px] font-semibold leading-[1.05] tracking-[-0.04em] md:text-[64px]">
+        找到能立刻用上的
+        <span class="text-accent">Agent Skills</span>
+      </h1>
+      <p class="mt-5 max-w-2xl text-[15px] leading-7 text-muted md:text-[16px]">
+        精选、可逛、装得进你的 agent。先看它能做什么、什么时候适合，再决定要不要装。
+        不追全量索引，只做值得被看见的那一小部分。
+      </p>
+
+      <form action="/explore" method="get" class="mt-8 flex max-w-2xl flex-col gap-2 sm:flex-row">
+        <label class="sr-only" for="home-search">搜索 Skills</label>
+        <input
+          id="home-search"
+          name="q"
+          type="search"
+          placeholder="搜 skill、场景或技术，例如“补测试”"
+          class="h-11 min-w-0 flex-1 rounded-lg border border-line bg-surface px-4 text-[13px] text-ink placeholder:text-faint focus:border-accent focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="h-11 rounded-lg bg-accent px-5 text-[13px] font-semibold text-accent-ink transition-opacity hover:opacity-90"
+        >
+          搜索
+        </button>
+      </form>
+
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <button
+          type="button"
+          data-random-skill
+          class="rounded-md border border-line-strong px-3 py-2 text-[12px] text-ink transition-colors hover:border-accent hover:text-accent"
+        >
+          随手拿一件
+        </button>
+        <a href="/explore" class="text-[12px] text-muted transition-colors hover:text-accent">
+          或浏览全部 20 个 →
+        </a>
+      </div>
+
+      <dl class="mt-12 grid max-w-2xl grid-cols-2 gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-4">
+        <div class="bg-surface px-4 py-4">
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Skills</dt>
+          <dd class="mt-1 text-[20px] font-semibold">{stats.total}</dd>
+        </div>
+        <div class="bg-surface px-4 py-4">
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Sources</dt>
+          <dd class="mt-1 text-[20px] font-semibold">10</dd>
+        </div>
+        <div class="bg-surface px-4 py-4">
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Reviewed</dt>
+          <dd class="mt-1 text-[20px] font-semibold text-warn">{stats.reviewed}</dd>
+        </div>
+        <div class="bg-surface px-4 py-4">
+          <dt class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Scanned</dt>
+          <dd class="mt-1 text-[20px] font-semibold text-warn">{stats.scanned}</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="container-page">
+    <section class="py-14" id="today">
+      <SectionHeading kicker="Today's shelf" title="今日五件" href="/explore" linkLabel="看全部" />
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        {featured.map((skill) => <SkillCard skill={skill} compact />)}
+      </div>
+    </section>
+
+    <section class="border-t border-line py-14" id="scenes">
+      <SectionHeading kicker="Start from the situation" title="按场景挑" />
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        {scenes.map((scene) => (
+          <a
+            href={`/explore?scene=${scene.id}`}
+            class="card group flex flex-col p-4 transition-colors hover:border-accent/50 hover:bg-surface-2/60"
+          >
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="text-[14px] font-semibold leading-5 group-hover:text-accent">{scene.title}</h3>
+              <span class="font-mono text-[10px] text-faint">{sceneCounts.get(scene.id) ?? 0}</span>
+            </div>
+            <p class="mt-2 text-[12px] leading-5 text-muted">{scene.description}</p>
+            <p class="mt-auto pt-4 font-mono text-[10px] text-faint">不适合：{scene.notFor}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="border-t border-line py-14" id="collections">
+      <SectionHeading
+        kicker="Collection 01"
+        title={designShelf.title}
+        href="/explore?shelf=design-systems"
+        linkLabel="查看专题"
+      />
+      <p class="-mt-2 mb-5 max-w-2xl text-[13px] leading-6 text-muted">{designShelf.blurb}</p>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {designSkills.map((skill) => <SkillCard skill={skill} compact />)}
+      </div>
+    </section>
+
+    <section class="border-t border-line py-14">
+      <SectionHeading
+        kicker="Collection 02"
+        title={smallShelf.title}
+        href="/explore?shelf=small-and-readable"
+        linkLabel="查看专题"
+      />
+      <p class="-mt-2 mb-5 max-w-2xl text-[13px] leading-6 text-muted">
+        {smallShelf.blurb} 体积小只代表更容易读，不代表没有风险。
+      </p>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        {smallSkills.map((skill) => <SkillCard skill={skill} compact />)}
+      </div>
+    </section>
+
+    <section class="border-t border-line py-14">
+      <SectionHeading
+        kicker="Collection 03"
+        title={officialShelf.title}
+        href="/explore?shelf=official"
+        linkLabel="查看专题"
+      />
+      <p class="-mt-2 mb-5 max-w-2xl text-[13px] leading-6 text-muted">{officialShelf.blurb}</p>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {officialSkills.map((skill) => <SkillCard skill={skill} />)}
+      </div>
+    </section>
+
+    <section class="border-t border-line py-14">
+      <div class="card p-6 md:p-8">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div>
+            <p class="section-kicker">What this is</p>
+            <h2 class="mt-2 text-[18px] font-semibold">Phase 1 骨架</h2>
+            <p class="mt-3 text-[12px] leading-6 text-muted">
+              已做：数据 schema、20 条真实来源样例、首页/Explore/详情页、可复制的安装命令。
+            </p>
+          </div>
+          <div>
+            <p class="section-kicker">What is not here yet</p>
+            <h2 class="mt-2 text-[18px] font-semibold">还没有</h2>
+            <p class="mt-3 text-[12px] leading-6 text-muted">
+              真实扫描、人工复核、Pagefind 全文搜索、中英路由、OpenCode catalog、提交入口。
+            </p>
+          </div>
+          <div>
+            <p class="section-kicker">Next</p>
+            <h2 class="mt-2 text-[18px] font-semibold">Phase 2</h2>
+            <p class="mt-3 text-[12px] leading-6 text-muted">
+              接入 tarball 采集与静态扫描，把样例数据换成可复核的真实数据。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script is:inline>
+    const randomButton = document.querySelector("[data-random-skill]");
+    randomButton?.addEventListener("click", () => {
+      const links = Array.from(document.querySelectorAll("a[data-skill-url]"));
+      if (!links.length) return;
+      const link = links[Math.floor(Math.random() * links.length)];
+      if (link instanceof HTMLAnchorElement) window.location.href = link.href;
+    });
+  </script>
+</BaseLayout>

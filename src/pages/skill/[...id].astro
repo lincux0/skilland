@@ -1,0 +1,292 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SkillCard from "../../components/SkillCard.astro";
+import AgentBadges from "../../components/AgentBadges.astro";
+import InstallCommand from "../../components/InstallCommand";
+import { getAllSkills } from "../../lib/skills";
+import { getScene } from "../../lib/content";
+import type { SkillRecord } from "../../lib/schema";
+import {
+  formatBytes,
+  formatDate,
+  formatTokens,
+  licenseLabel,
+  reviewLabel,
+  scanLabel,
+  shortCommit,
+  statusLabel,
+} from "../../lib/format";
+
+export function getStaticPaths() {
+  return getAllSkills().map((skill) => ({
+    params: { id: skill.publicId },
+    props: { skill },
+  }));
+}
+
+const { skill } = Astro.props as { skill: SkillRecord };
+const sceneItems = skill.taxonomy.scenes
+  .map((id) => getScene(id))
+  .filter((scene): scene is NonNullable<typeof scene> => Boolean(scene));
+const related = getAllSkills()
+  .filter(
+    (item) =>
+      item.publicId !== skill.publicId &&
+      item.taxonomy.scenes.some((scene) => skill.taxonomy.scenes.includes(scene)),
+  )
+  .slice(0, 3);
+const sourceUrl = `https://github.com/${skill.source.fullName}/blob/${skill.snapshot.commit}/${skill.path}`;
+const isDraft = skill.status === "draft";
+---
+
+<BaseLayout title={skill.name} description={skill.descriptionZh ?? skill.description}>
+  <div class="container-page py-10 md:py-14">
+    <nav class="flex items-center gap-2 font-mono text-[10px] text-faint" aria-label="面包屑">
+      <a href="/explore" class="hover:text-accent">Explore</a>
+      <span aria-hidden="true">/</span>
+      <span>{skill.source.fullName}</span>
+      <span aria-hidden="true">/</span>
+      <span class="text-muted">{skill.name}</span>
+    </nav>
+
+    <div class="mt-7 flex flex-wrap items-center gap-2">
+      <span class="chip">{statusLabel(skill.status)}</span>
+      <span class="chip">{scanLabel(skill.scan.status)}</span>
+      <span class="chip">{reviewLabel(skill.review.status)}</span>
+      <span class="chip">{licenseLabel(skill.source.licenseSpdx)}</span>
+      {isDraft && <span class="chip chip-accent">Phase 1 样例</span>}
+    </div>
+
+    <div class="mt-4 flex flex-col justify-between gap-5 md:flex-row md:items-start">
+      <div class="max-w-3xl">
+        <h1 class="text-[38px] font-semibold leading-[1.05] tracking-[-0.04em] md:text-[54px]">
+          {skill.name}
+        </h1>
+        <p class="mt-4 text-[16px] leading-7 text-muted md:text-[17px]">
+          {skill.descriptionZh ?? skill.description}
+        </p>
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <AgentBadges agents={skill.taxonomy.agents} portability={skill.taxonomy.portability} />
+          <span class="text-[11px] text-faint">兼容性未逐一验证</span>
+        </div>
+      </div>
+      <a
+        href={sourceUrl}
+        class="shrink-0 rounded-md border border-line-strong px-3 py-2 text-[12px] text-muted transition-colors hover:border-accent hover:text-accent"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        在 GitHub 查看 ↗
+      </a>
+    </div>
+
+    <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
+      <div class="min-w-0 space-y-10">
+        <section>
+          <h2 class="section-kicker">What it does</h2>
+          <div class="mt-3 space-y-4 text-[14px] leading-7 text-muted">
+            <p>{skill.descriptionZh ?? skill.description}</p>
+            {skill.descriptionZh && skill.descriptionZh !== skill.description && (
+              <details class="rounded-lg border border-line bg-surface px-4 py-3">
+                <summary class="cursor-pointer text-[11px] text-faint">英文原文</summary>
+                <p class="mt-3 text-[13px] leading-6">{skill.description}</p>
+              </details>
+            )}
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-kicker">When to use it</h2>
+          {sceneItems.length > 0 ? (
+            <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {sceneItems.map((scene) => (
+                <div class="card p-4">
+                  <h3 class="text-[14px] font-semibold">{scene.title}</h3>
+                  <p class="mt-2 text-[12px] leading-5 text-muted">{scene.description}</p>
+                  <p class="mt-3 font-mono text-[10px] leading-5 text-faint">不适合：{scene.notFor}</p>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p class="mt-3 text-[13px] text-muted">这个条目暂未归入场景；请根据描述判断是否适合。</p>
+          )}
+        </section>
+
+        <section>
+          <div class="flex items-end justify-between gap-4 border-b border-line pb-3">
+            <div>
+              <h2 class="section-kicker">Ingredients</h2>
+              <p class="mt-2 text-[16px] font-semibold">配料表</p>
+            </div>
+            <span class="chip">未扫描 · 仅元数据</span>
+          </div>
+
+          <div class="mt-4 grid gap-3 md:grid-cols-3">
+            <div class="card p-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Files</p>
+              <p class="mt-2 text-[22px] font-semibold">{skill.metrics.fileCount}</p>
+              <p class="mt-1 text-[11px] text-muted">Phase 1 仅列出 SKILL.md</p>
+            </div>
+            <div class="card p-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Tokens</p>
+              <p class="mt-2 text-[22px] font-semibold">{formatTokens(skill.metrics.bodyTokensEstimate)}</p>
+              <p class="mt-1 text-[11px] text-muted">按文件字节粗略估算</p>
+            </div>
+            <div class="card p-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Scripts</p>
+              <p class="mt-2 text-[22px] font-semibold">—</p>
+              <p class="mt-1 text-[11px] text-muted">未扫描，不能判断</p>
+            </div>
+          </div>
+
+          <div class="mt-4 overflow-x-auto rounded-lg border border-line">
+            <table class="w-full text-left text-[12px]">
+              <thead class="bg-surface-2 text-faint">
+                <tr>
+                  <th class="px-4 py-3 font-medium">文件</th>
+                  <th class="px-4 py-3 font-medium">大小</th>
+                  <th class="px-4 py-3 font-medium">类型</th>
+                  <th class="px-4 py-3 font-medium">扫描</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-line bg-surface">
+                {skill.files.map((file) => (
+                  <tr>
+                    <td class="break-all px-4 py-3 font-mono text-[11px] text-ink">{file.path}</td>
+                    <td class="px-4 py-3 text-muted">{formatBytes(file.size)}</td>
+                    <td class="px-4 py-3 text-muted">{file.kind}</td>
+                    <td class="px-4 py-3 text-muted">{file.scanned ? "已扫描" : "未扫描"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-4 grid gap-3 md:grid-cols-2">
+            <div class="card p-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Scan</p>
+              <p class="mt-2 text-[14px] font-semibold">{scanLabel(skill.scan.status)}</p>
+              <p class="mt-2 text-[11px] leading-5 text-muted">
+                扫描文件 {skill.scan.coverage.filesScanned} 个，跳过 {skill.scan.coverage.filesSkipped} 个。
+              </p>
+              {skill.scan.coverage.limitations.length > 0 && (
+                <ul class="mt-3 space-y-1 text-[10px] leading-5 text-faint">
+                  {skill.scan.coverage.limitations.map((item) => <li>· {item}</li>)}
+                </ul>
+              )}
+            </div>
+            <div class="card p-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Review</p>
+              <p class="mt-2 text-[14px] font-semibold">{reviewLabel(skill.review.status)}</p>
+              <p class="mt-2 text-[11px] leading-5 text-muted">
+                {skill.review.notes ?? "没有复核记录。"}
+              </p>
+              {skill.review.reviewed && (
+                <p class="mt-3 font-mono text-[10px] text-faint">
+                  复核于 {shortCommit(skill.review.reviewed.commit)} · {formatDate(skill.review.reviewed.reviewedAt)}
+                </p>
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-kicker">Versions</h2>
+          <div class="mt-3 overflow-x-auto rounded-lg border border-line">
+            <table class="w-full text-left text-[12px]">
+              <tbody class="divide-y divide-line bg-surface">
+                <tr>
+                  <th class="w-40 px-4 py-3 font-medium text-faint">上游 HEAD</th>
+                  <td class="px-4 py-3 font-mono text-[11px]">{shortCommit(skill.source.headCommit)}</td>
+                </tr>
+                <tr>
+                  <th class="px-4 py-3 font-medium text-faint">本站同步</th>
+                  <td class="px-4 py-3 font-mono text-[11px]">{shortCommit(skill.snapshot.commit)}</td>
+                </tr>
+                <tr>
+                  <th class="px-4 py-3 font-medium text-faint">自动扫描</th>
+                  <td class="px-4 py-3 text-muted">{scanLabel(skill.scan.status)}</td>
+                </tr>
+                <tr>
+                  <th class="px-4 py-3 font-medium text-faint">人工复核</th>
+                  <td class="px-4 py-3 text-muted">
+                    {skill.review.reviewed ? shortCommit(skill.review.reviewed.commit) : "—（未复核）"}
+                  </td>
+                </tr>
+                <tr>
+                  <th class="px-4 py-3 font-medium text-faint">默认安装</th>
+                  <td class="px-4 py-3 text-muted">固定到最新同步 commit（样例未复核）</td>
+                </tr>
+                <tr>
+                  <th class="px-4 py-3 font-medium text-faint">Catalog</th>
+                  <td class="px-4 py-3 text-muted">{skill.catalog.eligible ? "已进入" : "未进入"}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-3 text-[10px] leading-5 text-faint">
+            样例中“上游 HEAD”和“本站同步”相同，因为尚未接入真实同步管道。
+          </p>
+        </section>
+
+        {related.length > 0 && (
+          <section>
+            <h2 class="section-kicker">Related</h2>
+            <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {related.map((item) => <SkillCard skill={item} compact />)}
+            </div>
+          </section>
+        )}
+      </div>
+
+      <aside class="space-y-4 lg:sticky lg:top-20 lg:self-start">
+        <InstallCommand
+          client:load
+          latestCommand={skill.install.latestCommand}
+          useCommand={skill.install.useCommand}
+          reviewedCommand={skill.install.reviewedCommand}
+          reviewedCommit={skill.review.reviewed?.commit}
+        />
+
+        <div class="card p-4">
+          <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Source</p>
+          <a
+            href={skill.source.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-2 block text-[13px] font-medium text-ink hover:text-accent"
+          >
+            {skill.source.fullName} ↗
+          </a>
+          <p class="mt-1 font-mono text-[10px] text-faint">{skill.path}</p>
+          <div class="mt-4 space-y-2 text-[11px]">
+            <div class="flex justify-between gap-3">
+              <span class="text-faint">Stars</span>
+              <span class="text-muted">{skill.source.stars.toLocaleString("en-US")}</span>
+            </div>
+            <div class="flex justify-between gap-3">
+              <span class="text-faint">License</span>
+              <span class="text-muted">{licenseLabel(skill.source.licenseSpdx)}</span>
+            </div>
+            <div class="flex justify-between gap-3">
+              <span class="text-faint">Updated</span>
+              <span class="text-muted">{formatDate(skill.source.pushedAt)}</span>
+            </div>
+            <div class="flex justify-between gap-3">
+              <span class="text-faint">Bundle</span>
+              <span class="mono text-muted">{skill.snapshot.bundleHash.slice(0, 10)}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg border border-warn/30 bg-warn/5 p-4">
+          <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-warn">Not a safety check</p>
+          <p class="mt-2 text-[11px] leading-5 text-muted">
+            这是 Phase 1 样例：未拉取 SKILL.md 正文、未扫描脚本、未人工复核。不要根据这里的
+            “未扫描”或“未复核”做安装决定；正式流程会要求版本、扫描覆盖与复核记录。
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

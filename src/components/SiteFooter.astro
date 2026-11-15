@@ -1,0 +1,23 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-line">
+  <div class="container-page py-10">
+    <div class="flex flex-col justify-between gap-6 md:flex-row">
+      <div class="max-w-xl">
+        <p class="text-sm font-medium">Skill Shelf</p>
+        <p class="mt-2 text-[12px] leading-6 text-muted">
+          一个面向 AI Coding 开发者的 Agent Skills 发现平台。当前是 Phase 1
+          骨架：20 条样例数据，未扫描、未人工复核，仅用于验证信息架构与页面布局。
+        </p>
+      </div>
+      <div class="flex flex-col gap-2 text-[12px] text-muted md:items-end">
+        <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-faint">
+          Static-first · No backend · No AI API
+        </span>
+        <span>© {year} Skill Shelf · Phase 1</span>
+      </div>
+    </div>
+  </div>
+</footer>

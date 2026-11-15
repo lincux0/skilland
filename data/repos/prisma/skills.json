@@ -1,0 +1,170 @@
+{
+  "repo": {
+    "id": 1140468701,
+    "owner": "prisma",
+    "repo": "skills",
+    "fullName": "prisma/skills",
+    "url": "https://github.com/prisma/skills",
+    "stars": 80,
+    "licenseSpdx": "MIT",
+    "licenseStatus": "permissive",
+    "defaultBranch": "main",
+    "headCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+    "archived": false,
+    "pushedAt": "2026-11-10T16:06:30Z"
+  },
+  "skills": [
+    {
+      "path": "prisma-client-api/SKILL.md",
+      "slug": "prisma-client-api",
+      "name": "prisma-client-api",
+      "description": "Use the Prisma Client API correctly for queries, relations, and transactions.",
+      "descriptionZh": "正确使用 Prisma Client API 处理查询、关联和事务。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 6346,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1587,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely"
+        ],
+        "topics": [
+          "database",
+          "prisma"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "featuredRank": 8,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    },
+    {
+      "path": "prisma-database-setup/SKILL.md",
+      "slug": "prisma-database-setup",
+      "name": "prisma-database-setup",
+      "description": "Set up a Prisma project with the right database connection and schema.",
+      "descriptionZh": "配置 Prisma 项目的数据库连接与 schema。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 704,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 176,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "a6f192959cf43b08aa330fe1ffca090267215812",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "inherit-codebase"
+        ],
+        "topics": [
+          "database",
+          "prisma",
+          "setup"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "official"
+        ],
+        "featuredRank": 19,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-10T16:06:30Z"
+      }
+    }
+  ]
+}

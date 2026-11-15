@@ -1,0 +1,93 @@
+{
+  "repo": {
+    "id": 1134543109,
+    "owner": "vercel-labs",
+    "repo": "skills",
+    "fullName": "vercel-labs/skills",
+    "url": "https://github.com/vercel-labs/skills",
+    "stars": 39384,
+    "licenseSpdx": "MIT",
+    "licenseStatus": "permissive",
+    "defaultBranch": "main",
+    "headCommit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+    "archived": false,
+    "pushedAt": "2026-11-12T23:25:25Z"
+  },
+  "skills": [
+    {
+      "path": "skills/find-skills/SKILL.md",
+      "slug": "find-skills",
+      "name": "find-skills",
+      "description": "Search the open Agent Skills ecosystem from the command line and install a matching skill.",
+      "descriptionZh": "从命令行搜索开放 Agent Skills 生态并安装匹配的 skill。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 5472,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 1368,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "inherit-codebase"
+        ],
+        "topics": [
+          "skills",
+          "discovery"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "official"
+        ],
+        "featuredRank": 2,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-12T23:25:25Z"
+      }
+    }
+  ]
+}

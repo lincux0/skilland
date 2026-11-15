@@ -1,0 +1,96 @@
+{
+  "repo": {
+    "id": 1135501937,
+    "owner": "supabase",
+    "repo": "agent-skills",
+    "fullName": "supabase/agent-skills",
+    "url": "https://github.com/supabase/agent-skills",
+    "stars": 3071,
+    "licenseSpdx": "MIT",
+    "licenseStatus": "permissive",
+    "defaultBranch": "main",
+    "headCommit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+    "archived": false,
+    "pushedAt": "2026-11-12T15:32:31Z"
+  },
+  "skills": [
+    {
+      "path": "skills/supabase-postgres-best-practices/SKILL.md",
+      "slug": "supabase-postgres-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "description": "Design and review Postgres schemas, queries, and Supabase usage.",
+      "descriptionZh": "设计与审查 Postgres schema、查询和 Supabase 用法。",
+      "frontmatter": {},
+      "files": [
+        {
+          "path": "SKILL.md",
+          "size": 3231,
+          "kind": "skill",
+          "scanned": false,
+          "skipReason": "Phase 1 样例：只获取了仓库元数据，文件未扫描。"
+        }
+      ],
+      "metrics": {
+        "bodyTokensEstimate": 808,
+        "fileCount": 1,
+        "scriptCount": null,
+        "hasNetwork": null,
+        "hasCredentialPatterns": null
+      },
+      "scan": {
+        "status": "not-scanned",
+        "coverage": {
+          "filesScanned": 0,
+          "filesSkipped": 1,
+          "bytesScanned": 0,
+          "limitations": [
+            "Phase 1 样例：未拉取或扫描 SKILL.md 内容。"
+          ]
+        },
+        "flags": [],
+        "scannerVersion": "none",
+        "rulesetVersion": "none",
+        "scannedAt": "2026-11-15",
+        "scannedCommit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+        "scannedBundleHash": "not-scanned"
+      },
+      "review": {
+        "status": "unreviewed",
+        "notes": "Phase 1 样例：未拉取 SKILL.md 正文，未扫描，也未人工复核。"
+      },
+      "taxonomy": {
+        "scenes": [
+          "ship-safely",
+          "inherit-codebase"
+        ],
+        "topics": [
+          "database",
+          "postgres",
+          "supabase"
+        ],
+        "agents": [
+          "opencode",
+          "claude-code",
+          "codex",
+          "cursor"
+        ],
+        "language": "en",
+        "portability": "unknown"
+      },
+      "editorial": {
+        "shelfIds": [
+          "small-and-readable",
+          "official"
+        ],
+        "featuredRank": 14,
+        "curator": "Skill Shelf"
+      },
+      "status": "draft",
+      "timestamps": {
+        "firstSeenAt": "2026-11-15",
+        "lastSyncedAt": "2026-11-15",
+        "upstreamUpdatedAt": "2026-11-12T15:32:31Z"
+      }
+    }
+  ]
+}
