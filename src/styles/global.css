@@ -140,4 +140,11 @@
     text-decoration-color: color-mix(in srgb, var(--color-accent) 60%, transparent);
     text-underline-offset: 3px;
   }
+
+  mark {
+    background: color-mix(in srgb, var(--color-accent) 28%, transparent);
+    color: var(--color-ink);
+    border-radius: 2px;
+    padding-inline: 1px;
+  }
 }

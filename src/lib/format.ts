@@ -22,8 +22,32 @@ export function formatTokens(tokens: number): string {
   return `~${tokens}`;
 }
 
-export function licenseLabel(spdx: string | null): string {
-  return spdx ?? "未声明";
+export function licenseLabel(spdx: string | null, status?: string): string {
+  if (!spdx) return "未声明";
+  if ((status === "unknown" || status === "conflict") && spdx.length > 24) {
+    return "未声明";
+  }
+  return spdx;
+}
+
+export function topicLabel(topic: string): string {
+  const labels: Record<string, string> = {
+    design: "设计",
+    frontend: "前端",
+    testing: "测试",
+    debugging: "调试",
+    docs: "文档",
+    database: "数据库",
+    video: "视频",
+    browser: "浏览器",
+    "code-review": "代码审查",
+    architecture: "架构",
+    "agent-workflows": "Agent 工作流",
+    planning: "规划",
+    performance: "性能",
+    deployment: "部署",
+  };
+  return labels[topic] ?? topic;
 }
 
 export function statusLabel(status: string): string {

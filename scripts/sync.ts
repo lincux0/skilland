@@ -421,13 +421,17 @@ function buildSkill(
   });
 
   const descriptionZh = old?.descriptionZh;
+  const curated = Boolean(old?.editorial?.featuredRank);
   const oldTopics = old?.taxonomy.topics;
-  const topics = oldTopics?.length ? oldTopics : inferTopics(fm.name, fm.description, skillPath);
+  const topics =
+    curated && oldTopics?.length
+      ? oldTopics
+      : inferTopics(fm.name, fm.description, skillPath);
   const oldScenes = old?.taxonomy.scenes;
-  const scenes = oldScenes?.length ? oldScenes : inferScenes(topics);
+  const scenes = curated && oldScenes?.length ? oldScenes : inferScenes(topics);
   const oldShelves = old?.editorial?.shelfIds;
   const shelves =
-    oldShelves?.length
+    curated && oldShelves?.length
       ? oldShelves
       : inferShelves({
           official: Boolean(seed.official),

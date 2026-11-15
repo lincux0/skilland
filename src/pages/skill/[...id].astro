@@ -15,6 +15,7 @@ import {
   scanLabel,
   shortCommit,
   statusLabel,
+  topicLabel,
 } from "../../lib/format";
 
 export function getStaticPaths() {
@@ -37,6 +38,10 @@ const related = getAllSkills()
   .slice(0, 3);
 const sourceUrl = `https://github.com/${skill.source.fullName}/blob/${skill.snapshot.commit}/${skill.path}`;
 const isDraft = skill.status === "draft";
+const licenseText = licenseLabel(skill.source.licenseSpdx, skill.source.licenseStatus);
+const riskValues = skill.scan.flags.length
+  ? [...new Set(skill.scan.flags.map((flag) => flag.severity))]
+  : ["none"];
 const severityClass: Record<string, string> = {
   critical: "border-danger/40 text-danger",
   high: "border-warn/40 text-warn",
@@ -48,32 +53,73 @@ const severityClass: Record<string, string> = {
 ---
 
 <BaseLayout title={skill.name} description={skill.descriptionZh ?? skill.description}>
-  <div class="container-page py-10 md:py-14">
+  <div class="hidden" aria-hidden="true">
+    <span data-pagefind-filter="type:skill"></span>
+    {skill.taxonomy.agents.map((agent) => (
+      <span data-pagefind-filter={`agent:${agent}`}></span>
+    ))}
+    <span data-pagefind-filter={`scan:${skill.scan.status}`}></span>
+    <span data-pagefind-filter={`license:${licenseText}`}></span>
+    {riskValues.map((risk) => (
+      <span data-pagefind-filter={`risk:${risk}`}></span>
+    ))}
+    {skill.taxonomy.scenes.map((scene) => (
+      <span data-pagefind-filter={`scene:${scene}`}></span>
+    ))}
+    {(skill.editorial?.shelfIds ?? []).map((shelf) => (
+      <span data-pagefind-filter={`shelf:${shelf}`}></span>
+    ))}
+    <span data-pagefind-meta="agents">{skill.taxonomy.agents.join(",")}</span>
+    <span data-pagefind-meta="risk">{riskValues.join(",")}</span>
+    <span data-pagefind-meta="flags">{String(skill.scan.flags.length)}</span>
+    <span data-pagefind-meta="rank">{String(skill.editorial?.featuredRank ?? 9999)}</span>
+    <span data-pagefind-meta="publicId">{skill.publicId}</span>
+  </div>
+
+  <div class="container-page py-10 md:py-14" data-pagefind-body>
     <nav class="flex items-center gap-2 font-mono text-[10px] text-faint" aria-label="面包屑">
       <a href="/explore" class="hover:text-accent">Explore</a>
       <span aria-hidden="true">/</span>
-      <span>{skill.source.fullName}</span>
+      <span data-pagefind-meta="repo">{skill.source.fullName}</span>
       <span aria-hidden="true">/</span>
       <span class="text-muted">{skill.name}</span>
     </nav>
 
-    <div class="mt-7 flex flex-wrap items-center gap-2">
-      <span class="chip">{statusLabel(skill.status)}</span>
-      <span class="chip">{scanLabel(skill.scan.status)}</span>
+    <div data-search-context data-pagefind-ignore="all" hidden class="mt-5 flex flex-wrap items-center gap-3 rounded-lg border border-line bg-surface px-4 py-3 text-[11px] text-muted">
+      <span>搜索：<strong data-search-query class="font-medium text-ink"></strong></span>
+      <a data-search-back href="/explore" class="text-accent hover:underline">返回搜索结果</a>
+    </div>
+
+    <div class="mt-7 flex flex-wrap items-center gap-2" data-pagefind-ignore>
+      <span class="chip" data-pagefind-meta="status">{statusLabel(skill.status)}</span>
+      <span class="chip" data-pagefind-meta="scan">{scanLabel(skill.scan.status)}</span>
       <span class="chip">{reviewLabel(skill.review.status)}</span>
-      <span class="chip">{licenseLabel(skill.source.licenseSpdx)}</span>
+      <span class="chip" data-pagefind-meta="license">{licenseText}</span>
       {isDraft && <span class="chip chip-accent">自动扫描 · 未人工复核</span>}
     </div>
 
     <div class="mt-4 flex flex-col justify-between gap-5 md:flex-row md:items-start">
       <div class="max-w-3xl">
-        <h1 class="text-[38px] font-semibold leading-[1.05] tracking-[-0.04em] md:text-[54px]">
+        <h1 class="text-[38px] font-semibold leading-[1.05] tracking-[-0.04em] md:text-[54px]" data-pagefind-meta="title">
           {skill.name}
         </h1>
-        <p class="mt-4 text-[16px] leading-7 text-muted md:text-[17px]">
+        <p class="mt-4 text-[16px] leading-7 text-muted md:text-[17px]" data-pagefind-meta="description" data-search-highlight>
           {skill.descriptionZh ?? skill.description}
         </p>
-        <div class="mt-4 flex flex-wrap items-center gap-3">
+        <div class="mt-4 flex flex-wrap items-center gap-1.5">
+          {skill.taxonomy.topics.map((topic) => (
+            <span class="chip">{topicLabel(topic)}</span>
+          ))}
+          {skill.taxonomy.scenes.map((sceneId) => {
+            const scene = getScene(sceneId);
+            return (
+              <a href={`/explore?scene=${sceneId}`} class="chip transition-colors hover:border-accent hover:text-accent">
+                {scene?.title ?? sceneId}
+              </a>
+            );
+          })}
+        </div>
+        <div class="mt-4 flex flex-wrap items-center gap-3" data-pagefind-ignore="all">
           <AgentBadges agents={skill.taxonomy.agents} portability={skill.taxonomy.portability} />
           <span class="text-[11px] text-faint">兼容性未逐一验证</span>
         </div>
@@ -83,6 +129,7 @@ const severityClass: Record<string, string> = {
         class="shrink-0 rounded-md border border-line-strong px-3 py-2 text-[12px] text-muted transition-colors hover:border-accent hover:text-accent"
         target="_blank"
         rel="noopener noreferrer"
+        data-pagefind-ignore="all"
       >
         在 GitHub 查看 ↗
       </a>
@@ -97,13 +144,13 @@ const severityClass: Record<string, string> = {
             {skill.descriptionZh && skill.descriptionZh !== skill.description && (
               <details class="rounded-lg border border-line bg-surface px-4 py-3">
                 <summary class="cursor-pointer text-[11px] text-faint">英文原文</summary>
-                <p class="mt-3 text-[13px] leading-6">{skill.description}</p>
+                <p class="mt-3 text-[13px] leading-6" data-search-highlight>{skill.description}</p>
               </details>
             )}
           </div>
         </section>
 
-        <section>
+        <section data-pagefind-ignore="all">
           <h2 class="section-kicker">When to use it</h2>
           {sceneItems.length > 0 ? (
             <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -232,7 +279,7 @@ const severityClass: Record<string, string> = {
           </div>
         </section>
 
-        <section>
+        <section data-pagefind-ignore="all">
           <h2 class="section-kicker">Versions</h2>
           <div class="mt-3 overflow-x-auto rounded-lg border border-line">
             <table class="w-full text-left text-[12px]">
@@ -272,7 +319,7 @@ const severityClass: Record<string, string> = {
         </section>
 
         {related.length > 0 && (
-          <section>
+          <section data-pagefind-ignore="all">
             <h2 class="section-kicker">Related</h2>
             <div class="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((item) => <SkillCard skill={item} compact />)}
@@ -281,7 +328,7 @@ const severityClass: Record<string, string> = {
         )}
       </div>
 
-      <aside class="space-y-4 lg:sticky lg:top-20 lg:self-start">
+      <aside class="space-y-4 lg:sticky lg:top-20 lg:self-start" data-pagefind-ignore="all">
         <InstallCommand
           client:load
           latestCommand={skill.install.latestCommand}
@@ -308,7 +355,7 @@ const severityClass: Record<string, string> = {
             </div>
             <div class="flex justify-between gap-3">
               <span class="text-faint">License</span>
-              <span class="text-muted">{licenseLabel(skill.source.licenseSpdx)}</span>
+              <span class="text-muted">{licenseText}</span>
             </div>
             <div class="flex justify-between gap-3">
               <span class="text-faint">Updated</span>
@@ -324,11 +371,43 @@ const severityClass: Record<string, string> = {
         <div class="rounded-lg border border-warn/30 bg-warn/5 p-4">
           <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-warn">Not a safety check</p>
           <p class="mt-2 text-[11px] leading-5 text-muted">
-            这是 Phase 2 自动扫描：已读取 skill 目录文本并做静态规则分析，但未人工复核，
+            这是 Phase 2 的自动扫描数据：已读取 skill 目录文本并做静态规则分析，但未人工复核，
             也没有执行任何脚本。不要把这当作安全认证。
           </p>
         </div>
       </aside>
     </div>
   </div>
+
+  <script is:inline>
+    const params = new URLSearchParams(window.location.search);
+    const query = (params.get("q") || "").trim();
+    if (query) {
+      const context = document.querySelector("[data-search-context]");
+      const queryLabel = document.querySelector("[data-search-query]");
+      const back = document.querySelector("[data-search-back]");
+      if (context) context.hidden = false;
+      if (queryLabel) queryLabel.textContent = query;
+      if (back) back.href = "/explore?q=" + encodeURIComponent(query);
+
+      const roots = document.querySelectorAll("[data-search-highlight]");
+      const lower = query.toLowerCase();
+      for (const root of roots) {
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        const nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+        for (const node of nodes) {
+          const text = node.textContent || "";
+          const index = text.toLowerCase().indexOf(lower);
+          if (index < 0) continue;
+          const range = document.createRange();
+          range.setStart(node, index);
+          range.setEnd(node, index + query.length);
+          const mark = document.createElement("mark");
+          range.surroundContents(mark);
+          break;
+        }
+      }
+    }
+  </script>
 </BaseLayout>

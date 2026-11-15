@@ -5,7 +5,7 @@
     "repo": "skills",
     "fullName": "remotion-dev/skills",
     "url": "https://github.com/remotion-dev/skills",
-    "stars": 7149,
+    "stars": 7150,
     "licenseSpdx": null,
     "licenseStatus": "unknown",
     "defaultBranch": "main",
@@ -33,7 +33,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "c491302acdc7b659c11f23c7898f519c4cf6c2bb8b186ade2aeab1bcaca25be0",
         "bundleHash": "ce9e5401a9e1fc7d8aa642ccbfb83d15558245abb2cf2e550289500a2058a8f3",
         "filesFetched": 80,
@@ -662,7 +662,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "ce9e5401a9e1fc7d8aa642ccbfb83d15558245abb2cf2e550289500a2058a8f3"
       },
@@ -695,7 +695,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -717,7 +717,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "c08b52bfa3813f39a8ff95256607bebaccd2cee19f5b88d5e2b19bd206ecc7e8",
         "bundleHash": "5aecb99f9cfeb18528edd31176c478eb2c7d9b0ccff8c51da06cf72aa315bb28",
         "filesFetched": 6,
@@ -813,7 +813,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "5aecb99f9cfeb18528edd31176c478eb2c7d9b0ccff8c51da06cf72aa315bb28"
       },
@@ -824,8 +824,7 @@
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -846,7 +845,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -868,7 +867,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "7892df3fdd021f7024da6359dbeab451eb29f414e710bea8b687301bb245e2ff",
         "bundleHash": "a33ec6b9f2db714cb86eb7935d7b195a23ad5b95782039bdf0ec3a47e559128b",
         "filesFetched": 5,
@@ -955,7 +954,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "a33ec6b9f2db714cb86eb7935d7b195a23ad5b95782039bdf0ec3a47e559128b"
       },
@@ -966,8 +965,7 @@
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -988,7 +986,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -1010,7 +1008,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "9bf31669a3eb946f814db42e30ad7a3cce55f87cda049f31a5a6f3e330ee4892",
         "bundleHash": "2a7664660999ee9f5075dfb07b4c91c16700f91e219993d1dd2bc45dd6c119de",
         "filesFetched": 3,
@@ -1073,7 +1071,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "2a7664660999ee9f5075dfb07b4c91c16700f91e219993d1dd2bc45dd6c119de"
       },
@@ -1087,8 +1085,7 @@
         ],
         "topics": [
           "docs",
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -1110,7 +1107,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -1132,7 +1129,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "70f67a8427330076538d8e93788994fbe0730762717a70f0286145541589fbc9",
         "bundleHash": "ad10bffb36d765df8705a75a1bce236d4431c0f54b6036d33109fc4e10ff6f58",
         "filesFetched": 5,
@@ -1207,7 +1204,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "ad10bffb36d765df8705a75a1bce236d4431c0f54b6036d33109fc4e10ff6f58"
       },
@@ -1217,15 +1214,11 @@
       },
       "taxonomy": {
         "scenes": [
-          "inherit-codebase",
-          "ship-safely",
           "write-clearly"
         ],
         "topics": [
           "docs",
-          "video",
-          "architecture",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -1239,15 +1232,14 @@
       "editorial": {
         "shelfIds": [
           "official",
-          "docs-and-data",
-          "code-quality"
+          "docs-and-data"
         ],
         "curator": "Skill Shelf"
       },
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -1269,7 +1261,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "79e71584bd09d81a044acf11c04cb34998e091ca19ba164333310d4cf074cd2d",
         "bundleHash": "b2c722618e5bb4a83f87e8c3e4d964545a793f36f5fa3048fb0428ac5bea8ae4",
         "filesFetched": 3,
@@ -1332,7 +1324,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "b2c722618e5bb4a83f87e8c3e4d964545a793f36f5fa3048fb0428ac5bea8ae4"
       },
@@ -1341,13 +1333,9 @@
         "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
-        "scenes": [
-          "ship-safely"
-        ],
+        "scenes": [],
         "topics": [
-          "video",
-          "browser",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -1368,7 +1356,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -1390,7 +1378,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "f623f9ae66d44400846dc35124d32d4501ae0349d041d64ad0daa70a5f8dc920",
         "bundleHash": "272bba5dd65c16f6514d924e7660f9b59819a02fde70ae168082eff7a6eca713",
         "filesFetched": 32,
@@ -1711,7 +1699,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "272bba5dd65c16f6514d924e7660f9b59819a02fde70ae168082eff7a6eca713"
       },
@@ -1722,8 +1710,7 @@
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -1744,7 +1731,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -1766,7 +1753,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "8650285547e38233ec7c7b95faf88fb7941b170579f87159b42a5bdc40672d94",
         "bundleHash": "f5f1d1dc4e7ecd35ac519c794351350bd78f28523aaef1639ec16f6da68e7de1",
         "filesFetched": 69,
@@ -2311,7 +2298,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "f5f1d1dc4e7ecd35ac519c794351350bd78f28523aaef1639ec16f6da68e7de1"
       },
@@ -2322,8 +2309,7 @@
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -2343,7 +2329,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -2365,7 +2351,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "29164a346d0ba9549de08f1e5051d5ba4fc608e58334a908f63759e5e62a7da5",
         "bundleHash": "17c017dcba65086603b5b5c3ec9d770d267c45b5b552c140495a2377968986e0",
         "filesFetched": 6,
@@ -2461,7 +2447,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "17c017dcba65086603b5b5c3ec9d770d267c45b5b552c140495a2377968986e0"
       },
@@ -2472,8 +2458,7 @@
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -2494,7 +2479,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -2516,7 +2501,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "b59b979e360bb0ba615373cc7c2542115f7feee6be36f3f6bb9c5b63491325bb",
         "bundleHash": "998e63b743a2483db5bbad871f6bb656c38a7521751a0fb1e6b22948b7ced3f2",
         "filesFetched": 4,
@@ -2585,7 +2570,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "998e63b743a2483db5bbad871f6bb656c38a7521751a0fb1e6b22948b7ced3f2"
       },
@@ -2596,8 +2581,7 @@
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -2618,7 +2602,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -2640,7 +2624,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "9dad5026098719d03b0baf2bc5d32055b64357e125186433586603ff202cc407",
         "bundleHash": "baff8cfced8650a0cb6a2868766ad1d70e32d7f033b67c40cb9c4294b961681e",
         "filesFetched": 6,
@@ -2748,7 +2732,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "baff8cfced8650a0cb6a2868766ad1d70e32d7f033b67c40cb9c4294b961681e"
       },
@@ -2757,13 +2741,9 @@
         "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
-        "scenes": [
-          "design-to-code"
-        ],
+        "scenes": [],
         "topics": [
-          "design",
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -2777,15 +2757,14 @@
       "editorial": {
         "shelfIds": [
           "official",
-          "small-and-readable",
-          "design-systems"
+          "small-and-readable"
         ],
         "curator": "Skill Shelf"
       },
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -2807,7 +2786,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "0b0592686d2be506d22311b463972f1ae3b8b2650dabb30c6bbb2f4b9658909a",
         "bundleHash": "a8e57165b61d83c13c0ff817a5d105bb46dd79d854e45be39619b9d5b244d253",
         "filesFetched": 3,
@@ -2865,7 +2844,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "a8e57165b61d83c13c0ff817a5d105bb46dd79d854e45be39619b9d5b244d253"
       },
@@ -2874,13 +2853,9 @@
         "notes": "Phase 2 自动扫描；未人工复核。扫描未发现模式不代表安全。"
       },
       "taxonomy": {
-        "scenes": [
-          "ship-safely"
-        ],
+        "scenes": [],
         "topics": [
-          "video",
-          "code-review",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -2894,15 +2869,14 @@
       "editorial": {
         "shelfIds": [
           "official",
-          "small-and-readable",
-          "code-quality"
+          "small-and-readable"
         ],
         "curator": "Skill Shelf"
       },
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     },
@@ -2924,7 +2898,7 @@
       },
       "snapshot": {
         "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T04:55:02.743Z",
+        "syncedAt": "2026-11-15T05:34:46.407Z",
         "skillMdHash": "7fcc89867dd57219e6c89fa77da6efd51d57970b60cad2b6f7dd1cfb1e4d3666",
         "bundleHash": "11f65980bc25b514f1aca4e14f2e502189e9be3ee3b47c992bc574c8ffc327ab",
         "filesFetched": 3,
@@ -2987,7 +2961,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T04:55:02.743Z",
+        "scannedAt": "2026-11-15T05:34:46.407Z",
         "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
         "scannedBundleHash": "11f65980bc25b514f1aca4e14f2e502189e9be3ee3b47c992bc574c8ffc327ab"
       },
@@ -2998,8 +2972,7 @@
       "taxonomy": {
         "scenes": [],
         "topics": [
-          "video",
-          "agent-workflows"
+          "video"
         ],
         "agents": [
           "opencode",
@@ -3020,7 +2993,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T04:55:02.743Z",
+        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
         "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
       }
     }
