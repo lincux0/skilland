@@ -2,6 +2,8 @@
 
 Agent Skills 发现、探索与安装平台。当前是 **Phase 3：Pagefind 搜索与分面过滤**。
 
+**线上演示**：<https://skill-shelf-psi.vercel.app>（Vercel Hobby，非商业演示）
+
 > 数据来自 10 个公开 GitHub 仓库，共 112 个 Skills。全部条目都是
 > `draft` / `unreviewed`；`scan.status` 表示自动扫描覆盖范围，不代表安全认证。
 
@@ -26,6 +28,7 @@ npm run sync       # tarball 采集 + 静态扫描 + 写入 data/repos
 npm run index      # 单独运行 Pagefind（需要先 astro build）
 npm run build      # test:scan + validate + astro build + Pagefind
 npm run preview    # 预览带搜索索引的静态产物
+vercel --prod      # 手动发布到 Vercel 生产环境
 ```
 
 **测试全文搜索请用 `npm run build` + `npm run preview`**；`npm run dev` 没有构建后的 Pagefind 索引。
