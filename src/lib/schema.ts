@@ -134,6 +134,31 @@ export const SkillLicenseSchema = z.object({
   source: z.enum(["repo", "frontmatter", "none", "conflict", "author"]),
 });
 
+export const ReviewScopeSchema = z.enum([
+  "description",
+  "file-tree",
+  "scan-evidence",
+  "license",
+  "install-command",
+]);
+
+/**
+ * A single human decision, stored in data/reviews.json.
+ * Kept outside data/repos so `npm run sync` never overwrites a review.
+ */
+export const ReviewRecordSchema = z.object({
+  publicId: z.string().min(1),
+  commit: z.string().min(7),
+  bundleHash: z.string().min(1),
+  reviewedAt: z.string().min(1),
+  reviewer: z.string().min(1),
+  verdict: z.enum(["approved", "rejected"]).default("approved"),
+  scope: z.array(ReviewScopeSchema).min(1),
+  notes: z.string().optional(),
+  scan: ScanResultSchema,
+  licenseStatus: LicenseStatusSchema,
+});
+
 export const ReviewSchema = z.object({
   status: ReviewStatusSchema,
   reviewed: z
@@ -207,6 +232,8 @@ export type RepoSchemaType = z.infer<typeof RepoSchema>;
 export type LicenseStatus = z.infer<typeof LicenseStatusSchema>;
 export type RiskFlag = z.infer<typeof RiskFlagSchema>;
 export type ScanResult = z.infer<typeof ScanResultSchema>;
+export type ReviewRecord = z.infer<typeof ReviewRecordSchema>;
+export type ReviewScope = z.infer<typeof ReviewScopeSchema>;
 
 export interface InstallInfo {
   reviewedCommand?: string;
@@ -241,6 +268,20 @@ export interface UpstreamInfo {
   latestTreeSha: string;
 }
 
+export interface SkillVersionState {
+  upstream: { commit: string; at: string };
+  synced: { commit: string; at: string; bundleHash: string };
+  scanned: { commit: string; bundleHash: string; status: string; at: string };
+  reviewed?: { commit: string; bundleHash: string; at: string; reviewer: string };
+  install: { commit: string; source: "reviewed" | "synced" };
+  catalog?: { version: string; bundleHash: string };
+  consistency: {
+    scanMatchesSnapshot: boolean;
+    upstreamAhead: boolean;
+    reviewMatchesSnapshot: boolean | null;
+  };
+}
+
 export type SkillRecord = SkillSeed & {
   id: string;
   publicId: string;
@@ -249,4 +290,5 @@ export type SkillRecord = SkillSeed & {
   snapshot: SnapshotInfo;
   install: InstallInfo;
   catalog: CatalogInfo;
+  versions: SkillVersionState;
 };

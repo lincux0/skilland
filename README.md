@@ -25,6 +25,8 @@ npm run check      # Astro + TypeScript 检查
 npm run validate   # 校验 data/repos 下的 JSON
 npm run test:scan  # 扫描规则回归测试
 npm run sync       # tarball 采集 + 静态扫描 + 写入 data/repos
+npm run review     # 查看/写入人工复核记录（data/reviews.json）
+npm run validate:invariants  # 版本一致性不变量（构建时强制执行）
 npm run index      # 单独运行 Pagefind（需要先 astro build）
 npm run build      # test:scan + validate + astro build + Pagefind
 npm run preview    # 预览带搜索索引的静态产物
@@ -47,9 +49,34 @@ vercel --prod      # 手动发布到 Vercel 生产环境
   - 结果摘要带命中高亮；
   - 移动端筛选抽屉。
 - `⌘K` / `Ctrl+K`：全局命令面板，搜索详情页并直接跳转。
-- `/skill/[...id]`：详情、配料表、扫描状态、版本表、安装命令、来源信息；
+- `/skill/[...id]`：详情、配料表、扫描状态、版本一致性面板、复核记录、安装命令、来源信息；
   - 从搜索结果进入时显示“搜索：…”与返回链接，并高亮正文首处命中。
 - 浅色/深色 CSS variables；移动端无横向溢出。
+
+## Review records
+
+人工复核记录存放在 `data/reviews.json`，与 `data/repos/` 分离，`npm run sync` 不会覆盖。
+
+```bash
+npm run review -- --list
+npm run review -- --skill obra/superpowers/test-driven-development \
+  --reviewer "your-name" --notes "读了描述、文件清单与扫描证据"
+npm run review -- --skill <publicId> --reviewer "your-name" --reject --notes "原因"
+npm run review -- --skill <publicId> --remove
+```
+
+- 记录包含 `commit`、`bundleHash`、复核人、时间、范围（description / file-tree / scan-evidence / license / install-command）、当时的扫描快照与许可证状态。
+- `review.status` 由记录与当前快照实时派生：无记录 → `machine-scanned`；指纹相同 → `human-approved`；指纹不同 → `stale`。
+- 复核过期后默认安装仍指向**已复核**的 commit，不自动跟随未复核更新。
+- CLI 拒绝在扫描失败、未扫描、许可证 `unknown`/`conflict` 时写入“通过”。
+- 状态是“人看过”，不是安全认证；页面上不会出现“已认证/安全”这类承诺。
+
+## Version consistency
+
+详情页的版本面板展示六个版本：上游最新、本站同步、自动扫描、人工复核、默认安装、Catalog。
+`scripts/validate-invariants.ts` 在构建时强制检查计划文档 §6.4 的不变量（复核指纹自洽、
+完整扫描对应当前同步、已发布必须已复核、critical 必须隔离、stale 必须安装复核版本等），
+任何一条不满足就阻止构建。
 
 ## Scan semantics
 
@@ -61,7 +88,7 @@ vercel --prod      # 手动发布到 Vercel 生产环境
 
 ## What is intentionally missing
 
-- 人工复核流程、reviewed bundle、复核徽章。
+- 尚无人真正执行复核：`data/reviews.json` 目前为空，112 条都是 `machine-scanned`。
 - 中英双语路由（当前 UI 中文，部分条目保留中文导读）。
 - OpenCode HTTP catalog、提交入口、收录标准/安全页。
 - 任何账号、数据库、AI API、运行时后端。
