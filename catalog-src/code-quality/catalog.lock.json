@@ -1,0 +1,275 @@
+{
+  "packId": "code-quality",
+  "title": "Code quality",
+  "titleZh": "代码质量",
+  "descriptionZh": "测试、审查、诊断与架构改进的最小组合：先让变更可验证，再让它可合并。",
+  "version": "2026-11-15-c637550f",
+  "generatedAt": "2026-11-15T10:19:36.665Z",
+  "tier": "reviewed",
+  "skills": [
+    {
+      "name": "test-driven-development",
+      "publicId": "obra/superpowers/test-driven-development",
+      "version": "2026-11-15-0d84dcd8",
+      "source": {
+        "repo": "obra/superpowers",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "path": "skills/test-driven-development"
+      },
+      "bundleHash": "d1cfe792f8feb34e23e3f2785f2df4a458acce62eece64e376727be4fd8af3aa",
+      "files": [
+        "SKILL.md",
+        "writing-good-tests.md"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:12.800Z",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "bundleHash": "d1cfe792f8feb34e23e3f2785f2df4a458acce62eece64e376727be4fd8af3aa",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    },
+    {
+      "name": "code-review",
+      "publicId": "mattpocock/skills/code-review",
+      "version": "2026-11-15-67e4da2c",
+      "source": {
+        "repo": "mattpocock/skills",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "path": "skills/engineering/code-review"
+      },
+      "bundleHash": "9aed52233fb4ae108ba15ff85dd32c8253d2a94d5d7990daad89abb565047ac8",
+      "files": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:13.879Z",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "bundleHash": "9aed52233fb4ae108ba15ff85dd32c8253d2a94d5d7990daad89abb565047ac8",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    },
+    {
+      "name": "receiving-code-review",
+      "publicId": "obra/superpowers/receiving-code-review",
+      "version": "2026-11-15-2ea627de",
+      "source": {
+        "repo": "obra/superpowers",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "path": "skills/receiving-code-review"
+      },
+      "bundleHash": "e82d83690859b5d37e87365661dd034d86da6363c5405f3c5badc40cf7f78993",
+      "files": [
+        "SKILL.md"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:15.041Z",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "bundleHash": "e82d83690859b5d37e87365661dd034d86da6363c5405f3c5badc40cf7f78993",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    },
+    {
+      "name": "requesting-code-review",
+      "publicId": "obra/superpowers/requesting-code-review",
+      "version": "2026-11-15-f0ee1df4",
+      "source": {
+        "repo": "obra/superpowers",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "path": "skills/requesting-code-review"
+      },
+      "bundleHash": "4595cf96b417dafb6124bb2f08d03051dca693976315ddcc32845982fbf83b80",
+      "files": [
+        "SKILL.md",
+        "code-reviewer.md"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:16.186Z",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "bundleHash": "4595cf96b417dafb6124bb2f08d03051dca693976315ddcc32845982fbf83b80",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "publicId": "mattpocock/skills/improve-codebase-architecture",
+      "version": "2026-11-15-e09b28a0",
+      "source": {
+        "repo": "mattpocock/skills",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "path": "skills/engineering/improve-codebase-architecture"
+      },
+      "bundleHash": "a1967339b7123f57dfa8d2f2e2b8f3b13aaf6f1baa44f6eda83534c3aefb1924",
+      "files": [
+        "HTML-REPORT.md",
+        "SKILL.md",
+        "agents/openai.yaml"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:17.573Z",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "bundleHash": "a1967339b7123f57dfa8d2f2e2b8f3b13aaf6f1baa44f6eda83534c3aefb1924",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    },
+    {
+      "name": "diagnosing-bugs",
+      "publicId": "mattpocock/skills/diagnosing-bugs",
+      "version": "2026-11-15-58149e45",
+      "source": {
+        "repo": "mattpocock/skills",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "path": "skills/engineering/diagnosing-bugs"
+      },
+      "bundleHash": "5b653e570e7bb0fcdf13a7f954f473833e0d5d4c3aa85fd91cc3f4154679b045",
+      "files": [
+        "SKILL.md",
+        "agents/openai.yaml",
+        "scripts/hitl-loop.template.sh"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:18.705Z",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "bundleHash": "5b653e570e7bb0fcdf13a7f954f473833e0d5d4c3aa85fd91cc3f4154679b045",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    },
+    {
+      "name": "migrate-to-shoehorn",
+      "publicId": "mattpocock/skills/migrate-to-shoehorn",
+      "version": "2026-11-15-dd7dc713",
+      "source": {
+        "repo": "mattpocock/skills",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "path": "skills/misc/migrate-to-shoehorn"
+      },
+      "bundleHash": "c6c63ea23f1b7f8b111abcef4983b555a4b5e3f2a2f1b85f83f639fb80aad368",
+      "files": [
+        "SKILL.md",
+        "agents/openai.yaml"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:19.769Z",
+        "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+        "bundleHash": "c6c63ea23f1b7f8b111abcef4983b555a4b5e3f2a2f1b85f83f639fb80aad368",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "publicId": "obra/superpowers/finishing-a-development-branch",
+      "version": "2026-11-15-c722ecd8",
+      "source": {
+        "repo": "obra/superpowers",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "path": "skills/finishing-a-development-branch"
+      },
+      "bundleHash": "93abcd0f3e52093f38629995689cfe80d172f620c2a5f3e907657f1a9cb8bc76",
+      "files": [
+        "SKILL.md"
+      ],
+      "extraFiles": [
+        "LICENSE"
+      ],
+      "license": {
+        "spdx": "MIT",
+        "status": "permissive",
+        "file": "LICENSE"
+      },
+      "review": {
+        "reviewer": "wfszz",
+        "reviewedAt": "2026-11-15T10:19:20.940Z",
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "bundleHash": "93abcd0f3e52093f38629995689cfe80d172f620c2a5f3e907657f1a9cb8bc76",
+        "scope": [
+          "license",
+          "scan-evidence"
+        ]
+      }
+    }
+  ]
+}

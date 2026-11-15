@@ -12,6 +12,7 @@ import {
 
 const DATA_ROOT = path.join(process.cwd(), "data", "repos");
 const REVIEWS_FILE = path.join(process.cwd(), "data", "reviews.json");
+const CATALOG_ROOT = path.join(process.cwd(), "catalog-src");
 
 const AGENT_DIRS: Record<string, { project: string; global: string }> = {
   opencode: { project: ".agents/skills/", global: "~/.config/opencode/skills/" },
@@ -157,10 +158,41 @@ function deriveVersions(
   };
 }
 
+function loadCatalogEntries(): Map<
+  string,
+  { packId: string; version: string; bundleHash: string; publishedAt: string }
+> {
+  const entries = new Map<
+    string,
+    { packId: string; version: string; bundleHash: string; publishedAt: string }
+  >();
+  if (!fs.existsSync(CATALOG_ROOT)) return entries;
+  for (const packId of fs.readdirSync(CATALOG_ROOT)) {
+    const lockFile = path.join(CATALOG_ROOT, packId, "catalog.lock.json");
+    if (!fs.existsSync(lockFile)) continue;
+    const lock = JSON.parse(fs.readFileSync(lockFile, "utf8")) as {
+      generatedAt?: string;
+      skills?: { publicId: string; version: string; bundleHash: string }[];
+    };
+    for (const entry of lock.skills ?? []) {
+      entries.set(entry.publicId, {
+        packId,
+        version: entry.version,
+        bundleHash: entry.bundleHash,
+        publishedAt: lock.generatedAt ?? "",
+      });
+    }
+  }
+  return entries;
+}
+
 function deriveSkill(
   repoFile: RepoFile,
   skill: SkillSeed,
   record: ReviewRecord | undefined,
+  catalogEntry:
+    | { packId: string; version: string; bundleHash: string; publishedAt: string }
+    | undefined,
 ): SkillRecord {
   const { repo } = repoFile;
   const commit = skill.snapshot?.commit ?? repo.headCommit;
@@ -194,15 +226,25 @@ function deriveSkill(
   const review = deriveReview(skill.scan, snapshot, record);
   const reviewedCommit = review.reviewed?.commit;
   const installCommit = reviewedCommit ?? commit;
-  const catalog = {
-    eligible: false,
-    packIds: [],
-  };
+  const publicId = `${repo.owner}/${repo.repo}/${skill.slug}`;
+  const catalog = catalogEntry
+    ? {
+        eligible: true,
+        packIds: [catalogEntry.packId],
+        publishedVersion: catalogEntry.version,
+        publishedBundleHash: catalogEntry.bundleHash,
+        publishedAt: catalogEntry.publishedAt,
+        snapshotPath: `catalog-src/${catalogEntry.packId}/${skill.slug}`,
+      }
+    : {
+        eligible: false,
+        packIds: [],
+      };
 
   return {
     ...skill,
     id: `github:${repo.id}:${skill.path}`,
-    publicId: `${repo.owner}/${repo.repo}/${skill.slug}`,
+    publicId,
     source,
     upstream,
     snapshot,
@@ -231,6 +273,7 @@ let cachedSkills: SkillRecord[] | undefined;
 export function getAllSkills(): SkillRecord[] {
   if (cachedSkills) return cachedSkills;
   const reviews = loadReviews();
+  const catalogs = loadCatalogEntries();
   const records = loadRepoFiles()
     .flatMap((repoFile) =>
       repoFile.skills.map((skill) =>
@@ -238,6 +281,7 @@ export function getAllSkills(): SkillRecord[] {
           repoFile,
           skill,
           reviews.get(`${repoFile.repo.owner}/${repoFile.repo.repo}/${skill.slug}`),
+          catalogs.get(`${repoFile.repo.owner}/${repoFile.repo.repo}/${skill.slug}`),
         ),
       ),
     )

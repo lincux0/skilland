@@ -1,6 +1,6 @@
 # Skill Shelf
 
-Agent Skills 发现、探索与安装平台。当前是 **Phase 3：Pagefind 搜索与分面过滤**。
+Agent Skills 发现、探索与安装平台。当前是 **Phase 4：版本一致性、人工复核记录与实验性 OpenCode catalog**。
 
 **线上演示**：<https://skill-shelf-psi.vercel.app>（Vercel Hobby，非商业演示）
 
@@ -27,6 +27,8 @@ npm run test:scan  # 扫描规则回归测试
 npm run sync       # tarball 采集 + 静态扫描 + 写入 data/repos
 npm run review     # 查看/写入人工复核记录（data/reviews.json）
 npm run validate:invariants  # 版本一致性不变量（构建时强制执行）
+npm run catalog:vendor       # 从 GitHub 拉取 pack 文件并生成 catalog.lock.json
+npm run catalog:build        # 校验指纹并输出 public/catalog/
 npm run index      # 单独运行 Pagefind（需要先 astro build）
 npm run build      # test:scan + validate + astro build + Pagefind
 npm run preview    # 预览带搜索索引的静态产物
@@ -51,6 +53,7 @@ vercel --prod      # 手动发布到 Vercel 生产环境
 - `⌘K` / `Ctrl+K`：全局命令面板，搜索详情页并直接跳转。
 - `/skill/[...id]`：详情、配料表、扫描状态、版本一致性面板、复核记录、安装命令、来源信息；
   - 从搜索结果进入时显示“搜索：…”与返回链接，并高亮正文首处命中。
+- `/catalog`：实验性 OpenCode HTTP catalog，展示 pack、版本、复核信息与限制说明。
 - 浅色/深色 CSS variables；移动端无横向溢出。
 
 ## Review records
@@ -78,6 +81,23 @@ npm run review -- --skill <publicId> --remove
 完整扫描对应当前同步、已发布必须已复核、critical 必须隔离、stale 必须安装复核版本等），
 任何一条不满足就阻止构建。
 
+## OpenCode catalog（实验性）
+
+`/catalog` 是唯一入口，不属于常规安装路径。
+
+- `catalog-src/<pack>/pack.json`：pack 成员（`publicId` 列表）。
+- `npm run catalog:vendor`：按 `snapshot.commit` 从 GitHub 拉取每个 skill 目录与 LICENSE，
+  重算 bundle 指纹，必须等于 `snapshot.bundleHash` 与 `review.reviewed.bundleHash`，否则中止。
+- `catalog-src/<pack>/catalog.lock.json`：来源 commit、指纹、许可证、复核人/时间/范围。
+- `npm run catalog:build`：再次校验 `catalog-src` 指纹与当前复核记录，输出
+  `public/catalog/<pack>/index.json` + 文件副本；不是“已复核版本”就拒绝发布。
+- `vercel.json` 为 `/catalog/(.*)` 设置 `Cache-Control: public, max-age=0, must-revalidate`，
+  避免 CDN 缓存导致 version 变化后仍拿到旧文件。
+
+当前 pack：`code-quality`，8 个 skill，全部 MIT、完整扫描、无 high/critical、纯文本。
+`index.json` 只给 OpenCode 读（`name` / `version` / `files`）；来源与复核信息在
+`catalog.lock.json`。移除 skill 不会清理客户端本地缓存，`/catalog` 页面上有说明。
+
 ## Scan semantics
 
 - `scan.status: "complete"`：所有可读文本文件都在预算内扫描。
@@ -88,9 +108,10 @@ npm run review -- --skill <publicId> --remove
 
 ## What is intentionally missing
 
-- 尚无人真正执行复核：`data/reviews.json` 目前为空，112 条都是 `machine-scanned`。
+- 112 条中只有 8 条经过人工复核，且复核范围是许可证与扫描证据，不是逐行审计。
 - 中英双语路由（当前 UI 中文，部分条目保留中文导读）。
-- OpenCode HTTP catalog、提交入口、收录标准/安全页。
+- 提交入口、收录标准/安全页、下架流程页。
+- 定时增量同步（当前手动 `npm run sync`）。
 - 任何账号、数据库、AI API、运行时后端。
 
 ## Search design

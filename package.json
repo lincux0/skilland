@@ -8,8 +8,10 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run test:scan && npm run validate && npm run validate:invariants && astro build && npm run index",
+    "build": "npm run test:scan && npm run validate && npm run validate:invariants && npm run catalog:build && astro build && npm run index",
     "index": "pagefind --site dist",
+    "catalog:vendor": "tsx scripts/catalog.ts vendor",
+    "catalog:build": "tsx scripts/catalog.ts build",
     "preview": "astro preview",
     "validate": "tsx scripts/validate-data.ts",
     "validate:invariants": "tsx scripts/validate-invariants.ts",

@@ -1,1 +1,276 @@
-[]
+[
+  {
+    "publicId": "mattpocock/skills/code-review",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "bundleHash": "9aed52233fb4ae108ba15ff85dd32c8253d2a94d5d7990daad89abb565047ac8",
+    "reviewedAt": "2026-11-15T10:19:13.879Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 2,
+        "filesSkipped": 0,
+        "bytesScanned": 6821,
+        "limitations": []
+      },
+      "flags": [],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:35:07.721Z",
+      "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "scannedBundleHash": "9aed52233fb4ae108ba15ff85dd32c8253d2a94d5d7990daad89abb565047ac8"
+    },
+    "licenseStatus": "permissive"
+  },
+  {
+    "publicId": "mattpocock/skills/diagnosing-bugs",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "bundleHash": "5b653e570e7bb0fcdf13a7f954f473833e0d5d4c3aa85fd91cc3f4154679b045",
+    "reviewedAt": "2026-11-15T10:19:18.705Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 3,
+        "filesSkipped": 0,
+        "bytesScanned": 10083,
+        "limitations": []
+      },
+      "flags": [
+        {
+          "code": "NETWORK_FETCH",
+          "severity": "medium",
+          "evidence": [
+            {
+              "file": "SKILL.md",
+              "line": 27,
+              "excerpt": "eam reaches the bug: unit, integration, e2e. 2. **Curl / HTTP script** against a running dev server. 3. **CLI invocation** with a fixt"
+            },
+            {
+              "file": "scripts/hitl-loop.template.sh",
+              "line": 34,
+              "excerpt": "-------------------------- step \"Open the app at http://localhost:3000 and sign in.\" capture ERRORED \"Click the 'Export' button. Did it"
+            }
+          ],
+          "note": "Mentions network access or a network tool."
+        },
+        {
+          "code": "SCRIPT_PRESENT",
+          "severity": "low",
+          "evidence": [
+            {
+              "file": "scripts/hitl-loop.template.sh",
+              "excerpt": "Executable or script file present in the skill bundle."
+            }
+          ],
+          "note": "The bundle contains executable/script files; contents were scanned but never executed."
+        }
+      ],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:35:07.721Z",
+      "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "scannedBundleHash": "5b653e570e7bb0fcdf13a7f954f473833e0d5d4c3aa85fd91cc3f4154679b045"
+    },
+    "licenseStatus": "permissive"
+  },
+  {
+    "publicId": "mattpocock/skills/improve-codebase-architecture",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "bundleHash": "a1967339b7123f57dfa8d2f2e2b8f3b13aaf6f1baa44f6eda83534c3aefb1924",
+    "reviewedAt": "2026-11-15T10:19:17.573Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 3,
+        "filesSkipped": 0,
+        "bytesScanned": 12835,
+        "limitations": []
+      },
+      "flags": [
+        {
+          "code": "NETWORK_FETCH",
+          "severity": "medium",
+          "evidence": [
+            {
+              "file": "HTML-REPORT.md",
+              "line": 13,
+              "excerpt": "review for {{repo name}}</title> <script src=\"https://cdn.tailwindcss.com\"></script> <script type=\"module\"> import mermaid f"
+            }
+          ],
+          "note": "Mentions network access or a network tool."
+        }
+      ],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:35:07.721Z",
+      "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "scannedBundleHash": "a1967339b7123f57dfa8d2f2e2b8f3b13aaf6f1baa44f6eda83534c3aefb1924"
+    },
+    "licenseStatus": "permissive"
+  },
+  {
+    "publicId": "mattpocock/skills/migrate-to-shoehorn",
+    "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+    "bundleHash": "c6c63ea23f1b7f8b111abcef4983b555a4b5e3f2a2f1b85f83f639fb80aad368",
+    "reviewedAt": "2026-11-15T10:19:19.769Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 2,
+        "filesSkipped": 0,
+        "bytesScanned": 2905,
+        "limitations": []
+      },
+      "flags": [],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:35:07.721Z",
+      "scannedCommit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+      "scannedBundleHash": "c6c63ea23f1b7f8b111abcef4983b555a4b5e3f2a2f1b85f83f639fb80aad368"
+    },
+    "licenseStatus": "permissive"
+  },
+  {
+    "publicId": "obra/superpowers/finishing-a-development-branch",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "bundleHash": "93abcd0f3e52093f38629995689cfe80d172f620c2a5f3e907657f1a9cb8bc76",
+    "reviewedAt": "2026-11-15T10:19:20.940Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 1,
+        "filesSkipped": 0,
+        "bytesScanned": 7781,
+        "limitations": []
+      },
+      "flags": [],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:34:40.060Z",
+      "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "scannedBundleHash": "93abcd0f3e52093f38629995689cfe80d172f620c2a5f3e907657f1a9cb8bc76"
+    },
+    "licenseStatus": "permissive"
+  },
+  {
+    "publicId": "obra/superpowers/receiving-code-review",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "bundleHash": "e82d83690859b5d37e87365661dd034d86da6363c5405f3c5badc40cf7f78993",
+    "reviewedAt": "2026-11-15T10:19:15.041Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 1,
+        "filesSkipped": 0,
+        "bytesScanned": 6203,
+        "limitations": []
+      },
+      "flags": [],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:34:40.060Z",
+      "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "scannedBundleHash": "e82d83690859b5d37e87365661dd034d86da6363c5405f3c5badc40cf7f78993"
+    },
+    "licenseStatus": "permissive"
+  },
+  {
+    "publicId": "obra/superpowers/requesting-code-review",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "bundleHash": "4595cf96b417dafb6124bb2f08d03051dca693976315ddcc32845982fbf83b80",
+    "reviewedAt": "2026-11-15T10:19:16.186Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 2,
+        "filesSkipped": 0,
+        "bytesScanned": 9423,
+        "limitations": []
+      },
+      "flags": [],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:34:40.060Z",
+      "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "scannedBundleHash": "4595cf96b417dafb6124bb2f08d03051dca693976315ddcc32845982fbf83b80"
+    },
+    "licenseStatus": "permissive"
+  },
+  {
+    "publicId": "obra/superpowers/test-driven-development",
+    "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+    "bundleHash": "d1cfe792f8feb34e23e3f2785f2df4a458acce62eece64e376727be4fd8af3aa",
+    "reviewedAt": "2026-11-15T10:19:12.800Z",
+    "reviewer": "wfszz",
+    "verdict": "approved",
+    "scope": [
+      "license",
+      "scan-evidence"
+    ],
+    "notes": "Confirmed for the code-quality catalog pack: MIT license, complete scan, no high/critical flags, text-only files. Skill body was not read line by line.",
+    "scan": {
+      "status": "complete",
+      "coverage": {
+        "filesScanned": 2,
+        "filesSkipped": 0,
+        "bytesScanned": 17846,
+        "limitations": []
+      },
+      "flags": [],
+      "scannerVersion": "2.0.0",
+      "rulesetVersion": "2.0.0",
+      "scannedAt": "2026-11-15T05:34:40.060Z",
+      "scannedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "scannedBundleHash": "d1cfe792f8feb34e23e3f2785f2df4a458acce62eece64e376727be4fd8af3aa"
+    },
+    "licenseStatus": "permissive"
+  }
+]

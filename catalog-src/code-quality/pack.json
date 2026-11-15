@@ -1,0 +1,16 @@
+{
+  "id": "code-quality",
+  "title": "Code quality",
+  "titleZh": "代码质量",
+  "descriptionZh": "测试、审查、诊断与架构改进的最小组合：先让变更可验证，再让它可合并。",
+  "skills": [
+    "obra/superpowers/test-driven-development",
+    "mattpocock/skills/code-review",
+    "obra/superpowers/receiving-code-review",
+    "obra/superpowers/requesting-code-review",
+    "mattpocock/skills/improve-codebase-architecture",
+    "mattpocock/skills/diagnosing-bugs",
+    "mattpocock/skills/migrate-to-shoehorn",
+    "obra/superpowers/finishing-a-development-branch"
+  ]
+}

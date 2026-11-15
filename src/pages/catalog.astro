@@ -1,0 +1,171 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { formatDate } from "../lib/format";
+
+interface LockSkill {
+  name: string;
+  publicId: string;
+  version: string;
+  bundleHash: string;
+  files: string[];
+  extraFiles: string[];
+  license: { spdx: string; status: string };
+  review: { reviewer: string; reviewedAt: string; commit: string; scope: string[] };
+}
+
+interface Lock {
+  packId: string;
+  title: string;
+  titleZh: string;
+  descriptionZh: string;
+  version: string;
+  generatedAt: string;
+  tier: string;
+  skills: LockSkill[];
+}
+
+const ROOT = path.join(process.cwd(), "catalog-src");
+const packs: Lock[] = fs.existsSync(ROOT)
+  ? fs
+      .readdirSync(ROOT, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => path.join(ROOT, entry.name, "catalog.lock.json"))
+      .filter((file) => fs.existsSync(file))
+      .map((file) => JSON.parse(fs.readFileSync(file, "utf8")) as Lock)
+      .sort((a, b) => a.packId.localeCompare(b.packId))
+  : [];
+
+const baseUrl = (Astro.site ?? new URL("https://skill-shelf-psi.vercel.app")).origin;
+---
+
+<BaseLayout
+  title="OpenCode Catalog"
+  description="一个实验性的 OpenCode HTTP catalog：固定的已复核版本、可审计的 catalog.lock.json、明确的缓存与移除限制。"
+>
+  <div class="container-page py-12 md:py-16">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="chip chip-accent">Phase 4 · 实验性</span>
+      <span class="chip">opt-in · 不属于网站导航</span>
+    </div>
+
+    <h1 class="mt-6 text-[34px] font-semibold tracking-[-0.03em] md:text-[44px]">OpenCode Catalog</h1>
+    <p class="mt-3 max-w-2xl text-[14px] leading-7 text-muted">
+      OpenCode 支持从 HTTP catalog 读取 skills。这里发布一个固定到已复核 commit 的小包，
+      用于验证这条路径是否可用。它不是安装技能的必需方式，也不影响
+      <a href="/explore" class="text-accent hover:underline">常规安装命令</a>。
+    </p>
+
+    {packs.length === 0 && (
+      <p class="mt-8 rounded-lg border border-line bg-surface px-4 py-3 text-[12px] text-muted">
+        当前没有可发布的 catalog pack。运行 <code class="mono">npm run catalog:vendor</code> 与
+        <code class="mono">npm run catalog:build</code>。
+      </p>
+    )}
+
+    {packs.map((pack) => (
+      <section class="mt-12">
+        <div class="flex flex-wrap items-end justify-between gap-3 border-b border-line pb-3">
+          <div>
+            <p class="section-kicker">Pack</p>
+            <h2 class="mt-2 text-[20px] font-semibold">{pack.titleZh}</h2>
+            <p class="mt-2 max-w-2xl text-[12px] leading-6 text-muted">{pack.descriptionZh}</p>
+          </div>
+          <div class="text-right font-mono text-[10px] leading-5 text-faint">
+            <p>version {pack.version}</p>
+            <p>{pack.skills.length} skills · tier {pack.tier}</p>
+            <p>generated {formatDate(pack.generatedAt)}</p>
+          </div>
+        </div>
+
+        <div class="mt-4 grid gap-4 lg:grid-cols-[minmax(0,1fr)_320px]">
+          <div class="overflow-x-auto rounded-lg border border-line">
+            <table class="w-full text-left text-[12px]">
+              <thead class="bg-surface-2 text-faint">
+                <tr>
+                  <th class="px-4 py-2.5 font-medium">skill</th>
+                  <th class="px-4 py-2.5 font-medium">版本</th>
+                  <th class="px-4 py-2.5 font-medium">许可证</th>
+                  <th class="px-4 py-2.5 font-medium">复核</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-line bg-surface">
+                {pack.skills.map((skill) => (
+                  <tr>
+                    <td class="px-4 py-3">
+                      <a href={`/skill/${skill.publicId}/`} class="font-medium text-ink hover:text-accent">
+                        {skill.name}
+                      </a>
+                      <p class="mt-0.5 font-mono text-[9px] text-faint">{skill.publicId}</p>
+                    </td>
+                    <td class="px-4 py-3 font-mono text-[10px] text-muted">{skill.version}</td>
+                    <td class="px-4 py-3 text-muted">{skill.license.spdx}</td>
+                    <td class="px-4 py-3 text-muted">
+                      已人工复核 · {skill.review.reviewer}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-4">
+            <div class="card p-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">opencode.json</p>
+              <pre class="mono mt-2 overflow-x-auto rounded-md border border-line bg-canvas px-3 py-3 text-[10px] leading-5 text-ink"><code>{`{
+  "skills": [
+    "${baseUrl}/catalog/${pack.packId}/"
+  ]
+}`}</code></pre>
+              <p class="mt-2 text-[10px] leading-5 text-faint">
+                OpenCode 会在基础 URL 下固定请求 <code class="mono">index.json</code>；不要写到文件名。
+              </p>
+            </div>
+
+            <div class="card p-4">
+              <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">Files</p>
+              <div class="mt-2 space-y-1.5 text-[11px]">
+                <a href={`/catalog/${pack.packId}/index.json`} class="block text-accent hover:underline">
+                  index.json ↗
+                </a>
+                <a href={`/catalog/${pack.packId}/catalog.lock.json`} class="block text-accent hover:underline">
+                  catalog.lock.json ↗
+                </a>
+              </div>
+              <p class="mt-2 text-[10px] leading-5 text-faint">
+                每个 skill 目录同时分发上游 LICENSE；lock 记录来源 commit、bundle 指纹与复核信息。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    ))}
+
+    <section class="mt-12">
+      <h2 class="section-kicker">Limits</h2>
+      <ul class="mt-3 max-w-3xl space-y-2 text-[12px] leading-6 text-muted">
+        <li>· <span class="text-ink">version 是唯一刷新信号。</span>任何文件变化都必须 bump version，否则客户端只补缺失文件。</li>
+        <li>· <span class="text-ink">更新失败保留旧版本。</span>下载到 staging，全部成功后才原子替换；首次安装失败不会留下半成品。</li>
+        <li>· <span class="text-ink">移除不会清理本地缓存。</span>从 index 移除后，OpenCode 不再返回它，但已下载目录需要手动删除。</li>
+        <li>· <span class="text-ink">index.json 拉取失败时本次不加载。</span>catalog 不是离线可用的。</li>
+        <li>· <span class="text-ink">不支持鉴权、签名、私有源。</span>必须是公开 HTTP(S)，且没有内容哈希校验。</li>
+        <li>· <span class="text-ink">同名 skill 后注册覆盖先注册。</span>本 pack 内名称唯一。</li>
+      </ul>
+    </section>
+
+    <section class="mt-10">
+      <div class="rounded-lg border border-warn/30 bg-warn/5 p-4">
+        <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-warn">Not a safety check</p>
+        <p class="mt-2 max-w-3xl text-[11px] leading-5 text-muted">
+          包内条目有复核记录，但复核范围是许可证、扫描证据与文件构成，不是逐行代码审计，
+          也不构成安全认证。内容来自 MIT 仓库，分发时随附 LICENSE；安装前请自行确认。
+        </p>
+      </div>
+    </section>
+
+    <p class="mt-8 font-mono text-[10px] text-faint">
+      同时使用 <code class="mono">npx skills add</code> 安装同一 skill 时，两个来源会各自注册，注意不要重复启用。
+    </p>
+  </div>
+</BaseLayout>
