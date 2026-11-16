@@ -5,13 +5,13 @@
     "repo": "skills",
     "fullName": "remotion-dev/skills",
     "url": "https://github.com/remotion-dev/skills",
-    "stars": 7150,
+    "stars": 7320,
     "licenseSpdx": null,
     "licenseStatus": "unknown",
     "defaultBranch": "main",
-    "headCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+    "headCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
     "archived": false,
-    "pushedAt": "2026-11-11T19:23:32Z"
+    "pushedAt": "2026-11-16T08:11:09Z"
   },
   "skills": [
     {
@@ -27,18 +27,18 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "c491302acdc7b659c11f23c7898f519c4cf6c2bb8b186ade2aeab1bcaca25be0",
-        "bundleHash": "ce9e5401a9e1fc7d8aa642ccbfb83d15558245abb2cf2e550289500a2058a8f3",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "1264c8abdab99ed311f71cf0971ebaf2d7efb38087a875ddab2b38579a22fad2",
+        "bundleHash": "c6dafc3a8ec4a1d6b7f00c313b23abe9364a0fe7ac92cb4a6607eb95a60ece6f",
         "filesFetched": 80,
         "filesSkipped": 9,
-        "bytesFetched": 630990
+        "bytesFetched": 274623
       },
       "files": [
         {
@@ -148,7 +148,7 @@
         },
         {
           "path": "remotion-interactivity/REFERENCE.md",
-          "size": 14304,
+          "size": 14500,
           "kind": "reference",
           "scanned": true
         },
@@ -308,67 +308,19 @@
         },
         {
           "path": "remotion-maps/techniques/maptiler/TECHNIQUE.md",
-          "size": 4518,
+          "size": 3548,
           "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
-          "size": 1849,
-          "kind": "script",
           "scanned": true
         },
         {
           "path": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
-          "size": 2183,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
-          "size": 10830,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/example-Root.tsx",
-          "size": 1039,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
-          "size": 333134,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
-          "size": 13082,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/tokens.ts",
-          "size": 1256,
+          "size": 1549,
           "kind": "script",
           "scanned": true
         },
         {
           "path": "remotion-maps/techniques/maptiler/references/map-data-sources.md",
-          "size": 4798,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
-          "size": 6871,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/references/map-geo-prep.md",
-          "size": 4098,
+          "size": 4648,
           "kind": "reference",
           "scanned": true
         },
@@ -376,12 +328,6 @@
           "path": "remotion-maps/techniques/maptiler/references/render-stability.md",
           "size": 3639,
           "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
-          "size": 7553,
-          "kind": "script",
           "scanned": true
         },
         {
@@ -513,7 +459,7 @@
         },
         {
           "path": "remotion-markup/local-fonts.md",
-          "size": 1533,
+          "size": 2570,
           "kind": "reference",
           "scanned": true
         },
@@ -528,12 +474,67 @@
           "size": 995,
           "kind": "reference",
           "scanned": true
+        },
+        {
+          "path": "remotion-markup/measuring-text.md",
+          "size": 2801,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/motion-blur.md",
+          "size": 2039,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/multi-scene-video.md",
+          "size": 1035,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/parameters.md",
+          "size": 2544,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/remotion-maps/REFERENCE.md",
+          "size": 1030,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/remotion-maps/agents/openai.yaml",
+          "size": 293,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/remotion-maps/assets/remotion-icon.svg",
+          "size": 1303,
+          "kind": "asset",
+          "scanned": false,
+          "skipReason": "binary/asset not parsed"
+        },
+        {
+          "path": "remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md",
+          "size": 3909,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
+          "path": "remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+          "size": 8912,
+          "kind": "script",
+          "scanned": true
         }
       ],
       "metrics": {
         "bodyTokensEstimate": 1107,
         "fileCount": 80,
-        "scriptCount": 10,
+        "scriptCount": 6,
         "hasNetwork": true,
         "hasCredentialPatterns": true
       },
@@ -542,7 +543,7 @@
         "coverage": {
           "filesScanned": 71,
           "filesSkipped": 9,
-          "bytesScanned": 282326,
+          "bytesScanned": 257790,
           "limitations": [
             "remotion-captions/assets/remotion-icon.svg: binary asset not parsed",
             "remotion-create/assets/remotion-icon.svg: binary asset not parsed",
@@ -551,8 +552,8 @@
             "remotion-license/assets/remotion-icon.svg: binary asset not parsed",
             "remotion-maps/assets/remotion-icon.svg: binary asset not parsed",
             "remotion-maps/techniques/cesium/assets/sample-river.geojson: binary asset not parsed",
-            "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json: >256 KB; not scanned",
             "remotion-markup/assets/remotion-icon.svg: binary asset not parsed",
+            "remotion-markup/remotion-maps/assets/remotion-icon.svg: binary asset not parsed",
             "file list capped at 80; some files may be omitted"
           ]
         },
@@ -568,6 +569,11 @@
               },
               {
                 "file": "remotion-maps/techniques/cesium/TECHNIQUE.md",
+                "line": 15,
+                "excerpt": "ing blocks rather than textured architecture. ## Credentials For `landscape`, set: ```text REMOTION_MAPTILER_KEY=... ``` Create a MapTile"
+              },
+              {
+                "file": "remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md",
                 "line": 15,
                 "excerpt": "ing blocks rather than textured architecture. ## Credentials For `landscape`, set: ```text REMOTION_MAPTILER_KEY=... ``` Create a MapTile"
               }
@@ -649,11 +655,11 @@
                 "excerpt": "Executable or script file present in the skill bundle."
               },
               {
-                "file": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+                "file": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
                 "excerpt": "Executable or script file present in the skill bundle."
               },
               {
-                "file": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+                "file": "remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
                 "excerpt": "Executable or script file present in the skill bundle."
               }
             ],
@@ -662,9 +668,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "ce9e5401a9e1fc7d8aa642ccbfb83d15558245abb2cf2e550289500a2058a8f3"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "c6dafc3a8ec4a1d6b7f00c313b23abe9364a0fe7ac92cb4a6607eb95a60ece6f"
       },
       "review": {
         "status": "unreviewed",
@@ -695,8 +701,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -711,15 +717,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "c08b52bfa3813f39a8ff95256607bebaccd2cee19f5b88d5e2b19bd206ecc7e8",
-        "bundleHash": "5aecb99f9cfeb18528edd31176c478eb2c7d9b0ccff8c51da06cf72aa315bb28",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "8ac634854b62720a4cf439e90cf6251d26ae27d5800f438b5af8936c1400bc73",
+        "bundleHash": "1dd5f814e2a66c44b77ebf4d938f1a0ad04dc460cb0000da53f603f1d84b8910",
         "filesFetched": 6,
         "filesSkipped": 0,
         "bytesFetched": 16495
@@ -813,9 +819,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "5aecb99f9cfeb18528edd31176c478eb2c7d9b0ccff8c51da06cf72aa315bb28"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "1dd5f814e2a66c44b77ebf4d938f1a0ad04dc460cb0000da53f603f1d84b8910"
       },
       "review": {
         "status": "unreviewed",
@@ -845,8 +851,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -861,15 +867,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "7892df3fdd021f7024da6359dbeab451eb29f414e710bea8b687301bb245e2ff",
-        "bundleHash": "a33ec6b9f2db714cb86eb7935d7b195a23ad5b95782039bdf0ec3a47e559128b",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "7a1924e74653720516b6ddbf7edddae820bc49f6ee0d0dba5b16d16a6728c402",
+        "bundleHash": "8790e8fffbc96bf974a9f5a94be5fbfddf88a84db5dda1938528814bd842e067",
         "filesFetched": 5,
         "filesSkipped": 0,
         "bytesFetched": 5570
@@ -954,9 +960,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "a33ec6b9f2db714cb86eb7935d7b195a23ad5b95782039bdf0ec3a47e559128b"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "8790e8fffbc96bf974a9f5a94be5fbfddf88a84db5dda1938528814bd842e067"
       },
       "review": {
         "status": "unreviewed",
@@ -986,8 +992,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -1002,15 +1008,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "9bf31669a3eb946f814db42e30ad7a3cce55f87cda049f31a5a6f3e330ee4892",
-        "bundleHash": "2a7664660999ee9f5075dfb07b4c91c16700f91e219993d1dd2bc45dd6c119de",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "33be30cfc48cd5ab8274920737e59f7251e52f0d24bdaee2a90eeb8e10cf78ba",
+        "bundleHash": "35394898a437b82907ea1aaae75f451aed8bab8ec4b6b1ba5a6f69088469e52b",
         "filesFetched": 3,
         "filesSkipped": 0,
         "bytesFetched": 2984
@@ -1071,9 +1077,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "2a7664660999ee9f5075dfb07b4c91c16700f91e219993d1dd2bc45dd6c119de"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "35394898a437b82907ea1aaae75f451aed8bab8ec4b6b1ba5a6f69088469e52b"
       },
       "review": {
         "status": "unreviewed",
@@ -1107,8 +1113,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -1123,23 +1129,23 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "70f67a8427330076538d8e93788994fbe0730762717a70f0286145541589fbc9",
-        "bundleHash": "ad10bffb36d765df8705a75a1bce236d4431c0f54b6036d33109fc4e10ff6f58",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "83f7ccbdc104fca303f023ba25539dfbd6a92b4fcc781c2a02f11a009082fe06",
+        "bundleHash": "c178b5e00fca1a52812e87803ab3803d26e144af4e09d2a85da74cf4ecbf8ef9",
         "filesFetched": 5,
         "filesSkipped": 0,
-        "bytesFetched": 24001
+        "bytesFetched": 24197
       },
       "files": [
         {
           "path": "SKILL.md",
-          "size": 14343,
+          "size": 14539,
           "kind": "skill",
           "scanned": true
         },
@@ -1169,7 +1175,7 @@
         }
       ],
       "metrics": {
-        "bodyTokensEstimate": 3586,
+        "bodyTokensEstimate": 3635,
         "fileCount": 5,
         "scriptCount": 0,
         "hasNetwork": true,
@@ -1180,7 +1186,7 @@
         "coverage": {
           "filesScanned": 5,
           "filesSkipped": 0,
-          "bytesScanned": 24001,
+          "bytesScanned": 24197,
           "limitations": []
         },
         "flags": [
@@ -1204,9 +1210,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "ad10bffb36d765df8705a75a1bce236d4431c0f54b6036d33109fc4e10ff6f58"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "c178b5e00fca1a52812e87803ab3803d26e144af4e09d2a85da74cf4ecbf8ef9"
       },
       "review": {
         "status": "unreviewed",
@@ -1239,8 +1245,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -1255,15 +1261,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "79e71584bd09d81a044acf11c04cb34998e091ca19ba164333310d4cf074cd2d",
-        "bundleHash": "b2c722618e5bb4a83f87e8c3e4d964545a793f36f5fa3048fb0428ac5bea8ae4",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "de248627990fc816d5e2f17caaa8be4de09b92ba0092d9e42a6f1aa6a8eae05a",
+        "bundleHash": "66626d505eafb05be078e941b0dc0f0f2e21dd543993a41111c8de924c239137",
         "filesFetched": 3,
         "filesSkipped": 0,
         "bytesFetched": 2101
@@ -1324,9 +1330,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "b2c722618e5bb4a83f87e8c3e4d964545a793f36f5fa3048fb0428ac5bea8ae4"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "66626d505eafb05be078e941b0dc0f0f2e21dd543993a41111c8de924c239137"
       },
       "review": {
         "status": "unreviewed",
@@ -1356,8 +1362,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -1372,18 +1378,18 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "f623f9ae66d44400846dc35124d32d4501ae0349d041d64ad0daa70a5f8dc920",
-        "bundleHash": "272bba5dd65c16f6514d924e7660f9b59819a02fde70ae168082eff7a6eca713",
-        "filesFetched": 32,
-        "filesSkipped": 2,
-        "bytesFetched": 488431
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "ce182f8918097843b3ae2080d3fac1c4cd4376fbfd028aa041555201260fb6bf",
+        "bundleHash": "b7c29e104465b5e4c88191a9efd72994ab0962e71cfed2562e2c0367db9e3dc0",
+        "filesFetched": 23,
+        "filesSkipped": 1,
+        "bytesFetched": 106965
       },
       "files": [
         {
@@ -1497,67 +1503,19 @@
         },
         {
           "path": "techniques/maptiler/TECHNIQUE.md",
-          "size": 4518,
+          "size": 3548,
           "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/assets/CountryLabel.tsx",
-          "size": 1849,
-          "kind": "script",
           "scanned": true
         },
         {
           "path": "techniques/maptiler/assets/MapTilerVectorElement.ts",
-          "size": 2183,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/assets/RiverReveal.tsx",
-          "size": 10830,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/assets/example-Root.tsx",
-          "size": 1039,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/assets/sample-data/country-meta.json",
-          "size": 333134,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/assets/sample-data/yarlung-flow.json",
-          "size": 13082,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/assets/tokens.ts",
-          "size": 1256,
+          "size": 1549,
           "kind": "script",
           "scanned": true
         },
         {
           "path": "techniques/maptiler/references/map-data-sources.md",
-          "size": 4798,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/references/map-explainer-architecture.md",
-          "size": 6871,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/references/map-geo-prep.md",
-          "size": 4098,
+          "size": 4648,
           "kind": "reference",
           "scanned": true
         },
@@ -1565,12 +1523,6 @@
           "path": "techniques/maptiler/references/render-stability.md",
           "size": 3639,
           "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "techniques/maptiler/scripts/prep-geo.mjs",
-          "size": 7553,
-          "kind": "script",
           "scanned": true
         },
         {
@@ -1582,20 +1534,19 @@
       ],
       "metrics": {
         "bodyTokensEstimate": 258,
-        "fileCount": 32,
-        "scriptCount": 10,
+        "fileCount": 23,
+        "scriptCount": 5,
         "hasNetwork": true,
         "hasCredentialPatterns": true
       },
       "scan": {
         "status": "partial",
         "coverage": {
-          "filesScanned": 30,
-          "filesSkipped": 2,
-          "bytesScanned": 148888,
+          "filesScanned": 22,
+          "filesSkipped": 1,
+          "bytesScanned": 100556,
           "limitations": [
-            "techniques/cesium/assets/sample-river.geojson: binary asset not parsed",
-            "techniques/maptiler/assets/sample-data/country-meta.json: >256 KB; not scanned"
+            "techniques/cesium/assets/sample-river.geojson: binary asset not parsed"
           ]
         },
         "flags": [
@@ -1686,10 +1637,6 @@
                 "excerpt": "Executable or script file present in the skill bundle."
               },
               {
-                "file": "techniques/maptiler/assets/CountryLabel.tsx",
-                "excerpt": "Executable or script file present in the skill bundle."
-              },
-              {
                 "file": "techniques/maptiler/assets/MapTilerVectorElement.ts",
                 "excerpt": "Executable or script file present in the skill bundle."
               }
@@ -1699,9 +1646,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "272bba5dd65c16f6514d924e7660f9b59819a02fde70ae168082eff7a6eca713"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "b7c29e104465b5e4c88191a9efd72994ab0962e71cfed2562e2c0367db9e3dc0"
       },
       "review": {
         "status": "unreviewed",
@@ -1731,8 +1678,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -1747,18 +1694,18 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "8650285547e38233ec7c7b95faf88fb7941b170579f87159b42a5bdc40672d94",
-        "bundleHash": "f5f1d1dc4e7ecd35ac519c794351350bd78f28523aaef1639ec16f6da68e7de1",
-        "filesFetched": 69,
-        "filesSkipped": 3,
-        "bytesFetched": 617969
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "6484fb2c54c3db052674a8725d40e1fcc3b26d144d1b429c1e1f59719db0fe55",
+        "bundleHash": "60198dd8699703ecb6a8de490a29c984fab0306fef7024def3cd6a4061332b80",
+        "filesFetched": 60,
+        "filesSkipped": 2,
+        "bytesFetched": 237861
       },
       "files": [
         {
@@ -1883,7 +1830,7 @@
         },
         {
           "path": "local-fonts.md",
-          "size": 1533,
+          "size": 2570,
           "kind": "reference",
           "scanned": true
         },
@@ -1919,7 +1866,7 @@
         },
         {
           "path": "parameters.md",
-          "size": 2223,
+          "size": 2544,
           "kind": "reference",
           "scanned": true
         },
@@ -2035,67 +1982,19 @@
         },
         {
           "path": "remotion-maps/techniques/maptiler/TECHNIQUE.md",
-          "size": 4518,
+          "size": 3548,
           "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
-          "size": 1849,
-          "kind": "script",
           "scanned": true
         },
         {
           "path": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
-          "size": 2183,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
-          "size": 10830,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/example-Root.tsx",
-          "size": 1039,
-          "kind": "script",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
-          "size": 333134,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
-          "size": 13082,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/assets/tokens.ts",
-          "size": 1256,
+          "size": 1549,
           "kind": "script",
           "scanned": true
         },
         {
           "path": "remotion-maps/techniques/maptiler/references/map-data-sources.md",
-          "size": 4798,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
-          "size": 6871,
-          "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/references/map-geo-prep.md",
-          "size": 4098,
+          "size": 4648,
           "kind": "reference",
           "scanned": true
         },
@@ -2103,12 +2002,6 @@
           "path": "remotion-maps/techniques/maptiler/references/render-stability.md",
           "size": 3639,
           "kind": "reference",
-          "scanned": true
-        },
-        {
-          "path": "remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
-          "size": 7553,
-          "kind": "script",
           "scanned": true
         },
         {
@@ -2180,21 +2073,20 @@
       ],
       "metrics": {
         "bodyTokensEstimate": 3457,
-        "fileCount": 69,
-        "scriptCount": 10,
+        "fileCount": 60,
+        "scriptCount": 5,
         "hasNetwork": true,
         "hasCredentialPatterns": true
       },
       "scan": {
         "status": "partial",
         "coverage": {
-          "filesScanned": 66,
-          "filesSkipped": 3,
-          "bytesScanned": 277123,
+          "filesScanned": 58,
+          "filesSkipped": 2,
+          "bytesScanned": 230149,
           "limitations": [
             "remotion-maps/assets/remotion-icon.svg: binary asset not parsed",
-            "remotion-maps/techniques/cesium/assets/sample-river.geojson: binary asset not parsed",
-            "remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json: >256 KB; not scanned"
+            "remotion-maps/techniques/cesium/assets/sample-river.geojson: binary asset not parsed"
           ]
         },
         "flags": [
@@ -2285,10 +2177,6 @@
                 "excerpt": "Executable or script file present in the skill bundle."
               },
               {
-                "file": "remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
-                "excerpt": "Executable or script file present in the skill bundle."
-              },
-              {
                 "file": "remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
                 "excerpt": "Executable or script file present in the skill bundle."
               }
@@ -2298,9 +2186,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "f5f1d1dc4e7ecd35ac519c794351350bd78f28523aaef1639ec16f6da68e7de1"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "60198dd8699703ecb6a8de490a29c984fab0306fef7024def3cd6a4061332b80"
       },
       "review": {
         "status": "unreviewed",
@@ -2329,8 +2217,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -2345,15 +2233,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "29164a346d0ba9549de08f1e5051d5ba4fc608e58334a908f63759e5e62a7da5",
-        "bundleHash": "17c017dcba65086603b5b5c3ec9d770d267c45b5b552c140495a2377968986e0",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "b59cc633d927ac0a89e8394e5b2f1cc46fd5f2e871a8bbb02f24f99a19b25cf8",
+        "bundleHash": "d93722111452a902b74aa8de238998cb55a08234ca6a94b0ccf81c6a9b79505b",
         "filesFetched": 6,
         "filesSkipped": 0,
         "bytesFetched": 7098
@@ -2447,9 +2335,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "17c017dcba65086603b5b5c3ec9d770d267c45b5b552c140495a2377968986e0"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "d93722111452a902b74aa8de238998cb55a08234ca6a94b0ccf81c6a9b79505b"
       },
       "review": {
         "status": "unreviewed",
@@ -2479,15 +2367,15 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
       "path": "skills/remotion-render/SKILL.md",
       "slug": "remotion-render",
       "name": "remotion-render",
-      "description": "Export a Remotion video",
+      "description": "Export a Remotion video, still image, or editable OpenTimelineIO timeline",
       "frontmatter": {},
       "license": {
         "spdx": null,
@@ -2495,23 +2383,23 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "b59b979e360bb0ba615373cc7c2542115f7feee6be36f3f6bb9c5b63491325bb",
-        "bundleHash": "998e63b743a2483db5bbad871f6bb656c38a7521751a0fb1e6b22948b7ced3f2",
-        "filesFetched": 4,
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "7074a9e0d69e1c1f45c1a30fdbc584eb1da52ddb31f82be80e30ff4d9bee5209",
+        "bundleHash": "c748de1acc6f9d96fb23f41d06189bba22db180e2bf16284c3694e5c013fa721",
+        "filesFetched": 5,
         "filesSkipped": 0,
-        "bytesFetched": 6169
+        "bytesFetched": 26610
       },
       "files": [
         {
           "path": "SKILL.md",
-          "size": 2313,
+          "size": 2960,
           "kind": "skill",
           "scanned": true
         },
@@ -2528,6 +2416,12 @@
           "scanned": true
         },
         {
+          "path": "opentimeline.md",
+          "size": 19794,
+          "kind": "reference",
+          "scanned": true
+        },
+        {
           "path": "transparent-videos.md",
           "size": 2267,
           "kind": "reference",
@@ -2535,8 +2429,8 @@
         }
       ],
       "metrics": {
-        "bodyTokensEstimate": 579,
-        "fileCount": 4,
+        "bodyTokensEstimate": 740,
+        "fileCount": 5,
         "scriptCount": 0,
         "hasNetwork": true,
         "hasCredentialPatterns": false
@@ -2544,20 +2438,32 @@
       "scan": {
         "status": "complete",
         "coverage": {
-          "filesScanned": 4,
+          "filesScanned": 5,
           "filesSkipped": 0,
-          "bytesScanned": 6169,
+          "bytesScanned": 26610,
           "limitations": []
         },
         "flags": [
+          {
+            "code": "DEPENDENCY_INSTALL",
+            "severity": "high",
+            "evidence": [
+              {
+                "file": "opentimeline.md",
+                "line": 294,
+                "excerpt": "sions, convert the timeline to FCP7 XML: ```bash pip install OpenTimelineIO otio-fcp-adapter otioconvert -i timeline.otio -o timeline.xml -O"
+              }
+            ],
+            "note": "Installs dependencies that may run lifecycle scripts."
+          },
           {
             "code": "NETWORK_FETCH",
             "severity": "medium",
             "evidence": [
               {
                 "file": "SKILL.md",
-                "line": 21,
-                "excerpt": "`` npx remotion render ``` Full list of options: https://www.remotion.dev/docs/cli/render.md ## Passing input props Pass input props as"
+                "line": 23,
+                "excerpt": "px remotion compositions`. Full list of options: https://www.remotion.dev/docs/cli/render.md ## Passing input props Pass input props as"
               },
               {
                 "file": "assets/remotion-icon.svg",
@@ -2570,9 +2476,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "998e63b743a2483db5bbad871f6bb656c38a7521751a0fb1e6b22948b7ced3f2"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "c748de1acc6f9d96fb23f41d06189bba22db180e2bf16284c3694e5c013fa721"
       },
       "review": {
         "status": "unreviewed",
@@ -2602,8 +2508,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -2618,15 +2524,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "9dad5026098719d03b0baf2bc5d32055b64357e125186433586603ff202cc407",
-        "bundleHash": "baff8cfced8650a0cb6a2868766ad1d70e32d7f033b67c40cb9c4294b961681e",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "5929ef777c4fb493b2285f57b2038cd953afbe938680cd89ef9a53a2cac3cbe7",
+        "bundleHash": "937c429591506d56f05cefdbfb1c147204c2d7c4c86fe23bcf769ed91015c7a7",
         "filesFetched": 6,
         "filesSkipped": 0,
         "bytesFetched": 8791
@@ -2732,9 +2638,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "baff8cfced8650a0cb6a2868766ad1d70e32d7f033b67c40cb9c4294b961681e"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "937c429591506d56f05cefdbfb1c147204c2d7c4c86fe23bcf769ed91015c7a7"
       },
       "review": {
         "status": "unreviewed",
@@ -2764,8 +2670,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -2780,15 +2686,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "0b0592686d2be506d22311b463972f1ae3b8b2650dabb30c6bbb2f4b9658909a",
-        "bundleHash": "a8e57165b61d83c13c0ff817a5d105bb46dd79d854e45be39619b9d5b244d253",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "3a63e20ac739610d011c7f605c9daff864cde5576d1b3bd23795b1e264b31758",
+        "bundleHash": "7116a43609711ec9e8062c7a84d54275ced5e24c5f090d9c3e176bcf2deb7ab7",
         "filesFetched": 3,
         "filesSkipped": 0,
         "bytesFetched": 3151
@@ -2844,9 +2750,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "a8e57165b61d83c13c0ff817a5d105bb46dd79d854e45be39619b9d5b244d253"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "7116a43609711ec9e8062c7a84d54275ced5e24c5f090d9c3e176bcf2deb7ab7"
       },
       "review": {
         "status": "unreviewed",
@@ -2876,8 +2782,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     },
     {
@@ -2892,15 +2798,15 @@
         "source": "none"
       },
       "upstream": {
-        "latestCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "latestCommitAt": "2026-11-11T19:23:30Z",
-        "latestTreeSha": "374564213228b9892ff8ac3cf2efaa563fcf0a70"
+        "latestCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "latestCommitAt": "2026-11-16T08:11:07Z",
+        "latestTreeSha": "f0dc50e0d92847aa3a8e6a859d0734f386ed4dc7"
       },
       "snapshot": {
-        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "syncedAt": "2026-11-15T05:34:46.407Z",
-        "skillMdHash": "7fcc89867dd57219e6c89fa77da6efd51d57970b60cad2b6f7dd1cfb1e4d3666",
-        "bundleHash": "11f65980bc25b514f1aca4e14f2e502189e9be3ee3b47c992bc574c8ffc327ab",
+        "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "syncedAt": "2026-11-16T11:37:26.082Z",
+        "skillMdHash": "ff395e62752d23608643f2da039cf39f94061de905ef233b7dd15dbdf7e1fe91",
+        "bundleHash": "2282e57780d9e652128a55e86b42dc7ecf4d7427b43671eddc96f0aa097d195a",
         "filesFetched": 3,
         "filesSkipped": 0,
         "bytesFetched": 3532
@@ -2961,9 +2867,9 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:46.407Z",
-        "scannedCommit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
-        "scannedBundleHash": "11f65980bc25b514f1aca4e14f2e502189e9be3ee3b47c992bc574c8ffc327ab"
+        "scannedAt": "2026-11-16T11:37:26.082Z",
+        "scannedCommit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+        "scannedBundleHash": "2282e57780d9e652128a55e86b42dc7ecf4d7427b43671eddc96f0aa097d195a"
       },
       "review": {
         "status": "unreviewed",
@@ -2993,8 +2899,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-15T05:34:46.407Z",
-        "upstreamUpdatedAt": "2026-11-11T19:23:32Z"
+        "lastSyncedAt": "2026-11-16T11:37:26.082Z",
+        "upstreamUpdatedAt": "2026-11-16T08:11:09Z"
       }
     }
   ]

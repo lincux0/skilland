@@ -5,7 +5,7 @@
     "repo": "ui",
     "fullName": "shadcn-ui/ui",
     "url": "https://github.com/shadcn-ui/ui",
-    "stars": 128211,
+    "stars": 128299,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -32,7 +32,7 @@
       },
       "snapshot": {
         "commit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
-        "syncedAt": "2026-11-15T05:34:52.878Z",
+        "syncedAt": "2026-11-16T11:37:29.480Z",
         "skillMdHash": "64c879f6f1eab0decc306ca52ad32d41327c05c4d2fb7e708335e956c61dadf8",
         "bundleHash": "0a4f5240b778003c9fcb3bccb7e0d13a013cdefb15191a58061eaa1ba73becaa",
         "filesFetched": 10,
@@ -132,7 +132,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:52.878Z",
+        "scannedAt": "2026-11-16T11:37:29.480Z",
         "scannedCommit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
         "scannedBundleHash": "0a4f5240b778003c9fcb3bccb7e0d13a013cdefb15191a58061eaa1ba73becaa"
       },
@@ -167,7 +167,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:23.843Z",
-        "lastSyncedAt": "2026-11-15T05:34:52.878Z",
+        "lastSyncedAt": "2026-11-16T11:37:29.480Z",
         "upstreamUpdatedAt": "2026-11-13T10:58:16Z"
       }
     },
@@ -192,7 +192,7 @@
       },
       "snapshot": {
         "commit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
-        "syncedAt": "2026-11-15T05:34:52.878Z",
+        "syncedAt": "2026-11-16T11:37:29.480Z",
         "skillMdHash": "93951e5e83f616a3e046491c00d770bd54c0a64164706cd1191822a233d27592",
         "bundleHash": "c40bb98784690354cfc7cb34ed59b5ee8b1432cbc95b643540f3186a03acf480",
         "filesFetched": 21,
@@ -419,7 +419,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-15T05:34:52.878Z",
+        "scannedAt": "2026-11-16T11:37:29.480Z",
         "scannedCommit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
         "scannedBundleHash": "c40bb98784690354cfc7cb34ed59b5ee8b1432cbc95b643540f3186a03acf480"
       },
@@ -456,7 +456,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-15T05:34:52.878Z",
+        "lastSyncedAt": "2026-11-16T11:37:29.480Z",
         "upstreamUpdatedAt": "2026-11-13T10:58:16Z"
       }
     }

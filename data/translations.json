@@ -558,10 +558,10 @@
     "at": "2026-11-15T13:12:02.477Z"
   },
   "remotion-dev/skills/remotion-render": {
-    "zh": "导出 Remotion 视频。",
-    "source": "2d833fe9e1c89762",
-    "provider": "manual",
-    "at": "2026-11-15T13:12:02.477Z"
+    "zh": "导出 Remotion 视频、静态图像或可编辑的 OpenTimelineIO 时间线",
+    "source": "2a2851f2f33a82c9",
+    "provider": "google",
+    "at": "2026-11-16T11:37:36.538Z"
   },
   "remotion-dev/skills/remotion-saas": {
     "zh": "用 Remotion 构建应用。",
