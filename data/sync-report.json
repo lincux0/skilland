@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-16T11:37:19.786Z",
+  "generatedAt": "2026-11-17T12:00:21.811Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
-      "commit": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
       "mode": "tarball",
-      "tarballBytes": 4146531,
+      "tarballBytes": 4149339,
       "skills": 19,
       "treeTruncated": false
     },
@@ -19,9 +19,9 @@
     },
     {
       "fullName": "vercel-labs/skills",
-      "commit": "50894c1d98bc45ca1ab127213e59d6525065b5e7",
+      "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
       "mode": "tarball",
-      "tarballBytes": 448409,
+      "tarballBytes": 449751,
       "skills": 1,
       "treeTruncated": false
     },
@@ -59,7 +59,7 @@
     },
     {
       "fullName": "shadcn-ui/ui",
-      "commit": "e62c9435fff729a175f38983dee73b2cb4f6a069",
+      "commit": "968d8cb9dc42ae5d52e8fd356cf84596ec832a26",
       "mode": "api",
       "tarballBytes": 0,
       "skills": 2,
@@ -67,9 +67,9 @@
     },
     {
       "fullName": "vercel-labs/agent-browser",
-      "commit": "53384771fbafc261ba67608ac806dd5aa70b84f0",
+      "commit": "b06e2533ba9b3823b8a96c859d455cb55f4d7893",
       "mode": "tarball",
-      "tarballBytes": 2873593,
+      "tarballBytes": 4521430,
       "skills": 1,
       "treeTruncated": false
     },
@@ -89,8 +89,8 @@
     "complete": 103,
     "partial": 9,
     "criticalFlags": 0,
-    "translated": 1,
-    "translationPending": 1,
+    "translated": 0,
+    "translationPending": 0,
     "translationFailed": 0
   }
 }
