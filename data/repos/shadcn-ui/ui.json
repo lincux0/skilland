@@ -5,13 +5,13 @@
     "repo": "ui",
     "fullName": "shadcn-ui/ui",
     "url": "https://github.com/shadcn-ui/ui",
-    "stars": 128389,
+    "stars": 128461,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
     "headCommit": "968d8cb9dc42ae5d52e8fd356cf84596ec832a26",
     "archived": false,
-    "pushedAt": "2026-11-17T09:23:03Z"
+    "pushedAt": "2026-11-18T08:10:18Z"
   },
   "skills": [
     {
@@ -32,7 +32,7 @@
       },
       "snapshot": {
         "commit": "968d8cb9dc42ae5d52e8fd356cf84596ec832a26",
-        "syncedAt": "2026-11-17T12:00:32.103Z",
+        "syncedAt": "2026-11-18T11:54:07.085Z",
         "skillMdHash": "64c879f6f1eab0decc306ca52ad32d41327c05c4d2fb7e708335e956c61dadf8",
         "bundleHash": "0a4f5240b778003c9fcb3bccb7e0d13a013cdefb15191a58061eaa1ba73becaa",
         "filesFetched": 10,
@@ -132,7 +132,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-17T12:00:32.103Z",
+        "scannedAt": "2026-11-18T11:54:07.085Z",
         "scannedCommit": "968d8cb9dc42ae5d52e8fd356cf84596ec832a26",
         "scannedBundleHash": "0a4f5240b778003c9fcb3bccb7e0d13a013cdefb15191a58061eaa1ba73becaa"
       },
@@ -167,8 +167,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:23.843Z",
-        "lastSyncedAt": "2026-11-17T12:00:32.103Z",
-        "upstreamUpdatedAt": "2026-11-17T09:23:03Z"
+        "lastSyncedAt": "2026-11-18T11:54:07.085Z",
+        "upstreamUpdatedAt": "2026-11-18T08:10:18Z"
       }
     },
     {
@@ -192,7 +192,7 @@
       },
       "snapshot": {
         "commit": "968d8cb9dc42ae5d52e8fd356cf84596ec832a26",
-        "syncedAt": "2026-11-17T12:00:32.103Z",
+        "syncedAt": "2026-11-18T11:54:07.085Z",
         "skillMdHash": "93951e5e83f616a3e046491c00d770bd54c0a64164706cd1191822a233d27592",
         "bundleHash": "c40bb98784690354cfc7cb34ed59b5ee8b1432cbc95b643540f3186a03acf480",
         "filesFetched": 21,
@@ -419,7 +419,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-17T12:00:32.103Z",
+        "scannedAt": "2026-11-18T11:54:07.085Z",
         "scannedCommit": "968d8cb9dc42ae5d52e8fd356cf84596ec832a26",
         "scannedBundleHash": "c40bb98784690354cfc7cb34ed59b5ee8b1432cbc95b643540f3186a03acf480"
       },
@@ -456,8 +456,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-17T12:00:32.103Z",
-        "upstreamUpdatedAt": "2026-11-17T09:23:03Z"
+        "lastSyncedAt": "2026-11-18T11:54:07.085Z",
+        "upstreamUpdatedAt": "2026-11-18T08:10:18Z"
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T12:00:21.811Z",
+  "generatedAt": "2026-11-18T11:53:57.708Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
@@ -43,9 +43,9 @@
     },
     {
       "fullName": "remotion-dev/skills",
-      "commit": "3e20ac75161bc34468845df714701cc9bf6075f4",
+      "commit": "6f55706d1069e512430582ad86e4e57dc07afe1b",
       "mode": "tarball",
-      "tarballBytes": 281847,
+      "tarballBytes": 280499,
       "skills": 13,
       "treeTruncated": false
     },
@@ -67,9 +67,9 @@
     },
     {
       "fullName": "vercel-labs/agent-browser",
-      "commit": "b06e2533ba9b3823b8a96c859d455cb55f4d7893",
+      "commit": "deda8eff5e29bcc3b4a9f10aafd1412dbe91745a",
       "mode": "tarball",
-      "tarballBytes": 4521430,
+      "tarballBytes": 4533228,
       "skills": 1,
       "treeTruncated": false
     },
