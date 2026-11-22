@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T11:18:55.937Z",
+  "generatedAt": "2026-11-22T11:36:44.063Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
@@ -59,7 +59,7 @@
     },
     {
       "fullName": "shadcn-ui/ui",
-      "commit": "45bbf9ba23c9c0f63d38887947e5fb06f59c7da3",
+      "commit": "bfa64ff4d1cb7317d2403ecb176df6826d4caffc",
       "mode": "api",
       "tarballBytes": 0,
       "skills": 2,
@@ -67,9 +67,9 @@
     },
     {
       "fullName": "vercel-labs/agent-browser",
-      "commit": "1fde6b90e8f17474b2f122d4b4ce43a7fa0a6aa0",
+      "commit": "d2dfc782ccdd79d25a9b4f0acced9321789cecb8",
       "mode": "tarball",
-      "tarballBytes": 4632399,
+      "tarballBytes": 4632543,
       "skills": 1,
       "treeTruncated": false
     },
