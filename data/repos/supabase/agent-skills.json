@@ -5,7 +5,7 @@
     "repo": "agent-skills",
     "fullName": "supabase/agent-skills",
     "url": "https://github.com/supabase/agent-skills",
-    "stars": 3122,
+    "stars": 3126,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -42,7 +42,7 @@
       },
       "snapshot": {
         "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
-        "syncedAt": "2026-11-22T11:36:49.348Z",
+        "syncedAt": "2026-11-23T13:04:11.014Z",
         "skillMdHash": "ad65e776f45e761bafc609d3f506c77c1032225aa65e0c4c02f241b8071e5855",
         "bundleHash": "a3fbfb391e366f0b78ff6aec6f651d358685e31583587ed6220b6e8ade3925ed",
         "filesFetched": 36,
@@ -323,7 +323,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-22T11:36:49.348Z",
+        "scannedAt": "2026-11-23T13:04:11.014Z",
         "scannedCommit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
         "scannedBundleHash": "a3fbfb391e366f0b78ff6aec6f651d358685e31583587ed6220b6e8ade3925ed"
       },
@@ -361,7 +361,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-22T11:36:49.348Z",
+        "lastSyncedAt": "2026-11-23T13:04:11.014Z",
         "upstreamUpdatedAt": "2026-11-12T15:32:31Z"
       }
     },
@@ -388,7 +388,7 @@
       },
       "snapshot": {
         "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
-        "syncedAt": "2026-11-22T11:36:49.348Z",
+        "syncedAt": "2026-11-23T13:04:11.014Z",
         "skillMdHash": "697e0e949f97621c6fc1784169eb3ccbf673747d6bb8299a52962d3d84d93dc6",
         "bundleHash": "8fd120a5cab780fc8eb1902f73ea542176d90c1335acc3623ddcc17ae3ec7649",
         "filesFetched": 4,
@@ -462,7 +462,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-22T11:36:49.348Z",
+        "scannedAt": "2026-11-23T13:04:11.014Z",
         "scannedCommit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
         "scannedBundleHash": "8fd120a5cab780fc8eb1902f73ea542176d90c1335acc3623ddcc17ae3ec7649"
       },
@@ -503,7 +503,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:12.880Z",
-        "lastSyncedAt": "2026-11-22T11:36:49.348Z",
+        "lastSyncedAt": "2026-11-23T13:04:11.014Z",
         "upstreamUpdatedAt": "2026-11-12T15:32:31Z"
       }
     }

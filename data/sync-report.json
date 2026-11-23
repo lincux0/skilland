@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T11:36:44.063Z",
+  "generatedAt": "2026-11-23T13:04:04.568Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
@@ -43,9 +43,9 @@
     },
     {
       "fullName": "remotion-dev/skills",
-      "commit": "6f55706d1069e512430582ad86e4e57dc07afe1b",
+      "commit": "89c8afa3eee9cdd83838ac31979c2ba1384615aa",
       "mode": "tarball",
-      "tarballBytes": 280499,
+      "tarballBytes": 280528,
       "skills": 13,
       "treeTruncated": false
     },
@@ -59,7 +59,7 @@
     },
     {
       "fullName": "shadcn-ui/ui",
-      "commit": "bfa64ff4d1cb7317d2403ecb176df6826d4caffc",
+      "commit": "055aa6b7837b1808456a24beb4c97a677864aa82",
       "mode": "api",
       "tarballBytes": 0,
       "skills": 2,
