@@ -5,13 +5,13 @@
     "repo": "agent-browser",
     "fullName": "vercel-labs/agent-browser",
     "url": "https://github.com/vercel-labs/agent-browser",
-    "stars": 53541,
+    "stars": 53720,
     "licenseSpdx": "Apache-2.0",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
-    "headCommit": "d2dfc782ccdd79d25a9b4f0acced9321789cecb8",
+    "headCommit": "0a923358ea989d7602f0d06507ad3447c62ffe9b",
     "archived": false,
-    "pushedAt": "2026-11-23T01:46:38Z"
+    "pushedAt": "2026-11-24T08:43:01Z"
   },
   "skills": [
     {
@@ -29,13 +29,13 @@
         "source": "repo"
       },
       "upstream": {
-        "latestCommit": "d2dfc782ccdd79d25a9b4f0acced9321789cecb8",
-        "latestCommitAt": "2026-11-21T17:51:54Z",
-        "latestTreeSha": "298a190e0757a448a432ec6dbf0a67613f8ab8d8"
+        "latestCommit": "0a923358ea989d7602f0d06507ad3447c62ffe9b",
+        "latestCommitAt": "2026-11-23T21:52:02Z",
+        "latestTreeSha": "93d408b396e3f189bd40ccee49282c5f641926c7"
       },
       "snapshot": {
-        "commit": "d2dfc782ccdd79d25a9b4f0acced9321789cecb8",
-        "syncedAt": "2026-11-23T13:04:19.074Z",
+        "commit": "0a923358ea989d7602f0d06507ad3447c62ffe9b",
+        "syncedAt": "2026-11-24T13:53:51.037Z",
         "skillMdHash": "7d46deeb0101e84f8d70fd2e5cd18e3b6017edfb973607ff23e95e22c92ce73e",
         "bundleHash": "7fd53ade8282cbf7280480411cb8b1c6102bfa9926be5550ac5515a016e00fbe",
         "filesFetched": 1,
@@ -68,8 +68,8 @@
         "flags": [],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-23T13:04:19.074Z",
-        "scannedCommit": "d2dfc782ccdd79d25a9b4f0acced9321789cecb8",
+        "scannedAt": "2026-11-24T13:53:51.037Z",
+        "scannedCommit": "0a923358ea989d7602f0d06507ad3447c62ffe9b",
         "scannedBundleHash": "7fd53ade8282cbf7280480411cb8b1c6102bfa9926be5550ac5515a016e00fbe"
       },
       "review": {
@@ -105,8 +105,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-23T13:04:19.074Z",
-        "upstreamUpdatedAt": "2026-11-23T01:46:38Z"
+        "lastSyncedAt": "2026-11-24T13:53:51.037Z",
+        "upstreamUpdatedAt": "2026-11-24T08:43:01Z"
       }
     }
   ]
