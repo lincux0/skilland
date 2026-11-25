@@ -120,10 +120,10 @@
     "at": "2026-11-15T13:12:02.477Z"
   },
   "mattpocock/skills/chief-of-staff": {
-    "zh": "在一次会话里通过调度子代理，推进一个长期目标。",
-    "source": "a745c230d223ba00",
-    "provider": "manual",
-    "at": "2026-11-15T13:12:02.477Z"
+    "zh": "将工作委托给新的子代理，并记住它在过时的 wiki 中教给您的内容，以便下一次会议继续讨论主题。",
+    "source": "c7514a10143c731e",
+    "provider": "google",
+    "at": "2026-11-25T13:07:49.795Z"
   },
   "mattpocock/skills/claude-handoff": {
     "zh": "把当前对话交接给一个新的后台代理，由它立即接手继续做。",
@@ -526,6 +526,12 @@
     "source": "59a3e22f3d4018b5",
     "provider": "manual",
     "at": "2026-11-15T13:12:02.477Z"
+  },
+  "remotion-dev/skills/remotion-elements": {
+    "zh": "使用“npx remotion elements use”将 Elements、可重用视频组件（例如标题、背景、图表和标题样式）安装到 Remotion 项目中。使用“npx remotion elements add-library”在 Remotion Studio 中注册元素库。当给定元素页面 URL 或元素库 URL 或视频需要现成组件时使用。",
+    "source": "cc276ed23b802909",
+    "provider": "google",
+    "at": "2026-11-25T13:07:50.102Z"
   },
   "remotion-dev/skills/remotion-interactivity": {
     "zh": "按 Remotion Studio 可编辑的方式组织图层、时间与样式。",

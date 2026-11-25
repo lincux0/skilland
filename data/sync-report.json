@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T13:53:35.515Z",
+  "generatedAt": "2026-11-25T13:07:27.028Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
@@ -43,10 +43,10 @@
     },
     {
       "fullName": "remotion-dev/skills",
-      "commit": "89c8afa3eee9cdd83838ac31979c2ba1384615aa",
+      "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
       "mode": "tarball",
-      "tarballBytes": 280528,
-      "skills": 13,
+      "tarballBytes": 285065,
+      "skills": 14,
       "treeTruncated": false
     },
     {
@@ -67,17 +67,17 @@
     },
     {
       "fullName": "vercel-labs/agent-browser",
-      "commit": "0a923358ea989d7602f0d06507ad3447c62ffe9b",
+      "commit": "f0a98351ec920bd826b22c98dacf8414f04b9832",
       "mode": "tarball",
-      "tarballBytes": 4766811,
+      "tarballBytes": 5125816,
       "skills": 1,
       "treeTruncated": false
     },
     {
       "fullName": "mattpocock/skills",
-      "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
       "mode": "tarball",
-      "tarballBytes": 279823,
+      "tarballBytes": 280191,
       "skills": 39,
       "treeTruncated": false
     }
@@ -85,12 +85,12 @@
   "errors": [],
   "totals": {
     "repos": 10,
-    "skills": 112,
-    "complete": 103,
+    "skills": 113,
+    "complete": 104,
     "partial": 9,
     "criticalFlags": 0,
-    "translated": 0,
-    "translationPending": 0,
+    "translated": 2,
+    "translationPending": 2,
     "translationFailed": 0
   }
 }
