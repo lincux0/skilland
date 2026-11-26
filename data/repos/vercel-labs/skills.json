@@ -5,7 +5,7 @@
     "repo": "skills",
     "fullName": "vercel-labs/skills",
     "url": "https://github.com/vercel-labs/skills",
-    "stars": 40841,
+    "stars": 40977,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -33,7 +33,7 @@
       },
       "snapshot": {
         "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
-        "syncedAt": "2026-11-25T13:07:31.661Z",
+        "syncedAt": "2026-11-26T12:46:52.429Z",
         "skillMdHash": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
         "bundleHash": "135a7616b6704a25d129d5b6e095b83dc1c591dd3cbb5ebcfd343d45fecc947c",
         "filesFetched": 1,
@@ -79,7 +79,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-25T13:07:31.661Z",
+        "scannedAt": "2026-11-26T12:46:52.429Z",
         "scannedCommit": "57217cf86ba38148a57af9e90d14a4c049558330",
         "scannedBundleHash": "135a7616b6704a25d129d5b6e095b83dc1c591dd3cbb5ebcfd343d45fecc947c"
       },
@@ -114,7 +114,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-25T13:07:31.661Z",
+        "lastSyncedAt": "2026-11-26T12:46:52.429Z",
         "upstreamUpdatedAt": "2026-11-17T00:58:04Z"
       }
     }

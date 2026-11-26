@@ -486,10 +486,10 @@
     "at": "2026-11-15T13:12:02.477Z"
   },
   "prisma/skills/prisma-postgres-setup": {
-    "zh": "获取或复用 Prisma Postgres 数据库并接入应用；适合“我需要一个数据库”或使用 create-db 的场景。",
-    "source": "e17eeae6c4a59ffc",
-    "provider": "manual",
-    "at": "2026-11-15T13:12:02.477Z"
+    "zh": "获取或重用 Prisma Postgres 数据库并连接应用程序。当用户需要数据库并且没有配置任何数据库（“我需要一个数据库”、“添加 Postgres 数据库”、“为此应用程序设置数据库”）、即将部署、托管、发布或共享尚未托管数据库的应用程序（“部署我的应用程序”、“将其上线”、“与朋友共享”）、运行或提及 `create-db` 或 `npx create-db`，或者要求设置或连接 Prisma Postgres，包括 v0 和 Vercel Marketplace。将 Prisma ORM 配置交给 prisma-orm-setup；首先重用现有连接并遵循显式提供程序、驱动程序、替代 ORM 或仅数据库选择。",
+    "source": "db75d785678dd523",
+    "provider": "google",
+    "at": "2026-11-26T12:47:05.280Z"
   },
   "prisma/skills/prisma-postgres-upgrade": {
     "zh": "把 PostgreSQL 应用从 Prisma 6/7 一次性升级到 Prisma 8，保留 schema、数据与既有连接。",

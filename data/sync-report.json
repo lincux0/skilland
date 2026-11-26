@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T13:07:27.028Z",
+  "generatedAt": "2026-11-26T12:46:48.906Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
@@ -51,15 +51,15 @@
     },
     {
       "fullName": "prisma/skills",
-      "commit": "a6f192959cf43b08aa330fe1ffca090267215812",
+      "commit": "b4bebffd0d0c3499c3d342f69380886a28e28880",
       "mode": "tarball",
-      "tarballBytes": 103484,
+      "tarballBytes": 103720,
       "skills": 11,
       "treeTruncated": false
     },
     {
       "fullName": "shadcn-ui/ui",
-      "commit": "055aa6b7837b1808456a24beb4c97a677864aa82",
+      "commit": "0e5b2e621a9ee4cf6a604bbe6c5c0d5b70561eb4",
       "mode": "api",
       "tarballBytes": 0,
       "skills": 2,
@@ -67,9 +67,9 @@
     },
     {
       "fullName": "vercel-labs/agent-browser",
-      "commit": "f0a98351ec920bd826b22c98dacf8414f04b9832",
+      "commit": "a67ba089fec5fbfec07346aebad11666463d9799",
       "mode": "tarball",
-      "tarballBytes": 5125816,
+      "tarballBytes": 5131242,
       "skills": 1,
       "treeTruncated": false
     },
@@ -89,8 +89,8 @@
     "complete": 104,
     "partial": 9,
     "criticalFlags": 0,
-    "translated": 2,
-    "translationPending": 2,
+    "translated": 1,
+    "translationPending": 1,
     "translationFailed": 0
   }
 }
