@@ -5,13 +5,13 @@
     "repo": "skills",
     "fullName": "vercel-labs/skills",
     "url": "https://github.com/vercel-labs/skills",
-    "stars": 40977,
+    "stars": 41098,
     "licenseSpdx": "MIT",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
-    "headCommit": "57217cf86ba38148a57af9e90d14a4c049558330",
+    "headCommit": "e7fd0e9e52f029fe87729d8185cb8caf7049f678",
     "archived": false,
-    "pushedAt": "2026-11-17T00:58:04Z"
+    "pushedAt": "2026-11-27T05:06:11Z"
   },
   "skills": [
     {
@@ -27,13 +27,13 @@
         "source": "repo"
       },
       "upstream": {
-        "latestCommit": "57217cf86ba38148a57af9e90d14a4c049558330",
-        "latestCommitAt": "2026-11-17T00:58:01Z",
-        "latestTreeSha": "f062461f0d737d9cd8241a1137f3bd041a2e3346"
+        "latestCommit": "e7fd0e9e52f029fe87729d8185cb8caf7049f678",
+        "latestCommitAt": "2026-11-27T05:06:07Z",
+        "latestTreeSha": "b772152fabc6251eb4221868568caeef65aa1a7c"
       },
       "snapshot": {
-        "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
-        "syncedAt": "2026-11-26T12:46:52.429Z",
+        "commit": "e7fd0e9e52f029fe87729d8185cb8caf7049f678",
+        "syncedAt": "2026-11-27T12:40:08.025Z",
         "skillMdHash": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
         "bundleHash": "135a7616b6704a25d129d5b6e095b83dc1c591dd3cbb5ebcfd343d45fecc947c",
         "filesFetched": 1,
@@ -79,8 +79,8 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:52.429Z",
-        "scannedCommit": "57217cf86ba38148a57af9e90d14a4c049558330",
+        "scannedAt": "2026-11-27T12:40:08.025Z",
+        "scannedCommit": "e7fd0e9e52f029fe87729d8185cb8caf7049f678",
         "scannedBundleHash": "135a7616b6704a25d129d5b6e095b83dc1c591dd3cbb5ebcfd343d45fecc947c"
       },
       "review": {
@@ -114,8 +114,8 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-26T12:46:52.429Z",
-        "upstreamUpdatedAt": "2026-11-17T00:58:04Z"
+        "lastSyncedAt": "2026-11-27T12:40:08.025Z",
+        "upstreamUpdatedAt": "2026-11-27T05:06:11Z"
       }
     }
   ]

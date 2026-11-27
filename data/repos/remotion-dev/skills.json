@@ -5,7 +5,7 @@
     "repo": "skills",
     "fullName": "remotion-dev/skills",
     "url": "https://github.com/remotion-dev/skills",
-    "stars": 8037,
+    "stars": 8100,
     "licenseSpdx": null,
     "licenseStatus": "unknown",
     "defaultBranch": "main",
@@ -33,7 +33,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "b65ec262485151a7d105dd73e4ecea9e27e058c2d2d97be0f68531fbda75cb29",
         "bundleHash": "b247444ac1dede1b1857c0c70a5cd7d8831cacdefcdc5ec5ae2947117698abad",
         "filesFetched": 80,
@@ -659,7 +659,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "b247444ac1dede1b1857c0c70a5cd7d8831cacdefcdc5ec5ae2947117698abad"
       },
@@ -692,7 +692,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -714,7 +714,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "38bd2166f3f1317929ec4d19b30fdc409283c0a44bfe123e42ed5ad87ee959ac",
         "bundleHash": "9bc5b810dcfcc3852cdffcf3c4527d7034d7e5519ff91fe34904175c06a84692",
         "filesFetched": 6,
@@ -810,7 +810,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "9bc5b810dcfcc3852cdffcf3c4527d7034d7e5519ff91fe34904175c06a84692"
       },
@@ -842,7 +842,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -864,7 +864,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "5a8182233d6e877a0cfae5908afc0dba5527316f95533da8a75b4c027fd09529",
         "bundleHash": "108f93e8077954894627a5a4d585b675f2b39595eaca2b56a93954614e12adc3",
         "filesFetched": 5,
@@ -951,7 +951,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "108f93e8077954894627a5a4d585b675f2b39595eaca2b56a93954614e12adc3"
       },
@@ -983,7 +983,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -1005,7 +1005,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "7232d8305129fc10b3f79dab0d2daf59da882a7ea6bd5e4488bac9bad9bd1942",
         "bundleHash": "942bfab871f3835fa6582c853ecc55f2725fdbc3a138b537dc5372ad79af815a",
         "filesFetched": 3,
@@ -1068,7 +1068,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "942bfab871f3835fa6582c853ecc55f2725fdbc3a138b537dc5372ad79af815a"
       },
@@ -1104,7 +1104,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -1126,7 +1126,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "1c59df33df279acbb639b84ca5e496a9e2de99884fb5d3a87bf48eef35dd496a",
         "bundleHash": "57631a066e50ee040778570dcff1165d861195472582cb1b8bb71b408a93defe",
         "filesFetched": 3,
@@ -1189,7 +1189,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "57631a066e50ee040778570dcff1165d861195472582cb1b8bb71b408a93defe"
       },
@@ -1224,7 +1224,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-25T13:07:36.123Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -1246,7 +1246,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "f71c24f8653ebd8c722d5cf0783b2cb748eee377cf68792869e9cf54091ef966",
         "bundleHash": "7c16c9df27aad6937ba274c0d2cfbca914eda7474ab5666194f7ade75de7716d",
         "filesFetched": 5,
@@ -1321,7 +1321,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "7c16c9df27aad6937ba274c0d2cfbca914eda7474ab5666194f7ade75de7716d"
       },
@@ -1356,7 +1356,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -1378,7 +1378,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "8a8cd18d2c8f2d25cdecdbdef85caf4c450f5f0b2a55e39e92beaa50bb7d6dd0",
         "bundleHash": "4a7965e62214d279e9103ee50a82eefdd37fc1390b90f9f4becb895db338b06c",
         "filesFetched": 3,
@@ -1441,7 +1441,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "4a7965e62214d279e9103ee50a82eefdd37fc1390b90f9f4becb895db338b06c"
       },
@@ -1473,7 +1473,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -1495,7 +1495,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "c2f762df21cf0fab80412138aa1918ddfcb4216dc7ef14c8c47d605a6bf19475",
         "bundleHash": "2b783488e9a91650f29b5c9dcae93849cede597dc2b9b8edfeba70cca0592759",
         "filesFetched": 23,
@@ -1757,7 +1757,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "2b783488e9a91650f29b5c9dcae93849cede597dc2b9b8edfeba70cca0592759"
       },
@@ -1789,7 +1789,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -1811,7 +1811,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "0e263dcfa0c194eac05d7923c4bbca4c0f70af3823f922ecab942ade5ca97fa0",
         "bundleHash": "0e7f1f6678f5056e6880f1d03d4d1ca1b48fbfd50801ff48f6a7036f6bf05f86",
         "filesFetched": 59,
@@ -2291,7 +2291,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "0e7f1f6678f5056e6880f1d03d4d1ca1b48fbfd50801ff48f6a7036f6bf05f86"
       },
@@ -2322,7 +2322,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -2344,7 +2344,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "dc195ee6e8cbcb6aff814248709d4331038db1a713cd2ee611a6e5689343cc9e",
         "bundleHash": "012f99695b31b90296edbc6ca37358cfb6d3c4a394d7160ea0210de639e4ce12",
         "filesFetched": 6,
@@ -2440,7 +2440,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "012f99695b31b90296edbc6ca37358cfb6d3c4a394d7160ea0210de639e4ce12"
       },
@@ -2472,7 +2472,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -2494,7 +2494,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "304a35da98a3498ea72b74b500cbff36f3fa449d767a11fa2796b4fe0e24f0b1",
         "bundleHash": "e2efa812e10f67da2bbc70707d0da342100c85c6bedf2eed6435e70748048f25",
         "filesFetched": 5,
@@ -2581,7 +2581,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "e2efa812e10f67da2bbc70707d0da342100c85c6bedf2eed6435e70748048f25"
       },
@@ -2613,7 +2613,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -2635,7 +2635,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "c8ab1de21645e4068a29ac679ae2f409dc0ff6511957765510c191e3c699b49a",
         "bundleHash": "6990090797c1bda276602429a936746a7118823c664727e21dba5ae379cc4837",
         "filesFetched": 6,
@@ -2743,7 +2743,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "6990090797c1bda276602429a936746a7118823c664727e21dba5ae379cc4837"
       },
@@ -2775,7 +2775,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -2797,7 +2797,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "b6ffe3b9b7266f2fb1136db4ef37a11b512964e1333a4199d336ecba874b45ef",
         "bundleHash": "f1f3cd4a4650210b7c157ab7d5217d4abbc503a9a6a1cc2b689cc05cd88990c5",
         "filesFetched": 3,
@@ -2855,7 +2855,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "f1f3cd4a4650210b7c157ab7d5217d4abbc503a9a6a1cc2b689cc05cd88990c5"
       },
@@ -2887,7 +2887,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     },
@@ -2909,7 +2909,7 @@
       },
       "snapshot": {
         "commit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
-        "syncedAt": "2026-11-26T12:46:55.856Z",
+        "syncedAt": "2026-11-27T12:40:11.957Z",
         "skillMdHash": "0b72207a71a90000fc88ed4f38397e9e013305a8c441eeea5a391412581a1ca4",
         "bundleHash": "f4a3f5b8df14685ce81a85a38f91a8eaa38575d2a5698f1a2ce3ad41c3c09e75",
         "filesFetched": 3,
@@ -2972,7 +2972,7 @@
         ],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-26T12:46:55.856Z",
+        "scannedAt": "2026-11-27T12:40:11.957Z",
         "scannedCommit": "a3f4098a2afd0e13f6a6f8c8760e275f75457ea9",
         "scannedBundleHash": "f4a3f5b8df14685ce81a85a38f91a8eaa38575d2a5698f1a2ce3ad41c3c09e75"
       },
@@ -3004,7 +3004,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15T04:36:16.281Z",
-        "lastSyncedAt": "2026-11-26T12:46:55.856Z",
+        "lastSyncedAt": "2026-11-27T12:40:11.957Z",
         "upstreamUpdatedAt": "2026-11-24T17:19:19Z"
       }
     }

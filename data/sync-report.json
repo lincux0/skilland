@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T12:46:48.906Z",
+  "generatedAt": "2026-11-27T12:40:04.283Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
@@ -19,9 +19,9 @@
     },
     {
       "fullName": "vercel-labs/skills",
-      "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
+      "commit": "e7fd0e9e52f029fe87729d8185cb8caf7049f678",
       "mode": "tarball",
-      "tarballBytes": 449751,
+      "tarballBytes": 458357,
       "skills": 1,
       "treeTruncated": false
     },
@@ -67,9 +67,9 @@
     },
     {
       "fullName": "vercel-labs/agent-browser",
-      "commit": "a67ba089fec5fbfec07346aebad11666463d9799",
+      "commit": "3f43a2affd9944298104b7bb39d5f241aef85e91",
       "mode": "tarball",
-      "tarballBytes": 5131242,
+      "tarballBytes": 5150902,
       "skills": 1,
       "treeTruncated": false
     },
@@ -89,8 +89,8 @@
     "complete": 104,
     "partial": 9,
     "criticalFlags": 0,
-    "translated": 1,
-    "translationPending": 1,
+    "translated": 0,
+    "translationPending": 0,
     "translationFailed": 0
   }
 }
