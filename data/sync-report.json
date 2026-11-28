@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:40:04.283Z",
+  "generatedAt": "2026-11-28T11:56:36.932Z",
   "repos": [
     {
       "fullName": "anthropics/skills",
@@ -75,9 +75,9 @@
     },
     {
       "fullName": "mattpocock/skills",
-      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
+      "commit": "bbadaa631c37af594e5a05c9cefacd9956136b18",
       "mode": "tarball",
-      "tarballBytes": 280191,
+      "tarballBytes": 280302,
       "skills": 39,
       "treeTruncated": false
     }

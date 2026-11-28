@@ -5,7 +5,7 @@
     "repo": "agent-browser",
     "fullName": "vercel-labs/agent-browser",
     "url": "https://github.com/vercel-labs/agent-browser",
-    "stars": 54255,
+    "stars": 54393,
     "licenseSpdx": "Apache-2.0",
     "licenseStatus": "permissive",
     "defaultBranch": "main",
@@ -35,7 +35,7 @@
       },
       "snapshot": {
         "commit": "3f43a2affd9944298104b7bb39d5f241aef85e91",
-        "syncedAt": "2026-11-27T12:40:17.532Z",
+        "syncedAt": "2026-11-28T11:56:49.186Z",
         "skillMdHash": "7d46deeb0101e84f8d70fd2e5cd18e3b6017edfb973607ff23e95e22c92ce73e",
         "bundleHash": "7fd53ade8282cbf7280480411cb8b1c6102bfa9926be5550ac5515a016e00fbe",
         "filesFetched": 1,
@@ -68,7 +68,7 @@
         "flags": [],
         "scannerVersion": "2.0.0",
         "rulesetVersion": "2.0.0",
-        "scannedAt": "2026-11-27T12:40:17.532Z",
+        "scannedAt": "2026-11-28T11:56:49.186Z",
         "scannedCommit": "3f43a2affd9944298104b7bb39d5f241aef85e91",
         "scannedBundleHash": "7fd53ade8282cbf7280480411cb8b1c6102bfa9926be5550ac5515a016e00fbe"
       },
@@ -105,7 +105,7 @@
       "status": "draft",
       "timestamps": {
         "firstSeenAt": "2026-11-15",
-        "lastSyncedAt": "2026-11-27T12:40:17.532Z",
+        "lastSyncedAt": "2026-11-28T11:56:49.186Z",
         "upstreamUpdatedAt": "2026-11-27T02:10:30Z"
       }
     }
